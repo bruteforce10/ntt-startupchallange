@@ -30,7 +30,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { LIST_NAVBAR } from "@/constant/listNavbar";
-import EachUtils from "@/utils/EachUtils";
+import EachUtils from "@/utils/eachUtils";
 
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
