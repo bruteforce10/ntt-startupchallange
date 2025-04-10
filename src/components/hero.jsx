@@ -4,7 +4,8 @@ import { ArrowRight } from "lucide-react";
 export default function Hero() {
   return (
     <section>
-      <div className="relative h-[400px] sm:min-h-[calc(80vh-3.5rem)] flex flex-col justify-center w-full overflow-hidden">
+      <div className="relative h-[400px] sm:min-h-[calc(80vh-3.5rem)] z-[2] flex flex-col justify-center w-full overflow-hidden">
+        <div className="bg-linear-to-b from-blue-ntt-900 to-black/50 absolute top-0 left-0 w-full h-full z-[3]"></div>
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
           autoPlay
@@ -12,11 +13,11 @@ export default function Hero() {
           muted
           playsInline
         >
-          <source src="/bg-video.webm" type="video/webm" />
+          <source src="/bg-video-alt.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
-        <div className="relative space-y-8 mx-auto z-10 container px-4">
-          <h1 className=" text-4xl font-bold tracking-tight leading-tight sm:text-5xl md:text-6xl lg:text-6xl py-4">
+        <div className="relative max-sm:space-y-8 space-y-12 mx-auto z-10 container px-4">
+          <h1 className=" text-4xl font-bold tracking-tight leading-tight sm:text-5xl md:text-6xl lg:text-6xl ">
             Build Connections That Matter – Your Next Leap Starts at NTT Startup
             Challenge
           </h1>
