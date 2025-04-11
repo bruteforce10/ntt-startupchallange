@@ -24,7 +24,7 @@ export function BannerSection() {
       <Link
         href={"/about"}
         ref={bannerRef}
-        className="relative container mx-auto block h-[400px] cursor-pointer"
+        className="relative container mx-auto hidden lg:block h-[400px] cursor-pointer"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
         onMouseMove={handleMouseMove}
@@ -61,6 +61,15 @@ export function BannerSection() {
           priority
         />
       </Link>
+      <div className="container px-4">
+        <Image
+          src="/banner.avif?height=500&width=1200"
+          alt="NTT Startup Challenge Event"
+          fill
+          className="object-cover w-full h-auto rounded-xl"
+          priority
+        />
+      </div>
     </section>
   );
 }

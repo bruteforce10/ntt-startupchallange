@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import { Navbar } from "@/components/navbar";
 import { BannerSection } from "@/components/section-banner";
 import { CountdownSection } from "@/components/section-countdown";
+import { FeedbackSection } from "@/components/section-feedback";
 import { HistorySection } from "@/components/section-history";
 import { VideoSection } from "@/components/section-video";
 
@@ -22,6 +23,7 @@ export default function Home() {
         <VideoSection />
         <HistorySection />
         <BannerSection />
+        <FeedbackSection />
         <Footer />
       </div>
     </div>
