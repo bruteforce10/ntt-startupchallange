@@ -10,6 +10,7 @@ import { SpeakersSection } from "@/components/section-awards";
 import { CountdownSection } from "@/components/section-countdown";
 import { FeedbackSection } from "@/components/section-feedback";
 import { HistorySectionNew } from "@/components/section-history-new";
+import NominateSectionSection from "@/components/section-nominate-award";
 import SpeaksSection from "@/components/section-speaks";
 import {
   COMUNITY_PARTNER_CONTENT,
@@ -44,11 +45,7 @@ export default function Home() {
         />
         <HistorySectionNew />
         <FeedbackSection />
-        <ListSection
-          title={"Top Finalist NSC 2024"}
-          items={FINALIST_CONTENT}
-          pathImg={"top-finalist"}
-        />
+        <NominateSectionSection />
         <SpeakersSection />
         <SpeaksSection />
         <ListSection

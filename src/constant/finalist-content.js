@@ -51,6 +51,24 @@ export const FINALIST_CONTENT = [
   },
 ];
 
+export const NOMINATE_CONTENT = [
+  {
+    id: 1,
+    img: "/nominate-award/rank-1.webp",
+    name: "$ 10,000",
+  },
+  {
+    id: 2,
+    img: "/nominate-award/rank-2.webp",
+    name: "$ 5,000",
+  },
+  {
+    id: 3,
+    img: "/nominate-award/rank-3.webp",
+    name: "$ 3,000",
+  },
+];
+
 export const MAIN_PARTNER_CONTENT = [
   {
     id: 1,
