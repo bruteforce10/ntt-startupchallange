@@ -1,5 +1,6 @@
 import { HISTORY_CONTENT, HISTORY_LIST } from "@/constant/history-content";
 import EachUtils from "@/utils/eachUtils";
+import HeadingText from "./heading-text";
 
 export function HistorySection() {
   return (
@@ -18,14 +19,17 @@ export function HistorySection() {
           </div>
 
           <div className="space-y-8">
-            <div className="text-center lg:text-right">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                History of
-                <br />
-                NTT Startup Challenge
-              </h2>
-              <div className="h-1 w-24 bg-blue-500 max-lg:mx-auto lg:ml-auto"></div>
-            </div>
+            <HeadingText
+              text={
+                <>
+                  History of
+                  <br />
+                  NTT Startup Challenge
+                </>
+              }
+              className={"max-lg:text-center lg:text-right mb-12"}
+              classNameBorder={"lg:ml-auto mx-0 max-lg:mx-auto"}
+            />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <EachUtils

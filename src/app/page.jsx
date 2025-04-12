@@ -1,12 +1,21 @@
 import { AwardsSection } from "@/components/award-section";
 import { Footer } from "@/components/footer";
 import Hero from "@/components/hero";
+import { ContentHero2025 } from "@/components/modules/content-hero-2025";
+import CtaHero from "@/components/modules/cta-hero";
+import { ListSection } from "@/components/modules/list-section";
 import { Navbar } from "@/components/navbar";
-import { BannerSection } from "@/components/section-banner";
+import { NewsSection } from "@/components/news-section";
+import { SpeakersSection } from "@/components/section-awards";
 import { CountdownSection } from "@/components/section-countdown";
 import { FeedbackSection } from "@/components/section-feedback";
-import { HistorySection } from "@/components/section-history";
-import { VideoSection } from "@/components/section-video";
+import { HistorySectionNew } from "@/components/section-history-new";
+import SpeaksSection from "@/components/section-speaks";
+import {
+  COMUNITY_PARTNER_CONTENT,
+  FINALIST_CONTENT,
+  MAIN_PARTNER_CONTENT,
+} from "@/constant/finalist-content";
 
 export default function Home() {
   return (
@@ -19,13 +28,40 @@ export default function Home() {
 
       <div className="relative z-10">
         <Navbar />
-        <Hero />
-        <CountdownSection />
-        <VideoSection />
-        <HistorySection />
-        <BannerSection />
+        <Hero
+          videoUrl={"/bg-video-2025.webm"}
+          classNameContainer={"sm:h-[calc(100vh-3.5rem)] max-sm:h-screen"}
+          className={
+            "flex-col flex items-center sm:h-[360px] max-sm:h-[255px]  mb-24 justify-between "
+          }
+        >
+          <ContentHero2025 />
+          <CtaHero />
+        </Hero>
+        <CountdownSection
+          newEvent={"2025-05-19T00:00:00"}
+          title={"Official Application Close in"}
+        />
+        <HistorySectionNew />
         <FeedbackSection />
-        <AwardsSection />
+        <ListSection
+          title={"Top Finalist NSC 2024"}
+          items={FINALIST_CONTENT}
+          pathImg={"top-finalist"}
+        />
+        <SpeakersSection />
+        <SpeaksSection />
+        <ListSection
+          title={"Partners"}
+          items={MAIN_PARTNER_CONTENT}
+          pathImg={"main-partner"}
+        />
+        <ListSection
+          title={"Community Partners"}
+          items={COMUNITY_PARTNER_CONTENT}
+          pathImg={"community-partner"}
+        />
+        <NewsSection />
         <Footer />
       </div>
     </div>

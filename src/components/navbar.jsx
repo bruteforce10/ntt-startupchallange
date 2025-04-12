@@ -126,7 +126,7 @@ export function Navbar() {
                   Partner with us
                 </Button>
                 <Button variant="outline" className="w-full">
-                  NTTSC
+                  Register
                 </Button>
               </div>
             </SheetHeader>
@@ -187,7 +187,7 @@ export function Navbar() {
           {/* Action Buttons */}
           <div className="flex items-center space-x-2">
             <Button>Partner with us</Button>
-            <Button variant="outline">NTTSC</Button>
+            <Button variant="outline">Register</Button>
           </div>
         </div>
       </div>

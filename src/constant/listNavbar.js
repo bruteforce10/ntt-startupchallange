@@ -1,5 +1,6 @@
 export const LIST_NAVBAR = [
   { title: "Home", url: "/" },
+  { title: "NSC 2024", url: "nsc-2024" },
   {
     title: "Why Attend",
     url: "/why-attend",

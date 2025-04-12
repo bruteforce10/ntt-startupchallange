@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import HeadingText from "./heading-text";
 
 const awards = [
   {
@@ -32,11 +33,7 @@ export function AwardsSection() {
   return (
     <section className=" text-white pt-16 md:pt-28">
       <div className="container mx-auto px-4">
-        {/* Section heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Awards</h2>
-          <div className="h-1 w-24 bg-blue-500 mx-auto"></div>
-        </div>
+        <HeadingText text={"Awards"} />
 
         {/* Awards grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
