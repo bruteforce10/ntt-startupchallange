@@ -70,7 +70,7 @@ export function InnovationTabs() {
   ];
 
   return (
-    <section className="pt-16 md:pt-28">
+    <section id="#innovation" className="pt-16 md:pt-28">
       <div className="container mx-auto px-4">
         {/* Section heading */}
         <div className="text-center mb-16">

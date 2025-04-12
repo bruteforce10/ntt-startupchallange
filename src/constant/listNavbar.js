@@ -26,8 +26,8 @@ export const LIST_NAVBAR = [
     url: "/about",
     opt: [
       { title: "Group", url: "/about#group" },
-      { title: "Numbers", url: "/about#numbers" },
-      { title: "Open Innovation", url: "/about#open-innovation" },
+      { title: "Numbers", url: "/about#number" },
+      { title: "Open Innovation", url: "/about#innovation" },
     ],
   },
 ];
