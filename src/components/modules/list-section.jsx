@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import HeadingText from "../heading-text";
 
-export function ListSection({ title, items, pathImg }) {
+export function ListSection({ title, items, pathImg, id }) {
   return (
-    <section className="pt-16 md:pt-28">
+    <section id={id} className="pt-16 md:pt-28">
       <div className="container mx-auto px-4">
         <HeadingText text={title} />
 

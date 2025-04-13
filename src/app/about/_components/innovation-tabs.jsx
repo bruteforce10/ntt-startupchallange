@@ -2,75 +2,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { TABS_DATA } from "@/constant/group-ntt-content";
 
 export function InnovationTabs() {
   const [activeTab, setActiveTab] = useState("docomo-ventures");
 
-  const tabsData = [
-    {
-      id: "docomo-ventures",
-      label: "NTT DOCOMO Ventures",
-      logo: "/docomo-ntt.avif",
-      logoAlt: "NTT DOCOMO Ventures logo",
-      content: [
-        "NTT DOCOMO Ventures makes business collaborations between startups and NTT group",
-        "NTT DOCOMO Ventures Operates one of the largest corporate venture funds in Japan and has invested in the World's leading companies for over 10 years",
-      ],
-    },
-    {
-      id: "ntt-east",
-      label: "NTT East",
-      logo: "/ntt-easia.avif",
-      logoAlt: "NTT e-Asia logo",
-      content: [
-        "NTT e-Asia aims to create sustainable values for the communities in Asia by working with local partners",
-        "Expanding the possibilities of FTTH & Digital x Software to shape sustainable value for the Asian communities",
-      ],
-      secondLogo: "/ntt-ecity.avif",
-      secondLogoAlt: "NTT e-City Labo logo",
-      secondContent: [
-        "Demonstration Field for Realization of a Regional Recycling-Oriented Society",
-        "A facility where visitors can experience the solutions that the NTT East Group is working on to solve local issues",
-      ],
-    },
-    {
-      id: "ntt-west",
-      label: "NTT West",
-      logo: "/quint-bridge.avif",
-      logoAlt: "QUINTBRIDGE logo",
-      content: [
-        'QUINTBRIDGE offers programs and events based on the three axes of "Learn", "Interact", and "Co-create"',
-        "QUINTBRIDGE is a laboratory for social change, where enterprises, startups, students, and local governments — all who want a better world — can harness their individuality and interact as equals, creating innovative solutions through the exchange of ideas, technology, and expertise.",
-      ],
-    },
-    {
-      id: "ntt-com",
-      label: "NTT Com",
-      logo: "/extorch.avif",
-      logoAlt: "ExTorch logo",
-      content: [
-        'Open innovation programs with external companies "Co-creation" with society',
-        "Aiming to strengthen existing businesses and creating new ones by combining the technology of partners, with focus on startups, and assets put by NTT Communications together",
-      ],
-    },
-    {
-      id: "ntt-docomo",
-      label: "NTT DOCOMO",
-      logo: "/docomo-startup.avif",
-      logoAlt: "docomo STARTUP logo",
-      content: [
-        'Employee-created "Bottom-up" approach',
-        "New business creation program initiated by employees",
-        'Training Program "COLLEGE"',
-        'New Business Idea Contest "CHALLENGE"',
-        'Accelerator Program "GROWTH"',
-        "Develop new businesses from zero to one through those programs",
-      ],
-    },
-  ];
-
   return (
-    <section id="#innovation" className="pt-16 md:pt-28">
+    <section id="innovation" className="pt-16 md:pt-28">
       <div className="container mx-auto px-4">
         {/* Section heading */}
         <div className="text-center mb-16">
@@ -90,7 +28,7 @@ export function InnovationTabs() {
           {/* Tab list - scrollable on mobile */}
           <div className="overflow-x-auto pb-2">
             <TabsList className="bg-transparent h-auto p-0 w-full flex justify-between md:justify-center mb-8">
-              {tabsData.map((tab) => (
+              {TABS_DATA.map((tab) => (
                 <TabsTrigger
                   key={tab.id}
                   value={tab.id}
@@ -108,7 +46,7 @@ export function InnovationTabs() {
           </div>
 
           {/* Tab content */}
-          {tabsData.map((tab) => (
+          {TABS_DATA.map((tab) => (
             <TabsContent
               key={tab.id}
               value={tab.id}

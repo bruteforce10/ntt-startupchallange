@@ -7,7 +7,7 @@ import React from "react";
 
 const NttGroup = () => {
   return (
-    <section id="#group" className="pt-16 md:pt-28  container  mx-auto px-4 ">
+    <section id="group" className="pt-16 md:pt-28  container  mx-auto px-4 ">
       <HeadingText text={"NTT Group"} />
       <div className="flex flex-wrap justify-center items-center mx-auto sm:gap-8 max-w-6xl bg-white rounded-3xl  px-6 py-8">
         <EachUtils

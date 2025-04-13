@@ -4,7 +4,7 @@ import MouseMoveEffect from "@/components/mouse-move-effect";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  display: 'swap',
+  display: "swap",
 });
 
 export const metadata = {
@@ -15,7 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={`${plusJakartaSans.className} antialiased `} suppressHydrationWarning>
+      <body
+        className={`${plusJakartaSans.className} antialiased scroll-smooth`}
+        suppressHydrationWarning
+      >
         <MouseMoveEffect />
         {children}
       </body>
