@@ -4,6 +4,7 @@ import NominateSectionSection from "@/components/section-nominate-award";
 import React from "react";
 import { IndustryCarousel } from "./_components/industry-courosel";
 import { StartupBenefitsSection } from "./_components/startup-benefit-section";
+import { WhyAttendSection } from "./_components/why-attend-section";
 
 const WhyAttendPage = () => {
   return (
@@ -16,6 +17,7 @@ const WhyAttendPage = () => {
       <IndustryCarousel />
       <NominateSectionSection />
       <StartupBenefitsSection />
+      <WhyAttendSection />
     </InitialPage>
   );
 };

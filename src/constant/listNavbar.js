@@ -1,6 +1,5 @@
 export const LIST_NAVBAR = [
   { title: "Home", url: "/" },
-  { title: "NSC 2024", url: "nsc-2024" },
   {
     title: "Why Attend",
     url: "/why-attend",
@@ -30,4 +29,6 @@ export const LIST_NAVBAR = [
       { title: "Open Innovation", url: "/about#innovation" },
     ],
   },
+  { title: "Team", url: "team" },
+  { title: "NSC 2024", url: "nsc-2024" },
 ];

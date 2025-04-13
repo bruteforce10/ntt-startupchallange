@@ -66,7 +66,7 @@ export function Navbar() {
             alt="NTT Logo"
             height={1500}
             width={1500}
-            className="h-18 w-auto"
+            className="h-18 w-auto object-contain"
           />
         </Link>
 
@@ -133,7 +133,7 @@ export function Navbar() {
           </SheetContent>
         </Sheet>
 
-        <div className="hidden lg:flex gap-4">
+        <div className="hidden lg:flex lg:gap-4">
           {/* Desktop Navigation */}
           <div className="flex items-center justify-center flex-1">
             <NavigationMenu className="justify-center">
@@ -186,7 +186,7 @@ export function Navbar() {
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-2">
-            <Button>Partner with us</Button>
+            <Button className={"max-xl:hidden"}>Partner with us</Button>
             <Button variant="outline">Register</Button>
           </div>
         </div>
