@@ -8,7 +8,7 @@ const sections = [
   {
     id: "startup",
     title: "Startup",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "/why-attend/startup.avif",
     points: [
       {
         title: "Established in 2016 by NTT Communications:",
@@ -35,7 +35,7 @@ const sections = [
   {
     id: "investors",
     title: "Investors",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "/why-attend/investors.avif",
     points: [
       {
         title: "Exclusive access to top talent:",
@@ -56,7 +56,7 @@ const sections = [
   {
     id: "attendees",
     title: "Attendees",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "/why-attend/attendees.avif",
     points: [
       {
         title: "A landmark event:",
@@ -77,7 +77,7 @@ const sections = [
   {
     id: "media",
     title: "Media",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "/why-attend/media.avif",
     points: [
       {
         title: "A historic gathering:",
@@ -99,7 +99,7 @@ const sections = [
   {
     id: "partners",
     title: "Partners",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "/why-attend/partners.avif",
     points: [
       {
         title: "Collaborate with industry leaders:",
@@ -163,7 +163,7 @@ export function WhyAttendSection() {
 
         <div className="flex flex-col md:flex-row">
           {/* Sticky sidebar navigation */}
-          <div className="md:w-1/4 md:pr-8 ">
+          <div className="md:w-1/4 md:pr-8 max-lg:hidden">
             <div className="sticky top-20 pt-20">
               <nav className="space-y-4">
                 {sections.map((section) => (
@@ -183,27 +183,22 @@ export function WhyAttendSection() {
             </div>
           </div>
 
-          <div className="md:w-3/4 space-y-24">
+          <div className="lg:w-3/4 space-y-24">
             {sections.map((section, index) => {
               return (
                 <div
                   key={section.id}
                   id={section.id}
                   ref={sectionRefs.current[index]}
-                  className="scroll-mt-20"
+                  className="scroll-mt-32"
                 >
-                  <div className="relative h-[200px] md:h-[300px] mb-8 rounded-lg overflow-hidden">
+                  <div className="relative h-[200px] md:h-[200px] mb-8 rounded-lg overflow-hidden">
                     <Image
-                      src={section.image || "/placeholder.svg"}
+                      src={section.image}
                       alt={`${section.title} section`}
                       fill
                       className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                      <h3 className="text-4xl md:text-5xl font-bold text-white">
-                        {section.title}
-                      </h3>
-                    </div>
                   </div>
 
                   <div className="space-y-6">
