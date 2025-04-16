@@ -187,7 +187,9 @@ export function Navbar() {
           {/* Action Buttons */}
           <div className="flex items-center space-x-2">
             <Button className={"max-xl:hidden"}>Partner with us</Button>
-            <Button variant="outline">Register</Button>
+            <Link href="/register">
+              <Button variant="outline">Register</Button>
+            </Link>
           </div>
         </div>
       </div>
