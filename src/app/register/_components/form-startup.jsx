@@ -21,56 +21,89 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
-  firstname: z.string().min(2).max(50),
-  lastname: z.string().min(2).max(50),
-  email: z.string().email(),
-  jobtitle: z.string().min(2).max(50),
-  startupname: z.string().min(2).max(50),
-  website: z.string().refine((val) => val.toLowerCase().includes("www."), {
-    message: "Website must include 'www'",
-  }),
+  first_name: z.string().min(2).max(50),
+  last_name: z.string().min(2).max(50),
+  email_address: z.string().email(),
+  job_title: z.string().min(2).max(50),
+  startup_name: z.string().min(2).max(50),
+  website: z.string(),
   phone: z
     .string()
-    .regex(/^[0-9+()-]*$/, "Phone number can only contain numbers and +()-")
     .min(10, "Phone number must be at least 10 digits")
     .max(15, "Phone number must not exceed 15 digits")
     .refine((val) => val.startsWith("+") || val.startsWith("0"), {
       message: "Phone number must start with + or 0",
     }),
   country: z.string().min(2).max(50),
-  collaborate: z.string().min(2).max(50),
+  collaborate: z
+    .string()
+    .min(2, "Collabarate must contain at 1 option(s)")
+    .max(50),
 });
 
 export default function FormStartup() {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      firstname: "",
-      lastname: "",
-      email: "",
-      jobtitle: "",
-      startupname: "",
+      first_name: "",
+      last_name: "",
+      email_address: "",
+      job_title: "",
+      startup_name: "",
       website: "",
-      phone: "+62",
+      phone: "",
       country: "",
       collaborate: "",
     },
     mode: "onSubmit",
   });
+  const [isSuccess, setIsSuccess] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(false);
 
-  function onSubmit(values) {
-    console.log(values);
+  async function onSubmit(values) {
+    setIsLoading(true);
+    try {
+      const res = await fetch("/api/send-startup", {
+        method: "POST",
+        body: JSON.stringify(values),
+      });
+
+      const result = await res.json();
+      if (result.success) {
+        form.reset();
+        setIsSuccess(true);
+        scrollTo(0, 0);
+        setTimeout(() => setIsSuccess(false), 5000);
+      }
+    } catch (error) {
+      console.error("Submit error:", error);
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
+        {isSuccess && (
+          <Alert>
+            <AlertDescription>
+              Thank you! Your submission has been received!
+            </AlertDescription>
+          </Alert>
+        )}
+        <p>
+          Any startup companies operating business in South East Asia can apply.
+          Please note that startup must be legal entity not just an idea.
+        </p>
         <div className="flex max-sm:flex-col w-full gap-4">
           <FormField
             control={form.control}
-            name="firstname"
+            name="first_name"
             render={({ field }) => (
               <FormItem className={"w-full"}>
                 <FormLabel>
@@ -85,7 +118,7 @@ export default function FormStartup() {
           />
           <FormField
             control={form.control}
-            name="lastname"
+            name="last_name"
             render={({ field }) => (
               <FormItem className={"w-full"}>
                 <FormLabel>
@@ -116,7 +149,7 @@ export default function FormStartup() {
         />
         <FormField
           control={form.control}
-          name="email"
+          name="email_address"
           render={({ field }) => (
             <FormItem className={"w-full"}>
               <FormLabel>
@@ -131,7 +164,7 @@ export default function FormStartup() {
         />
         <FormField
           control={form.control}
-          name="jobtitle"
+          name="job_title"
           render={({ field }) => (
             <FormItem className={"w-full"}>
               <FormLabel>
@@ -146,7 +179,7 @@ export default function FormStartup() {
         />
         <FormField
           control={form.control}
-          name="startupname"
+          name="startup_name"
           render={({ field }) => (
             <FormItem className={"w-full"}>
               <FormLabel>
@@ -164,9 +197,7 @@ export default function FormStartup() {
           name="website"
           render={({ field }) => (
             <FormItem className={"w-full"}>
-              <FormLabel>
-                Website <sup className="text-red-500 text-lg -ml-1">*</sup>
-              </FormLabel>
+              <FormLabel>Website</FormLabel>
               <FormControl>
                 <Input {...field} />
               </FormControl>
@@ -205,9 +236,18 @@ export default function FormStartup() {
                 </FormControl>
 
                 <SelectContent>
-                  <SelectItem value="m@example.com">m@example.com</SelectItem>
-                  <SelectItem value="m@google.com">m@google.com</SelectItem>
-                  <SelectItem value="m@support.com">m@support.com</SelectItem>
+                  <SelectItem value="All entity">All entity</SelectItem>
+                  <SelectItem value="NTT Docomo Ventures">
+                    NTT Docomo Ventures
+                  </SelectItem>
+                  <SelectItem value="NTT East">NTT East</SelectItem>
+                  <SelectItem value="NTT West">NTT West</SelectItem>
+                  <SelectItem value="NTT Finance">NTT Finance</SelectItem>
+                  <SelectItem value="NTT Communications">
+                    NTT Communications
+                  </SelectItem>
+                  <SelectItem value="NTT Docomo">NTT Docomo</SelectItem>
+                  <SelectItem value="NTT Data">NTT Data</SelectItem>
                 </SelectContent>
               </Select>
 
@@ -215,8 +255,14 @@ export default function FormStartup() {
             </FormItem>
           )}
         />
-        <Button type="submit" className={"w-full"}>
-          Submit
+        <Button type="submit" className="w-full" disabled={isLoading}>
+          {isLoading ? (
+            <span className="flex items-center gap-2">
+              <Loader2 className="animate-spin h-4 w-4" /> Submitting...
+            </span>
+          ) : (
+            "Submit"
+          )}
         </Button>
       </form>
     </Form>

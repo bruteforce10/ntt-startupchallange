@@ -25,6 +25,8 @@
     "lucide-react": "^0.487.0",
     "motion": "^12.6.5",
     "next": "15.2.4",
+    "nodemailer": "^6.10.1",
+    "pocketbase": "^0.26.0",
     "react": "^19.0.0",
     "react-countdown": "^2.3.6",
     "react-countdown-circle-timer": "^3.2.1",

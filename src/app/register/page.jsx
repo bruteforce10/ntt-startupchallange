@@ -46,12 +46,12 @@ function RegisterPage() {
                     >
                       Startup
                     </TabsTrigger>
-                    <TabsTrigger
+                    {/* <TabsTrigger
                       value="partner"
                       className="w-full data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:text-white data-[state=active]:border-b-2 data-[state=active]:border-blue-500 rounded-lg text-gray-400"
                     >
                       Partner
-                    </TabsTrigger>
+                    </TabsTrigger> */}
                   </TabsList>
 
                   <TabsContent value="startup">
