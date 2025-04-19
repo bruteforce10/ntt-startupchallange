@@ -21,10 +21,19 @@ export async function POST(req) {
   });
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,
+    from: {
+      email: process.env.EMAIL_USER,
+      name: "NTT Startup Challenge",
+    },
     to: data.email_address,
     subject: "Terima kasih sudah mengisi form!",
     html,
+    headers: {
+      "X-Mailer": "NTT Startup Challenge Mailer",
+      "X-Priority": "3",
+      "X-MSMail-Priority": "Normal",
+      Importance: "normal",
+    },
   };
 
   try {
