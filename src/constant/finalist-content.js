@@ -71,64 +71,10 @@ export const NOMINATE_CONTENT = [
 
 export const MAIN_PARTNER_CONTENT = [
   {
-    id: 3,
+    id: 1,
     name: "",
     url: "",
   },
-  {
-    id: 4,
-    name: "",
-    url: "",
-  },
-  {
-    id: 5,
-    name: "",
-    url: "",
-  },
-  {
-    id: 6,
-    name: "",
-    url: "",
-  },
-  {
-    id: 7,
-    name: "",
-    url: "",
-  },
-
-  {
-    id: 9,
-    name: "",
-    url: "",
-  },
-  {
-    id: 10,
-    name: "",
-    url: "",
-  },
-  {
-    id: 11,
-    name: "",
-    url: "",
-  },
-  {
-    id: 12,
-    name: "",
-    url: "",
-  },
-  {
-    id: 13,
-    name: "",
-    url: "",
-  },
-  {
-    id: 14,
-    name: "",
-    url: "",
-  },
-];
-
-export const COMUNITY_PARTNER_CONTENT = [
   {
     id: 2,
     name: "",
@@ -139,93 +85,11 @@ export const COMUNITY_PARTNER_CONTENT = [
     name: "",
     url: "",
   },
+];
+
+export const COMUNITY_PARTNER_CONTENT = [
   {
-    id: 4,
-    name: "",
-    url: "",
-  },
-  {
-    id: 5,
-    name: "",
-    url: "",
-  },
-  {
-    id: 6,
-    name: "",
-    url: "",
-  },
-  {
-    id: 7,
-    name: "",
-    url: "",
-  },
-  {
-    id: 8,
-    name: "",
-    url: "",
-  },
-  {
-    id: 9,
-    name: "",
-    url: "",
-  },
-  {
-    id: 10,
-    name: "",
-    url: "",
-  },
-  {
-    id: 11,
-    name: "",
-    url: "",
-  },
-  {
-    id: 12,
-    name: "",
-    url: "",
-  },
-  {
-    id: 13,
-    name: "",
-    url: "",
-  },
-  {
-    id: 14,
-    name: "",
-    url: "",
-  },
-  {
-    id: 15,
-    name: "",
-    url: "",
-  },
-  {
-    id: 16,
-    name: "",
-    url: "",
-  },
-  {
-    id: 17,
-    name: "",
-    url: "",
-  },
-  {
-    id: 18,
-    name: "",
-    url: "",
-  },
-  {
-    id: 19,
-    name: "",
-    url: "",
-  },
-  {
-    id: 20,
-    name: "",
-    url: "",
-  },
-  {
-    id: 21,
+    id: 1,
     name: "",
     url: "",
   },

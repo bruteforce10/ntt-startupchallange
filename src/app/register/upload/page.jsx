@@ -31,8 +31,6 @@ function UploadForm() {
   const searchParams = useSearchParams();
   const defaultEmail = searchParams.get("email") || "";
 
-  const [displayData, setDisplayData] = React.useState(null);
-
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -59,7 +57,6 @@ function UploadForm() {
       const result = await res.json();
       if (result.success) {
         setIsSuccess("success");
-        setDisplayData(result.data);
       } else {
         setIsSuccess("error");
       }
@@ -79,24 +76,6 @@ function UploadForm() {
     }
   };
 
-  const renderData = (data) => {
-    if (!data) return null;
-
-    return (
-      <div className="mt-8 p-4 border rounded-lg bg-gray-50">
-        <h2 className="text-xl font-bold mb-4">Data yang Dikirim:</h2>
-        <div className="space-y-2">
-          <p>
-            <strong>Email:</strong> {data.email_address}
-          </p>
-          <p>
-            <strong>File:</strong> {data.file_proposal?.name}
-          </p>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <section className="pt-16 md:pt-28 container mx-auto px-4 space-y-8">
       {isSuccess == "success" && (
@@ -114,7 +93,7 @@ function UploadForm() {
         </Alert>
       )}
       <h1 className=" font-extrabold tracking-wide uppercase  leading-tight sm:text-3xl md:text-4xl lg:text-6xl">
-        Upload Proposal NTT Partner
+        NSC 2025 DECK SUBMISSION
       </h1>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
@@ -130,8 +109,8 @@ function UploadForm() {
                   <Input {...field} disabled={!!defaultEmail} />
                 </FormControl>
                 <FormDescription>
-                  Harap memastikan bahwa email yang dikirim sesuai dengan email
-                  yang telah terdaftar
+                  Please make sure that the email above is the same as the one
+                  you used to register
                 </FormDescription>
                 <FormMessage />
               </FormItem>
@@ -170,8 +149,6 @@ function UploadForm() {
           </Button>
         </form>
       </Form>
-
-      {renderData(displayData)}
     </section>
   );
 }
