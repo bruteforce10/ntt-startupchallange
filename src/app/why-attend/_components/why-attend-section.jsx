@@ -134,8 +134,6 @@ export function WhyAttendSection() {
     return inView;
   });
 
-  console.log(sectionInView);
-
   useEffect(() => {
     const visibleSectionIndex = sectionInView.findIndex((inView) => inView);
     if (visibleSectionIndex !== -1) {
@@ -192,7 +190,7 @@ export function WhyAttendSection() {
                   ref={sectionRefs.current[index]}
                   className="scroll-mt-32"
                 >
-                  <div className="relative h-[200px] md:h-[200px] mb-8 rounded-lg overflow-hidden">
+                  <div className="relative h-32 sm:h-[200px] md:h-[200px] mb-8 rounded-lg overflow-hidden">
                     <Image
                       src={section.image}
                       alt={`${section.title} section`}

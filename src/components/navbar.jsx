@@ -122,12 +122,18 @@ export function Navbar() {
                 />
               </Accordion>
               <div className="mt-6 space-y-4">
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                  Partner with us
-                </Button>
-                <Button variant="outline" className="w-full">
-                  Register
-                </Button>
+                <Link
+                  href={`mailto:global-incubation@ntt.com?subject=Partner With Us`}
+                >
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                    Partner with us
+                  </Button>
+                </Link>
+                <Link href={"/register"}>
+                  <Button variant="outline" className="w-full">
+                    Register
+                  </Button>
+                </Link>
               </div>
             </SheetHeader>
           </SheetContent>
@@ -186,7 +192,11 @@ export function Navbar() {
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-2">
-            <Button className={"max-xl:hidden"}>Partner with us</Button>
+            <Link
+              href={`mailto:global-incubation@ntt.com?subject=Partner With Us`}
+            >
+              <Button className={"max-xl:hidden"}>Partner with us</Button>
+            </Link>
             <Link href="/register">
               <Button variant="outline">Register</Button>
             </Link>
