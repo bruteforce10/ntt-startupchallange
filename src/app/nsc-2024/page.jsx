@@ -27,10 +27,6 @@ export default function NSC2024Page() {
         </h1>
         <CtaHero />
       </Hero>
-      <CountdownSection
-        newEvent={true}
-        title={"The Next NTT Startup Challenge is"}
-      />
       <VideoSection />
       <HistorySection />
       <BannerSection />

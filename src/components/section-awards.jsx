@@ -10,11 +10,18 @@ export function SpeakersSection() {
         <HeadingText text={"Speakers, Judges & VIPs"} />
 
         {/* Speakers grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
+        <Image
+          src={"/coming-soon.png"}
+          width={500}
+          height={500}
+          className="w-full h-auto"
+          alt="coming-soon"
+        />
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
           {SPEAKERS_CONTENT.map((speaker) => (
             <SpeakerCard key={speaker.id} speaker={speaker} />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

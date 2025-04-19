@@ -31,6 +31,8 @@ function UploadForm() {
   const searchParams = useSearchParams();
   const defaultEmail = searchParams.get("email") || "";
 
+  const [displayData, setDisplayData] = React.useState(null);
+
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -57,6 +59,7 @@ function UploadForm() {
       const result = await res.json();
       if (result.success) {
         setIsSuccess("success");
+        setDisplayData(result.data);
       } else {
         setIsSuccess("error");
       }
@@ -74,6 +77,24 @@ function UploadForm() {
         setIsSuccess("");
       }, 5000);
     }
+  };
+
+  const renderData = (data) => {
+    if (!data) return null;
+
+    return (
+      <div className="mt-8 p-4 border rounded-lg bg-gray-50">
+        <h2 className="text-xl font-bold mb-4">Data yang Dikirim:</h2>
+        <div className="space-y-2">
+          <p>
+            <strong>Email:</strong> {data.email_address}
+          </p>
+          <p>
+            <strong>File:</strong> {data.file_proposal?.name}
+          </p>
+        </div>
+      </div>
+    );
   };
 
   return (
@@ -149,6 +170,8 @@ function UploadForm() {
           </Button>
         </form>
       </Form>
+
+      {renderData(displayData)}
     </section>
   );
 }

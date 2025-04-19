@@ -71,16 +71,6 @@ export const NOMINATE_CONTENT = [
 
 export const MAIN_PARTNER_CONTENT = [
   {
-    id: 1,
-    name: "",
-    url: "",
-  },
-  {
-    id: 2,
-    name: "",
-    url: "",
-  },
-  {
     id: 3,
     name: "",
     url: "",
@@ -105,11 +95,7 @@ export const MAIN_PARTNER_CONTENT = [
     name: "",
     url: "",
   },
-  {
-    id: 8,
-    name: "",
-    url: "",
-  },
+
   {
     id: 9,
     name: "",
@@ -143,11 +129,6 @@ export const MAIN_PARTNER_CONTENT = [
 ];
 
 export const COMUNITY_PARTNER_CONTENT = [
-  {
-    id: 1,
-    name: "",
-    url: "",
-  },
   {
     id: 2,
     name: "",
