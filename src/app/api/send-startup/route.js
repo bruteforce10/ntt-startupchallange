@@ -10,6 +10,7 @@ export async function POST(req) {
   const filePath = path.join(process.cwd(), "public/email-template.html");
   let html = fs.readFileSync(filePath, "utf8");
   html = html.replace("{{name}}", data.first_name);
+  html = html.replace("{{email}}", data.email_address);
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
