@@ -1,15 +1,23 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
 import HeadingText from "@/components/heading-text";
 import InitialPage from "@/components/pages/initial-page";
 import FormStartup from "./_components/form-startup";
 import FormPartner from "./_components/form-partner";
+import { useSearchParams } from "next/navigation";
+
 function RegisterPage() {
+  const params = useSearchParams();
   const [activeTab, setActiveTab] = useState("startup");
+
+  const type = params.get("type");
+
+  useEffect(() => {
+    if (type) {
+      setActiveTab(type);
+    }
+  }, [type]);
 
   return (
     <InitialPage>

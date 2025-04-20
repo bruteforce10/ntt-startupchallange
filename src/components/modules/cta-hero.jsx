@@ -19,12 +19,12 @@ const CtaHero = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent className={"bg-white text-black mt-2 mb-2"}>
           <DropdownMenuItem>
-            <Link href={"/register"} className="text-lg">
+            <Link href={"/register?type=startup"} className="text-lg">
               Startup Registration
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/register"} className="text-lg">
+            <Link href={"/register?type=partner"} className="text-lg">
               Partner Registration
             </Link>
           </DropdownMenuItem>
