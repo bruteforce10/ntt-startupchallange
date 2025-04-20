@@ -16,6 +16,7 @@ export function SpeakersSection() {
           height={500}
           className="w-full h-auto"
           alt="coming-soon"
+          quality={100}
         />
         {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
           {SPEAKERS_CONTENT.map((speaker) => (
