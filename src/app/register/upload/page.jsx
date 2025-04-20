@@ -23,8 +23,8 @@ const formSchema = z.object({
   email_address: z.string().email(),
   file_proposal: z.custom((file) => {
     if (!file) return false;
-    return file.size <= 50 * 1024 * 1024;
-  }, "File size must be less than 50MB"),
+    return file.size <= 150 * 1024 * 1024;
+  }, "File size must be less than 150MB"),
 });
 
 function UploadForm() {

@@ -31,6 +31,7 @@ import {
 } from "@/components/ui/accordion";
 import { LIST_NAVBAR } from "@/constant/listNavbar";
 import EachUtils from "@/utils/eachUtils";
+import CtaHero from "./modules/cta-hero";
 
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
@@ -89,6 +90,7 @@ export function Navbar() {
                     if (!item.opt) {
                       return (
                         <Link
+                          key={item.title}
                           href={item.url}
                           className="block text-sm font-medium py-4 hover:underline cursor-default"
                         >
@@ -121,19 +123,8 @@ export function Navbar() {
                   }}
                 />
               </Accordion>
-              <div className="mt-6 space-y-4">
-                <Link
-                  href={`mailto:global-incubation@ntt.com?subject=Partner With Us`}
-                >
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                    Partner with us
-                  </Button>
-                </Link>
-                <Link href={"/register"}>
-                  <Button variant="outline" className="w-full">
-                    Register
-                  </Button>
-                </Link>
+              <div className="mt-6 w-full space-y-4">
+                <CtaHero />
               </div>
             </SheetHeader>
           </SheetContent>
@@ -192,14 +183,7 @@ export function Navbar() {
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-2">
-            <Link
-              href={`mailto:global-incubation@ntt.com?subject=Partner With Us`}
-            >
-              <Button className={"max-xl:hidden"}>Partner with us</Button>
-            </Link>
-            <Link href="/register">
-              <Button variant="outline">Register</Button>
-            </Link>
+            <CtaHero />
           </div>
         </div>
       </div>

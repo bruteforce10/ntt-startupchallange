@@ -1,28 +1,40 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const CtaHero = () => {
   return (
     <div className="flex gap-4">
-      <Link href={`mailto:global-incubation@ntt.com?subject=Partner With Us`}>
-        <Button size="lg">
-          Partner With Us
-          <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
-      </Link>
-      <Link href={"/register"}>
-        <Button
-          variant="outline"
-          className={
-            "bg-white border-none hover:bg-white/80 hover:text-blue-ntt"
-          }
-          size="lg"
-        >
+      <DropdownMenu>
+        <DropdownMenuTrigger className="bg-blue-ntt border-none rounded-md text-white px-6 py-2 cursor-pointer hover:bg-blue-ntt/80">
           Register
-        </Button>
-      </Link>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent className={"bg-white text-black mt-2 mb-2"}>
+          <DropdownMenuItem>
+            <Link href={"/register"} className="text-lg">
+              Startup Registration
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href={"/register"} className="text-lg">
+              Partner Registration
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href={"/register"} className="text-lg">
+              Attend Final Day
+            </Link>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </div>
   );
 };

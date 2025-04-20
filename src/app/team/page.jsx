@@ -12,7 +12,7 @@ const TeamPage = () => {
         width="3500"
         height="3500"
         alt="ntt-team"
-        className="w-full  h-auto"
+        className="w-full sm:h-[calc(100vh-5vh)] sm:-mt-20 sm:object-cover h-auto sm:object-top"
         quality={100}
       />
       <TeamSection title={"NTT Team"} pathImg={"ntt"} data={NTT_TEAM_PROFILE} />
