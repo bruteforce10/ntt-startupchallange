@@ -21,8 +21,8 @@ export function EventPromotion() {
 
               {/* Date indicator */}
               <div className="absolute top-4 right-4 bg-blue-ntt text-white p-3 rounded-lg text-center w-20">
-                <div className="text-sm font-medium">Thu</div>
-                <div className="text-4xl font-bold">14</div>
+                <div className="text-sm font-medium">Tue</div>
+                <div className="text-4xl font-bold">11</div>
               </div>
             </div>
 

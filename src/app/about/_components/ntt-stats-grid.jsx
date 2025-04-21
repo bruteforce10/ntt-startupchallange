@@ -26,6 +26,7 @@ export function NttStatsGrid() {
             </div>
           ))}
         </div>
+        <p className="text-right text-md text-gray-500 mt-4">*2023</p>
       </div>
     </section>
   );

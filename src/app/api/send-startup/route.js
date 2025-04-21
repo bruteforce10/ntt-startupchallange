@@ -26,7 +26,7 @@ export async function POST(req) {
       name: "NTT Startup Challenge",
     },
     to: data.email_address,
-    subject: "Terima kasih sudah mengisi form!",
+    subject: "Thank you for your registration!",
     html,
     headers: {
       "X-Mailer": "NTT Startup Challenge Mailer",

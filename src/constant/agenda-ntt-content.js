@@ -7,7 +7,7 @@ export const DETAIL_EVENTS = [
   },
   {
     Icon: <Calendar className="text-blue-600 h-5 w-5 flex-shrink-0" />,
-    title: " Thursday, November 11, 2025",
+    title: " Tuesday, November 11, 2025",
   },
   {
     Icon: <Clock className="text-blue-600 h-5 w-5 flex-shrink-0" />,
@@ -33,8 +33,8 @@ export const BENEFIT_LIST = [
 export const SCHEDULE_DATA = [
   {
     time: "-",
-    content: "-",
-    presenter: "-",
+    content: "COMING SOON",
+    presenter: "COMING SOON",
     isHighlighted: false,
     isBreak: false,
   },

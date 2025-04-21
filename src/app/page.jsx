@@ -29,7 +29,7 @@ export default function Home() {
         <CtaHero />
       </Hero>
       <CountdownSection
-        newEvent={"2025-05-19T00:00:00"}
+        newEvent={"2025-03-12T00:00:00"}
         title={"Official Application Open in"}
       />
       <HistorySectionNew />

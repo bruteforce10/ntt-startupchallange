@@ -20,7 +20,7 @@ const NominateSectionSection = () => {
                   width={130}
                   height={130}
                 />
-                {/* <p className="text-center text-3xl font-medium">{item.name}</p> */}
+                <p className="text-center text-2xl font-medium">COMING SOON</p>
               </div>
             )}
           />
