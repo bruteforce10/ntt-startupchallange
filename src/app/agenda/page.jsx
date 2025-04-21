@@ -25,9 +25,10 @@ export default function About() {
       <EventSchedule />
       <ListSection
         title={"Partners"}
-        items={MAIN_PARTNER_CONTENT}
+        items={Array.from(
+          new Set([...Array(3)].map((_, i) => ({ id: i + 1, url: "" })))
+        )}
         pathImg={"main-partner"}
-        id={"partner"}
       />
       <ListSection
         title={"Community Partners"}

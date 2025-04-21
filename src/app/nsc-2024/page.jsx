@@ -37,16 +37,20 @@ export default function NSC2024Page() {
         items={FINALIST_CONTENT}
         pathImg={"top-finalist"}
       />
-      <SpeakersSection />
+      <SpeakersSection comingSoon={false} />
       <SpeaksSection />
       <ListSection
         title={"Partners"}
-        items={MAIN_PARTNER_CONTENT}
+        items={Array.from(
+          new Set([...Array(14)].map((_, i) => ({ id: i + 1, url: "" })))
+        )}
         pathImg={"main-partner"}
       />
       <ListSection
         title={"Community Partners"}
-        items={COMUNITY_PARTNER_CONTENT}
+        items={Array.from(
+          new Set([...Array(21)].map((_, i) => ({ id: i + 1, url: "" })))
+        )}
         pathImg={"community-partner"}
       />
       <NewsSection />
