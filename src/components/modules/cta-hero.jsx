@@ -29,7 +29,12 @@ const CtaHero = () => {
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/register"} className="text-lg">
+            <Link
+              href={
+                "/https://www.eventbrite.com/e/1323350509999?aff=oddtdtcreator"
+              }
+              className="text-lg"
+            >
               Attend Final Day
             </Link>
           </DropdownMenuItem>
