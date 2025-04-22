@@ -5,6 +5,12 @@ import NttGroup from "./_components/ntt-group";
 import { NttStatsGrid } from "./_components/ntt-stats-grid";
 import { InnovationTabs } from "./_components/innovation-tabs";
 
+export const metadata = {
+  title: "About",
+  description:
+    "Expand Your Network, Capitalize on Unique Opportunities with NTT Startup Challenge",
+};
+
 export default function About() {
   return (
     <InitialPage>

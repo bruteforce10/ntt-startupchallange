@@ -1,0 +1,52 @@
+{
+  "title": "NTT Startup Challenge - Premier Startup Ecosystem Platform in Southeast Asia",
+  "description": "Welcome to NTT Startup Challenge, the premier platform nurturing the Startup Ecosystem in Southeast Asia. Since 2016, we've empowered over 7,000 startups to secure funding, gain insights, and forge valuable partnerships.",
+  "keywords": [
+    "NTT Startup Challenge",
+    "startup ecosystem",
+    "Southeast Asia startups",
+    "startup funding",
+    "startup networking",
+    "NTT Group",
+    "startup competition",
+    "startup acceleration",
+    "business opportunities",
+    "startup partnerships"
+  ],
+  "og": {
+    "title": "NTT Startup Challenge 2024",
+    "description": "Embark on a journey with hundreds startups across Southeast Asia, aiming to be among the top 10 finalists and vie for the top 3 winning spots.",
+    "type": "website",
+    "site_name": "NTT Startup Challenge",
+    "locale": "en_US"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "NTT Startup Challenge 2024",
+    "description": "Join Southeast Asia's premier startup platform. Connect with startups, government entities, and enterprises for potential collaborations and growth opportunities."
+  },
+  "organization": {
+    "name": "NTT Startup Challenge",
+    "description": "A premier platform by NTT Group fostering startup growth and innovation in Southeast Asia",
+    "foundingYear": "2016",
+    "url": "https://www.ntt-startupchallenge.com"
+  },
+  "additional_info": {
+    "region": "Southeast Asia",
+    "program_type": "Startup Competition & Acceleration",
+    "target_audience": [
+      "Startups",
+      "Entrepreneurs",
+      "Business Leaders",
+      "Investors",
+      "Government Entities"
+    ],
+    "benefits": [
+      "Secure critical funding",
+      "Gain valuable insights",
+      "Forge partnerships",
+      "Network expansion",
+      "Business acceleration"
+    ]
+  }
+}
