@@ -72,9 +72,6 @@ function UploadForm() {
         {
           method: "PATCH",
           body: formData,
-          headers: {
-            Authorization: `Bearer YOUR_ADMIN_TOKEN_HERE`, 
-          },
         }
       );
   
@@ -169,6 +166,12 @@ function UploadForm() {
               "Submit"
             )}
           </Button>
+          {isLoading && (
+            <div className="space-y-1 opacity-75 text-sm">
+            <p>Please ensure your internet connection is stable.</p>
+            <p>Kindly wait for about 10 to 15 minutes depending on the size of the file you are uploading.</p>
+            </div>
+          )}
         </form>
       </Form>
     </section>
