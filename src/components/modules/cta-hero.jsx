@@ -31,7 +31,7 @@ const CtaHero = () => {
           <DropdownMenuItem>
             <Link
               href={
-                "/https://www.eventbrite.com/e/1323350509999?aff=oddtdtcreator"
+                "https://www.eventbrite.com/e/1323350509999?aff=oddtdtcreator"
               }
               className="text-lg"
             >
