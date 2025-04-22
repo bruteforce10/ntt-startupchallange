@@ -12,7 +12,6 @@ import NominateSectionSection from "@/components/section-nominate-award";
 import SpeaksSection from "@/components/section-speaks";
 import {
   COMUNITY_PARTNER_CONTENT,
-  MAIN_PARTNER_CONTENT,
 } from "@/constant/finalist-content";
 
 export default function Home() {

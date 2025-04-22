@@ -46,22 +46,45 @@ function UploadForm() {
   const onSubmit = async (data) => {
     try {
       setIsLoading(true);
-      const formData = new FormData();
-      formData.append("email_address", data.email_address);
-      formData.append("file_proposal", data.file_proposal);
+  
+      const email = data.email_address;
+      const file = data.file_proposal;
+  
 
-      const res = await fetch("/api/send-file-proposal", {
-        method: "POST",
-        body: formData,
-      });
-      const result = await res.json();
-      if (result.success) {
+      const res = await fetch(`https://pb.ntt-startupchallenge.com/api/collections/data_startup/records?filter=(email_address="${email}")`);
+      const list = await res.json();
+      const matchedRecord = list?.items?.[0];
+  
+      if (!matchedRecord) {
+        setIsSuccess("error");
+        return;
+      }
+  
+      const recordId = matchedRecord.id;
+  
+
+      const formData = new FormData();
+      formData.append("file_proposal", file);
+  
+ 
+      const updateRes = await fetch(
+        `https://pb.ntt-startupchallenge.com/api/collections/data_startup/records/${recordId}`,
+        {
+          method: "PATCH",
+          body: formData,
+          headers: {
+            Authorization: `Bearer YOUR_ADMIN_TOKEN_HERE`, 
+          },
+        }
+      );
+  
+      if (updateRes.ok) {
         setIsSuccess("success");
       } else {
         setIsSuccess("error");
       }
     } catch (error) {
-      console.error("Submit error:", error);
+      console.error("Upload error:", error);
       setIsSuccess("error");
     } finally {
       form.reset();
@@ -70,11 +93,10 @@ function UploadForm() {
         fileInput.value = "";
       }
       setIsLoading(false);
-      setTimeout(() => {
-        setIsSuccess("");
-      }, 5000);
+      setTimeout(() => setIsSuccess(""), 5000);
     }
   };
+  
 
   return (
     <section className="pt-16 md:pt-28 container mx-auto px-4 space-y-8">
