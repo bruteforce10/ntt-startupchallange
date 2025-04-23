@@ -11,7 +11,7 @@ const awards = [
     thorpy: "/awards/trophy-1.svg",
     company: "ProfilePrint",
     logo: "/awards/winner-1.avif?height=50&width=150",
-    url: "https://profileprint.com",
+    url: "https://profileprint.ai",
   },
   {
     place: 2,

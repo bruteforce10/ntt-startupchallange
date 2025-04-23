@@ -23,7 +23,7 @@ export function BannerSection() {
     <>
       <section className="relative  px-4 pt-16 hidden lg:block md:pt-28">
         <Link
-          href={"https://www.ntt-startupchallenge.com/infographic"}
+          href={"https://www.ntt-startupchallenge.com/info-graphic"}
           ref={bannerRef}
           target="_blank"
           className="relative container mx-auto block  h-[400px] cursor-pointer"
