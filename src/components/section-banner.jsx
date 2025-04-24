@@ -65,6 +65,7 @@ export function BannerSection() {
         </Link>
       </section>
       <div className="px-4 pt-16 lg:hidden container mx-auto  ">
+        <Link href={"https://www.ntt-startupchallenge.com/info-graphic"} target="_blank">
         <Image
           src="/banner.avif"
           width={600}
@@ -72,7 +73,8 @@ export function BannerSection() {
           alt="NTT Startup Challenge Event"
           className=" w-full  h-auto rounded-xl"
           priority
-        />
+          />
+          </Link>
       </div>
     </>
   );
