@@ -1,9 +1,15 @@
 import { pb } from "@/utils/config-pocket-base";
 import { NextResponse } from "next/server";
-import { revalidatePath } from "next/cache";
 
 export async function GET() {
-  const allRecords = await pb.collection("data_startup").getFullList();
-  revalidatePath("/data-startup");
-  return NextResponse.json(allRecords);
+  try {
+    const allRecords = await pb.collection("data_startup").getFullList();
+    return NextResponse.json(allRecords);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return NextResponse.json(
+      { error: "Failed to fetch data" },
+      { status: 500 }
+    );
+  }
 }

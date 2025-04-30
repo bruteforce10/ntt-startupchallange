@@ -4,9 +4,10 @@ import InitialPage from "@/components/pages/initial-page";
 import React from "react";
 
 async function getData() {
-  const res = await fetch(
-    "https://ntt-startupchallenge.com/api/get-data-startup"
-  );
+  const res = await fetch("/api/get-data-startup", {
+    cache: "no-store",
+    next: { revalidate: 0 },
+  });
   const data = await res.json();
 
   return data;
