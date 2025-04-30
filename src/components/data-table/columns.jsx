@@ -93,5 +93,13 @@ export const columns = [
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Proposal" />
     ),
+    cell: ({ row }) => {
+      const fileUrl = `https://pb.ntt-startupchallenge.com/api/files/pbc_3609018881/${row?.original?.id}/${row?.original?.file_proposal}`;
+      return (
+        <a href={fileUrl} target="_blank" rel="noopener noreferrer">
+          View Proposal
+        </a>
+      );
+    },
   },
 ];

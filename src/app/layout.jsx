@@ -1,6 +1,7 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import MouseMoveEffect from "@/components/mouse-move-effect";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -18,14 +19,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
-      <body
-        className={`${plusJakartaSans.className} antialiased scroll-smooth`}
-        suppressHydrationWarning
-      >
-        <MouseMoveEffect />
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" className="dark" suppressHydrationWarning>
+        <body
+          className={`${plusJakartaSans.className} antialiased scroll-smooth`}
+          suppressHydrationWarning
+        >
+          <MouseMoveEffect />
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

@@ -1,15 +1,24 @@
 import { columns } from "@/components/data-table/columns";
 import { DataTable } from "@/components/data-table/data-table";
 import InitialPage from "@/components/pages/initial-page";
-import { startups } from "@/constant/data-startup";
-
 import React from "react";
 
-export default function DataStartupPage() {
+async function getData() {
+  const res = await fetch(
+    "https://ntt-startupchallenge.com/api/get-data-startup"
+  );
+  const data = await res.json();
+
+  return data;
+}
+
+export default async function DataStartupPage() {
+  const data = await getData();
+
   return (
     <InitialPage>
       <main className="container mx-auto px-4 py-8">
-        <DataTable columns={columns} data={startups} />
+        <DataTable columns={columns} data={data} />
       </main>
     </InitialPage>
   );

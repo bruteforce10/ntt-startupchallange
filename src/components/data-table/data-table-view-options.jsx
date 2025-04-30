@@ -21,7 +21,10 @@ export function DataTableViewOptions({ table }) {
       return;
     }
 
-    const data = selectedRows.map((row) => row.original);
+    const data = selectedRows.map((row) => ({
+      ...row.original,
+      file_proposal: `https://pb.ntt-startupchallenge.com/api/files/pbc_3609018881/${row?.original?.id}/${row?.original?.file_proposal}`,
+    }));
     const ws = XLSX.utils.json_to_sheet(data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, "Selected Data");
