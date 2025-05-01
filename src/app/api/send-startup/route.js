@@ -13,10 +13,15 @@ export async function POST(req) {
   html = html.replace("{{email}}", data.email_address);
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
+    },
+    tls: {
+      rejectUnauthorized: false,
     },
   });
 
@@ -37,6 +42,10 @@ export async function POST(req) {
   };
 
   try {
+    // Verify transporter configuration
+    await transporter.verify();
+    console.log("Server is ready to send emails");
+
     const allRecords = await pb.collection("data_startup").getFullList();
     const record = allRecords.find(
       (r) => r.email_address === data.email_address
@@ -48,10 +57,22 @@ export async function POST(req) {
       await pb.collection("data_startup").create(data);
     }
 
-    await transporter.sendMail(mailOptions);
-    return NextResponse.json({ success: true });
+    // Send email
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Email sent:", info.messageId);
+
+    return NextResponse.json({
+      success: true,
+      messageId: info.messageId,
+    });
   } catch (error) {
-    console.error("Gagal kirim", error);
-    return NextResponse.json({ success: false }, { status: 500 });
+    console.error("Error sending email:", error);
+    return NextResponse.json(
+      {
+        success: false,
+        error: error.message,
+      },
+      { status: 500 }
+    );
   }
 }
