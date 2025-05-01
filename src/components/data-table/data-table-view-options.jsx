@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import * as XLSX from "xlsx";
 
-export function DataTableViewOptions({ table }) {
+export function DataTableViewOptions({ table, partner }) {
   const exportToExcel = () => {
     const selectedRows = table.getSelectedRowModel().rows;
 
@@ -21,10 +21,19 @@ export function DataTableViewOptions({ table }) {
       return;
     }
 
-    const data = selectedRows.map((row) => ({
-      ...row.original,
-      file_proposal: `https://pb.ntt-startupchallenge.com/api/files/pbc_3609018881/${row?.original?.id}/${row?.original?.file_proposal}`,
-    }));
+    let data;
+
+    if (!partner) {
+      data = selectedRows.map((row) => ({
+        ...row.original,
+        file_proposal: `https://pb.ntt-startupchallenge.com/api/files/pbc_3609018881/${row?.original?.id}/${row?.original?.file_proposal}`,
+      }));
+    } else {
+      data = selectedRows.map((row) => ({
+        ...row.original,
+      }));
+    }
+
     const ws = XLSX.utils.json_to_sheet(data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, "Selected Data");

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { DataTableViewOptions } from "./data-table-view-options";
 
-export function DataTableToolbar({ table }) {
+export function DataTableToolbarPartner({ table }) {
   const isFiltered = table.getState().columnFilters.length > 0;
 
   return (
@@ -14,13 +14,8 @@ export function DataTableToolbar({ table }) {
       <div className="flex flex-1 items-center space-x-2">
         <Input
           placeholder="Filter records..."
-          value={
-            table.getColumn("startup_name")?.getFilterValue() ??
-            table.getColumn("first_name")?.getFilterValue() ??
-            ""
-          }
+          value={table.getColumn("first_name")?.getFilterValue() ?? ""}
           onChange={(event) => {
-            table.getColumn("startup_name")?.setFilterValue(event.target.value);
             table.getColumn("first_name")?.setFilterValue(event.target.value);
           }}
           className="h-8 w-[150px] lg:w-[250px]"
@@ -36,7 +31,9 @@ export function DataTableToolbar({ table }) {
           </Button>
         )}
       </div>
-      <DataTableViewOptions table={table} />
+      <div className="ml-4">
+        <DataTableViewOptions table={table} partner={true} />
+      </div>
     </div>
   );
 }

@@ -1,15 +1,11 @@
 "use client";
 
-import * as React from "react";
 import {
-  ColumnDef,
   ColumnFiltersState,
   SortingState,
   VisibilityState,
   flexRender,
   getCoreRowModel,
-  getFacetedRowModel,
-  getFacetedUniqueValues,
   getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
@@ -25,23 +21,26 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
+import { Button } from "@/components/ui/button";
 import { DataTablePagination } from "./data-table-pagination";
 import { DataTableToolbar } from "./data-table-toolbar";
+import { DataTableToolbarPartner } from "./data-table-toolbar-partner";
+import { useState } from "react";
 
 export function DataTable({ columns, data }) {
-  const [rowSelection, setRowSelection] = React.useState({});
-  const [columnVisibility, setColumnVisibility] = React.useState({});
-  const [columnFilters, setColumnFilters] = React.useState([]);
-  const [sorting, setSorting] = React.useState([]);
+  const [sorting, setSorting] = useState([]);
+  const [columnFilters, setColumnFilters] = useState([]);
+  const [columnVisibility, setColumnVisibility] = useState({});
+  const [rowSelection, setRowSelection] = useState({});
 
   const table = useReactTable({
     data,
     columns,
     state: {
       sorting,
+      columnFilters,
       columnVisibility,
       rowSelection,
-      columnFilters,
     },
     enableRowSelection: true,
     onRowSelectionChange: setRowSelection,
@@ -52,13 +51,21 @@ export function DataTable({ columns, data }) {
     getFilteredRowModel: getFilteredRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     getSortedRowModel: getSortedRowModel(),
-    getFacetedRowModel: getFacetedRowModel(),
-    getFacetedUniqueValues: getFacetedUniqueValues(),
   });
 
+  const isPartnerTable = columns.some(
+    (col) => col.accessorKey === "company_name"
+  );
+
   return (
-    <div className="space-y-4">
-      <DataTableToolbar table={table} />
+    <div>
+      <div className="flex items-center py-4">
+        {isPartnerTable ? (
+          <DataTableToolbarPartner table={table} />
+        ) : (
+          <DataTableToolbar table={table} />
+        )}
+      </div>
       <div className="rounded-md border">
         <Table>
           <TableHeader>

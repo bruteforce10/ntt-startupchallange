@@ -1,6 +1,9 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-const isProtectedRoute = createRouteMatcher(["/data-startup(.*)"]);
+const isProtectedRoute = createRouteMatcher([
+  "/data-startup(.*)",
+  "/data-partner(.*)",
+]);
 
 export default clerkMiddleware(async (auth, req) => {
   const { orgRole } = await auth();
@@ -8,7 +11,11 @@ export default clerkMiddleware(async (auth, req) => {
 
   if (isProtectedRoute(req)) await auth.protect();
 
-  if (orgRole !== "org:admin" && pathname.includes("/data-startup")) {
+  if (
+    orgRole !== "org:admin" &&
+    pathname.includes("/data-startup") &&
+    pathname.includes("/data-partner")
+  ) {
     return new Response("Forbidden", { status: 403 });
   }
 });
