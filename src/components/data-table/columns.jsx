@@ -95,11 +95,39 @@ export const columns = [
     ),
     cell: ({ row }) => {
       const fileUrl = `https://pb.ntt-startupchallenge.com/api/files/pbc_3609018881/${row?.original?.id}/${row?.original?.file_proposal}`;
-      return (
-        <a href={fileUrl} target="_blank" rel="noopener noreferrer">
-          View Proposal
-        </a>
-      );
+      if (row?.original?.file_proposal) {
+        return (
+          <a href={fileUrl} target="_blank" rel="noopener noreferrer">
+            View Proposal
+          </a>
+        );
+      } else {
+        return <div>N/A</div>;
+      }
+    },
+  },
+  {
+    accessorKey: "opt_link_file_proposal",
+    header: ({ column }) => (
+      <DataTableColumnHeader
+        column={column}
+        title="(Option) Link File Proposal"
+      />
+    ),
+    cell: ({ row }) => {
+      if (row?.original?.opt_link_file_proposal) {
+        return (
+          <a
+            href={row?.original?.opt_link_file_proposal}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Direct Link Proposal
+          </a>
+        );
+      } else {
+        return <div>N/A</div>;
+      }
     },
   },
 ];

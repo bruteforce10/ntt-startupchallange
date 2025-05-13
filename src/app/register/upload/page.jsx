@@ -14,10 +14,18 @@ import {
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2 } from "lucide-react";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import { z } from "zod";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const formSchema = z.object({
   email_address: z.string().email(),
@@ -30,6 +38,7 @@ const formSchema = z.object({
 function UploadForm() {
   const searchParams = useSearchParams();
   const defaultEmail = searchParams.get("email") || "";
+  const router = useRouter();
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -42,31 +51,62 @@ function UploadForm() {
 
   const [isSuccess, setIsSuccess] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
+  const [isLoadingLink, setIsLoadingLink] = React.useState(false);
+  const [link_url, setLinkUrl] = React.useState("");
+
+  const onSubmitLink = async () => {
+    try {
+      setIsLoadingLink(true);
+      const formData = new FormData();
+      formData.append("opt_link_file_proposal", link_url);
+      formData.append("email_address", defaultEmail);
+
+      await fetch("/api/send-file-link-proposal", {
+        method: "POST",
+        body: formData,
+      });
+    } catch (error) {
+      setIsSuccess("error");
+      console.error("Upload error:", error);
+    } finally {
+      setIsLoadingLink(false);
+      setIsSuccess("success");
+      setTimeout(() => window.location.reload(), 3000);
+    }
+  };
 
   const onSubmit = async (data) => {
     try {
       setIsLoading(true);
-  
+
       const email = data.email_address;
       const file = data.file_proposal;
-  
 
-      const res = await fetch(`https://pb.ntt-startupchallenge.com/api/collections/data_startup/records?filter=(email_address="${email}")`);
+      if (!defaultEmail) {
+        const params = new URLSearchParams(searchParams.toString());
+        params.set("email", email);
+
+        const decodedEmail = decodeURIComponent(email);
+        form.setValue("email_address", email);
+        router.push(`/register/upload?email=${decodedEmail}`);
+      }
+
+      const res = await fetch(
+        `https://pb.ntt-startupchallenge.com/api/collections/data_startup/records?filter=(email_address="${email}")`
+      );
       const list = await res.json();
       const matchedRecord = list?.items?.[0];
-  
+
       if (!matchedRecord) {
         setIsSuccess("error");
         return;
       }
-  
+
       const recordId = matchedRecord.id;
-  
 
       const formData = new FormData();
       formData.append("file_proposal", file);
-  
- 
+
       const updateRes = await fetch(
         `https://pb.ntt-startupchallenge.com/api/collections/data_startup/records/${recordId}`,
         {
@@ -74,7 +114,7 @@ function UploadForm() {
           body: formData,
         }
       );
-  
+
       if (updateRes.ok) {
         setIsSuccess("success");
       } else {
@@ -84,7 +124,6 @@ function UploadForm() {
       console.error("Upload error:", error);
       setIsSuccess("error");
     } finally {
-      form.reset();
       const fileInput = document.querySelector('input[type="file"]');
       if (fileInput) {
         fileInput.value = "";
@@ -93,7 +132,6 @@ function UploadForm() {
       setTimeout(() => setIsSuccess(""), 5000);
     }
   };
-  
 
   return (
     <section className="pt-16 md:pt-28 container mx-auto px-4 space-y-8">
@@ -157,6 +195,53 @@ function UploadForm() {
             )}
           />
 
+          {isLoading && (
+            <div className="space-y-1 opacity-75 text-sm">
+              <p>Please ensure your internet connection is stable.</p>
+              <p className="sm:max-w-2xl leading-loose">
+                Please wait approximately 10 to 15 minutes, depending on the
+                size of the file you are uploading. <br /> If it takes too long,
+                you may upload it via a direct link (google drive, onedrive,
+                etc) instead.
+                <Dialog>
+                  <DialogTrigger>
+                    <span className="underline cursor-pointer ml-1 hover:text-blue-ntt/80 text-white">
+                      Click Here
+                    </span>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle>Sumbit link directly</DialogTitle>
+                    </DialogHeader>
+                    {isSuccess == "success" && (
+                      <Alert>
+                        <AlertDescription>
+                          Thank you! Your submission has been received!
+                        </AlertDescription>
+                      </Alert>
+                    )}
+                    {isSuccess == "error" && (
+                      <Alert variant={"destructive"}>
+                        <AlertDescription>
+                          Email not found, please check your email again
+                        </AlertDescription>
+                      </Alert>
+                    )}
+                    <Input
+                      value={link_url}
+                      onChange={(e) => setLinkUrl(e.target.value)}
+                      type="text"
+                      placeholder="link here"
+                    />
+                    <Button onClick={onSubmitLink} disabled={isLoadingLink}>
+                      Submit
+                    </Button>
+                  </DialogContent>
+                </Dialog>
+              </p>
+            </div>
+          )}
+
           <Button type="submit" className="w-full" disabled={isLoading}>
             {isLoading ? (
               <span className="flex items-center gap-2">
@@ -166,12 +251,6 @@ function UploadForm() {
               "Submit"
             )}
           </Button>
-          {isLoading && (
-            <div className="space-y-1 opacity-75 text-sm">
-            <p>Please ensure your internet connection is stable.</p>
-            <p>Kindly wait for about 10 to 15 minutes depending on the size of the file you are uploading.</p>
-            </div>
-          )}
         </form>
       </Form>
     </section>
