@@ -27,7 +27,7 @@ export default function Home() {
       </Hero>
       <CountdownSection
         newEvent={"2025-08-22T00:00:00"}
-        title={"Official Application Open in"}
+        title={"Application Close in"}
       />
       <HistorySectionNew />
       <FeedbackSection />
