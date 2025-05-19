@@ -226,7 +226,7 @@ export default function FormStartup() {
           render={({ field }) => (
             <FormItem className={"w-full py-4"}>
               <FormLabel>
-                wich corporate entity would you like to collaborate with?{" "}
+                which corporate entity would you like to collaborate with?{" "}
               </FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl className="w-full">
