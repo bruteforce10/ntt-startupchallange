@@ -27,6 +27,10 @@ export const GROUP_NTT_CONTENT = [
     url: "https://services.global.ntt/en-us/",
     img: "ntt-data",
   },
+  {
+    url: "/",
+    img: "ntt-at",
+  },
 ];
 
 export const TABS_DATA = [
