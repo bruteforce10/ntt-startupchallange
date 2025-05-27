@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,8 +21,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Loader2 } from "lucide-react";
+import { Label } from "@radix-ui/react-dropdown-menu";
 
 const formSchema = z.object({
   first_name: z.string().min(2).max(50),
@@ -43,6 +44,7 @@ const formSchema = z.object({
     .string()
     .min(2, "Collabarate must contain at 1 option(s)")
     .max(50),
+  how_did_you_hear: z.string(),
 });
 
 export default function FormStartup() {
@@ -58,11 +60,18 @@ export default function FormStartup() {
       phone: "",
       country: "",
       collaborate: "",
+      how_did_you_hear: "",
     },
     mode: "onSubmit",
   });
   const [isSuccess, setIsSuccess] = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(false);
+  const [ventureCapital, setVentureCapital] = React.useState("");
+
+  const howDidYouHear = useWatch({
+    control: form.control,
+    name: "how_did_you_hear",
+  });
 
   async function onSubmit(values) {
     setIsLoading(true);
@@ -224,9 +233,9 @@ export default function FormStartup() {
           control={form.control}
           name="collaborate"
           render={({ field }) => (
-            <FormItem className={"w-full py-4"}>
+            <FormItem className={"w-full pt-4"}>
               <FormLabel>
-                which corporate entity would you like to collaborate with?{" "}
+                Which corporate entity would you like to collaborate with?{" "}
               </FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl className="w-full">
@@ -256,6 +265,69 @@ export default function FormStartup() {
             </FormItem>
           )}
         />
+        <FormField
+          control={form.control}
+          name="how_did_you_hear"
+          render={({ field }) => (
+            <FormItem className={"w-full pt-4"}>
+              <FormLabel>How did you hear about us?</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl className="w-full">
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select one..." />
+                  </SelectTrigger>
+                </FormControl>
+
+                <SelectContent>
+                  <SelectItem value="instagram">Instagram</SelectItem>
+                  <SelectItem value="twitter">Twitter</SelectItem>
+                  <SelectItem value="linkedin">LinkedIn</SelectItem>
+                  <SelectItem value="facebook">Facebook</SelectItem>
+                  <SelectItem value="NTT Website">NTT Website</SelectItem>
+                  <SelectItem
+                    value="NTT Personel/Event
+"
+                  >
+                    NTT Personel/Event
+                  </SelectItem>
+                  <SelectItem value="Venture Capital">
+                    Venture Capital
+                  </SelectItem>
+                </SelectContent>
+              </Select>
+
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        {howDidYouHear === "Venture Capital" && (
+          <div className="pb-4">
+            <Label className="my-2 text-sm text-gray-200">
+              Please specify the name of Venture Capital
+            </Label>
+            <div className="flex items-center gap-2">
+              <Input
+                className="w-full"
+                placeholder="Please specify the Venture Capital name"
+                onChange={(e) => setVentureCapital(e.target.value)}
+              />
+              <Button
+                variant={"secondary"}
+                onClick={() => {
+                  form.setValue(
+                    "how_did_you_hear",
+                    "Venture Capital: " + ventureCapital
+                  );
+                  setVentureCapital("");
+                }}
+              >
+                Set Venture Capital
+              </Button>
+            </div>
+          </div>
+        )}
+
         <Button type="submit" className="w-full" disabled={isLoading}>
           {isLoading ? (
             <span className="flex items-center gap-2">
