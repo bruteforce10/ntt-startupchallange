@@ -20,14 +20,14 @@ const NominateSectionSection = () => {
                   width={130}
                   height={130}
                 />
-                <p className="text-center text-2xl font-medium">COMING SOON</p>
+                <p className="text-center text-2xl font-medium">{item.name}</p>
               </div>
             )}
           />
         </div>
-        {/* <div className="text-right mt-8 text-lg text-gray-500">
+        <div className="text-right mt-8 text-lg text-gray-500">
           Prizes listed are in USD (U.S. Dollars)
-        </div> */}
+        </div>
       </div>
     </section>
   );

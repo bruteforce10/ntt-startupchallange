@@ -89,6 +89,16 @@ export const columns = [
     ),
   },
   {
+    accessorKey: "how_did_you_hear",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="How Did You Hear" />
+    ),
+    cell: ({ row }) => {
+      const value = row?.original?.how_did_you_hear;
+      return value ? value : <div>N/A</div>;
+    },
+  },
+  {
     accessorKey: "file_proposal",
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Proposal" />
