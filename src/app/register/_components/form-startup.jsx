@@ -258,6 +258,9 @@ export default function FormStartup() {
                   <SelectItem value="NTT Docomo">NTT Docomo</SelectItem>
                   <SelectItem value="NTT AT">NTT AT</SelectItem>
                   <SelectItem value="NTT Data">NTT Data</SelectItem>
+                  <SelectItem value="NTT Precision Medicine">
+                    NTT Precision Medicine
+                  </SelectItem>
                 </SelectContent>
               </Select>
 

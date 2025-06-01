@@ -28,8 +28,12 @@ export const GROUP_NTT_CONTENT = [
     img: "ntt-data",
   },
   {
-    url: "/",
+    url: "https://www.nttt.com/en/index.html",
     img: "ntt-at",
+  },
+  {
+    url: "https://www.ntttt.com/en/index.html",
+    img: "ntt-precision-media",
   },
 ];
 
