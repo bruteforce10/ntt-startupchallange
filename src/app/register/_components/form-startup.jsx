@@ -40,7 +40,10 @@ const formSchema = z.object({
       message: "Phone number must start with + or 0",
     }),
   country: z.string().min(2).max(50),
-  collaborate: z.array(z.string()).min(1, "Select at least one option"),
+  collaborate: z
+    .array(z.string())
+    .min(1, "Select at least one option")
+    .max(3, "You may choose a maximum of 3."),
   how_did_you_hear: z.string(),
 });
 

@@ -18,8 +18,8 @@ const NttGroup = () => {
                 src={`/ntt-group/${item.img}.avif`}
                 alt={item.img}
                 quality={100}
-                width={220}
-                height={250}
+                width={item.width}
+                height={item.height}
               />
             </Link>
           )}

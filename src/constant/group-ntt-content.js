@@ -2,38 +2,56 @@ export const GROUP_NTT_CONTENT = [
   {
     url: "https://www.nttdocomo-v.com/en/",
     img: "docomo",
+    width: 220,
+    height: 250,
   },
   {
     url: "https://www.ntt-east.co.jp/en/",
     img: "docomo-business",
+    width: 220,
+    height: 250,
   },
   {
     url: "https://www.ntt-west.co.jp/english/",
     img: "docomo-ntt",
+    width: 220,
+    height: 250,
   },
   {
     url: "https://www.ntt-finance.co.jp/eng/",
     img: "ntteast",
+    width: 220,
+    height: 250,
   },
   {
     url: "https://www.ntt.com/en/index.html",
     img: "ntt-finance",
+    width: 220,
+    height: 250,
   },
   {
     url: "https://www.docomo.ne.jp/english/",
     img: "nttwest",
+    width: 220,
+    height: 250,
   },
   {
     url: "https://services.global.ntt/en-us/",
     img: "ntt-data",
+    width: 220,
+    height: 250,
   },
   {
     url: "https://www.nttt.com/en/index.html",
     img: "ntt-at",
+    width: 180,
+    height: 200,
   },
   {
     url: "https://www.ntttt.com/en/index.html",
     img: "ntt-precision-media",
+    width: 440,
+    height: 250,
   },
 ];
 
