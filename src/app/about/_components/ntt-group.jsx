@@ -14,15 +14,13 @@ const NttGroup = () => {
           of={GROUP_NTT_CONTENT}
           render={(item) => (
             <Link key={item.url} href={item.url} className="block">
-              <div className="sm:w-52 w-40 h-16  relative">
-                <Image
-                  src={`/ntt-group/${item.img}.avif`}
-                  alt={item.img}
-                  fill
-                  quality={100}
-                  className="object-contain"
-                />
-              </div>
+              <Image
+                src={`/ntt-group/${item.img}.avif`}
+                alt={item.img}
+                quality={100}
+                width={220}
+                height={250}
+              />
             </Link>
           )}
         />

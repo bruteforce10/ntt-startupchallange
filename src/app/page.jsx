@@ -37,7 +37,7 @@ export default function Home() {
       <ListSection
         title={"Partners"}
         items={Array.from(
-          new Set([...Array(3)].map((_, i) => ({ id: i + 1, url: "" })))
+          new Set([...Array(4)].map((_, i) => ({ id: i + 1, url: "" })))
         )}
         pathImg={"main-partner"}
       />

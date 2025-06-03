@@ -40,10 +40,7 @@ const formSchema = z.object({
       message: "Phone number must start with + or 0",
     }),
   country: z.string().min(2).max(50),
-  collaborate: z
-    .string()
-    .min(2, "Collabarate must contain at 1 option(s)")
-    .max(50),
+  collaborate: z.array(z.string()).min(1, "Select at least one option"),
   how_did_you_hear: z.string(),
 });
 
@@ -59,7 +56,7 @@ export default function FormStartup() {
       website: "",
       phone: "",
       country: "",
-      collaborate: "",
+      collaborate: [],
       how_did_you_hear: "",
     },
     mode: "onSubmit",
@@ -75,10 +72,18 @@ export default function FormStartup() {
 
   async function onSubmit(values) {
     setIsLoading(true);
+
+    const formattedValues = {
+      ...values,
+      collaborate: Array.isArray(values.collaborate)
+        ? values.collaborate.join(", ")
+        : values.collaborate,
+    };
+
     try {
       const res = await fetch("/api/send-startup", {
         method: "POST",
-        body: JSON.stringify(values),
+        body: JSON.stringify(formattedValues),
       });
 
       const result = await res.json();
@@ -229,45 +234,71 @@ export default function FormStartup() {
             </FormItem>
           )}
         />
+
         <FormField
           control={form.control}
           name="collaborate"
-          render={({ field }) => (
-            <FormItem className={"w-full pt-4"}>
+          render={() => (
+            <FormItem className="w-full pt-4">
               <FormLabel>
-                Which corporate entity would you like to collaborate with?{" "}
+                Which corporate entity would you like to collaborate with?
               </FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                <FormControl className="w-full">
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select one..." />
-                  </SelectTrigger>
-                </FormControl>
-
-                <SelectContent>
-                  <SelectItem value="All entity">All entity</SelectItem>
-                  <SelectItem value="NTT Docomo Ventures">
-                    NTT Docomo Ventures
-                  </SelectItem>
-                  <SelectItem value="NTT East">NTT East</SelectItem>
-                  <SelectItem value="NTT West">NTT West</SelectItem>
-                  <SelectItem value="NTT Finance">NTT Finance</SelectItem>
-                  <SelectItem value="NTT Communications">
-                    NTT Communications
-                  </SelectItem>
-                  <SelectItem value="NTT Docomo">NTT Docomo</SelectItem>
-                  <SelectItem value="NTT AT">NTT AT</SelectItem>
-                  <SelectItem value="NTT Data">NTT Data</SelectItem>
-                  <SelectItem value="NTT Precision Medicine">
-                    NTT Precision Medicine
-                  </SelectItem>
-                </SelectContent>
-              </Select>
-
+              <div className="grid grid-cols-2 gap-2">
+                {[
+                  "All entity",
+                  "NTT Docomo Ventures",
+                  "NTT East",
+                  "NTT West",
+                  "NTT Finance",
+                  "NTT Communications",
+                  "NTT Docomo",
+                  "NTT AT",
+                  "NTT Data",
+                  "NTT Precision Medicine",
+                ].map((entity) => (
+                  <FormField
+                    key={entity}
+                    control={form.control}
+                    name="collaborate"
+                    render={({ field }) => {
+                      return (
+                        <FormItem
+                          key={entity}
+                          className="flex flex-row items-center space-x-1 space-y-0"
+                        >
+                          <FormControl>
+                            <input
+                              type="checkbox"
+                              value={entity}
+                              checked={field.value?.includes(entity)}
+                              onChange={(e) => {
+                                const isChecked = e.target.checked;
+                                if (isChecked) {
+                                  field.onChange([...field.value, entity]);
+                                } else {
+                                  field.onChange(
+                                    field.value.filter(
+                                      (item) => item !== entity
+                                    )
+                                  );
+                                }
+                              }}
+                            />
+                          </FormControl>
+                          <FormLabel className="text-sm font-normal">
+                            {entity}
+                          </FormLabel>
+                        </FormItem>
+                      );
+                    }}
+                  />
+                ))}
+              </div>
               <FormMessage />
             </FormItem>
           )}
         />
+
         <FormField
           control={form.control}
           name="how_did_you_hear"
