@@ -94,7 +94,7 @@ export default function FormStartup() {
         form.reset();
         setIsSuccess(true);
         scrollTo(0, 0);
-        setTimeout(() => setIsSuccess(false), 5000);
+        setTimeout(() => setIsSuccess(false), 10000);
       }
     } catch (error) {
       console.error("Submit error:", error);
@@ -109,7 +109,8 @@ export default function FormStartup() {
         {isSuccess && (
           <Alert>
             <AlertDescription>
-              Thank you! Your submission has been received!
+              Thank you! Your registration was successful. Please check your
+              email for guidance on submitting your pitch deck.
             </AlertDescription>
           </Alert>
         )}
@@ -321,6 +322,9 @@ export default function FormStartup() {
                   <SelectItem value="linkedin">LinkedIn</SelectItem>
                   <SelectItem value="facebook">Facebook</SelectItem>
                   <SelectItem value="NTT Website">NTT Website</SelectItem>
+                  <SelectItem value="Direct Email Invitation">
+                    Direct Email Invitation
+                  </SelectItem>
                   <SelectItem
                     value="NTT Personel/Event
 "
