@@ -7,6 +7,14 @@ export const SPEAK_CONTENT = [
     desc: "As a trusted partner of NTT, Qontak since 2017 has been able to leverage NTTs company ecosystem, a wide network of enterprise connections and a number of customers. We sincerely thank NTT for joint go-to market support over the years and for more collaborations in the future. The NTT startup challenge was especially helpful and the pinnacle of our working relationship having bridged over 400 tech companies to jointly collaborate and cross sell.",
     name: "— Brendan Rakphongphairoj, CIO at Mekari",
   },
+  {
+    desc: "We at ProfilePrint are honored and fortunate to have won 1st place at the inaugural NTT Startup challenge 2024 which allowed us to work closely with NTT Group as a strategic partner to deepen our market penetration. It not only expedited our expansion into the Japan market but also allowed us to work alongside NTT group companies in serving the larger global market.",
+    name: "— Alan Lai , Founder of ProfilePrint (NTT Startup Challenge 2024 1 Award)",
+  },
+  {
+    desc: "It has been a true privilege to be involved with the NTT Startup Challenge since 2017 and to witness its evolution into a leading platform for collaboration between startups across Asia and the NTT Group. NTT Startup Challenge offers an exceptional gateway to NTT Group’s vast resources, networks, and markets—enabling win-win partnerships that drive real innovation. I wholeheartedly encourage startups across Asia to seize this opportunity and be part of a vibrant ecosystem of shared success together with the NTT Group. ",
+    name: "— Kuan Hsu , General Partner of KK Fund",
+  },
 ];
 
 export const SPEAKERS_CONTENT = [
