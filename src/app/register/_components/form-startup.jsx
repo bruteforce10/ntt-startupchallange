@@ -334,6 +334,7 @@ export default function FormStartup() {
                   <SelectItem value="Venture Capital">
                     Venture Capital
                   </SelectItem>
+                  <SelectItem value="Other">Other</SelectItem>
                 </SelectContent>
               </Select>
 
