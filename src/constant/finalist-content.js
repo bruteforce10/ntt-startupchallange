@@ -193,4 +193,14 @@ export const COMUNITY_PARTNER_CONTENT = [
     name: "",
     url: "",
   },
+  {
+    id: 5,
+    name: "",
+    url: "",
+  },
+  {
+    id: 6,
+    name: "",
+    url: "",
+  },
 ];
