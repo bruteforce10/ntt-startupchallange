@@ -343,15 +343,21 @@ export default function FormStartup() {
           )}
         />
 
-        {howDidYouHear === "Venture Capital" && (
+        {(howDidYouHear === "Venture Capital" || "other") && (
           <div className="pb-4">
             <Label className="my-2 text-sm text-gray-200">
-              Please specify the name of Venture Capital
+              {howDidYouHear === "Venture Capital"
+                ? "Please specify the Venture Capital name"
+                : "Please specify other source of information"}
             </Label>
             <div className="flex items-center gap-2">
               <Input
                 className="w-full"
-                placeholder="Please specify the Venture Capital name"
+                placeholder={
+                  howDidYouHear === "Venture Capital"
+                    ? "Venture Capital"
+                    : "Other"
+                }
                 onChange={(e) => setVentureCapital(e.target.value)}
               />
               <Button
@@ -359,12 +365,16 @@ export default function FormStartup() {
                 onClick={() => {
                   form.setValue(
                     "how_did_you_hear",
-                    "Venture Capital: " + ventureCapital
+                    howDidYouHear === "Venture Capital"
+                      ? `Venture Capital: ${ventureCapital}`
+                      : `Other: ${ventureCapital}`
                   );
                   setVentureCapital("");
                 }}
               >
-                Set Venture Capital
+                {howDidYouHear === "Venture Capital"
+                  ? " Venture Capital"
+                  : " Other"}
               </Button>
             </div>
           </div>
