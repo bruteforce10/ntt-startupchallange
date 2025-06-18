@@ -258,6 +258,7 @@ export default function FormStartup() {
                   "NTT Docomo",
                   "NTT AT",
                   "NTT Data",
+                  "Nippon Information and Communication Corporation (NI+C)",
                   "NTT Precision Medicine",
                 ].map((entity) => (
                   <FormField

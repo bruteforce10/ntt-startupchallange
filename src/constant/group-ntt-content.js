@@ -53,6 +53,12 @@ export const GROUP_NTT_CONTENT = [
     width: 440,
     height: 250,
   },
+  {
+    url: "https://www.nttttt.com/en/index.html",
+    img: "ni+c",
+    width: 200,
+    height: 250,
+  },
 ];
 
 export const TABS_DATA = [
