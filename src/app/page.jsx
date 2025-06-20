@@ -10,7 +10,10 @@ import { FeedbackSection } from "@/components/section-feedback";
 import { HistorySectionNew } from "@/components/section-history-new";
 import NominateSectionSection from "@/components/section-nominate-award";
 import SpeaksSection from "@/components/section-speaks";
-import { COMUNITY_PARTNER_CONTENT } from "@/constant/finalist-content";
+import {
+  COMUNITY_PARTNER_CONTENT,
+  MAIN_PARTNER_CONTENT,
+} from "@/constant/finalist-content";
 
 export default function Home() {
   return (
@@ -36,9 +39,7 @@ export default function Home() {
       <SpeaksSection />
       <ListSection
         title={"Partners"}
-        items={Array.from(
-          new Set([...Array(9)].map((_, i) => ({ id: i + 1, url: "" })))
-        )}
+        items={MAIN_PARTNER_CONTENT}
         pathImg={"main-partner"}
       />
       <ListSection

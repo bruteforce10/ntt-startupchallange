@@ -73,102 +73,52 @@ export const MAIN_PARTNER_CONTENT = [
   {
     id: 1,
     name: "Partner 1",
-    url: "https://partner1.com",
+    url: "https://www.artique-agency.com",
   },
   {
     id: 2,
     name: "Partner 2",
-    url: "https://partner2.com",
+    url: "https://kkfund.co",
   },
   {
     id: 3,
     name: "Partner 3",
-    url: "https://partner3.com",
+    url: "https://mekari.com",
   },
   {
     id: 4,
     name: "Partner 4",
-    url: "https://partner4.com",
+    url: "https://cradle.com.my",
   },
   {
     id: 5,
     name: "Partner 5",
-    url: "https://partner5.com",
+    url: "https://trihillcapital.com",
   },
   {
     id: 6,
     name: "Partner 6",
-    url: "https://partner6.com",
+    url: "https://exeo-global.com",
   },
   {
     id: 7,
     name: "Partner 7",
-    url: "https://partner7.com",
+    url: "https://e27.co",
   },
   {
     id: 8,
     name: "Partner 8",
-    url: "https://partner8.com",
+    url: "https://www.bniventures.co.id/id",
   },
   {
     id: 9,
     name: "Partner 9",
-    url: "https://partner9.com",
+    url: "https://www.tca.org.tw/en",
   },
   {
     id: 10,
     name: "Partner 10",
-    url: "https://partner10.com",
-  },
-  {
-    id: 11,
-    name: "Partner 11",
-    url: "https://partner11.com",
-  },
-  {
-    id: 12,
-    name: "Partner 12",
-    url: "https://partner12.com",
-  },
-  {
-    id: 13,
-    name: "Partner 13",
-    url: "https://partner13.com",
-  },
-  {
-    id: 14,
-    name: "Partner 14",
-    url: "https://partner14.com",
-  },
-  {
-    id: 15,
-    name: "Partner 15",
-    url: "https://partner15.com",
-  },
-  {
-    id: 16,
-    name: "Partner 16",
-    url: "https://partner16.com",
-  },
-  {
-    id: 17,
-    name: "Partner 17",
-    url: "https://partner17.com",
-  },
-  {
-    id: 18,
-    name: "Partner 18",
-    url: "https://partner18.com",
-  },
-  {
-    id: 19,
-    name: "Partner 19",
-    url: "https://partner19.com",
-  },
-  {
-    id: 20,
-    name: "Partner 20",
-    url: "https://partner20.com",
+    url: "https://500.co",
   },
 ];
 
@@ -176,31 +126,36 @@ export const COMUNITY_PARTNER_CONTENT = [
   {
     id: 1,
     name: "",
-    url: "",
+    url: "https://indigo.id/",
   },
   {
     id: 2,
     name: "",
-    url: "",
+    url: "https://www.myimpactcircle.org",
   },
   {
     id: 3,
     name: "",
-    url: "",
+    url: "https://sebi.umy.ac.id",
   },
   {
     id: 4,
     name: "",
-    url: "",
+    url: "https://surabaya.uph.edu/incubator#overview",
   },
   {
     id: 5,
     name: "",
-    url: "",
+    url: "https://starfindo.or.id",
   },
   {
     id: 6,
     name: "",
-    url: "",
+    url: "https://thinkzone.vn",
+  },
+  {
+    id: 7,
+    name: "",
+    url: "https://ibis-uty.com",
   },
 ];
