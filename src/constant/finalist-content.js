@@ -120,6 +120,11 @@ export const MAIN_PARTNER_CONTENT = [
     name: "Partner 10",
     url: "https://500.co",
   },
+  {
+    id: 11,
+    name: "Partner 11",
+    url: "https://bssc.vn/en/",
+  },
 ];
 
 export const COMUNITY_PARTNER_CONTENT = [
