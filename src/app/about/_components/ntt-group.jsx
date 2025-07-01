@@ -13,7 +13,7 @@ const NttGroup = () => {
         <EachUtils
           of={GROUP_NTT_CONTENT}
           render={(item) => (
-            <Link key={item.url} href={item.url} className="block">
+            <Link key={item.img} href={item.url} className="block">
               <Image
                 src={`/ntt-group/${item.img}.avif`}
                 alt={item.img}

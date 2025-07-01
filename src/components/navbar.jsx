@@ -63,11 +63,11 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="grow ">
           <Image
-            src="/logo-navbar.avif"
+            src="/logo-navbar.webp"
             alt="NTT Logo"
             height={1500}
             width={1500}
-            className="h-18 w-auto object-contain"
+            className="h-28 w-auto object-contain"
           />
         </Link>
 

@@ -163,4 +163,14 @@ export const COMUNITY_PARTNER_CONTENT = [
     name: "",
     url: "https://ibis-uty.com",
   },
+  {
+    id: 8,
+    name: "",
+    url: "https://abpincubator.com/",
+  },
+  {
+    id: 9,
+    name: "",
+    url: "https://www.skystarventures.com/",
+  },
 ];
