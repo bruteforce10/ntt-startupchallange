@@ -173,4 +173,14 @@ export const COMUNITY_PARTNER_CONTENT = [
     name: "",
     url: "https://www.skystarventures.com/",
   },
+  {
+    id: 10,
+    name: "",
+    url: "https://vietnam.zonestartups.com/",
+  },
+  {
+    id: 11,
+    name: "",
+    url: "https://vietnam.zonestartups.com/",
+  },
 ];
