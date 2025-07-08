@@ -115,8 +115,9 @@ export default function FormStartup() {
           </Alert>
         )}
         <p>
-          Any startup companies operating business in South East Asia can apply.
-          Please note that startup must be legal entity not just an idea.
+          Any startup companies operating business in Southeast Asia, South
+          Korea, Taiwan and Hong Kong can apply. Please note that startup must
+          be legal entity not just an idea.
         </p>
         <div className="flex max-sm:flex-col w-full gap-4">
           <FormField
