@@ -87,43 +87,53 @@ export const MAIN_PARTNER_CONTENT = [
   },
   {
     id: 4,
+    name: "Partner 11",
+    url: "https://workspacedojo.com/",
+  },
+  {
+    id: 5,
     name: "Partner 4",
     url: "https://cradle.com.my",
   },
   {
-    id: 5,
+    id: 6,
     name: "Partner 5",
     url: "https://trihillcapital.com",
   },
   {
-    id: 6,
+    id: 7,
     name: "Partner 6",
     url: "https://exeo-global.com",
   },
   {
-    id: 7,
+    id: 8,
     name: "Partner 7",
     url: "https://e27.co",
   },
   {
-    id: 8,
+    id: 9,
     name: "Partner 8",
     url: "https://www.bniventures.co.id/id",
   },
   {
-    id: 9,
+    id: 10,
     name: "Partner 9",
     url: "https://www.tca.org.tw/en",
   },
   {
-    id: 10,
+    id: 11,
     name: "Partner 10",
     url: "https://500.co",
   },
   {
-    id: 11,
+    id: 12,
     name: "Partner 11",
     url: "https://bssc.vn/en/",
+  },
+  {
+    id: 13,
+    name: "Partner 11",
+    url: "https://vinacapital.com/",
   },
 ];
 

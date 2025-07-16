@@ -37,10 +37,7 @@ export function CountdownSection({ newEvent, title }) {
           {title}
         </h2>
         <div className="bg-linear-to-bl from-blue-ntt-900 to-blue-ntt-700 rounded-lg p-8 md:p-12 max-w-3xl mx-auto">
-          <p className="text-2xl text-center md:text-6xl font-bold">
-            August 22, 2025
-          </p>
-          {/* {isClient ? (
+          {isClient ? (
             <Countdown date={countdownDate} renderer={renderer} />
           ) : (
             <div className="flex items-center justify-center gap-4 md:gap-8">
@@ -52,7 +49,7 @@ export function CountdownSection({ newEvent, title }) {
               <CountdownSeparator />
               <CountdownUnit value="00" label="Seconds" />
             </div>
-          )} */}
+          )}
         </div>
       </div>
     </section>
