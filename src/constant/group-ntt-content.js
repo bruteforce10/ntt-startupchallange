@@ -18,14 +18,14 @@ export const GROUP_NTT_CONTENT = [
     height: 250,
   },
   {
-    url: "https://www.ntt-finance.co.jp/eng/",
-    img: "ntteast",
+    url: "https://www.ntt.com/en/index.html",
+    img: "ntt-finance",
     width: 220,
     height: 250,
   },
   {
-    url: "https://www.ntt.com/en/index.html",
-    img: "ntt-finance",
+    url: "https://www.ntt-finance.co.jp/eng/",
+    img: "ntteast",
     width: 220,
     height: 250,
   },
@@ -51,6 +51,24 @@ export const GROUP_NTT_CONTENT = [
     url: "https://www.ntttt.com/en/index.html",
     img: "ntt-precision-media",
     width: 440,
+    height: 250,
+  },
+  {
+    url: "https://www.nttttt.com/en/index.html",
+    img: "ni+c",
+    width: 200,
+    height: 250,
+  },
+  {
+    url: "/",
+    img: "nttanodeenergy",
+    width: 220,
+    height: 250,
+  },
+  {
+    url: "/",
+    img: "docomo-solutions",
+    width: 390,
     height: 250,
   },
 ];

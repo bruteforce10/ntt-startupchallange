@@ -22,6 +22,7 @@ export function NttGroupCompanies() {
                     <Image
                       src={`/ntt-connect/${index + 1}.avif`}
                       alt={`${company.name} logo`}
+                      className=" rounded-lg"
                       width={900}
                       height={200}
                     />

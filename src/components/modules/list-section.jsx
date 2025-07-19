@@ -22,8 +22,8 @@ export function ListSection({ title, items, pathImg, id }) {
               >
                 <Image
                   src={`/${pathImg}/${item.id}.webp`}
-                  width={180}
-                  height={180}
+                  width={150}
+                  height={150}
                   alt={`${item.name} logo`}
                   className="object-contain brightness-100 filter"
                 />

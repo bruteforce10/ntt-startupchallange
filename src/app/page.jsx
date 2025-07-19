@@ -10,7 +10,10 @@ import { FeedbackSection } from "@/components/section-feedback";
 import { HistorySectionNew } from "@/components/section-history-new";
 import NominateSectionSection from "@/components/section-nominate-award";
 import SpeaksSection from "@/components/section-speaks";
-import { COMUNITY_PARTNER_CONTENT } from "@/constant/finalist-content";
+import {
+  COMUNITY_PARTNER_CONTENT,
+  MAIN_PARTNER_CONTENT,
+} from "@/constant/finalist-content";
 
 export default function Home() {
   return (
@@ -27,7 +30,7 @@ export default function Home() {
       </Hero>
       <CountdownSection
         newEvent={"2025-08-22T00:00:00"}
-        title={"Application Close in"}
+        title={"Application Close on August 22, 2025"}
       />
       <HistorySectionNew />
       <FeedbackSection />
@@ -36,9 +39,7 @@ export default function Home() {
       <SpeaksSection />
       <ListSection
         title={"Partners"}
-        items={Array.from(
-          new Set([...Array(8)].map((_, i) => ({ id: i + 1, url: "" })))
-        )}
+        items={MAIN_PARTNER_CONTENT}
         pathImg={"main-partner"}
       />
       <ListSection

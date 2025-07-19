@@ -16,6 +16,8 @@ import {
   MAIN_PARTNER_CONTENT,
 } from "@/constant/finalist-content";
 import CtaHero from "@/components/modules/cta-hero";
+import HeadingText from "@/components/heading-text";
+import Image from "next/image";
 
 export default function NSC2024Page() {
   return (
@@ -39,20 +41,30 @@ export default function NSC2024Page() {
       />
       <SpeakersSection comingSoon={false} />
       <SpeaksSection />
-      <ListSection
-        title={"Partners"}
-        items={Array.from(
-          new Set([...Array(14)].map((_, i) => ({ id: i + 1, url: "" })))
-        )}
-        pathImg={"main-partner"}
-      />
-      <ListSection
-        title={"Community Partners"}
-        items={Array.from(
-          new Set([...Array(21)].map((_, i) => ({ id: i + 1, url: "" })))
-        )}
-        pathImg={"community-partner"}
-      />
+      <section className="pt-16 md:pt-28">
+        <div className="container mx-auto px-4 space-y-8">
+          <HeadingText text={"Partners"} />
+          <Image
+            src={"/partner-nsc-2024.png"}
+            width={1920}
+            height={1080}
+            alt="Partners"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </section>
+      <section className="pt-16 md:pt-28">
+        <div className="container mx-auto px-4 space-y-8">
+          <HeadingText text={"Community Partners"} />
+          <Image
+            src={"/community-nsc-2024.png"}
+            width={1920}
+            height={1080}
+            alt="Partners"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </section>
       <NewsSection />
     </InitialPage>
   );
