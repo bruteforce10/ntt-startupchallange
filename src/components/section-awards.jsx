@@ -2,7 +2,7 @@ import Image from "next/image";
 import HeadingText from "./heading-text";
 import { SPEAKERS_CONTENT } from "@/constant/speaks-content";
 
-export function SpeakersSection({ comingSoon = true }) {
+export function SpeakersSection({ comingSoon = false }) {
   return (
     <section className=" text-white pt-16 md:pt-28">
       <div className="container mx-auto px-4">

@@ -135,6 +135,11 @@ export const MAIN_PARTNER_CONTENT = [
     name: "Partner 11",
     url: "https://vinacapital.com/",
   },
+  {
+    id: 14,
+    name: "Partner 11",
+    url: "https://gobi.vc/",
+  },
 ];
 
 export const COMUNITY_PARTNER_CONTENT = [

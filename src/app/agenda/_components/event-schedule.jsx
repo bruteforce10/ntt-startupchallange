@@ -44,9 +44,6 @@ export function EventSchedule() {
                 <TableHead className="text-white py-3 font-semibold">
                   Content
                 </TableHead>
-                <TableHead className="text-white py-3 font-semibold">
-                  Presenter
-                </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -69,9 +66,6 @@ export function EventSchedule() {
                     }
                   >
                     {item.content}
-                  </TableCell>
-                  <TableCell className="text-white whitespace-normal break-words max-w-sm py-3">
-                    {item.presenter}
                   </TableCell>
                 </TableRow>
               ))}
