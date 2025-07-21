@@ -33,7 +33,7 @@ export const SPEAKERS_CONTENT = [
   {
     id: 3,
     name: "Ken Ebihara",
-    organization: "-",
+    organization: "Founding General Partner of Rebright Partners",
     bio: "Takeshi Ebihara is Founding General Partner at Rebright Partners, VC  firm invests in Seed to Series-A Startups in SE Asia and India includes  Indonesian Largest IPO company Bukalapak (1st round Lead/Solo),  Philipino Largest tech exit company Coins.Ph (1st round co-lead) ,  multiple Indian Unicorn and Soonicorns.  Ebihara has been in the industry more than decades as a venture  capitalist as well as serial entrepreneur started his career at JAFCO, the  largest VC/PE firm in Japan in 1994. He also founded and managed  several Tech companies includes Tokyo Stock-EX Listed Public  Company ",
   },
   {
