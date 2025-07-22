@@ -48,12 +48,12 @@ export const SPEAKERS_CONTENT = [
     organization: "Vertex Ventures",
     bio: "Gary Khoeng is a Partner at Vertex Ventures Southeast Asia & India, leading the Indonesian team. He focuses on Indonesia's startup ecosystem. Before joining Vertex, Gary invested in early-stage opportunities at an Indonesian fund across sectors like e-Commerce and Fintech. Prior to that, he worked at Citigroup in New York, Singapore, and Hong Kong, and at the Boston Consulting Group in Jakarta, covering FMCG and Financial Services.",
   },
-  {
-    id: 6,
-    name: "Victor Lesmana",
-    organization: "Bukalapak",
-    bio: "Victor Lesmana is the CEO of BukaFinancial & Commerce. He is a seasoned business leader with extensive experience in Financial Services, Technology, Consumer Goods, M&A and Supply Chain, growing through diverse B2B & B2C businesses across core divisions, including Manufacturing, Digital Products, Logistics, Payment, Fintech, and New Businesses.",
-  },
+  // {
+  //   id: 6,
+  //   name: "Victor Lesmana",
+  //   organization: "Bukalapak",
+  //   bio: "Victor Lesmana is the CEO of BukaFinancial & Commerce. He is a seasoned business leader with extensive experience in Financial Services, Technology, Consumer Goods, M&A and Supply Chain, growing through diverse B2B & B2C businesses across core divisions, including Manufacturing, Digital Products, Logistics, Payment, Fintech, and New Businesses.",
+  // },
   {
     id: 7,
     name: "Yuma Kotake",
