@@ -42,12 +42,12 @@ export const SPEAKERS_CONTENT = [
     organization: "GDP Venture",
     bio: "Antonny is a founding partner at GDP Venture. Technology, marketing, people, and execution have driven his professional journey. He began in Enterprise IT before joining SemutApi Colony as Managing Director in 2005, transforming it into a digital marketing agency. In 2010, he started MerahPutih Incubator, the seed investment arm of GDP Venture.",
   },
-  {
-    id: 5,
-    name: "Gary Khoeng",
-    organization: "Vertex Ventures",
-    bio: "Gary Khoeng is a Partner at Vertex Ventures Southeast Asia & India, leading the Indonesian team. He focuses on Indonesia's startup ecosystem. Before joining Vertex, Gary invested in early-stage opportunities at an Indonesian fund across sectors like e-Commerce and Fintech. Prior to that, he worked at Citigroup in New York, Singapore, and Hong Kong, and at the Boston Consulting Group in Jakarta, covering FMCG and Financial Services.",
-  },
+  // {
+  //   id: 5,
+  //   name: "Gary Khoeng",
+  //   organization: "Vertex Ventures",
+  //   bio: "Gary Khoeng is a Partner at Vertex Ventures Southeast Asia & India, leading the Indonesian team. He focuses on Indonesia's startup ecosystem. Before joining Vertex, Gary invested in early-stage opportunities at an Indonesian fund across sectors like e-Commerce and Fintech. Prior to that, he worked at Citigroup in New York, Singapore, and Hong Kong, and at the Boston Consulting Group in Jakarta, covering FMCG and Financial Services.",
+  // },
   // {
   //   id: 6,
   //   name: "Victor Lesmana",
