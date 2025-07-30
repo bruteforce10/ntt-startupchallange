@@ -138,7 +138,22 @@ export const MAIN_PARTNER_CONTENT = [
   {
     id: 14,
     name: "Partner 11",
+    url: "https://www.hkstp.org/en/",
+  },
+  {
+    id: 15,
+    name: "Partner 11",
     url: "https://gobi.vc/",
+  },
+  {
+    id: 16,
+    name: "Partner 11",
+    url: "https://www.antler.co/",
+  },
+  {
+    id: 17,
+    name: "Partner 11",
+    url: "https://www.vertexventures.sg/",
   },
 ];
 
@@ -197,5 +212,30 @@ export const COMUNITY_PARTNER_CONTENT = [
     id: 11,
     name: "",
     url: "https://vietnam.zonestartups.com/",
+  },
+  {
+    id: 12,
+    name: "",
+    url: "https://umscomm.vercel.app/",
+  },
+  {
+    id: 13,
+    name: "",
+    url: "https://www.nexea.co/",
+  },
+  {
+    id: 14,
+    name: "",
+    url: "https://ukmindonesia.id/",
+  },
+  {
+    id: 15,
+    name: "",
+    url: "https://growthcharger.com/",
+  },
+  {
+    id: 16,
+    name: "",
+    url: "https://kairous.com/home/",
   },
 ];
