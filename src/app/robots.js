@@ -3,7 +3,6 @@ export default function robots() {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: "/private/",
     },
     sitemap: "https://www.ntt-startupchallenge.com/sitemap.xml",
   };
