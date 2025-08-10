@@ -26,7 +26,6 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en" className="dark" suppressHydrationWarning>
         <head>
-          <meta name="robots" content="noindex" />
           <Script
             strategy="afterInteractive"
             src={`https://www.googletagmanager.com/gtag/js?id=G-Y3F146ER46`}
