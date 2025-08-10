@@ -18,6 +18,7 @@ export const metadata = {
   },
   description:
     "Build Connections That Matter – Your Next Leap Starts at NTT Startup Challenge",
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }) {
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en" className="dark" suppressHydrationWarning>
         <head>
+          <meta name="robots" content="noindex" />
           <Script
             strategy="afterInteractive"
             src={`https://www.googletagmanager.com/gtag/js?id=G-Y3F146ER46`}
