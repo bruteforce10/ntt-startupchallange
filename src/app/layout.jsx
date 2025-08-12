@@ -18,6 +18,7 @@ export const metadata = {
   },
   description:
     "Build Connections That Matter – Your Next Leap Starts at NTT Startup Challenge",
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }) {
