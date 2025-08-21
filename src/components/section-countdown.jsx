@@ -9,9 +9,7 @@ export function CountdownSection({ newEvent, title }) {
     setIsClient(true);
   }, []);
 
-  // Create date in GMT+8 (Singapore time)
-  // Parse the ISO string and create a date object that represents the time in GMT+8
-  const countdownDate = new Date(newEvent + "+08:00");
+  const countdownDate = new Date(newEvent);
 
   // Renderer for the countdown
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
