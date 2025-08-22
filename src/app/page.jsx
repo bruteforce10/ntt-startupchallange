@@ -29,8 +29,8 @@ export default function Home() {
         <CtaHero />
       </Hero>
       <CountdownSection
-        newEvent={"2025-08-22T23:59:00+08:00"}
-        title={"Application Close on August 22, 2025"}
+        newEvent={"2025-11-11T12:00:00+07:00"}
+        title={"Final Day of NTT Startup Challenge 2025 is coming in!"}
       />
       <HistorySectionNew />
       <FeedbackSection />
