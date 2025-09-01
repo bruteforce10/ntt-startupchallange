@@ -33,7 +33,7 @@ export function CountdownSection({ newEvent, title }) {
   return (
     <section className="pt-16 md:pt-28">
       <div className="container mx-auto px-4 space-y-8 lg:space-y-12">
-        <h2 className="text-3xl lg:text-5xl font-medium text-center bg-gradient-to-br from-foreground from-30% via-foreground/90 to-foreground/70 bg-clip-text">
+        <h2 className="text-3xl lg:text-5xl max-w-5xl leading-relaxed mx-auto font-medium text-center bg-gradient-to-br from-foreground from-30% via-foreground/90 to-foreground/70 bg-clip-text">
           {title}
         </h2>
         <div className="bg-linear-to-bl from-blue-ntt-900 to-blue-ntt-700 rounded-lg p-8 md:p-12 max-w-3xl mx-auto">
@@ -50,6 +50,29 @@ export function CountdownSection({ newEvent, title }) {
               <CountdownUnit value="00" label="Seconds" />
             </div>
           )}
+        </div>
+        
+        {/* Startup Ranking Announcements Section */}
+        <div className="max-w-2xl mx-auto bg-linear-to-bl from-blue-ntt-900 to-blue-ntt-700 rounded-lg ">
+          <div className="bg-gradient-to-br from-blue-ntt-900 to-blue-ntt-800 rounded-lg p-6 md:p-8 text-white">
+            <div className="space-y-4">
+              <div className="text-center">
+                <p className="text-lg md:text-xl font-medium">
+                  The Top 50 startups will be announced on September 26, 2025.
+                </p>
+              </div>
+              
+              <div className="flex justify-center">
+                <div className="w-full h-px bg-gradient-to-r from-blue-400 to-blue-600"></div>
+              </div>
+              
+              <div className="text-center">
+                <p className="text-lg md:text-xl font-medium">
+                  The Top 20 startups will be announced on October 16, 2025.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
