@@ -54,16 +54,15 @@ export function CountdownSection({ newEvent, title }) {
           )}
         </div>
 
-        <Link href="/top-50-startup-of-ntt-challange" className="block">
-          <Image src="/cover-startup-50.webp" alt="Top 50 Startup of NTT Startup Challenge 2025" width={1000} height={1000} />
+        <Link href="/top-50-startup-of-ntt-challange" className="block w-full ">
+          <Image src="/cover-startup-50.webp" alt="Top 50 Startup of NTT Startup Challenge 2025" width={1000} height={1000} className="mx-auto" />
         </Link>
         
         {/* Startup Ranking Announcements Section */}
         <div className="max-w-2xl mx-auto bg-linear-to-bl from-blue-ntt-900 to-blue-ntt-700 rounded-lg ">
           <div className="bg-gradient-to-br from-blue-ntt-900 to-blue-ntt-800 rounded-lg p-6 md:p-8 text-white">
           <p className="text-lg md:text-xl font-medium">
-                The Top 50 startups will be announced on
-                September 26, 2025.
+          The Top 20 Startups Will be Announced on October 16, 2025
                 </p>
           </div>
         </div>
