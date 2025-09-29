@@ -36,12 +36,12 @@ export const SPEAKERS_CONTENT = [
     organization: "Founding General Partner of Rebright Partners",
     bio: "Takeshi Ebihara is Founding General Partner at Rebright Partners, VC  firm invests in Seed to Series-A Startups in SE Asia and India includes  Indonesian Largest IPO company Bukalapak (1st round Lead/Solo),  Philipino Largest tech exit company Coins.Ph (1st round co-lead) ,  multiple Indian Unicorn and Soonicorns.  Ebihara has been in the industry more than decades as a venture  capitalist as well as serial entrepreneur started his career at JAFCO, the  largest VC/PE firm in Japan in 1994. He also founded and managed  several Tech companies includes Tokyo Stock-EX Listed Public  Company ",
   },
-  {
-    id: 4,
-    name: "Antonny Liem",
-    organization: "GDP Venture",
-    bio: "Antonny is a founding partner at GDP Venture. Technology, marketing, people, and execution have driven his professional journey. He began in Enterprise IT before joining SemutApi Colony as Managing Director in 2005, transforming it into a digital marketing agency. In 2010, he started MerahPutih Incubator, the seed investment arm of GDP Venture.",
-  },
+  // {
+  //   id: 4,
+  //   name: "Antonny Liem",
+  //   organization: "GDP Venture",
+  //   bio: "Antonny is a founding partner at GDP Venture. Technology, marketing, people, and execution have driven his professional journey. He began in Enterprise IT before joining SemutApi Colony as Managing Director in 2005, transforming it into a digital marketing agency. In 2010, he started MerahPutih Incubator, the seed investment arm of GDP Venture.",
+  // },
   // {
   //   id: 5,
   //   name: "Gary Khoeng",

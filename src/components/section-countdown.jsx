@@ -1,6 +1,8 @@
 "use client";
 import Countdown from "react-countdown";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export function CountdownSection({ newEvent, title }) {
   const [isClient, setIsClient] = useState(false);
@@ -51,27 +53,17 @@ export function CountdownSection({ newEvent, title }) {
             </div>
           )}
         </div>
+
+        <Link href="/top-50-startup-of-ntt-challange" className="block w-full ">
+          <Image src="/cover-startup-50.webp" alt="Top 50 Startup of NTT Startup Challenge 2025" width={1000} height={1000} className="mx-auto" />
+        </Link>
         
         {/* Startup Ranking Announcements Section */}
         <div className="max-w-2xl mx-auto bg-linear-to-bl from-blue-ntt-900 to-blue-ntt-700 rounded-lg ">
           <div className="bg-gradient-to-br from-blue-ntt-900 to-blue-ntt-800 rounded-lg p-6 md:p-8 text-white">
-            <div className="space-y-4">
-              <div className="text-center">
-                <p className="text-lg md:text-xl font-medium">
-                  The Top 50 startups will be announced on September 26, 2025.
+          <p className="text-lg md:text-xl font-medium">
+          The Top 20 Startups Will be Announced on October 16, 2025
                 </p>
-              </div>
-              
-              <div className="flex justify-center">
-                <div className="w-full h-px bg-gradient-to-r from-blue-400 to-blue-600"></div>
-              </div>
-              
-              <div className="text-center">
-                <p className="text-lg md:text-xl font-medium">
-                  The Top 20 startups will be announced on October 16, 2025.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
