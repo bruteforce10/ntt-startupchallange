@@ -62,7 +62,7 @@ export function CountdownSection({ newEvent, title }) {
         <div className="max-w-2xl mx-auto bg-linear-to-bl from-blue-ntt-900 to-blue-ntt-700 rounded-lg ">
           <div className="bg-gradient-to-br from-blue-ntt-900 to-blue-ntt-800 rounded-lg p-6 md:p-8 text-white">
           <p className="text-lg md:text-xl font-medium">
-          The Top 20 Startups Will be Announced on October 16, 2025
+          The Top 20 Startups Will be Announced on October 8, 2025
                 </p>
           </div>
         </div>
