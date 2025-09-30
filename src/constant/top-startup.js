@@ -67,7 +67,7 @@ const TOP_STARTUPS = [
   },
   {
       name: "CarnotFleet",
-      slug: "carnotfleet",
+      slug: "carnofleet",
       description: "CarnotFleet provides plug & play cold chain solutions that can convert existing non refrigerated vehicles or assets into temperature controlled units, without requiring major modifications.",
       url: "https://carnotfleet.com"
   },
