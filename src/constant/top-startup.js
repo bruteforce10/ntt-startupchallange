@@ -300,5 +300,128 @@ const TOP_STARTUPS = [
       url: "https://y.uno/"
   }
   ];
+
+  const TOP_STARTUPS_20 = [
+    {
+      "name": "AI Seer",
+      "slug": "ai-seer",
+      "description": "Offers Facticity.AI, a platform that verifies the authenticity of text, audio and video, helping organizations counter misinformation and maintain brand safety in the gen‑AI era.",
+      "url": "https://aiseer.co/"
+    },
+    {
+      "name": "Aktivo Labs",
+      "slug": "aktivolabs",
+      "description": "Aktivo Labs is a Singapore-founded HealthTech company that creates predictive and preventive health journeys by applying proprietary AI models to behavioral and biometric data. Our solutions help leading insurers, healthcare providers, and fintech companies to lower health-related costs, attract and retain customers, and increase value per relationship, while improving wellbeing and enabling sustainable growth",
+      "url": "www.aktivolabs.com"
+    },
+    {
+      "name": "Alterno",
+      "slug": "alterno",
+      "description": "Provides industrial energy-efficiency and renewable optimization solutions through sand-based thermal energy storage. Demand forecasting and control enable peak shaving, cost savings, and improved ESG performance.",
+      "url": "https://alterno.net/"
+    },
+    {
+      "name": "BarkingDog Technology Inc. (AI Amaze)",
+      "slug": "ai-amaze",
+      "description": "BarkingDog Technology Inc. is dedicated to the development of AI+XR technologies, offering cross-platform AI agent solutions under its flagship product, AI AMAZE. This service empowers businesses to rapidly and seamlessly establish accurate, controllable generative AI applications featuring realistic virtual agents. By delivering innovative, knowledge-driven digital experiences (Bridge to Services), BarkingDog Technology enhances operational efficiency and reduces costs for businesses internally, while externally revolutionizing customer engagement. Its services span various industries and scenarios, including tourism and guided tours, food and retail, smart factories, and intelligent healthcare.",
+      "url": "https://www.barkingdog.ai/"
+    },
+    {
+      "name": "Betterdata",
+      "slug": "betterdata",
+      "description": "Synthetic data platform that preserves statistical properties while mitigating re‑identification risk, enabling safe development, testing and data sharing in regulated industries.",
+      "url": "www.betterdata.ai"
+    },
+    {
+      "name": "bootloader",
+      "slug": "bootloader",
+      "description": "Open‑source lightweight bootloader supporting multiple architectures, reducing bring‑up time for embedded development with robustness and a small footprint.",
+      "url": "https://bootloader.studio/"
+    },
+    {
+      "name": "Funding Societies",
+      "slug": "funding-societies",
+      "description": "Operates the largest digital financing platform for SMEs in Southeast Asia, offering working capital, invoice and trade financing with data‑driven underwriting and collections to expand credit access.",
+      "url": "www.fundingsocieties.com"
+    },
+    {
+      "name": "HeyMax",
+      "slug": "heymax",
+      "description": "Rewards platform that lets users earn miles and points simultaneously on everyday spending. Card linking and optimization algorithms maximize travel perks and improve user LTV.",
+      "url": "https://heymax.ai"
+    },
+    {
+      "name": "Hydroleap",
+      "slug": "hydroleap",
+      "description": "Electrochemical wastewater treatment platform that reduces chemical usage. Automation and energy efficiency lower OPEX and improve ESG outcomes for factories and data centers.",
+      "url": "https://www.hydroleap.com/"
+    },
+    {
+      "name": "Klleon",
+      "slug": "klleon",
+      "description": "Klleon turns screens into multilingual, conversational concierges via an on-device digital-human SDK—real-time, privacy-safe dialogue, OEM-integrated(Samsung/LG and so on), and built to scale.",
+      "url": "https://www.klleon.io/about"
+    },
+    {
+      "name": "Midwest Composites",
+      "slug": "midwest-composites",
+      "description": "Company developing and manufacturing advanced composites, supplying lightweight, high-strength materials for aerospace and automotive to boost performance and energy efficiency — while championing sustainability with renewable, plant-based sources.",
+      "url": "https://midwestcomposites.com.my/"
+    },
+    {
+      "name": "Mighty Jaxx",
+      "slug": "mighty-jaxx",
+      "description": "The Mighty Jaxx Group is a global network of brands and creators dedicated to bringing the future of pop culture into homes across the world. Mighty Jaxx partners with the world’s most iconic entertainment companies to craft experiences and cross-platform storytelling that resonate across both physical and digital worlds.",
+      "url": "https://mightyjaxx.com"
+    },
+    {
+      "name": "NewID",
+      "slug": "newid",
+      "description": "Runs FAST/AVOD platforms focused on Korean content, with strong global traction across TV, mobility, and ads. Profitable in 2025 (~$7M rev), planning Series B. Backed by NEW, leveraging AI monetization.",
+      "url": "http://www.its-newid.com"
+    },
+    {
+      "name": "Quantified Energy",
+      "slug": "quantified-energy",
+      "description": "Quantified Energy is a solar deep-tech company from Singapore leveraging the patented autonomous drone electroluminescence (EL) mapping technology and AI-driven data analytics to inspect and assess the health of solar PV power plants, facilitating optimized operations and proactive maintenance.",
+      "url": "https://quantified-energy.com/"
+    },
+    {
+      "name": "Rekosistem",
+      "slug": "rekosistem",
+      "description": "Waste and circularity data platform. Tracks collection, sorting and recycling to provide traceability, enabling enterprises and cities to cut emissions and manage circular economy KPIs.",
+      "url": "https://rekosistem.com/"
+    },
+    {
+      "name": "Seedflex",
+      "slug": "seedflex",
+      "description": "Provides flexible revolving working‑capital lines for SMEs. Data‑driven underwriting on sales and cash‑flow signals enables rapid access to funds and smoother cash management.",
+      "url": "https://www.seedflex.com/"
+    },
+    {
+      "name": "SoBanHang",
+      "slug": "sobanhang",
+      "description": "Vietnam‑focused MSME retail app combining POS, inventory, and online sales. Digitizes cash‑based trade by streamlining ordering, payments and procurement in a single app.",
+      "url": "https://sobanhang.com"
+    },
+    {
+      "name": "Speedoc",
+      "slug": "speedoc",
+      "description": "Virtual clinic and home‑care platform offering telemedicine, house‑call doctors and nurses, medication delivery, and virtual wards, enabling comprehensive at‑home acute and chronic care.",
+      "url": "https://sg.speedoc.com/"
+    },
+    {
+      "name": "Ternakin",
+      "slug": "ternakin",
+      "description": "Aquaculture company building a scalable aquaculture ecosystem through co-ownership farms, value-added fish processing, and a transparent supply chain for sustainable food systems.",
+      "url": "https://ternakin.co/en/"
+    },
+    {
+      "name": "Viact",
+      "slug": "viact",
+      "description": "AI powered safety monitoring for high-risk industries, detecting PPE gaps, fall and ergonomic risks with real-time alerts and reports to prevent incidents.",
+      "url": "https://www.viact.ai/"
+    }
+  ]
   
-  export default TOP_STARTUPS;
+  export { TOP_STARTUPS, TOP_STARTUPS_20 };

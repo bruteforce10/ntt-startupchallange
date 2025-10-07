@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import InitialPage from "@/components/pages/initial-page";
-import TOP_STARTUPS from "@/constant/top-startup";
+import { TOP_STARTUPS } from "@/constant/top-startup";
 
 export default function Top50StartupsPage() {
   return (
