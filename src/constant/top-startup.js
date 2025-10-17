@@ -333,10 +333,10 @@ const TOP_STARTUPS = [
       "url": "www.betterdata.ai"
     },
     {
-      "name": "bootloader",
-      "slug": "bootloader",
-      "description": "Open‑source lightweight bootloader supporting multiple architectures, reducing bring‑up time for embedded development with robustness and a small footprint.",
-      "url": "https://bootloader.studio/"
+        "name": "QuikBot Technologies",
+        "slug": "quikbot-technologies",
+        "description": "Builds autonomous delivery robots and an AFMD (Autonomous Final-Mile Delivery) PaaS, enabling floor-to-floor deliveries in commercial sites while cutting delivery times and emissions.",
+        "url": "https://www.quikbot.ai"
     },
     {
       "name": "Funding Societies",
