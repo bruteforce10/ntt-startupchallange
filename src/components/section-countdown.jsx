@@ -3,6 +3,8 @@ import Countdown from "react-countdown";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ListSection } from "./modules/list-section";
+import { TOP_STARTUPS_10 } from "@/constant/top-startup";
 
 export function CountdownSection({ newEvent, title }) {
   const [isClient, setIsClient] = useState(false);
@@ -54,15 +56,35 @@ export function CountdownSection({ newEvent, title }) {
           )}
         </div>
 
-        <Link href="/top-20-startup-of-ntt-challange" className="block w-full ">
-          <Image src="/cover-startup-20.webp" alt="Top 20 Startup of NTT Startup Challenge 2025" width={1000} height={1000} className="mx-auto" />
+        <ListSection
+          title={"Top 10 Finalists of NTT Startup Challenge 2025"}
+          items={TOP_STARTUPS_10}
+          pathImg={"top-50-startup"}
+          formatImg={".png"}
+        />
+
+        <Link
+          href="/top-20-startup-of-ntt-challange"
+          className="block mt-32 w-full "
+        >
+          <Image
+            src="/cover-startup-20.webp"
+            alt="Top 20 Startup of NTT Startup Challenge 2025"
+            width={1000}
+            height={1000}
+            className="mx-auto"
+          />
         </Link>
 
         <Link href="/top-50-startup-of-ntt-challange" className="block w-full ">
-          <Image src="/cover-startup-50.webp" alt="Top 50 Startup of NTT Startup Challenge 2025" width={1000} height={1000} className="mx-auto" />
+          <Image
+            src="/cover-startup-50.webp"
+            alt="Top 50 Startup of NTT Startup Challenge 2025"
+            width={1000}
+            height={1000}
+            className="mx-auto"
+          />
         </Link>
-       
-       
       </div>
     </section>
   );

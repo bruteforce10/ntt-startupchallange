@@ -155,6 +155,16 @@ export const MAIN_PARTNER_CONTENT = [
     name: "Partner 11",
     url: "https://www.vertexventures.sg/",
   },
+  {
+    id: 18,
+    name: "Partner 11",
+    url: "https://rebrightpartners.com/",
+  },
+  {
+    id: 19,
+    name: "Partner 11",
+    url: "https://aiesec.or.id/",
+  },
 ];
 
 export const COMUNITY_PARTNER_CONTENT = [

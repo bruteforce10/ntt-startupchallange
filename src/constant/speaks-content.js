@@ -19,16 +19,25 @@ export const SPEAK_CONTENT = [
 
 export const SPEAKERS_CONTENT = [
   {
-    id: 1,
-    name: "Kuan Hsu",
-    organization: "KK Fund",
-    bio: "Kuan Hsu is the General Partner of KK Fund, an early-stage venture capital firm backing visionary entrepreneurs to address Southeast Asia's most pressing challenges through innovation and leadership.",
-  },
-  {
     id: 2,
     name: "Akie Iriyama",
     organization: "Waseda University",
     bio: "Akie Iriyama is a professor at Waseda Business School. His research in strategic management, international business, and entrepreneurship has been published in prestigious journals. Previously, he worked as an industrial economist and consultant at Mitsubishi Research Institute Inc. in Japan.",
+  },
+  {
+    id: 8,
+    name: "Ken Katsuyama",
+    organization: "NTT Holdings",
+    bio: "Ken Katsuyama is the Senior Vice President, Head of Global Business at Nippon Telegraph and Telephone Corporation (NTT). His current responsibility is the global business of the whole NTT group. In addition, he is a member of the board of directors of NTT DATA, Inc., a major operating company of NTT group covering outside of Japan.",
+  },
+];
+
+export const JUDGES_CONTENT = [
+  {
+    id: 1,
+    name: "Kuan Hsu",
+    organization: "KK Fund",
+    bio: "Kuan Hsu is the General Partner of KK Fund, an early-stage venture capital firm backing visionary entrepreneurs to address Southeast Asia's most pressing challenges through innovation and leadership.",
   },
   {
     id: 3,
@@ -59,12 +68,6 @@ export const SPEAKERS_CONTENT = [
     name: "Yuma Kotake",
     organization: "NTT DOCOMO Ventures",
     bio: "Yuma Kotake is the director of NTT Docomo Ventures, a corporate venture capital of NTT Group, and responsible for investment in Southeast Asia. He also has more than 10 years of experience as in-house lawyer dealing with cross-border M&A and alliance.",
-  },
-  {
-    id: 8,
-    name: "Ken Katsuyama",
-    organization: "NTT Holdings",
-    bio: "Ken Katsuyama is the Senior Vice President, Head of Global Business at Nippon Telegraph and Telephone Corporation (NTT). His current responsibility is the global business of the whole NTT group. In addition, he is a member of the board of directors of NTT DATA, Inc., a major operating company of NTT group covering outside of Japan.",
   },
   {
     id: 9,

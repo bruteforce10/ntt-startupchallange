@@ -1,30 +1,28 @@
 import Image from "next/image";
 import HeadingText from "./heading-text";
-import { SPEAKERS_CONTENT } from "@/constant/speaks-content";
+import { JUDGES_CONTENT, SPEAKERS_CONTENT } from "@/constant/speaks-content";
 
-export function SpeakersSection({ comingSoon = false }) {
+export function SpeakersSection() {
   return (
     <section className=" text-white pt-16 md:pt-28">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 space-y-24">
         {/* Section heading */}
-        <HeadingText text={"Speakers, Judges & VIPs"} />
-
-        {comingSoon ? (
-          <Image
-            src={"/coming-soon.png"}
-            width={500}
-            height={500}
-            className="w-full h-auto"
-            alt="coming-soon"
-            quality={100}
-          />
-        ) : (
+        <div>
+          <HeadingText text={"Speakers"} />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
             {SPEAKERS_CONTENT.map((speaker) => (
               <SpeakerCard key={speaker.id} speaker={speaker} />
             ))}
           </div>
-        )}
+        </div>
+        <div>
+          <HeadingText text={"Judges"} />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
+            {JUDGES_CONTENT.map((speaker) => (
+              <SpeakerCard key={speaker.id} speaker={speaker} />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

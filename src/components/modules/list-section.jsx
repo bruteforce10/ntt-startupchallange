@@ -3,7 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import HeadingText from "../heading-text";
 
-export function ListSection({ title, items, pathImg, id }) {
+export function ListSection({
+  title,
+  items,
+  pathImg,
+  id,
+  formatImg = ".webp",
+}) {
   return (
     <section id={id} className="pt-16 md:pt-28">
       <div className="container mx-auto px-4">
@@ -15,13 +21,13 @@ export function ListSection({ title, items, pathImg, id }) {
             render={(item) => (
               <Link
                 key={item.id}
-                href={item.url}
+                href={item.url || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center group transition-transform duration-300 hover:scale-110"
               >
                 <Image
-                  src={`/${pathImg}/${item.id}.webp`}
+                  src={`/${pathImg}/${item.id}${formatImg}`}
                   width={150}
                   height={150}
                   alt={`${item.name} logo`}
