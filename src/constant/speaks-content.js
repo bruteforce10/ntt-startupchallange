@@ -25,6 +25,13 @@ export const SPEAKERS_CONTENT = [
     bio: "Akie Iriyama is a professor at Waseda Business School. His research in strategic management, international business, and entrepreneurship has been published in prestigious journals. Previously, he worked as an industrial economist and consultant at Mitsubishi Research Institute Inc. in Japan.",
   },
   {
+    id: 10,
+    name: "Takashi Ebihara",
+    organization:
+      "Executive Vice President, Head of Technology Planning NTT, Inc.",
+    bio: "Takashi Ebihara is a startup-savvy technology executive at NTT Holdings, serving as Co-Chief Artificial Intelligence Officer, CIO, and Head of Technology Planning. He accelerates responsible AI adoption across businesses, translates long-horizon R&D—including the IOWN initiative—into usable platforms, and advances information strategy and cybersecurity. Previously, as CTO/CIO of NTT EAST, he led end-to-end modernization at Japan’s largest operator; as President & CEO of NTT e-Asia, he scaled digital solutions across Southeast Asia. Ebihara partners with founders building AI-native, network-centric products, offering enterprise distribution and deep domain expertise. He holds an MBA from the National University of Singapore and a B.S. in Applied Physics from Tokyo University of Science.",
+  },
+  {
     id: 8,
     name: "Ken Katsuyama",
     organization: "NTT Holdings",
@@ -38,6 +45,12 @@ export const JUDGES_CONTENT = [
     name: "Kuan Hsu",
     organization: "KK Fund",
     bio: "Kuan Hsu is the General Partner of KK Fund, an early-stage venture capital firm backing visionary entrepreneurs to address Southeast Asia's most pressing challenges through innovation and leadership.",
+  },
+  {
+    id: 2,
+    name: "Akie Iriyama",
+    organization: "Waseda University",
+    bio: "Akie Iriyama is a professor at Waseda Business School. His research in strategic management, international business, and entrepreneurship has been published in prestigious journals. Previously, he worked as an industrial economist and consultant at Mitsubishi Research Institute Inc. in Japan.",
   },
   {
     id: 3,
