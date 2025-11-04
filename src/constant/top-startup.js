@@ -352,14 +352,13 @@ const TOP_STARTUPS = [
 ];
 
 const TOP_STARTUPS_10 = [
-  // { id: "aktivolabs", url: "https://aktivolabs.com/" },
-  { id: "quikbot-technologies", url: "https://www.quikbot.ai" },
   { id: "alterno", url: "https://alterno.net/" },
   { id: "betterdata", url: "https://betterdata.ai/" },
   { id: "heymax", url: "https://heymax.ai" },
   { id: "hydroleap", url: "https://www.hydroleap.com/" },
   { id: "klleon", url: "https://www.klleon.io/about" },
   { id: "newid", url: "http://www.its-newid.com" },
+  { id: "quikbot-technologies", url: "https://www.quikbot.ai" },
   { id: "rekosistem", url: "https://rekosistem.com/" },
   { id: "sobanhang", url: "https://sobanhang.com" },
   { id: "ternakin", url: "https://ternakin.co/en/" },
