@@ -1,5 +1,17 @@
 export const GROUP_NTT_CONTENT = [
   {
+    url: "https://group.ntt/en/",
+    img: "ntt-group",
+    width: 220,
+    height: 250,
+  },
+  {
+    url: "https://www.ntt-tx.com/",
+    img: "ntt-tx",
+    width: 220,
+    height: 250,
+  },
+  {
     url: "https://www.nttdocomo-v.com/en/",
     img: "docomo",
     width: 220,
@@ -51,7 +63,7 @@ export const GROUP_NTT_CONTENT = [
     url: "https://www.ntt-precisionmedicine.co.jp",
     img: "ntt-precision-media",
     width: 440,
-    height: 250,
+    height: 200,
   },
   {
     url: "https://www.niandc.co.jp/english",

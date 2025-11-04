@@ -37,12 +37,15 @@ export function EventSchedule() {
         <div className="hidden md:block rounded-lg overflow-hidden">
           <Table>
             <TableHeader>
-              <TableRow className="bg-blue-600 text-xl">
+              <TableRow className="bg-[#1e4a7a] text-xl">
                 <TableHead className="w-[150px] px-6 py-3 text-white font-semibold">
                   Time
                 </TableHead>
                 <TableHead className="text-white py-3 font-semibold">
-                  Content
+                  Topic
+                </TableHead>
+                <TableHead className="text-white py-3 font-semibold">
+                  Presenter
                 </TableHead>
               </TableRow>
             </TableHeader>
@@ -52,20 +55,17 @@ export function EventSchedule() {
                   key={index}
                   className={cn(
                     "border-b border-[#1a2942] text-lg",
-                    item.isBreak ? "bg-[#0A1428]" : "bg-[#0d1b30]"
+                    item.isBreak ? "bg-[#2ea8d4]" : "bg-[#0d1b30]"
                   )}
                 >
                   <TableCell className="font-medium text-white px-6 py-3">
                     {item.time}
                   </TableCell>
-                  <TableCell
-                    className={
-                      item.isHighlighted
-                        ? "text-blue-400 py-3 font-bold pr-6"
-                        : "text-white py-3 pr-6"
-                    }
-                  >
+                  <TableCell className="text-white py-3 pr-6">
                     {item.content}
+                  </TableCell>
+                  <TableCell className="text-white py-3 pr-6">
+                    {item.presenter || ""}
                   </TableCell>
                 </TableRow>
               ))}
@@ -80,7 +80,7 @@ export function EventSchedule() {
               key={index}
               className={cn(
                 "rounded-lg overflow-hidden",
-                item.isBreak ? "bg-[#0A1428]" : "bg-[#0d1b30]"
+                item.isBreak ? "bg-[#2ea8d4]" : "bg-[#0d1b30]"
               )}
             >
               <div
@@ -89,13 +89,12 @@ export function EventSchedule() {
               >
                 <div className="flex flex-col">
                   <span className="font-medium text-white">{item.time}</span>
-                  <span
-                    className={
-                      item.isHighlighted ? "text-blue-400" : "text-white"
-                    }
-                  >
-                    {item.content}
-                  </span>
+                  <span className="text-white">{item.content}</span>
+                  {item.presenter && (
+                    <span className="text-sm text-gray-300 mt-1">
+                      {item.presenter}
+                    </span>
+                  )}
                 </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,12 +113,6 @@ export function EventSchedule() {
                   <path d="m6 9 6 6 6-6" />
                 </svg>
               </div>
-              {expandedRows.includes(index) && item.presenter && (
-                <div className="px-4 pb-4 pt-0">
-                  <div className="text-sm text-gray-400 mb-1">Presenter</div>
-                  <div className="text-white">{item.presenter}</div>
-                </div>
-              )}
             </div>
           ))}
         </div>
