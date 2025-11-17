@@ -81,14 +81,24 @@ export const MAIN_PARTNER_CONTENT = [
     url: "https://kkfund.co",
   },
   {
+    id: 18,
+    name: "Partner 11",
+    url: "https://rebrightpartners.com/",
+  },
+  {
+    id: 17,
+    name: "Partner 11",
+    url: "https://www.vertexventures.sg/",
+  },
+  {
+    id: 7,
+    name: "Partner 6",
+    url: "https://exeo-global.com",
+  },
+  {
     id: 3,
     name: "Partner 3",
     url: "https://mekari.com",
-  },
-  {
-    id: 4,
-    name: "Partner 11",
-    url: "https://workspacedojo.com/",
   },
   {
     id: 5,
@@ -96,14 +106,14 @@ export const MAIN_PARTNER_CONTENT = [
     url: "https://cradle.com.my",
   },
   {
+    id: 4,
+    name: "Partner 11",
+    url: "https://workspacedojo.com/",
+  },
+  {
     id: 6,
     name: "Partner 5",
     url: "https://trihillcapital.com",
-  },
-  {
-    id: 7,
-    name: "Partner 6",
-    url: "https://exeo-global.com",
   },
   {
     id: 8,
@@ -149,16 +159,6 @@ export const MAIN_PARTNER_CONTENT = [
     id: 16,
     name: "Partner 11",
     url: "https://www.antler.co/",
-  },
-  {
-    id: 17,
-    name: "Partner 11",
-    url: "https://www.vertexventures.sg/",
-  },
-  {
-    id: 18,
-    name: "Partner 11",
-    url: "https://rebrightpartners.com/",
   },
   {
     id: 19,
