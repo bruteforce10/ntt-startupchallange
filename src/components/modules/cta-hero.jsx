@@ -13,7 +13,7 @@ import {
 const CtaHero = () => {
   return (
     <div className="flex gap-4">
-      <Button className="bg-blue-ntt border-none rounded-md text-white px-6 py-5 cursor-pointer hover:bg-blue-ntt/80">
+      {/* <Button className="bg-blue-ntt border-none rounded-md text-white px-6 py-5 cursor-pointer hover:bg-blue-ntt/80">
         <Link
           href={"https://www.eventbrite.com/e/1323350509999?aff=oddtdtcreator"}
           className="block"
@@ -21,7 +21,7 @@ const CtaHero = () => {
         >
           Attend Final Day
         </Link>
-      </Button>
+      </Button> */}
       {/* <DropdownMenu>
         <DropdownMenuTrigger className="bg-blue-ntt border-none rounded-md text-white px-6 py-2 cursor-pointer hover:bg-blue-ntt/80">
           Register
