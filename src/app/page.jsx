@@ -28,10 +28,10 @@ export default function Home() {
         <ContentHero2025 />
         <CtaHero />
       </Hero>
-      <CountdownSection
+      {/* <CountdownSection
         newEvent={"2025-11-11T12:00:00+07:00"}
         title={"Final Day of NTT Startup Challenge 2025 is coming on 11 November"}
-      />
+      /> */}
       <HistorySectionNew />
       <FeedbackSection />
       <NominateSectionSection />
