@@ -33,9 +33,9 @@ const NominateSectionSection = () => {
             )}
           />
         </div>
-        {/* <div className="text-right mt-8 text-lg text-gray-500">
-          Prizes listed are in USD (U.S. Dollars)
-        </div> */}
+        <div className="text-right mt-8 text-lg text-gray-500">
+          The winners of the NTT Startup Challenge 2025
+        </div>
       </div>
     </section>
   );

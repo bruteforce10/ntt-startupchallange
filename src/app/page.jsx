@@ -28,6 +28,7 @@ export default function Home() {
         <ContentHero2025 />
         <CtaHero />
       </Hero>
+      <NominateSectionSection />
       <CountdownSection
         newEvent={"2025-11-11T12:00:00+07:00"}
         title={
@@ -36,7 +37,6 @@ export default function Home() {
       />
       <HistorySectionNew />
       <FeedbackSection />
-      <NominateSectionSection />
       <SpeakersSection />
       <SpeaksSection />
       <ListSection
