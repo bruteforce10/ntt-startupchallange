@@ -23,7 +23,7 @@ const NominateSectionSection = () => {
               //   />
               //   <p className="text-center text-2xl font-medium">{item.name}</p>
               // </div>
-              <Link href={item.url} key={item.id} target="_blank">
+              <Link href={item.link} key={item.id} target="_blank">
                 <Image
                   src={item.img}
                   alt={item.name + " " + "NTT-Challange-Startup"}
