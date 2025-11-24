@@ -55,16 +55,19 @@ export const NOMINATE_CONTENT = [
   {
     id: 1,
     img: "/nominate-award/rank-1.webp",
+    link: "https://heymax.ai",
     name: "$ 10,000",
   },
   {
     id: 2,
     img: "/nominate-award/rank-2.webp",
+    link: "https://www.klleon.io/about",
     name: "$ 5,000",
   },
   {
     id: 3,
     img: "/nominate-award/rank-3.webp",
+    link: "https://www.hydroleap.com/",
     name: "$ 3,000",
   },
 ];
