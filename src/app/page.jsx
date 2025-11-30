@@ -6,6 +6,7 @@ import { NewsSection } from "@/components/news-section";
 import InitialPage from "@/components/pages/initial-page";
 import { SpeakersSection } from "@/components/section-awards";
 import { CountdownSection } from "@/components/section-countdown";
+import SectionCoverLink from "@/components/section-cover-link";
 import { FeedbackSection } from "@/components/section-feedback";
 import { HistorySectionNew } from "@/components/section-history-new";
 import NominateSectionSection from "@/components/section-nominate-award";
@@ -50,6 +51,11 @@ export default function Home() {
         pathImg={"community-partner"}
       />
       <NewsSection />
+      <SectionCoverLink
+        title={"NTT Startup Challenge 2025 Gallery"}
+        image={"/cover-gallery.webp"}
+        link={"/gallery"}
+      />
     </InitialPage>
   );
 }
