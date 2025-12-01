@@ -33,7 +33,7 @@ export const getGalleryImages = async ({
   folder = process.env.CLOUDINARY_GALLERY_FOLDER,
   maxResults = DEFAULT_MAX_RESULTS,
 } = {}) => {
-  const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
+  const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
   const apiKey = process.env.CLOUDINARY_API_KEY;
   const apiSecret = process.env.CLOUDINARY_API_SECRET;
 
