@@ -4,7 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadingText from "./heading-text";
 
-const SectionCoverLink = ({ title, image, link }) => {
+const SectionCoverLink = ({
+  title,
+  image = "/cover-gallery-fix.webp",
+  link,
+}) => {
   return (
     <section className="pt-16 md:pt-28 px-4 container mx-auto">
       <HeadingText text={title} className="text-center" />

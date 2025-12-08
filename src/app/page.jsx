@@ -53,7 +53,7 @@ export default function Home() {
       <NewsSection />
       <SectionCoverLink
         title={"NTT Startup Challenge 2025 Gallery"}
-        image={"/cover-gallery.webp"}
+        image={"/cover-gallery-fix.webp"}
         link={"/gallery"}
       />
     </InitialPage>
