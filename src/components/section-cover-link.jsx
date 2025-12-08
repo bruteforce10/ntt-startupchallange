@@ -8,14 +8,17 @@ const SectionCoverLink = ({ title, image, link }) => {
   return (
     <section className="pt-16 md:pt-28 px-4 container mx-auto">
       <HeadingText text={title} className="text-center" />
-      <Link href={link}>
-        <Image
-          src={image}
-          alt={title}
-          width={280}
-          className="sm:max-w-[2000px] min-w-[1000px] h-auto mx-auto rounded-lg"
-          height={280}
-        />
+      <Link href={link} className="block w-full">
+        <div className="relative w-full max-w-7xl mx-auto rounded-lg overflow-hidden">
+          <Image
+            src={image}
+            alt={title}
+            width={1200}
+            height={600}
+            className="w-full h-auto object-contain rounded-lg"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
+          />
+        </div>
       </Link>
     </section>
   );

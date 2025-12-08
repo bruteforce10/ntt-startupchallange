@@ -10,7 +10,7 @@ const NominateSectionSection = () => {
     <section className="pt-16 md:pt-28 px-4">
       <HeadingText text={"The Winners of NTT Challenge 2025"} />
       <div className="bg-linear-to-bl  from-blue-ntt-900 to-blue-ntt-700 rounded-lg p-8 md:p-12 max-w-5xl mx-auto">
-        <div className="flex max-sm:flex-col max-sm:gap-16 max-sm:items-center  sm:justify-around">
+        <div className="flex max-md:flex-col max-md:gap-16 max-md:items-center max-lg:gap-24 max-lg:flex-wrap md:flex-row md:justify-around">
           <EachUtils
             of={NOMINATE_CONTENT}
             render={(item) => (
