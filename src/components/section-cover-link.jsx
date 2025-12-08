@@ -21,6 +21,8 @@ const SectionCoverLink = ({
             height={600}
             className="w-full h-auto object-contain rounded-lg"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
+            priority
+            unoptimized={image.startsWith("/")}
           />
         </div>
       </Link>
