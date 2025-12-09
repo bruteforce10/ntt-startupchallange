@@ -141,13 +141,14 @@ export function Navbar() {
                     if (!item.opt) {
                       return (
                         <NavigationMenuItem key={item.title}>
-                          <Link href={item.url} legacyBehavior passHref>
-                            <NavigationMenuLink
+                          <NavigationMenuLink asChild>
+                            <Link
+                              href={item.url}
                               className={navigationMenuTriggerStyle()}
                             >
                               {item.title}
-                            </NavigationMenuLink>
-                          </Link>
+                            </Link>
+                          </NavigationMenuLink>
                         </NavigationMenuItem>
                       );
                     } else {
@@ -192,12 +193,13 @@ export function Navbar() {
 }
 
 const ListItem = React.forwardRef(
-  ({ className, title, children, ...props }, ref) => {
+  ({ className, title, children, href, ...props }, ref) => {
     return (
       <li>
         <NavigationMenuLink asChild>
-          <a
+          <Link
             ref={ref}
+            href={href}
             className={cn(
               "block select-none space-y-1 rounded-md p-3 leading-none no-underline hover:bg-primary hover:text-accent text-accent",
               className
@@ -210,7 +212,7 @@ const ListItem = React.forwardRef(
                 {children}
               </p>
             )}
-          </a>
+          </Link>
         </NavigationMenuLink>
       </li>
     );

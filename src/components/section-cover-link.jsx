@@ -13,7 +13,7 @@ const SectionCoverLink = ({
     <section className="pt-16 md:pt-28 px-4 container mx-auto">
       <HeadingText text={title} className="text-center" />
       <Link href={link} className="block w-full">
-        <div className="relative w-full max-w-7xl mx-auto rounded-lg overflow-hidden">
+        <div className="relative w-full mx-auto rounded-lg overflow-hidden">
           <Image
             src={image}
             alt={title}

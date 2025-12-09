@@ -30,6 +30,13 @@ export default function Home() {
         <CtaHero />
       </Hero>
       <NominateSectionSection />
+      <SectionCoverLink
+        title={
+          "Watch the NTT Startup Challange 2025 recap video on our YouTube channel"
+        }
+        image={"/cover-youtube.webp"}
+        link={"https://youtu.be/v5FNZHFIJco?si=krivUKOUb6SITX2p"}
+      />
       <CountdownSection
         newEvent={"2025-11-11T12:00:00+07:00"}
         title={
