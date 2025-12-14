@@ -1,31 +1,26 @@
 "use client";
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
 import HeadingText from "./heading-text";
 
 const SectionCoverLink = ({
   title,
-  image = "/cover-gallery-fix.webp",
-  link,
+  videoUrl = "https://www.youtube.com/embed/v5FNZHFIJco?si=zS5TIODbSvQFR7Sn",
 }) => {
   return (
     <section className="pt-16 md:pt-28 px-4 container mx-auto">
       <HeadingText text={title} className="text-center" />
-      <Link href={link} className="block w-full">
-        <div className="relative w-full mx-auto rounded-lg overflow-hidden">
-          <Image
-            src={image}
-            alt={title}
-            width={1200}
-            height={600}
-            className="w-full h-auto object-contain rounded-lg"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
-            priority
-            unoptimized={image.startsWith("/")}
+      <div className="w-full mx-auto rounded-lg overflow-hidden">
+        <div className="relative w-full aspect-video">
+          <iframe
+            src={videoUrl}
+            title={title || "NTT Startup Challenge 2025 Recap Video"}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute top-0 left-0 w-full h-full rounded-lg"
           />
         </div>
-      </Link>
+      </div>
     </section>
   );
 };
