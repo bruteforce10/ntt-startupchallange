@@ -35,6 +35,8 @@ import CtaHero from "./modules/cta-hero";
 
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
+  const [activePositionSideLeft, setActivePositionSideLeft] =
+    React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -133,7 +135,10 @@ export function Navbar() {
         <div className="hidden lg:flex lg:gap-4">
           {/* Desktop Navigation */}
           <div className="flex items-center justify-center flex-1">
-            <NavigationMenu className="justify-center">
+            <NavigationMenu
+              className="justify-center"
+              positionSideLeft={activePositionSideLeft}
+            >
               <NavigationMenuList>
                 <EachUtils
                   of={LIST_NAVBAR}
@@ -153,11 +158,22 @@ export function Navbar() {
                       );
                     } else {
                       return (
-                        <NavigationMenuItem key={item.title}>
+                        <NavigationMenuItem
+                          key={item.title}
+                          onMouseEnter={() =>
+                            item.positionSideLeft &&
+                            setActivePositionSideLeft(true)
+                          }
+                          onMouseLeave={() => {
+                            setTimeout(() => {
+                              setActivePositionSideLeft(false);
+                            }, 3000);
+                          }}
+                        >
                           <NavigationMenuTrigger>
                             {item.title}
                           </NavigationMenuTrigger>
-                          <NavigationMenuContent className="origin-top-left left-0">
+                          <NavigationMenuContent>
                             <ul className="grid w-[200px] gap-3 p-4">
                               <EachUtils
                                 of={item.opt}

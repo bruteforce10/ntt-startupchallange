@@ -5,7 +5,13 @@ import { ChevronDownIcon } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
-function NavigationMenu({ className, children, viewport = true, ...props }) {
+function NavigationMenu({
+  className,
+  children,
+  viewport = true,
+  positionSideLeft,
+  ...props
+}) {
   return (
     <NavigationMenuPrimitive.Root
       data-slot="navigation-menu"
@@ -17,7 +23,9 @@ function NavigationMenu({ className, children, viewport = true, ...props }) {
       {...props}
     >
       {children}
-      {viewport && <NavigationMenuViewport />}
+      {viewport && (
+        <NavigationMenuViewport positionSideLeft={positionSideLeft} />
+      )}
     </NavigationMenuPrimitive.Root>
   );
 }
@@ -79,17 +87,18 @@ function NavigationMenuContent({ className, ...props }) {
   );
 }
 
-function NavigationMenuViewport({ className, ...props }) {
+function NavigationMenuViewport({ className, positionSideLeft, ...props }) {
   return (
     <div
       className={cn(
-        "absolute top-full left-0 isolate z-50 flex justify-center"
+        "absolute top-full left-0 isolate z-50 flex justify-center",
+        positionSideLeft && "left-[350px]"
       )}
     >
       <NavigationMenuPrimitive.Viewport
         data-slot="navigation-menu-viewport"
         className={cn(
-          "origin-top-center bg-accent-foreground text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 ml-32 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border shadow md:w-[var(--radix-navigation-menu-viewport-width)]",
+          "origin-top-center bg-accent-foreground text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 ml-40 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border shadow md:w-[var(--radix-navigation-menu-viewport-width)]",
           className
         )}
         {...props}
