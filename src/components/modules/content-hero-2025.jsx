@@ -4,7 +4,7 @@ import { FlipWords } from "../ui/flip-words";
 export function ContentHero2025() {
   const words = [
     "Build Connections That Matter",
-    "Your Next Leap Starts at NTT Startup Challenge 2025",
+    "Your Next Leap Starts at NTT Startup Challenge",
   ];
 
   return (
