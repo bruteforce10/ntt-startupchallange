@@ -1,9 +1,9 @@
 const DEFAULT_MAX_RESULTS = Number(
-  process.env.CLOUDINARY_GALLERY_MAX_RESULTS ?? 30
+  process.env.CLOUDINARY_GALLERY_MAX_RESULTS ?? 150,
 );
 
 const DEFAULT_REVALIDATE_SECONDS = Number(
-  process.env.CLOUDINARY_REVALIDATE_SECONDS ?? 300
+  process.env.CLOUDINARY_REVALIDATE_SECONDS ?? 300,
 );
 
 const sanitizeFolder = (folder) => folder?.replaceAll('"', "").trim();
@@ -39,7 +39,7 @@ export const getGalleryImages = async ({
 
   if (!cloudName || !apiKey || !apiSecret) {
     throw new Error(
-      "Cloudinary credentials are missing. Please set NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, and CLOUDINARY_API_SECRET."
+      "Cloudinary credentials are missing. Please set NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, and CLOUDINARY_API_SECRET.",
     );
   }
 
@@ -62,13 +62,13 @@ export const getGalleryImages = async ({
       method: "POST",
       headers: {
         Authorization: `Basic ${Buffer.from(`${apiKey}:${apiSecret}`).toString(
-          "base64"
+          "base64",
         )}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify(searchPayload),
       next: { revalidate: DEFAULT_REVALIDATE_SECONDS },
-    }
+    },
   );
 
   const payload = await response.json();
@@ -76,7 +76,7 @@ export const getGalleryImages = async ({
   if (!response.ok) {
     throw new Error(
       payload.error?.message ??
-        "Unable to load gallery assets from Cloudinary at the moment."
+        "Unable to load gallery assets from Cloudinary at the moment.",
     );
   }
 

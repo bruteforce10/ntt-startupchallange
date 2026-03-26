@@ -1,3 +1,4 @@
+import HeadingText from "@/components/heading-text";
 import Hero from "@/components/hero";
 import { ContentHero2025 } from "@/components/modules/content-hero-2025";
 import CtaHero from "@/components/modules/cta-hero";
@@ -15,6 +16,8 @@ import {
   COMUNITY_PARTNER_CONTENT,
   MAIN_PARTNER_CONTENT,
 } from "@/constant/finalist-content";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -58,11 +61,21 @@ export default function Home() {
         pathImg={"community-partner"}
       />
       <NewsSection />
-      <SectionCoverLink
-        title={"NTT Startup Challenge 2025 Gallery"}
-        image={"/cover-gallery-fix.webp"}
-        link={"/gallery"}
-      />
+      <section className="pt-16 md:pt-28 px-4 container mx-auto">
+        <HeadingText
+          text={"NTT Startup Challenge 2025 Gallery"}
+          className="text-center"
+        />
+        <Link href="/gallery" className="block w-full ">
+          <Image
+            src="/cover-gallery-fix.webp"
+            alt="NTT Startup Challenge 2025 Gallery"
+            width={1000}
+            height={1000}
+            className="mx-auto"
+          />
+        </Link>
+      </section>
     </InitialPage>
   );
 }
