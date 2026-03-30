@@ -35,7 +35,7 @@ export default function Home() {
       <NominateSectionSection />
       <SectionCoverLink
         title={
-          "Watch the NTT Startup Challange 2025 recap video on our YouTube channel"
+          "Watch The NTT Startup Challenge 2025 Recap Video on Our YouTube Channel"
         }
         image={"/cover-youtube.webp"}
         link={"https://youtu.be/v5FNZHFIJco?si=krivUKOUb6SITX2p"}
