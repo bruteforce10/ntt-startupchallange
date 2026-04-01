@@ -47,6 +47,7 @@ html {
 
 @theme {
   --color-blue-ntt: #256fb8;
+  --color-blue-ntt-200: #A2C9FF;
   --color-blue-ntt-400: #003087;
   --color-blue-ntt-700: #082947;
   ---color-blue-ntt-800: #050e28;
@@ -126,6 +127,7 @@ html {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

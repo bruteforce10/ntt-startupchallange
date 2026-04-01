@@ -8,18 +8,23 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import HeadingText from "./heading-text";
+import { SectionHeading2026 } from "./nsc-2026/section-heading";
 import EachUtils from "@/utils/eachUtils";
 import { SPEAK_CONTENT } from "@/constant/speaks-content";
 import Autoplay from "embla-carousel-autoplay";
 
-const SpeaksSection = () => {
+const SpeaksSection = ({ is2026 = false }) => {
   const plugin = React.useRef(
     Autoplay({ delay: 3000, stopOnInteraction: true })
   );
 
   return (
     <div className="md:pt-28 pt-16 ">
-      <HeadingText text={"Our Community Speaks"} />
+      {is2026 ? (
+        <SectionHeading2026 title="Our Community Speaks" />
+      ) : (
+        <HeadingText text={"Our Community Speaks"} />
+      )}
       <Carousel
         plugins={[plugin.current]}
         className="lg:max-w-6xl max-lg:max-w-2xl px-4 container mx-auto"
