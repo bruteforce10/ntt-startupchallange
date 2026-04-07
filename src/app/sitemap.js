@@ -24,5 +24,11 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.5,
     },
+    {
+      url: "https://www.ntt-startupchallenge.com/nsc-2025",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 }

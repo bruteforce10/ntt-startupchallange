@@ -7,7 +7,10 @@ import Link from "next/link";
 
 const NominateSectionSection = () => {
   return (
-    <section className="pt-16 md:pt-28 px-4 container mx-auto">
+    <section
+      id="winner"
+      className="pt-16 md:pt-28 px-4 container mx-auto scroll-mt-24"
+    >
       <HeadingText text={"The Winners of NTT Startup Challenge 2025"} />
       <div className="bg-linear-to-bl  from-blue-ntt-900 to-blue-ntt-700 rounded-lg p-8 md:p-12 w-full mx-auto">
         <div className="flex max-md:flex-col max-md:gap-16 max-md:items-center max-lg:gap-24 max-lg:flex-wrap md:flex-row md:justify-around">

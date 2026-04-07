@@ -1,81 +1,10 @@
-import HeadingText from "@/components/heading-text";
-import Hero from "@/components/hero";
-import { ContentHero2025 } from "@/components/modules/content-hero-2025";
-import CtaHero from "@/components/modules/cta-hero";
-import { ListSection } from "@/components/modules/list-section";
-import { NewsSection } from "@/components/news-section";
-import InitialPage from "@/components/pages/initial-page";
-import { SpeakersSection } from "@/components/section-awards";
-import { CountdownSection } from "@/components/section-countdown";
-import SectionCoverLink from "@/components/section-cover-link";
-import { FeedbackSection } from "@/components/section-feedback";
-import { HistorySectionNew } from "@/components/section-history-new";
-import NominateSectionSection from "@/components/section-nominate-award";
-import SpeaksSection from "@/components/section-speaks";
-import {
-  COMUNITY_PARTNER_CONTENT,
-  MAIN_PARTNER_CONTENT,
-} from "@/constant/finalist-content";
-import Image from "next/image";
-import Link from "next/link";
+import { Nsc2026PageContent } from "@/components/pages/nsc-2026-page";
 
-export default function Home() {
-  return (
-    <InitialPage>
-      <Hero
-        videoUrl={"/bg-video-2025.webm"}
-        classNameContainer={"sm:h-[calc(100vh-3.5rem)] max-sm:h-screen"}
-        className={
-          "flex-col flex items-center sm:h-[360px] max-sm:h-[255px]  mb-24 justify-between "
-        }
-      >
-        <ContentHero2025 />
-        <CtaHero />
-      </Hero>
-      <NominateSectionSection />
-      <SectionCoverLink
-        title={
-          "Watch The NTT Startup Challenge 2025 Recap Video on Our YouTube Channel"
-        }
-        image={"/cover-youtube.webp"}
-        link={"https://youtu.be/v5FNZHFIJco?si=krivUKOUb6SITX2p"}
-      />
-      <CountdownSection
-        newEvent={"2025-11-11T12:00:00+07:00"}
-        title={
-          "Final Day of NTT Startup Challenge 2025 is coming on 11 November"
-        }
-      />
-      <HistorySectionNew />
-      <FeedbackSection />
-      <SpeakersSection />
-      <SpeaksSection />
-      <ListSection
-        title={"Partners"}
-        items={MAIN_PARTNER_CONTENT}
-        pathImg={"main-partner"}
-      />
-      <ListSection
-        title={"Community Partners"}
-        items={COMUNITY_PARTNER_CONTENT}
-        pathImg={"community-partner"}
-      />
-      <NewsSection />
-      <section className="pt-16 md:pt-28 px-4 container mx-auto">
-        <HeadingText
-          text={"NTT Startup Challenge 2025 Gallery"}
-          className="text-center"
-        />
-        <Link href="/gallery" className="block w-full ">
-          <Image
-            src="/cover-gallery-fix.webp"
-            alt="NTT Startup Challenge 2025 Gallery"
-            width={1000}
-            height={1000}
-            className="mx-auto"
-          />
-        </Link>
-      </section>
-    </InitialPage>
-  );
+export const metadata = {
+  title: "NTT Startup Challenge 2026",
+  description: "Join the NTT Startup Challenge 2026 - Your next leap starts here.",
+};
+
+export default function HomePage() {
+  return <Nsc2026PageContent />;
 }

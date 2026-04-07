@@ -31,6 +31,7 @@ export const LIST_NAVBAR = [
   },
   { title: "Team", url: "/team" },
   { title: "NSC 2024", url: "/nsc-2024" },
+  { title: "NSC 2025", url: "/nsc-2025" },
   {
     title: "Infographics",
     url: "/infographics",
