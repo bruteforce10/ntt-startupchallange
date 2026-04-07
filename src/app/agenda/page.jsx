@@ -1,14 +1,10 @@
 import ContentHeroInfoPage from "@/components/modules/content-hero-info-page";
 import InitialPage from "@/components/pages/initial-page";
-import { EventPromotion } from "./_components/event-promotion";
-import { EventSchedule } from "./_components/event-schedule";
 import { ListSection } from "@/components/modules/list-section";
-import {
-  COMUNITY_PARTNER_CONTENT,
-  MAIN_PARTNER_CONTENT,
-} from "@/constant/finalist-content";
+import { PARTNER_CONTENT_2026 } from "@/constant/finalist-content";
 import { NttGroupCompanies } from "./_components/ntt-group-companies";
 import { FaqSection } from "./_components/faq-content";
+import { ComingSoonSection2026 } from "@/components/nsc-2026/coming-soon-section";
 
 export const metadata = {
   title: "Agenda",
@@ -27,17 +23,22 @@ export default function About() {
           </span>
         }
       />
-      <EventPromotion />
-      <EventSchedule />
+      <ComingSoonSection2026 />
+      {/* <EventPromotion />
+      <EventSchedule /> */}
       <ListSection
-        title={"Partners"}
-        items={MAIN_PARTNER_CONTENT}
-        pathImg={"main-partner"}
+        title={"Sponsors"}
+        subtitle={"PARTNERSHIP"}
+        items={[]}
+        is2026
+        emptyLabel={"COMING SOON"}
       />
       <ListSection
         title={"Community Partners"}
-        items={COMUNITY_PARTNER_CONTENT}
-        pathImg={"community-partner"}
+        subtitle={"ECOSYSTEM"}
+        items={PARTNER_CONTENT_2026}
+        pathImg={"community-partner/2026"}
+        is2026
       />
       <NttGroupCompanies />
       <FaqSection />

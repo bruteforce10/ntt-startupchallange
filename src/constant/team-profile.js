@@ -7,33 +7,39 @@ export const TEAM_PROFILE = [
   },
   {
     id: 2,
-    fullName: "Rudy Kosashi",
-    profile:
-      "Meet Rudy Kosashi, an accomplished account manager professional with over ten years of experience in various industries, including B2B and B2C sales campaigns and event management. Rudy has proven his expertise in handling the campaign for SaaS, IT infrastructures, Banking, Oil & Gas, and Retail products and services. He has a proven track record of building solid partnerships, generating high quality leads, negotiating, and closing complex deal. Rudy has been involved in the NTT Startup Challenge since 2018.",
-  },
-  {
-    id: 3,
     fullName: "Alexander Prabu",
     profile:
       "Meet Alex, a highly skilled young professional specializing in telemarketing and outbound outreach. Alex has mastered connecting with leads and representing campaigns with finesse. His expertise in the field is guaranteed to help clients achieve their marketing goals and drive campaign performance growth.",
   },
   {
-    id: 4,
+    id: 3,
     fullName: "Fani Firdaus",
     profile:
       "Meet Fani - a talented Gen-Z designer who is taking the design world by storm with his eye-catching and innovative work. With a fresh perspective and a keen eye for detail, Fani is bringing a new color and vibrancy to the industry. Whether it's designing logos, websites, or marketing campaigns, Fani's work is sure to leave a lasting impression.",
   },
   {
-    id: 5,
+    id: 4,
     fullName: "Fitria Malida",
     profile:
       "Meet Fitria, a specialist in crafting engaging and impactful social media content strategies. Her expertise lies in leveraging data-driven insights, conducting in-depth analysis, and understanding target audiences to create campaigns that are both relevant and resonant. Fitria is also skilled in reading and interpreting content performance data, ensuring that every strategic decision is guided by accurate and actionable insights.",
   },
   {
-    id: 6,
-    fullName: "Maharani Kamal",
+    id: 5,
+    fullName: "Tjut Ulfa",
     profile:
-      "Meet Rani, a dynamic creative writer with a deep love for storytelling and a natural flair for words. Blending her passion for writing with data-driven strategies, Rani crafts engaging content that not only resonates with audiences but also aligns with business goals. With a keen eye for detail and a fresh Gen Z perspective, she brings vibrancy and originality to every piece whether it's a social media campaign, blog post, or brand narrative. Rani's strength lies in her ability to connect, inspire, and drive engagement through authentic, meaningful stories that leave a lasting impression.",
+      "Tjut Ulfah is an accomplished community and strategic partnership professional with over 6 years of experience across various industries, including creative platforms, government telecommunications, and startup incubators. Tjut has proven her expertise in driving business development, product strategy, and executing high-impact community activations with government stakeholders. She has a proven track record of building solid partnerships, leading team coordination, and sustaining long-term community engagement.",
+  },
+  {
+    id: 6,
+    fullName: "Alvia Ananda",
+    profile:
+      "Meet Alvia Ananda, a dedicated professional specializing in data mining and telemarketing. Alvia excels at gathering and analyzing valuable data to identify potential leads, while effectively engaging prospects through strategic outreach. Her combined expertise ensures efficient targeting and meaningful connections, helping clients optimize their campaigns and achieve stronger marketing results.",
+  },
+  {
+    id: 7,
+    fullName: "Deshinta Nilasari",
+    profile:
+      "Deshinta is a specialist in crafting engaging and impactful social media content strategies. Her expertise lies in leveraging data-driven insights, conducting in-depth analysis, and understanding target audiences to create campaigns that are both relevant and resonant. Deshinta is also skilled in reading and interpreting content performance data, ensuring that every strategic decision is guided by accurate and actionable insights.",
   },
 ];
 

@@ -21,7 +21,7 @@ const WhyAttendPage = () => {
         }
       />
       <IndustryCarousel />
-      <NominateSectionSection />
+      {/* <NominateSectionSection /> */}
       <StartupBenefitsSection />
       <WhyAttendSection />
     </InitialPage>

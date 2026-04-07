@@ -36,9 +36,11 @@ function TeamCard({ speaker, pathImg }) {
 
       <h3 className="text-2xl font-bold mt-2">{speaker.fullName}</h3>
 
-      <p className="text-gray-300 leading-relaxed max-w-lg mx-auto">
-        {speaker.profile}
-      </p>
+      {speaker.profile ? (
+        <p className="text-gray-300 leading-relaxed max-w-lg mx-auto">
+          {speaker.profile}
+        </p>
+      ) : null}
     </div>
   );
 }

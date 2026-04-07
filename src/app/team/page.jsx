@@ -25,7 +25,7 @@ const TeamPage = () => {
         quality={100}
       />
       <TeamSection
-        title={"ArtiqueTeam"}
+        title={"Artique Team"}
         pathImg={"artique"}
         data={TEAM_PROFILE}
       />
