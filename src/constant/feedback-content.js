@@ -15,3 +15,21 @@ export const FEEDBACK_CONTENT = [
     desc: "NSC is powered by a coalition of NTT group companies, providing a unique platform to access comprehensive resources, technologies, and partnerships. Exploit this collective strength to scale your startup across SEA and Japan, exploring new dimensions in Fintech, Agritech, AI and more.",
   },
 ];
+
+export const FEEDBACK_CONTENT_2026 = [
+    {
+    title: "Direct Access to Industry Leaders and Capital",
+    img: "1.avif",
+    desc: "Step into the NTTSC to engage face-to-face with a diverse array of industry leaders, potential partners, and fellow innovators. This platform gives you a rare chance to secure critical funding, gain valuable insights, and build partnerships that can accelerate your startup's growth and visibility in the industry.",
+  },
+  {
+    title: "Showcase Your Startup Among the Best",
+    img: "2.avif",
+    desc: "Compete and stand out among thousands of regional startups for a chance to be one of the finalists at NTTSC. Selected by NTT, these top startups gain spotlight exposure, attracting support and recognition that can catapult your business to the forefront of the  SEA, Taiwan, Hong Kong, South Korea, India and Australia. startup scene.",
+  },
+  {
+    title: "Leverage NTT’s Ecosystem for Growth",
+    img: "3.avif",
+    desc: "NTTSC is powered by a coalition of NTT group companies, providing a unique platform to access comprehensive resources, technologies, and partnerships. Exploit this collective strength to scale your startup across  SEA, Taiwan, Hong Kong, South Korea, India and Australia., exploring new dimensions in Fintech, Agritech, AI and more.",
+  },
+];

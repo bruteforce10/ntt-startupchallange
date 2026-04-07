@@ -1,4 +1,4 @@
-import { HISTORY_CONTENT, HISTORY_LIST } from "@/constant/history-content";
+import { HISTORY_CONTENT_2026, HISTORY_LIST } from "@/constant/history-content";
 import { Users, Rocket, Globe, Award } from "lucide-react";
 import React from "react";
 import HeadingText from "../heading-text";
@@ -26,7 +26,7 @@ export function HistorySection2026() {
             History of NTT <br /> Startup Challenge
           </h2>
           <div className="text-gray-400 space-y-4 text-base leading-relaxed">
-            {HISTORY_CONTENT.map((text, idx) => (
+            {HISTORY_CONTENT_2026.map((text, idx) => (
               <p key={idx}>{text}</p>
             ))}
           </div>

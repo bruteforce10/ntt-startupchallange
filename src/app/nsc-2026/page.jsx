@@ -19,7 +19,7 @@ export default function Nsc2026Page() {
   return (
     <InitialPage>
       <Hero
-        videoUrl={"/bg-video-2026.mp4"}
+        videoUrl={"/bg-video-2025.webm"}
         classNameContainer={"min-h-screen pb-8"}
         className={"flex-col flex items-center justify-between"}
       >

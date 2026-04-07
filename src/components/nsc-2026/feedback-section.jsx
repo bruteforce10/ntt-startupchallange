@@ -1,4 +1,4 @@
-import { FEEDBACK_CONTENT } from "@/constant/feedback-content";
+import { FEEDBACK_CONTENT_2026 } from "@/constant/feedback-content";
 import Image from "next/image";
 import React from "react";
 
@@ -8,7 +8,7 @@ export function FeedbackSection2026() {
 
   return (
     <section className="container mx-auto px-4 py-20 text-white space-y-32">
-      {FEEDBACK_CONTENT.map((item, idx) => {
+      {FEEDBACK_CONTENT_2026.map((item, idx) => {
         const isEven = idx % 2 !== 0;
 
         return (
