@@ -29,8 +29,8 @@ export const LIST_NAVBAR = [
       { title: "Open Innovation", url: "/about#innovation" },
     ],
   },
-  { title: "Team", url: "team" },
-  { title: "NSC 2024", url: "nsc-2024" },
+  { title: "Team", url: "/team" },
+  { title: "NSC 2024", url: "/nsc-2024" },
   {
     title: "Infographics",
     url: "/infographics",

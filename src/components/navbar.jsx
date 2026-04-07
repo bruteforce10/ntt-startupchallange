@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -29,9 +29,35 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { LIST_NAVBAR } from "@/constant/listNavbar";
 import EachUtils from "@/utils/eachUtils";
-import CtaHero from "./modules/cta-hero";
+
+const NAVBAR_ACTIONS = [
+  {
+    title: "Partner With Us",
+    href: "mailto:info@ntt-startupchallenge.com?subject=Partner%20With%20Us",
+  },
+  {
+    title: "Register",
+    href: "https://www.eventbrite.com/e/1323350509999?aff=oddtdtcreator",
+    external: true,
+  },
+  {
+    title: "Subscribe to Our Newsletter",
+    href: "mailto:info@ntt-startupchallenge.com?subject=Newsletter%20Subscription",
+  },
+];
+
+const PRIMARY_ACTION = NAVBAR_ACTIONS[1];
+const SECONDARY_ACTIONS = [NAVBAR_ACTIONS[0], NAVBAR_ACTIONS[2]];
 
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
@@ -58,7 +84,7 @@ export function Navbar() {
         "sticky top-0 z-50 w-full border-blue-ntt border-b-[4px] transition-all duration-200",
         scrolled
           ? "bg-white/80 backdrop-blur  supports-[backdrop-filter]:bg-white/80"
-          : "bg-white"
+          : "bg-white",
       )}
     >
       <div className="flex h-16 py-10 items-center justify-between container mx-auto px-4">
@@ -75,16 +101,28 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         <Sheet>
-          <SheetTrigger className="lg:hidden">
-            <Menu className="h-5 w-5 cursor-pointer text-black" />
+          <SheetTrigger asChild>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="xl:hidden h-11 w-11 rounded-full border border-blue-ntt/15 bg-white text-blue-ntt shadow-sm hover:bg-blue-ntt/6"
+              aria-label="Open navigation menu"
+            >
+              <Menu className="h-5 w-5" aria-hidden="true" />
+            </Button>
           </SheetTrigger>
           <SheetContent
             side="right"
-            className="w-[300px] sm:w-[400px] bg-white text-accent"
+            className="w-[320px] max-w-[calc(100vw-1rem)] overscroll-y-contain border-l border-blue-ntt/10 bg-white text-accent sm:w-[400px]"
           >
             <SheetHeader>
-              <SheetTitle></SheetTitle>
-              <SheetDescription></SheetDescription>
+              <SheetTitle className="text-left text-lg text-blue-ntt-700">
+                Navigation
+              </SheetTitle>
+              <SheetDescription className="text-left text-sm leading-6 text-slate-600">
+                Explore NTT Startup Challenge pages and take the next step from
+                here.
+              </SheetDescription>
               <Accordion type="single" collapsible className="mt-6">
                 <EachUtils
                   of={LIST_NAVBAR}
@@ -94,14 +132,17 @@ export function Navbar() {
                         <Link
                           key={item.title}
                           href={item.url}
-                          className="block text-sm font-medium py-4 hover:underline cursor-default"
+                          className="block rounded-2xl px-3 py-4 text-sm font-medium text-slate-800 transition-colors hover:bg-blue-ntt/5 hover:text-blue-ntt"
                         >
                           {item.title}
                         </Link>
                       );
                     } else {
                       return (
-                        <AccordionItem value="why-attend">
+                        <AccordionItem
+                          key={item.title}
+                          value={item.title.toLowerCase().replace(/\s+/g, "-")}
+                        >
                           <AccordionTrigger>{item.title}</AccordionTrigger>
                           <AccordionContent>
                             <div className="flex flex-col space-y-2">
@@ -111,7 +152,7 @@ export function Navbar() {
                                   <Link
                                     href={item.url}
                                     key={item.url}
-                                    className="py-2"
+                                    className="rounded-xl px-3 py-2 text-sm text-slate-700 transition-colors hover:bg-blue-ntt/5 hover:text-blue-ntt"
                                   >
                                     {item.title}
                                   </Link>
@@ -125,14 +166,14 @@ export function Navbar() {
                   }}
                 />
               </Accordion>
-              <div className="mt-6 w-full space-y-4">
-                <CtaHero />
+              <div className="mt-8 w-full">
+                <MobileNavbarActions />
               </div>
             </SheetHeader>
           </SheetContent>
         </Sheet>
 
-        <div className="hidden lg:flex lg:gap-4">
+        <div className="hidden xl:flex xl:gap-6">
           {/* Desktop Navigation */}
           <div className="flex items-center justify-center flex-1">
             <NavigationMenu
@@ -199,13 +240,120 @@ export function Navbar() {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex items-center space-x-2">
-            <CtaHero />
+          <div className="flex items-center">
+            <DesktopNavbarActions />
           </div>
         </div>
       </div>
     </header>
   );
+}
+
+function DesktopNavbarActions() {
+  return (
+    <div className="flex items-center gap-3">
+      <NavbarActionButton
+        {...PRIMARY_ACTION}
+        className="min-h-11 min-w-[10rem] rounded-2xl border border-blue-ntt bg-blue-ntt px-5 py-3 text-[0.95rem] font-semibold text-white shadow-[0_18px_40px_rgba(37,111,184,0.26)] transition-[transform,background-color,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#1c5f9f] motion-reduce:hover:translate-y-0"
+      />
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button
+            variant="outline"
+            className="min-h-11 rounded-2xl border-blue-ntt/20 bg-white px-4 py-3 text-[0.95rem] font-semibold text-slate-800 shadow-[0_10px_28px_rgba(8,41,71,0.08)] transition-[background-color,border-color,color,box-shadow] duration-200 hover:border-blue-ntt/40 hover:bg-blue-ntt/5 hover:text-blue-ntt"
+          >
+            More
+            <ChevronDown className="size-4" aria-hidden="true" />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent
+          align="end"
+          className="w-[19rem] rounded-3xl border border-blue-ntt/10 bg-white/98 p-2 shadow-[0_24px_60px_rgba(8,41,71,0.14)]"
+        >
+          <DropdownMenuLabel className="px-3 pt-3 pb-2 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-blue-ntt-700">
+            More Ways to Connect
+          </DropdownMenuLabel>
+          <DropdownMenuSeparator className="mx-3 bg-blue-ntt/10" />
+          {SECONDARY_ACTIONS.map((action) => (
+            <DropdownMenuItem
+              key={action.title}
+              asChild
+              className="group mt-1 cursor-pointer rounded-2xl p-0 focus:bg-transparent"
+            >
+              <a
+                href={action.href}
+                {...getActionProps(action)}
+                className="block rounded-2xl px-4 py-3 transition-[background-color,color,box-shadow] duration-200 hover:bg-blue-ntt/5 focus-visible:bg-blue-ntt/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-ntt/25"
+              >
+                <span className="block text-sm font-semibold text-slate-900 transition-colors group-hover:text-blue-ntt">
+                  {action.title}
+                </span>
+              </a>
+            </DropdownMenuItem>
+          ))}
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </div>
+  );
+}
+
+function MobileNavbarActions() {
+  return (
+    <div className="flex flex-col gap-3">
+      <NavbarActionButton
+        {...PRIMARY_ACTION}
+        mobile
+        className="min-h-12 w-full rounded-2xl border border-blue-ntt bg-blue-ntt px-5 py-3 text-base font-semibold text-white shadow-[0_18px_40px_rgba(37,111,184,0.22)] transition-[transform,background-color,box-shadow] duration-200 ease-out hover:bg-[#1c5f9f]"
+      />
+      <NavbarActionButton
+        {...SECONDARY_ACTIONS[0]}
+        mobile
+        className="min-h-12 w-full rounded-2xl border border-blue-ntt/25 bg-blue-ntt/5 px-5 py-3 text-base font-semibold text-blue-ntt transition-colors duration-200 hover:bg-blue-ntt/10"
+      />
+      <a
+        href={SECONDARY_ACTIONS[1].href}
+        className="rounded-xl px-1 py-2 text-sm font-medium text-slate-600 underline-offset-4 transition-colors hover:text-blue-ntt hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-ntt/25"
+      >
+        {SECONDARY_ACTIONS[1].title}
+      </a>
+    </div>
+  );
+}
+
+function NavbarActionButton({
+  title,
+  href,
+  className,
+  external = false,
+  mobile = false,
+}) {
+  return (
+    <Button
+      asChild
+      className={cn(
+        "touch-manipulation whitespace-normal text-center leading-tight",
+        mobile ? "w-full justify-center" : "justify-center",
+        className,
+      )}
+    >
+      <a href={href} {...getActionProps({ href, external })}>
+        <span className="text-balance">{title}</span>
+      </a>
+    </Button>
+  );
+}
+
+function getActionProps(action) {
+  const isMailto = action.href.startsWith("mailto:");
+
+  if (action.external || isMailto) {
+    return {
+      target: isMailto ? undefined : "_blank",
+      rel: isMailto ? undefined : "noreferrer",
+    };
+  }
+
+  return {};
 }
 
 const ListItem = React.forwardRef(
@@ -218,7 +366,7 @@ const ListItem = React.forwardRef(
             href={href}
             className={cn(
               "block select-none space-y-1 rounded-md p-3 leading-none no-underline hover:bg-primary hover:text-accent text-accent",
-              className
+              className,
             )}
             {...props}
           >
@@ -232,6 +380,6 @@ const ListItem = React.forwardRef(
         </NavigationMenuLink>
       </li>
     );
-  }
+  },
 );
 ListItem.displayName = "ListItem";

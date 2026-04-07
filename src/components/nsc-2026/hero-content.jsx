@@ -1,20 +1,64 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+
+const HERO_ACTIONS = [
+  {
+    label: "STARTUP REGISTRATION FOR NTTSC 2026",
+    href: "https://www.eventbrite.com/e/1323350509999?aff=oddtdtcreator",
+    external: true,
+    className:
+      "border border-blue-ntt bg-blue-ntt text-white shadow-[0_20px_45px_rgba(37,111,184,0.28)] hover:bg-[#1b5f9e]",
+  },
+  {
+    label: "ATTEND OUR INFORMATION SESSIONS IN YOUR CITY",
+    href: "mailto:info@ntt-startupchallenge.com?subject=NTTSC%202026%20Information%20Sessions",
+    className:
+      "border border-white/20 bg-white/12 text-white shadow-[0_18px_40px_rgba(5,12,31,0.22)] hover:bg-white/18",
+  },
+  {
+    label: "ATTEND THE FINAL DAY NTTSC 2026",
+    href: "mailto:info@ntt-startupchallenge.com?subject=NTTSC%202026%20Final%20Day",
+    className:
+      "border border-blue-ntt-200/35 bg-[#08172d]/85 text-blue-ntt-200 shadow-[0_18px_36px_rgba(8,23,45,0.32)] hover:border-blue-ntt-200/55 hover:bg-[#0d2342]",
+  },
+];
 
 export function HeroContent2026() {
   return (
-    <div className="text-center space-y-8 h-full">
-      <h1 className="text-4xl md:text-7xl text-shadow-lg font-black text-white uppercase leading-tight">
-        YOUR NEXT LEAP <br />
-        STARTS AT <span className="text-blue-ntt-200">NTT STARTUP</span>
-      </h1>
-      <Button
-        asChild
-        className="bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md transition-all px-8 py-3 h-auto rounded-full text-lg tracking-widest font-semibold inline-flex items-center gap-2"
-      >
-        <Link href="/">VIEW 2025 RECAP</Link>
-      </Button>
+    <div className="flex h-full w-full flex-col items-center justify-end text-center ">
+      <div className="max-w-[min(92vw,72rem)] space-y-6 sm:space-y-8">
+        <h1 className="text-balance sm:text-[3rem]  text-[2rem] lg:text-[5rem] font-black uppercase leading-[1.2]  text-white [text-shadow:0_10px_34px_rgba(0,0,0,0.45)]">
+          YOUR NEXT LEAP STARTS AT{" "}
+          <span className="text-blue-ntt-200">NTT STARTUP CHALLENGE 2026 </span>
+          BIGGER, LOUDER AND <span className="text-blue-ntt-200">BOLDER</span>
+        </h1>
+
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 lg:flex-row lg:items-stretch lg:justify-center">
+          {HERO_ACTIONS.map((action, index) => (
+            <Button
+              key={action.label}
+              asChild
+              className={[
+                "min-h-12 flex-1 touch-manipulation rounded-2xl px-5 py-4 text-center text-sm font-extrabold leading-snug whitespace-normal transition-[transform,background-color,border-color,color,box-shadow] duration-200 ease-out hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-blue-ntt-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent motion-reduce:hover:translate-y-0 sm:min-h-14 sm:px-6 sm:text-[0.95rem]",
+                index === 0 ? "lg:flex-[1.1]" : "lg:flex-1",
+                action.className,
+              ].join(" ")}
+            >
+              <a
+                href={action.href}
+                {...(action.external
+                  ? {
+                      target: "_blank",
+                      rel: "noreferrer",
+                    }
+                  : {})}
+              >
+                <span className="block text-balance">{action.label}</span>
+              </a>
+            </Button>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
