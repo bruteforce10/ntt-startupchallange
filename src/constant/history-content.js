@@ -9,18 +9,18 @@ export const HISTORY_CONTENT_2026 = [
 export const HISTORY_LIST = [
   {
     title: "Participants",
-    number: "7,000",
+    number: "8,200",
   },
   {
     title: "Startups",
-    number: "4,000",
+    number: "5,000",
   },
   {
     title: "Countries",
-    number: "5",
+    number: "10",
   },
   {
     title: "Partners",
-    number: "300",
+    number: "335",
   },
 ];
