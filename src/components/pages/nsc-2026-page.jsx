@@ -30,25 +30,18 @@ export function Nsc2026PageContent() {
       <AwardsSection2026 />
       <PersonCarouselSection2026
         title="Past Speakers"
-        subtitle="CURRENT PANEL"
         items={SPEAKERS_CONTENT}
       />
-      <PersonCarouselSection2026
-        title="Past Judges"
-        subtitle="EXPERT PANEL"
-        items={JUDGES_CONTENT}
-      />
+      <PersonCarouselSection2026 title="Past Judges" items={JUDGES_CONTENT} />
       <InfoSessionSection2026 />
       <ListSection
         title={"Sponsors"}
-        subtitle={"PARTNERSHIP"}
         items={[]}
         is2026
         emptyLabel={"COMING SOON"}
       />
       <ListSection
         title={"Community Partners"}
-        subtitle={"ECOSYSTEM"}
         items={PARTNER_CONTENT_2026}
         pathImg={"community-partner/2026"}
         is2026
