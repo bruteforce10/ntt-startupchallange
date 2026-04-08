@@ -6,18 +6,20 @@ const HERO_ACTIONS = [
     label: "STARTUP REGISTRATION FOR NTTSC 2026",
     href: "https://www.eventbrite.com/e/1323350509999?aff=oddtdtcreator",
     external: true,
+    disabled: true,
+    badge: "coming soon",
     className:
       "border border-blue-ntt bg-blue-ntt text-white shadow-[0_20px_45px_rgba(37,111,184,0.28)] hover:bg-[#1b5f9e]",
   },
   {
     label: "ATTEND OUR INFORMATION SESSIONS IN YOUR CITY",
-    href: "mailto:info@ntt-startupchallenge.com?subject=NTTSC%202026%20Information%20Sessions",
+    href: "/#infosession",
     className:
       "border border-white/20 bg-white/12 text-white shadow-[0_18px_40px_rgba(5,12,31,0.22)] hover:bg-white/18",
   },
   {
     label: "ATTEND THE FINAL DAY NTTSC 2026",
-    href: "mailto:info@ntt-startupchallenge.com?subject=NTTSC%202026%20Final%20Day",
+    href: "https://www.eventbrite.hk/e/final-day-ntt-startup-challenge-2026-tickets-1986790310301?aff=oddtdtcreator",
     className:
       "border border-blue-ntt-200/35 bg-[#08172d]/85 text-blue-ntt-200 shadow-[0_18px_36px_rgba(8,23,45,0.32)] hover:border-blue-ntt-200/55 hover:bg-[#0d2342]",
   },
@@ -27,7 +29,7 @@ export function HeroContent2026() {
   return (
     <div className="flex h-full w-full flex-col items-center justify-end text-center ">
       <div className="max-w-[min(92vw,72rem)] space-y-6 sm:space-y-8">
-        <h1 className="text-balance sm:text-[3rem]  text-[2rem] lg:text-[5rem] font-black uppercase leading-[1.2]  text-white [text-shadow:0_10px_34px_rgba(0,0,0,0.45)]">
+        <h1 className="text-balance sm:text-[3rem]  text-[2rem] lg:text-[4rem] font-black uppercase leading-[1.2]  text-white [text-shadow:0_10px_34px_rgba(0,0,0,0.45)]">
           YOUR NEXT LEAP STARTS AT{" "}
           <span className="text-blue-ntt-200">NTT STARTUP CHALLENGE 2026 </span>
           BIGGER, LOUDER AND <span className="text-blue-ntt-200">BOLDER</span>
@@ -40,21 +42,36 @@ export function HeroContent2026() {
               asChild
               className={[
                 "min-h-12 flex-1 touch-manipulation rounded-2xl px-5 py-4 text-center text-sm font-extrabold leading-snug whitespace-normal transition-[transform,background-color,border-color,color,box-shadow] duration-200 ease-out hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-blue-ntt-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent motion-reduce:hover:translate-y-0 sm:min-h-14 sm:px-6 sm:text-[0.95rem]",
+                action.badge ? "h-auto flex-col gap-1.5" : "",
                 index === 0 ? "lg:flex-[1.1]" : "lg:flex-1",
                 action.className,
               ].join(" ")}
             >
-              <a
-                href={action.href}
-                {...(action.external
-                  ? {
-                      target: "_blank",
-                      rel: "noreferrer",
-                    }
-                  : {})}
-              >
-                <span className="block text-balance">{action.label}</span>
-              </a>
+              {action.disabled ? (
+                <span aria-disabled="true" className="cursor-default">
+                  <span className="block text-balance">{action.label}</span>
+                  <span className="block text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/85">
+                    {action.badge}
+                  </span>
+                </span>
+              ) : (
+                <a
+                  href={action.href}
+                  {...(action.external
+                    ? {
+                        target: "_blank",
+                        rel: "noreferrer",
+                      }
+                    : {})}
+                >
+                  <span className="block text-balance">{action.label}</span>
+                  {action.badge ? (
+                    <span className="block text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/85">
+                      {action.badge}
+                    </span>
+                  ) : null}
+                </a>
+              )}
             </Button>
           ))}
         </div>

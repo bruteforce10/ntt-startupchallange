@@ -4,7 +4,7 @@ import React from "react";
 
 export function FeedbackSection2026() {
   // Using the '-new.png' files in public/feedback
-  const newImages = ["1-new.png", "2-new.png", "3-new.png"];
+  const newImages = ["1-new.webp", "2-new.webp", "3-new.webp"];
 
   return (
     <section className="container mx-auto px-4 py-20 text-white space-y-32">
@@ -14,8 +14,9 @@ export function FeedbackSection2026() {
         return (
           <div
             key={idx}
-            className={`flex flex-col gap-12 lg:gap-32 items-center ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"
-              }`}
+            className={`flex flex-col gap-12 lg:gap-32 items-center ${
+              isEven ? "lg:flex-row-reverse" : "lg:flex-row"
+            }`}
           >
             {/* Text side */}
             <div className="lg:w-1/2 space-y-8">
@@ -45,7 +46,6 @@ export function FeedbackSection2026() {
                   className="object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-
               </div>
             </div>
           </div>

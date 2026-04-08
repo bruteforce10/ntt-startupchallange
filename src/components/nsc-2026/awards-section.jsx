@@ -11,7 +11,7 @@ export function AwardsSection2026() {
     },
     {
       place: "1st PLACE",
-      subtext: "$- USD",
+      subtext: "",
       image: "trophy-new-1.svg",
       order: 2, // Visual order (center)
       isFirst: true,

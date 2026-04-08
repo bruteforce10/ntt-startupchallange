@@ -3,25 +3,25 @@ export const TEAM_PROFILE = [
     id: 1,
     fullName: "Diani NM",
     profile:
-      "Meet Diani NM – a dynamic global marketing professional with over 11 years of experience driving impactful projects that elevate brands and foster growth. Diani has crafted innovative B2B marketing strategies, spearheaded expansion initiatives, and navigated successful market penetration efforts for prestigious global enterprises in the technology sector, as well as top-tier intellectual properties, including renowned football clubs. From 2016 to 2020, she served as the head of the agency department and has been a team leader on the agency side to execute the NTT Startup Challenge since 2017. Currently, Diani, the founder of Artique Agency, leverages her deep understanding of marketing trends to nurture impactful projects that stand out in a competitive landscape.",
+      "Diani NM is a dynamic global marketing expert with 12+ years of experience scaling brands and driving market penetration. A specialist in B2B tech and high-profile intellectual properties—including top-tier football clubs—she has been a pivotal leader for the NTT Startup Challenge since 2017. Formerly a Head of Marketing Consultant and Business Development Manager(2016–2023), Diani is now the founder of Artique Agency, where she leverages deep industry insights to craft innovative strategies that help brands thrive in competitive global markets.",
   },
   {
     id: 2,
     fullName: "Alexander Prabu",
     profile:
-      "Meet Alex, a highly skilled young professional specializing in telemarketing and outbound outreach. Alex has mastered connecting with leads and representing campaigns with finesse. His expertise in the field is guaranteed to help clients achieve their marketing goals and drive campaign performance growth.",
+      "Alexander is an accomplished campaign activation and strategic operations professional with over two years of experience in driving regional growth and market expansion. Alex has proven his expertise in handling B2B and B2C campaigns across various sectors, including global entertainment IP licensing, international sports retail, and high-level event management. Alex has been involved in the NTT Startup Challenge for the past 2 years.",
   },
   {
     id: 3,
     fullName: "Fani Firdaus",
     profile:
-      "Meet Fani - a talented Gen-Z designer who is taking the design world by storm with his eye-catching and innovative work. With a fresh perspective and a keen eye for detail, Fani is bringing a new color and vibrancy to the industry. Whether it's designing logos, websites, or marketing campaigns, Fani's work is sure to leave a lasting impression.",
+      "Fani is a talented creative designer who is taking the design world by storm with his eye-catching and innovative work. With a fresh perspective and a keen eye for detail, Fani is bringing a new color and vibrancy to the industry. Whether it's designing logos, websites, or marketing campaigns, Fani's work is sure to leave a lasting impression. Fani has been involved in the NTT Startup Challenge for the past 2 years.",
   },
   {
     id: 4,
     fullName: "Fitria Malida",
     profile:
-      "Meet Fitria, a specialist in crafting engaging and impactful social media content strategies. Her expertise lies in leveraging data-driven insights, conducting in-depth analysis, and understanding target audiences to create campaigns that are both relevant and resonant. Fitria is also skilled in reading and interpreting content performance data, ensuring that every strategic decision is guided by accurate and actionable insights.",
+      "Fitria is an accomplished campaign activation and marketing professional. Fitria has proven her expertise in managing high-level events across various B2B industries and sectors, and is highly experienced in handling campaigns for agencies, government bodies, and international organizations. Fitria has been involved in the NTT Startup Challenge for the past 2 years.",
   },
   {
     id: 5,
@@ -33,7 +33,7 @@ export const TEAM_PROFILE = [
     id: 6,
     fullName: "Alvia Ananda",
     profile:
-      "Meet Alvia Ananda, a dedicated professional specializing in data mining and telemarketing. Alvia excels at gathering and analyzing valuable data to identify potential leads, while effectively engaging prospects through strategic outreach. Her combined expertise ensures efficient targeting and meaningful connections, helping clients optimize their campaigns and achieve stronger marketing results.",
+      "Alvia is a data researcher who focuses on making sense of complex information. She analyzes market trends to help the team make better, faster decisions, focusing on gathering data that actually moves the project forward instead of just collecting numbers.",
   },
   {
     id: 7,

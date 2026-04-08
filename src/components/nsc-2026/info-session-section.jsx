@@ -19,10 +19,11 @@ const INFO_SESSIONS = [
 
 export function InfoSessionSection2026() {
   return (
-    <section className="container mx-auto px-4 py-16 md:py-20 text-white">
-      <SectionHeading2026
-        title="Meet NTT Startup Challenge Team at Our Info Session"
-      />
+    <section
+      id="infosession"
+      className="container mx-auto px-4 py-16 md:py-20 text-white"
+    >
+      <SectionHeading2026 title="Meet NTT Startup Challenge Team at Our Info Session" />
 
       <div className="grid gap-8 lg:grid-cols-2">
         {INFO_SESSIONS.map((session) => (

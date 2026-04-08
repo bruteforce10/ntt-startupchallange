@@ -43,12 +43,14 @@ import EachUtils from "@/utils/eachUtils";
 const NAVBAR_ACTIONS = [
   {
     title: "Partner With Us",
-    href: "mailto:info@ntt-startupchallenge.com?subject=Partner%20With%20Us",
+    href: "/",
   },
   {
     title: "Register",
-    href: "https://www.eventbrite.com/e/1323350509999?aff=oddtdtcreator",
+    href: "/",
     external: true,
+    disabled: true,
+    badge: "coming soon",
   },
   {
     title: "Subscribe to Our Newsletter",
@@ -326,19 +328,39 @@ function NavbarActionButton({
   className,
   external = false,
   mobile = false,
+  disabled = false,
+  badge,
 }) {
+  const content = (
+    <>
+      <span className="text-balance">{title}</span>
+      {badge ? (
+        <span className="text-[0.45rem] font-medium uppercase tracking-[0.18em] opacity-90">
+          {badge}
+        </span>
+      ) : null}
+    </>
+  );
+
   return (
     <Button
       asChild
       className={cn(
         "touch-manipulation whitespace-normal text-center leading-tight",
+        badge && "h-auto flex-col gap-1",
         mobile ? "w-full justify-center" : "justify-center",
         className,
       )}
     >
-      <a href={href} {...getActionProps({ href, external })}>
-        <span className="text-balance">{title}</span>
-      </a>
+      {disabled ? (
+        <span aria-disabled="true" className="cursor-default">
+          {content}
+        </span>
+      ) : (
+        <a href={href} {...getActionProps({ href, external })}>
+          {content}
+        </a>
+      )}
     </Button>
   );
 }

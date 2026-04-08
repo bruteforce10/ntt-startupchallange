@@ -5,7 +5,7 @@ import { SectionHeading2026 } from "./nsc-2026/section-heading";
 
 const SectionCoverLink = ({
   title,
-  videoUrl = "https://www.youtube.com/embed/v5FNZHFIJco?si=zS5TIODbSvQFR7Sn",
+  videoUrl = "https://www.youtube.com/watch?v=E8aOKHAuffU",
   is2026 = false,
   subtitle,
 }) => {

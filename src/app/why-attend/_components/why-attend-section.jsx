@@ -13,12 +13,12 @@ const sections = [
       {
         title: "Established in 2016 by NTT Communications:",
         description:
-          "NSC is dedicated to nurturing the Startup Ecosystem in Southeast Asia.",
+          "NTTSC is dedicated to nurturing the Startup Ecosystem in  SEA, Taiwan, Hong Kong, South Korea, India and Australia.",
       },
       {
         title: "Join a network of success:",
         description:
-          "Over 4,000 startups have applied to collaborate with us, and more than 50 have embarked on journeys of business development and commercialization.",
+          "Over 8,500 startups have applied to collaborate with us, and more than 50 have embarked on journeys of business development and commercialization.",
       },
       {
         title: "An unparalleled opportunity:",
@@ -28,7 +28,7 @@ const sections = [
       {
         title: "Unlock potential collaborations:",
         description:
-          "NTT is ready to share its vast assets to foster collaboration within SEA and/or Japan.",
+          "NTT is ready to share its vast assets to foster collaboration within  SEA, Taiwan, Hong Kong, South Korea, India and Australia. or Japan.",
       },
     ],
   },
@@ -61,7 +61,7 @@ const sections = [
       {
         title: "A landmark event:",
         description:
-          "NSC stands as one of the most historic startup events in SEA, hosted by an enterprise, attracting over 7,000 participants since 2016.",
+          "NTTSC stands as one of the most historic startup events in SEA, hosted by an enterprise, attracting over 8,500 participants since 2016.",
       },
       {
         title: "Discover transformative startups:",
