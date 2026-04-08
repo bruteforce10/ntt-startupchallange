@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { Analytics } from "@vercel/analytics/next";
 import Providers from "@/components/providers";
 import Script from "next/script";
+import { GA_TRACKING_ID, GOOGLE_ADS_TRACKING_ID } from "@/lib/gtag";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -28,7 +29,7 @@ export default function RootLayout({ children }) {
         <head>
           <Script
             strategy="afterInteractive"
-            src={`https://www.googletagmanager.com/gtag/js?id=G-Y3F146ER46`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
           />
           <Script
             id="google-analytics"
@@ -38,9 +39,10 @@ export default function RootLayout({ children }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-Y3F146ER46', {
-                page_path: window.location.pathname,
+              gtag('config', '${GA_TRACKING_ID}', {
+                send_page_view: false,
               });
+              gtag('config', '${GOOGLE_ADS_TRACKING_ID}');
             `,
             }}
           />
