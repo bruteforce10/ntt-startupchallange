@@ -8,9 +8,9 @@ export function ComingSoonSection2026() {
   return (
     <section className="container mx-auto px-4 py-20 md:py-32 text-center text-white">
       <div className="max-w-4xl mx-auto space-y-12">
-        {/* <h2 className="text-4xl font-bold leading-tight">
-          The NTT Startup Challenge 2026 is
-        </h2> */}
+        <h2 className="text-4xl font-bold leading-tight">
+          The NTT Startup Challenge 2026
+        </h2>
 
         <div className="relative inline-block group w-full max-w-4xl">
           {/* Animated glow effect behind the box */}

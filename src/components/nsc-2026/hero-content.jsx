@@ -32,7 +32,7 @@ export function HeroContent2026() {
         <h1 className="text-balance sm:text-[3rem]  text-[2rem] lg:text-[4rem] font-black uppercase leading-[1.2]  text-white [text-shadow:0_10px_34px_rgba(0,0,0,0.45)]">
           YOUR NEXT LEAP STARTS AT{" "}
           <span className="text-blue-ntt-200">NTT STARTUP CHALLENGE 2026 </span>
-          BIGGER, LOUDER AND <span className="text-blue-ntt-200">BOLDER</span>
+          BIGGER, LOUDER, AND <span className="text-blue-ntt-200">BOLDER</span>
         </h1>
 
         <div className="mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 lg:flex-row lg:items-stretch lg:justify-center">
