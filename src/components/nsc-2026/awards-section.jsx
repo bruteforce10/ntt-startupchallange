@@ -25,7 +25,7 @@ export function AwardsSection2026() {
 
   return (
     <section className="container mx-auto px-4 py-20 text-white text-center">
-      <SectionHeading2026 title="Challenge Awards" subtitle="PRIZE POOL" />
+      <SectionHeading2026 title="Awards" />
 
       <div className="grid grid-cols-1 md:grid-cols-3 mt-26 gap-8 items-end max-w-5xl mx-auto">
         {awards.map((award, idx) => (
@@ -39,7 +39,7 @@ export function AwardsSection2026() {
           >
             {award.isFirst && (
               <div className="absolute -top-4 bg-yellow-500 text-black px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
-                Champion
+                Winners
               </div>
             )}
             <div className="relative w-40 h-48 md:w-56 md:h-64 mb-8">

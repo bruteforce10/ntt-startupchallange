@@ -4,16 +4,16 @@ import { SectionHeading2026 } from "./section-heading";
 
 const INFO_SESSIONS = [
   {
-    title: "Vietnam Info Session",
-    href: "https://www.eventbrite.com/e/1986785057590?aff=oddtdtcreator",
-    image: "/info-session/Infosession%20Vietnam.webp",
-    alt: "NTT Startup Challenge Vietnam Info Session poster",
-  },
-  {
     title: "Malaysia Info Session",
     href: "https://www.eventbrite.com/e/1986789688441?aff=oddtdtcreator",
     image: "/info-session/Infosession%20Malaysia.webp",
     alt: "NTT Startup Challenge Malaysia Info Session poster",
+  },
+  {
+    title: "Vietnam Info Session",
+    href: "https://www.eventbrite.com/e/1986785057590?aff=oddtdtcreator",
+    image: "/info-session/Infosession%20Vietnam.webp",
+    alt: "NTT Startup Challenge Vietnam Info Session poster",
   },
 ];
 

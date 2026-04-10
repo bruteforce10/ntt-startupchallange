@@ -3,7 +3,7 @@ import { CountdownTimer } from "../ui/countdown-timer";
 
 export function ComingSoonSection2026() {
   // Target date for the countdown: November 11, 2026
-  const targetDate = new Date("2026-11-11T00:00:00").getTime();
+  const targetDate = new Date("2025-11-11T00:00:00").getTime();
 
   return (
     <section className="container mx-auto px-4 py-20 md:py-32 text-center text-white">
@@ -20,8 +20,8 @@ export function ComingSoonSection2026() {
             <CountdownTimer
               date={targetDate}
               completedNode={
-                <p className="text-4xl md:text-7xl font-black text-blue-ntt-200 uppercase tracking-[0.2em] animate-pulse">
-                  Coming <br className="md:hidden" /> Soon
+                <p className="text-2xl md:text-5xl font-black text-blue-ntt-200 uppercase tracking-[0.2em] animate-pulse">
+                  11th November 2026
                 </p>
               }
             />

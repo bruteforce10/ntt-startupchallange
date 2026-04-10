@@ -7,34 +7,34 @@ export function StartupBenefitsSection() {
     {
       title: "Potential Investment Opportunities:",
       description:
-        "Explore the possibility of investments through NTT's corporate ventures, tailored to promising startups seeking to scale.",
+        "Explore potential investment opportunities through NTT’s corporate venture arms, tailored to promising startups seeking to scale.",
     },
     {
       title: "Enhanced Visibility and PR Support:",
       description:
-        "Gain significant exposure through high-profile PR activities and NTT's media channels, boosting your startup's public profile.",
+        "Gain significant exposure through high-profile PR initiatives and NTT’s media channels, strengthening your startup’s public presence.",
     },
     {
       title: "Comprehensive Resource Access:",
       description:
-        "Utilize cutting-edge co-working spaces and access a variety of strategic resources that support your technological and business advancement.",
+        "Access cutting-edge co-working spaces and a wide range of strategic resources to support your technological and business growth.",
     },
     {
       title: "Sales and Marketing Support:",
       description:
-        "Assistance with customer referrals, sales channel provision, and test marketing strategies.",
+        "Benefit from customer referrals, access to sales channels, and assistance with test marketing initiatives.",
     },
     {
       title: "Exclusive Networking Opportunities:",
       description:
-        "Connect with key industry leaders, government officials, and influential venture capitalists through NTT's extensive global networks.",
+        "Connect with industry leaders, government officials, and influential venture capitalists through NTT’s extensive global network.",
     },
     {
-      title: "Empowering Startups through *Venture Client Model:",
+      title: "Empowering Startups through the Venture Client Model:",
       description:
-        "Leverage NTT's commitment to the Venture Client model, offering startups direct collaboration opportunities to refine and scale their innovations with our extensive resources and expertise.",
+        "Leverage NTT’s commitment to the Venture Client Model, enabling direct collaboration opportunities to refine and scale your innovations using NTT’s resources and expertise.",
       footnote:
-        "*Venture Client Model: Enterprises become startups' clients, leveraging startups' solutions to accelerate innovation and drive mutual growth",
+        "*Venture Client Model: Enterprises become clients of startups, leveraging startup solutions to accelerate innovation and drive mutual growth.",
     },
   ];
 

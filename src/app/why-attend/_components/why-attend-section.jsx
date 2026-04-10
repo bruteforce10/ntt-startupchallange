@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-import { Plus } from "lucide-react";
+import { Check } from "lucide-react";
 
 const sections = [
   {
@@ -195,19 +195,19 @@ export function WhyAttendSection() {
                       src={section.image}
                       alt={`${section.title} section`}
                       fill
-                      className="object-cover"
+                      className="object-contain md:object-contain lg:object-cover"
                     />
                   </div>
 
                   <div className="space-y-6">
                     {section.points.map((point, pointIndex) => (
                       <div key={pointIndex} className="flex gap-4">
-                        <div className="flex-shrink-0 mt-1">
+                        <div className="flex-shrink-0 mt-1 ">
                           <div className="bg-blue-600 rounded-sm p-1">
-                            <Plus className="h-4 w-4 text-white" />
+                            <Check className="h-4 w-4 text-white" />
                           </div>
                         </div>
-                        <div>
+                        <div className="text-xl leading-relaxed -mt-1">
                           <span className="font-medium text-white">
                             {point.title}
                           </span>{" "}

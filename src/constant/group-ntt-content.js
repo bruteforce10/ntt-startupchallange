@@ -161,10 +161,10 @@ export const STATISTICS = [
     title: "Employees Worldwide",
     value: "330,000+",
   },
-  {
-    title: "S&P Rating",
-    value: "A",
-  },
+  // {
+  //   title: "S&P Rating",
+  //   value: "A",
+  // },
   {
     title: "Heritage",
     value: "150+ years",

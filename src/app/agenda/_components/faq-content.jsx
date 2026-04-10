@@ -21,7 +21,7 @@ export function FaqSection() {
     {
       question: "What type of startups can apply?",
       answer:
-        "Any startup company operating a business in Southeast Asia can apply. Please note that the startup must be a legal entity, not just an idea.",
+        "Any startup company operating a business in Southeast Asia, Taiwan, Hong Kong, South Korea, India, and Australia is eligible to apply. Please note that startup must be a legal entity, not just an idea.",
     },
     {
       question: "Who will evaluate the applications?",

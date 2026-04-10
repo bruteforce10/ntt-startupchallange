@@ -41,20 +41,19 @@ export const SPEAKERS_CONTENT = [
   {
     id: 2,
     name: "Akie Iriyama",
-    organization: "Waseda University",
+    organization: "Waseda University - Professor",
     bio: "Akie Iriyama is a professor at Waseda Business School. His research in strategic management, international business, and entrepreneurship has been published in prestigious journals. Previously, he worked as an industrial economist and consultant at Mitsubishi Research Institute Inc. in Japan.",
   },
   {
     id: 10,
     name: "Takashi Ebihara",
-    organization:
-      "Executive Vice President, Head of Technology Planning NTT, Inc.",
+    organization: "NTT Inc.,Executive Vice President",
     bio: "Takashi Ebihara is a startup-savvy technology executive at NTT Holdings, serving as Co-Chief Artificial Intelligence Officer, CIO, and Head of Technology Planning. He accelerates responsible AI adoption across businesses, translates long-horizon R&D—including the IOWN initiative—into usable platforms, and advances information strategy and cybersecurity. Previously, as CTO/CIO of NTT EAST, he led end-to-end modernization at Japan’s largest operator; as President & CEO of NTT e-Asia, he scaled digital solutions across Southeast Asia. Ebihara partners with founders building AI-native, network-centric products, offering enterprise distribution and deep domain expertise. He holds an MBA from the National University of Singapore and a B.S. in Applied Physics from Tokyo University of Science.",
   },
   {
     id: 8,
     name: "Ken Katsuyama",
-    organization: "NTT Holdings",
+    organization: "NTT Inc.,Senior Vice President",
     bio: "Ken Katsuyama is the Senior Vice President, Head of Global Business at Nippon Telegraph and Telephone Corporation (NTT). His current responsibility is the global business of the whole NTT group. In addition, he is a member of the board of directors of NTT DATA, Inc., a major operating company of NTT group covering outside of Japan.",
   },
 ];

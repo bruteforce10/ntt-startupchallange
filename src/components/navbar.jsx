@@ -210,7 +210,7 @@ export function Navbar() {
                           onMouseLeave={() => {
                             setTimeout(() => {
                               setActivePositionSideLeft(false);
-                            }, 3000);
+                            }, 4000);
                           }}
                         >
                           <NavigationMenuTrigger>

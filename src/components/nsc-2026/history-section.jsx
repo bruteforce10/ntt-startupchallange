@@ -1,7 +1,8 @@
 import { HISTORY_CONTENT_2026, HISTORY_LIST } from "@/constant/history-content";
 import { Users, Rocket, Globe, Award } from "lucide-react";
 import React from "react";
-import HeadingText from "../heading-text";
+
+const HIGHLIGHT_TEXT = "Taiwan, Hong Kong, South Korea, India and Australia.";
 
 export function HistorySection2026() {
   const icons = [
@@ -27,7 +28,18 @@ export function HistorySection2026() {
           </h2>
           <div className="text-gray-400 space-y-4 text-base leading-relaxed">
             {HISTORY_CONTENT_2026.map((text, idx) => (
-              <p key={idx}>{text}</p>
+              <p key={idx}>
+                {text.split(HIGHLIGHT_TEXT).map((part, partIndex, parts) => (
+                  <React.Fragment key={partIndex}>
+                    {part}
+                    {partIndex < parts.length - 1 ? (
+                      <span className="underline decoration-blue-ntt-200 decoration-2 underline-offset-4 text-white">
+                        {HIGHLIGHT_TEXT}
+                      </span>
+                    ) : null}
+                  </React.Fragment>
+                ))}
+              </p>
             ))}
           </div>
         </div>

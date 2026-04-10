@@ -34,7 +34,7 @@ const SpeaksSection = ({ is2026 = false }) => {
             of={SPEAK_CONTENT}
             render={(item, index) => (
               <CarouselItem key={index}>
-                <div className="bg-linear-to-bl flex flex-col gap-12 h-full from-blue-ntt-900 to-blue-ntt-700 rounded-lg p-8 md:p-12 mx-auto">
+                <div className="bg-linear-to-bl flex flex-col justify-center items-center gap-12 h-full from-blue-ntt-900 to-blue-ntt-700 rounded-lg p-8 md:p-12 mx-auto">
                   <p className="text-xl leading-normal italic text-center">
                     "{item.desc}"
                   </p>
