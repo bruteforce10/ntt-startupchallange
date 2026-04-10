@@ -6,13 +6,19 @@ export const GROUP_NTT_CONTENT = [
     height: 250,
   },
   {
+    url: "https://www.nttdocomo-v.com/en/news/3we8r6oq5o/",
+    img: "synexia-ventures",
+    width: 220,
+    height: 200,
+  },
+  {
     url: "https://www.ntt-tx.com/",
     img: "ntt-tx",
     width: 220,
     height: 250,
   },
   {
-    url: "https://www.nttdocomo-v.com/en/",
+    url: "https://www.docomo.ne.jp/english/",
     img: "docomo",
     width: 220,
     height: 250,
@@ -54,6 +60,12 @@ export const GROUP_NTT_CONTENT = [
     height: 250,
   },
   {
+    url: "https://www.niandc.co.jp/lp/nttintegration/",
+    img: "ntt-integration",
+    width: 220,
+    height: 250,
+  },
+  {
     url: "https://www.ntt-at.com/",
     img: "ntt-at",
     width: 180,
@@ -62,15 +74,15 @@ export const GROUP_NTT_CONTENT = [
   {
     url: "https://www.ntt-precisionmedicine.co.jp",
     img: "ntt-precision-media",
-    width: 440,
+    width: 350,
     height: 200,
   },
-  {
-    url: "https://www.niandc.co.jp/english",
-    img: "ni+c",
-    width: 200,
-    height: 250,
-  },
+  // {
+  //   url: "https://www.niandc.co.jp/english",
+  //   img: "ni+c",
+  //   width: 200,
+  //   height: 250,
+  // },
   {
     url: "https://www.ntt-ae.co.jp/en",
     img: "nttanodeenergy",
@@ -80,7 +92,7 @@ export const GROUP_NTT_CONTENT = [
   {
     url: "https://www.nttcom.co.jp/english",
     img: "docomo-solutions",
-    width: 390,
+    width: 350,
     height: 250,
   },
 ];
@@ -151,15 +163,15 @@ export const TABS_DATA = [
 export const STATISTICS = [
   {
     title: "Global Revenue",
-    value: "$97 billion",
+    value: "$90 billion",
   },
   {
     title: "Fortune Global",
-    value: "#83",
+    value: "#120",
   },
   {
     title: "Employees Worldwide",
-    value: "330,000+",
+    value: "340,000",
   },
   // {
   //   title: "S&P Rating",
@@ -167,15 +179,15 @@ export const STATISTICS = [
   // },
   {
     title: "Heritage",
-    value: "150+ years",
+    value: "150 years",
   },
   {
     title: "Global IT Services Provider",
-    value: "Top 5",
+    value: "Top 10",
   },
   {
     title: "Countries & Regions",
-    value: "80+",
+    value: "70+",
   },
   {
     title: "> Of Fortune Global 100 Are Clients",
@@ -195,7 +207,7 @@ export const STATISTICS = [
   },
   {
     title: "Patents",
-    value: "18,000+",
+    value: "22,000",
   },
   {
     title: "Market Share Data Center",

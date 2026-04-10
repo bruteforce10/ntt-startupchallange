@@ -9,7 +9,7 @@ export const SPEAK_CONTENT = [
   },
   {
     desc: "We at ProfilePrint are honored and fortunate to have won 1st place at the inaugural NTT Startup challenge 2024 which allowed us to work closely with NTT Group as a strategic partner to deepen our market penetration. It not only expedited our expansion into the Japan market but also allowed us to work alongside NTT group companies in serving the larger global market.",
-    name: "— Alan Lai , Founder of ProfilePrint (NTT Startup Challenge 2024 1 Award)",
+    name: "— Alan Lai, Founder of ProfilePrint (NTT Startup Challenge 2024, 1st winner)",
   },
   {
     desc: "It has been a true privilege to be involved with the NTT Startup Challenge since 2017 and to witness its evolution into a leading platform for collaboration between startups across Asia and the NTT Group. NTT Startup Challenge offers an exceptional gateway to NTT Group’s vast resources, networks, and markets—enabling win-win partnerships that drive real innovation. I wholeheartedly encourage startups across Asia to seize this opportunity and be part of a vibrant ecosystem of shared success together with the NTT Group. ",
@@ -25,7 +25,7 @@ export const SPEAK_CONTENT = [
   },
   {
     desc: "My hope for the challenge is that innovative solutions continually float up get recognized by NTT.",
-    name: "— Zachary Loh, Market Development Manager, Hydro Leap",
+    name: "— Zachary Loh, Market Development Manager, Hydroleap (NTT Startup Challenge 2025, 3rd winner)",
   },
   {
     desc: "I am really looking forward to collaborating with NTT together make many opportunities and fun things.",
@@ -62,7 +62,7 @@ export const JUDGES_CONTENT = [
   {
     id: 1,
     name: "Kuan Hsu",
-    organization: "KK Fund",
+    organization: "Synexia Ventures, Managing Director.",
     bio: "Kuan Hsu is the General Partner of KK Fund, an early-stage venture capital firm backing visionary entrepreneurs to address Southeast Asia's most pressing challenges through innovation and leadership.",
   },
   {
