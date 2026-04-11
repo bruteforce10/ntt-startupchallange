@@ -21,7 +21,7 @@ export const SPEAK_CONTENT = [
   },
   {
     desc: "I am really looking forward to the expansion of the impact that the NTT Startup Challenge has brought to the ecosystem, that would be amazing thing to witness going forward.",
-    name: "— Mr. Kuan Hsu, Managing Partner, Synexia Venture",
+    name: "— Kuan Hsu, Managing Partner, Synexia Venture",
   },
   {
     desc: "My hope for the challenge is that innovative solutions continually float up get recognized by NTT.",
@@ -63,7 +63,7 @@ export const JUDGES_CONTENT = [
     id: 1,
     name: "Kuan Hsu",
     organization: "Synexia Ventures, Managing Director.",
-    bio: "Kuan Hsu is the General Partner of KK Fund, an early-stage venture capital firm backing visionary entrepreneurs to address Southeast Asia's most pressing challenges through innovation and leadership.",
+    bio: "Kuan Hsu is the Managing Director of Synexia Ventures, an investment vehicle established to reinforce NTT Group’s business development in Southeast Asia. Synexia Ventures aims to further strengthen these Group-wide initiatives by establishing an investment platform specialized in Southeast Asia, accelerating NTT Group’s collaboration with local startups and fostering new business creation in the region.",
   },
   {
     id: 2,
