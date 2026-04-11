@@ -15,14 +15,26 @@ export function NttStatsGrid() {
           {STATISTICS.map((stat, index) => (
             <div
               key={index}
-              className="bg-[#0A1428] rounded-lg p-6 flex flex-col items-center justify-center text-center transition-transform hover:transform hover:scale-105"
+              className="bg-[#0A1428] rounded-lg p-6 flex min-h-[220px] flex-col items-center justify-center text-center transition-transform hover:transform hover:scale-105"
             >
-              <h3 className="text-blue-400 text-sm md:text-base mb-2">
-                {stat.title}
-              </h3>
-              <p className="text-white text-3xl md:text-4xl font-bold">
+              {stat.logoText ? (
+                <div className="mb-5">
+                  <p className="text-3xl font-black tracking-wide text-white md:text-4xl">
+                    {stat.logoText}
+                  </p>
+                  {stat.logoSubtext ? (
+                    <p className="text-sm font-medium text-blue-300 md:text-base">
+                      {stat.logoSubtext}
+                    </p>
+                  ) : null}
+                </div>
+              ) : null}
+              <p className="text-white text-3xl md:text-4xl font-bold mb-2">
                 {stat.value}
               </p>
+              <h3 className="text-blue-400 text-sm md:text-base">
+                {stat.title}
+              </h3>
             </div>
           ))}
         </div>

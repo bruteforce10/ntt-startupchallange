@@ -162,63 +162,64 @@ export const TABS_DATA = [
 
 export const STATISTICS = [
   {
-    title: "Global Revenue",
-    value: "$90 billion",
-  },
-  {
-    title: "Fortune Global",
-    value: "#120",
-  },
-  {
-    title: "Employees Worldwide",
     value: "340,000",
+    title: "Global employees",
+  },
+  {
+    logoText: "FORTUNE",
+    value: "#120",
+    title: "Fortune Global 500",
+  },
+  {
+    value: "70+",
+    title: "Countries and regions",
+  },
+  {
+    value: "5,000",
+    title: "Research professionals",
+  },
+  {
+    value: "$ 90B",
+    title: "Global revenue",
+  },
+  {
+    logoText: "IDC",
+    value: "Leader",
+    title: "Data center services marketscape",
+  },
+  {
+    value: "Top 3",
+    title: "Data center provider",
+  },
+  {
+    value: "Top 10",
+    title: "Global IT Services Provider",
+  },
+  {
+    logoText: "RADAR",
+    logoSubtext: "by Qrator",
+    value: "Top ranked",
+    title: "IP Backbone Perfect 10 score",
+  },
+  {
+    logoText: "Clarivate",
+    value: "Top 100",
+    title: "Global Innovator 2026",
   },
   // {
-  //   title: "S&P Rating",
-  //   value: "A",
+  //   value: "A-",
+  //   title: "S&P Global",
   // },
   {
-    title: "Heritage",
     value: "150 years",
+    title: "Heritage",
   },
   {
-    title: "Global IT Services Provider",
-    value: "Top 10",
-  },
-  {
-    title: "Countries & Regions",
-    value: "70+",
-  },
-  {
-    title: "> Of Fortune Global 100 Are Clients",
-    value: "75%",
-  },
-  {
-    title: "Global Brand Finance",
-    value: "#41",
-  },
-  {
-    title: "R&D Annual Spend",
-    value: "$3.6B",
-  },
-  {
-    title: "Research Professionals",
-    value: "5,000",
-  },
-  {
-    title: "Patents",
     value: "22,000",
+    title: "Patents",
   },
   {
-    title: "Market Share Data Center",
-    value: "#3",
-  },
-  {
-    title: "IP Backbone by CAIDA",
-    value: "Top 5",
-  },
-  {
-    title: "Network Coverage Countries & Regions",
-    value: "190+",
+    value: "$ 3B",
+    title: "R&D Investments",
   },
 ];
