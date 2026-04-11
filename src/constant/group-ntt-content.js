@@ -136,7 +136,7 @@ export const TABS_DATA = [
   },
   {
     id: "ntt-com",
-    label: "NTT Com",
+    label: "NTT Docomo Business",
     logo: "/extorch.avif",
     logoAlt: "ExTorch logo",
     content: [

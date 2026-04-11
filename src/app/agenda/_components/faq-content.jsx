@@ -12,7 +12,7 @@ export function FaqSection() {
     {
       question: "What will top 3 startup receive?",
       answer:
-        "They will receive cash prize and variety of options to collaborate with NTT Group such as potential investment, join business development and so on.",
+        "In addition to a cash prize, the top three startups will gain privileged access to collaboration opportunities with the NTT Group, including potential investment, joint business development, access to NTT’s extensive global network, and participation in the Venture Client model to accelerate growth and market validation.",
     },
     {
       question: "How many startups will be selected for the final stage?",

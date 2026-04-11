@@ -18,7 +18,7 @@ const sections = [
       {
         title: "Join a network of success:",
         description:
-          "Over 8,500 startups have applied to collaborate with us, and more than 50 have embarked on journeys of business development and commercialization.",
+          "Over 8,200 startups have applied to collaborate with us, and more than 50 have embarked on journeys of business development and commercialization.",
       },
       {
         title: "An unparalleled opportunity:",
@@ -61,7 +61,7 @@ const sections = [
       {
         title: "A landmark event:",
         description:
-          "NTTSC stands as one of the most historic startup events in SEA, hosted by an enterprise, attracting over 8,500 participants since 2016.",
+          "NTTSC stands as one of the most historic startup events in SEA, hosted by an enterprise, attracting over 8,200 participants since 2016.",
       },
       {
         title: "Discover transformative startups:",
