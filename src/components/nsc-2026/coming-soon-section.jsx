@@ -26,7 +26,7 @@ export function ComingSoonSection2026() {
               }
             />
             <p className="text-xl md:text-2xl mt-12 text-white/60 font-black uppercase tracking-[0.21em] animate-pulse">
-              1st Mei 2026
+              1st May 2026
             </p>
           </div>
         </div>
