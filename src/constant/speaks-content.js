@@ -21,7 +21,7 @@ export const SPEAK_CONTENT = [
   },
   {
     desc: "I am really looking forward to the expansion of the impact that the NTT Startup Challenge has brought to the ecosystem, that would be amazing thing to witness going forward.",
-    name: "— Kuan Hsu, Managing Partner, Synexia Venture",
+    name: "— Kuan Hsu, Managing Partner, Synexia Ventures",
   },
   {
     desc: "My hope for the challenge is that innovative solutions continually float up get recognized by NTT.",
@@ -29,7 +29,7 @@ export const SPEAK_CONTENT = [
   },
   {
     desc: "I am really looking forward to collaborating with NTT together make many opportunities and fun things.",
-    name: "— Jiho Suh, COO, Klleon (NTT Startup Challenge 2025, 2st winner)",
+    name: "— Jiho Suh, COO, Klleon (NTT Startup Challenge 2025, 2nd winner)",
   },
   {
     desc: "We are hoping that the NTT Startup Challenge will grow stronger and stronger by the year, and hopefully next year, there will be more than 1200 applications and see even greater startup innovation ideas come to the market and join the challenge.",
@@ -56,38 +56,38 @@ export const SPEAKERS_CONTENT = [
     organization: "NTT Inc.,Senior Vice President",
     bio: "Ken Katsuyama is the Senior Vice President, Head of Global Business at Nippon Telegraph and Telephone Corporation (NTT). His current responsibility is the global business of the whole NTT group. In addition, he is a member of the board of directors of NTT DATA, Inc., a major operating company of NTT group covering outside of Japan.",
   },
-  {
-    id: "ricky-willianto",
-    name: "Ricky Willianto",
-    organization: "Co-Founder of Ravenry",
-    bio: "",
-  },
-  {
-    id: "andhy-koesnandar",
-    name: "Andhy Koesnandar",
-    organization: "CEO of Cermati",
-    bio: "",
-  },
-  {
-    id: "alan-lai",
-    name: "Alan Lai",
-    organization:
-      "Founder of Profile Print (NTT Startup Challenge 2024 1st Winner)",
-    bio: "",
-  },
-  {
-    id: "airlangga-hartarto",
-    name: "Airlangga Hartarto",
-    organization: "Minister for Economic Affairs of Indonesia",
-    bio: "",
-  },
+  // {
+  //   id: "ricky-willianto",
+  //   name: "Ricky Willianto",
+  //   organization: "Co-Founder of Ravenry",
+  //   bio: "",
+  // },
+  // {
+  //   id: "andhy-koesnandar",
+  //   name: "Andhy Koesnandar",
+  //   organization: "CEO of Cermati",
+  //   bio: "",
+  // },
+  // {
+  //   id: "alan-lai",
+  //   name: "Alan Lai",
+  //   organization:
+  //     "Founder of Profile Print (NTT Startup Challenge 2024 1st Winner)",
+  //   bio: "",
+  // },
+  // {
+  //   id: "airlangga-hartarto",
+  //   name: "Airlangga Hartarto",
+  //   organization: "Minister for Economic Affairs of Indonesia",
+  //   bio: "",
+  // },
 ];
 
 export const JUDGES_CONTENT = [
   {
     id: 1,
     name: "Kuan Hsu",
-    organization: "Synexia Ventures, Managing Director.",
+    organization: "Synexia Ventures, Managing Director",
     bio: "Kuan Hsu is the Managing Director of Synexia Ventures, an investment vehicle established to reinforce NTT Group’s business development in Southeast Asia. Synexia Ventures aims to further strengthen these Group-wide initiatives by establishing an investment platform specialized in Southeast Asia, accelerating NTT Group’s collaboration with local startups and fostering new business creation in the region.",
   },
   {
