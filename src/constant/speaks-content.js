@@ -11,16 +11,16 @@ export const SPEAK_CONTENT = [
     desc: "We at ProfilePrint are honored and fortunate to have won 1st place at the inaugural NTT Startup challenge 2024 which allowed us to work closely with NTT Group as a strategic partner to deepen our market penetration. It not only expedited our expansion into the Japan market but also allowed us to work alongside NTT group companies in serving the larger global market.",
     name: "— Alan Lai, Founder of ProfilePrint (NTT Startup Challenge 2024, 1st winner)",
   },
-  {
-    desc: "It has been a true privilege to be involved with the NTT Startup Challenge since 2017 and to witness its evolution into a leading platform for collaboration between startups across Asia and the NTT Group. NTT Startup Challenge offers an exceptional gateway to NTT Group’s vast resources, networks, and markets—enabling win-win partnerships that drive real innovation. I wholeheartedly encourage startups across Asia to seize this opportunity and be part of a vibrant ecosystem of shared success together with the NTT Group. ",
-    name: "— Kuan Hsu , General Partner of KK Fund",
-  },
+  // {
+  //   desc: "It has been a true privilege to be involved with the NTT Startup Challenge since 2017 and to witness its evolution into a leading platform for collaboration between startups across Asia and the NTT Group. NTT Startup Challenge offers an exceptional gateway to NTT Group’s vast resources, networks, and markets—enabling win-win partnerships that drive real innovation. I wholeheartedly encourage startups across Asia to seize this opportunity and be part of a vibrant ecosystem of shared success together with the NTT Group. ",
+  //   name: "— Kuan Hsu , General Partner of KK Fund",
+  // },
   {
     desc: "This 2025 NTT Startup Challenge received more than 1000 applicants, which is the largest around the globe.",
     name: "— Takeshi Ebihara, Managing Partner, Rebright Ventures",
   },
   {
-    desc: "I am really looking forward to the expansion of the impact that the NTT Startup Challenge has brought to the ecosystem, that would be amazing thing to witness going forward.",
+    desc: "It has been a true privilege to be involved with the NTT Startup Challenge since 2017 and to witness its evolution into a leading platform for collaboration between startups across Asia and the NTT Group. NTT Startup Challenge offers an exceptional gateway to NTT Group’s vast resources, networks, and markets—enabling win-win partnerships that drive real innovation. I wholeheartedly encourage startups across Asia to seize this opportunity and be part of a vibrant ecosystem of shared success together with the NTT Group. I am really looking forward to the expansion of the impact that the NTT Startup Challenge has brought to the ecosystem, that would be amazing thing to witness going forward.",
     name: "— Kuan Hsu, Managing Partner, Synexia Ventures",
   },
   {

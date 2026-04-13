@@ -6,7 +6,7 @@ export const GROUP_NTT_CONTENT = [
     height: 250,
   },
   {
-    url: "https://www.nttdocomo-v.com/en/news/3we8r6oq5o/",
+    url: "https://www.linkedin.com/company/synexia-ventures/posts/?feedView=all",
     img: "synexia-ventures",
     width: 220,
     height: 200,
@@ -141,7 +141,7 @@ export const TABS_DATA = [
     logoAlt: "ExTorch logo",
     content: [
       'Open innovation programs with external companies "Co-creation" with society',
-      "Aiming to strengthen existing businesses and creating new ones by combining the technology of partners, with focus on startups, and assets put by NTT Communications together",
+      "Aiming to strengthen existing businesses and creating new ones by combining the technology of partners, with focus on startups, and assets put by NTT Docomo Ventures together",
     ],
   },
   {

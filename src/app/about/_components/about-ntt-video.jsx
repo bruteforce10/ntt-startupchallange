@@ -17,11 +17,10 @@ export function AboutNttVideoSection() {
               NTT Group is a global leader in IT and telecommunications,
               leveraging a broad customer base and extensive ICT expertise
               developed over 150 years of innovation and societal contribution.
-              NTT's business consists of integrated ICT (NTT DOCOMO, NTT
-              Communications, and NTT COMWARE etc.), Regional communications
-              (NTT EAST and WEST etc.), global solutions (NTT DATA etc.), real
-              estate (NTT Urban Solutions), energy (NTT Anode Energy) and
-              others.
+              NTT's business consists of integrated ICT (NTT DOCOMO, NTT Docomo
+              Ventures, and NTT COMWARE etc.), Regional communications (NTT EAST
+              and WEST etc.), global solutions (NTT DATA etc.), real estate (NTT
+              Urban Solutions), energy (NTT Anode Energy) and others.
             </p>
           </div>
 
