@@ -35,8 +35,8 @@ export const LIST_NAVBAR = [
     url: "/",
     positionSideLeft: true,
     opt: [
-      { title: "NSC 2024", url: "/nsc-2024" },
-      { title: "NSC 2025", url: "/nsc-2025" },
+      { title: "NTTSC 2024", url: "/nsc-2024" },
+      { title: "NTTSC 2025", url: "/nsc-2025" },
     ],
   },
   {

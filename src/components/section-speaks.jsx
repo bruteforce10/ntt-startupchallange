@@ -15,7 +15,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 const SpeaksSection = ({ is2026 = false }) => {
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true }),
+    Autoplay({ delay: 10000, stopOnInteraction: true }),
   );
 
   return (

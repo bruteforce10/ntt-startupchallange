@@ -21,7 +21,7 @@ export const SPEAK_CONTENT = [
   },
   {
     desc: "I am really looking forward to the expansion of the impact that the NTT Startup Challenge has brought to the ecosystem, that would be amazing thing to witness going forward.",
-    name: "— Mr. Kuan Hsu, Managing Partner, Synexia Venture",
+    name: "— Kuan Hsu, Managing Partner, Synexia Ventures",
   },
   {
     desc: "My hope for the challenge is that innovative solutions continually float up get recognized by NTT.",
@@ -29,11 +29,11 @@ export const SPEAK_CONTENT = [
   },
   {
     desc: "I am really looking forward to collaborating with NTT together make many opportunities and fun things.",
-    name: "— Jiho Suh, COO, Klleon",
+    name: "— Jiho Suh, COO, Klleon (NTT Startup Challenge 2025, 2nd winner)",
   },
   {
     desc: "We are hoping that the NTT Startup Challenge will grow stronger and stronger by the year, and hopefully next year, there will be more than 1200 applications and see even greater startup innovation ideas come to the market and join the challenge.",
-    name: "— David B. Wang, Global Head of Loyalty Partnership & GM of Hong Kong (Heymax)",
+    name: "— David B. Wang, Global Head of Loyalty Partnership & GM of Hong Kong Heymax  (NTT Startup Challenge 2025, 1st winner)",
   },
 ];
 
@@ -56,14 +56,39 @@ export const SPEAKERS_CONTENT = [
     organization: "NTT Inc.,Senior Vice President",
     bio: "Ken Katsuyama is the Senior Vice President, Head of Global Business at Nippon Telegraph and Telephone Corporation (NTT). His current responsibility is the global business of the whole NTT group. In addition, he is a member of the board of directors of NTT DATA, Inc., a major operating company of NTT group covering outside of Japan.",
   },
+  // {
+  //   id: "ricky-willianto",
+  //   name: "Ricky Willianto",
+  //   organization: "Co-Founder of Ravenry",
+  //   bio: "",
+  // },
+  // {
+  //   id: "andhy-koesnandar",
+  //   name: "Andhy Koesnandar",
+  //   organization: "CEO of Cermati",
+  //   bio: "",
+  // },
+  // {
+  //   id: "alan-lai",
+  //   name: "Alan Lai",
+  //   organization:
+  //     "Founder of Profile Print (NTT Startup Challenge 2024 1st Winner)",
+  //   bio: "",
+  // },
+  // {
+  //   id: "airlangga-hartarto",
+  //   name: "Airlangga Hartarto",
+  //   organization: "Minister for Economic Affairs of Indonesia",
+  //   bio: "",
+  // },
 ];
 
 export const JUDGES_CONTENT = [
   {
     id: 1,
     name: "Kuan Hsu",
-    organization: "Synexia Ventures, Managing Director.",
-    bio: "Kuan Hsu is the General Partner of KK Fund, an early-stage venture capital firm backing visionary entrepreneurs to address Southeast Asia's most pressing challenges through innovation and leadership.",
+    organization: "Synexia Ventures, Managing Director",
+    bio: "Kuan Hsu is the Managing Director of Synexia Ventures, an investment vehicle established to reinforce NTT Group’s business development in Southeast Asia. Synexia Ventures aims to further strengthen these Group-wide initiatives by establishing an investment platform specialized in Southeast Asia, accelerating NTT Group’s collaboration with local startups and fostering new business creation in the region.",
   },
   {
     id: 2,
@@ -77,18 +102,18 @@ export const JUDGES_CONTENT = [
     organization: "Founding General Partner of Rebright Partners",
     bio: "Takeshi Ebihara is Founding General Partner at Rebright Partners, VC  firm invests in Seed to Series-A Startups in SE Asia and India includes  Indonesian Largest IPO company Bukalapak (1st round Lead/Solo),  Philipino Largest tech exit company Coins.Ph (1st round co-lead) ,  multiple Indian Unicorn and Soonicorns.  Ebihara has been in the industry more than decades as a venture  capitalist as well as serial entrepreneur started his career at JAFCO, the  largest VC/PE firm in Japan in 1994. He also founded and managed  several Tech companies includes Tokyo Stock-EX Listed Public  Company ",
   },
-  // {
-  //   id: 4,
-  //   name: "Antonny Liem",
-  //   organization: "GDP Venture",
-  //   bio: "Antonny is a founding partner at GDP Venture. Technology, marketing, people, and execution have driven his professional journey. He began in Enterprise IT before joining SemutApi Colony as Managing Director in 2005, transforming it into a digital marketing agency. In 2010, he started MerahPutih Incubator, the seed investment arm of GDP Venture.",
-  // },
-  // {
-  //   id: 5,
-  //   name: "Gary Khoeng",
-  //   organization: "Vertex Ventures",
-  //   bio: "Gary Khoeng is a Partner at Vertex Ventures Southeast Asia & India, leading the Indonesian team. He focuses on Indonesia's startup ecosystem. Before joining Vertex, Gary invested in early-stage opportunities at an Indonesian fund across sectors like e-Commerce and Fintech. Prior to that, he worked at Citigroup in New York, Singapore, and Hong Kong, and at the Boston Consulting Group in Jakarta, covering FMCG and Financial Services.",
-  // },
+  {
+    id: "anthony-liem",
+    name: "Anthony Liem",
+    organization: "Founding Partner of GDP Venture",
+    bio: "Antonny is a founding partner at GDP Venture. Technology, marketing, people, and execution have driven his professional journey. He began in Enterprise IT before joining SemutApi Colony as Managing Director in 2005, transforming it into a digital marketing agency. In 2010, he started MerahPutih Incubator, the seed investment arm of GDP Venture.",
+  },
+  {
+    id: "gary-khoeng",
+    name: "Gary Khoeng",
+    organization: "Partner of Vertex Ventures",
+    bio: "Gary Khoeng is a Partner at Vertex Ventures Southeast Asia & India, leading the Indonesian team. He focuses on Indonesia's startup ecosystem. Before joining Vertex, Gary invested in early-stage opportunities at an Indonesian fund across sectors like e-Commerce and Fintech. Prior to that, he worked at Citigroup in New York, Singapore, and Hong Kong, and at the Boston Consulting Group in Jakarta, covering FMCG and Financial Services.",
+  },
   // {
   //   id: 6,
   //   name: "Victor Lesmana",

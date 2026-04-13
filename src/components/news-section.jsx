@@ -30,7 +30,18 @@ function formatNewsDate(value) {
 function stripHtml(value) {
   if (!value) return "";
 
-  return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  if (typeof window !== "undefined") {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(value, "text/html");
+
+    return doc.body.textContent?.replace(/\s+/g, " ").trim() || "";
+  }
+
+  return value
+    .replace(/&nbsp;/gi, " ")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function getNewsImageSrc(item) {
@@ -46,7 +57,6 @@ function getNewsImageSrc(item) {
 function NewsCard({ item }) {
   const imageSrc = getNewsImageSrc(item);
   const description = stripHtml(item?.description);
-  const formattedDate = formatNewsDate(item?.created);
 
   return (
     <Link
@@ -72,9 +82,6 @@ function NewsCard({ item }) {
       </div>
 
       <div className="space-y-2">
-        {formattedDate ? (
-          <p className="text-sm font-medium text-white/80">{formattedDate}</p>
-        ) : null}
         <h3 className="line-clamp-2 text-lg font-semibold leading-snug text-white md:text-xl">
           {item?.title}
         </h3>
@@ -144,10 +151,10 @@ export function NewsSection({ is2026 = false }) {
   const newsActivities = data?.newsActivities ?? [];
   const errors = data?.errors ?? [];
   const hasNewsArticleError = errors.some((message) =>
-    message.includes("news_article")
+    message.includes("news_article"),
   );
   const hasNewsActivityError = errors.some((message) =>
-    message.includes("news_activity")
+    message.includes("news_activity"),
   );
 
   const Heading = is2026 ? (

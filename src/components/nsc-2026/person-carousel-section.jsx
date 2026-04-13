@@ -28,7 +28,7 @@ function PersonCard({ person }) {
       <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-6">
         {person.organization}
       </p>
-      
+
       <div className="relative flex-grow">
         <p
           className={`text-gray-400 text-sm leading-relaxed font-light tracking-wide ${
@@ -37,12 +37,14 @@ function PersonCard({ person }) {
         >
           {person.bio}
         </p>
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="text-blue-ntt-200 hover:text-white mt-4 text-sm font-semibold transition-colors focus:outline-none"
-        >
-          {isExpanded ? "Show less" : "Read more"}
-        </button>
+        {person.bio.split(" ").length > 30 && (
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="text-blue-ntt-200 hover:text-white mt-4 text-sm font-semibold transition-colors focus:outline-none"
+          >
+            {isExpanded ? "Show less" : "Read more"}
+          </button>
+        )}
       </div>
     </div>
   );

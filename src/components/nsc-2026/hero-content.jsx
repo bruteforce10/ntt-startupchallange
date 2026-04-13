@@ -41,8 +41,8 @@ export function HeroContent2026() {
               key={action.label}
               asChild
               className={[
-                "min-h-12 flex-1 basis-0 min-w-0 touch-manipulation rounded-2xl px-5 py-4 text-center text-sm font-extrabold leading-snug whitespace-normal transition-[transform,background-color,border-color,color,box-shadow] duration-200 ease-out hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-blue-ntt-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent motion-reduce:hover:translate-y-0 sm:min-h-14 sm:px-6 sm:text-[0.95rem]",
-                action.badge ? "h-auto flex-col gap-1.5" : "",
+                "flex min-h-16 flex-1 basis-0 min-w-0 items-center justify-center touch-manipulation rounded-2xl px-5 py-4 text-center text-sm font-extrabold leading-snug whitespace-normal transition-[transform,background-color,border-color,color,box-shadow] duration-200 ease-out hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-blue-ntt-200/60 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent motion-reduce:hover:translate-y-0 sm:min-h-[4.5rem] sm:px-6 sm:text-[0.95rem]",
+                action.badge ? "flex-col gap-1.5" : "",
                 "lg:flex-1 lg:basis-0",
                 action.className,
               ].join(" ")}
