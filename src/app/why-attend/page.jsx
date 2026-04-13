@@ -10,6 +10,9 @@ export const metadata = {
   title: "Why Attend",
   description:
     "Generate valuable leads: Utilize the event to connect with startups, government entities, and enterprises for potential lead generation. ntt startup challenge.",
+  alternates: {
+    canonical: "/why-attend",
+  },
 };
 
 const WhyAttendPage = () => {

@@ -13,6 +13,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://www.ntt-startupchallenge.com"),
   title: {
     default: "NTT Startup Challenge",
     template: "%s | NTT Startup Challenge",

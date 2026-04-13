@@ -4,6 +4,9 @@ export const metadata = {
   title: "NTT Startup Challenge 2025",
   description:
     "Explore the NTT Startup Challenge 2025 highlights, partners, speakers, and recap content.",
+  alternates: {
+    canonical: "/nsc-2025",
+  },
 };
 
 export default function Nsc2025Page() {

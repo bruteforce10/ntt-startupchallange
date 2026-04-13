@@ -10,6 +10,9 @@ export const metadata = {
   title: "Agenda",
   description:
     "Expand Your Network, Capitalize on Unique Opportunities with NTT Startup Challenge",
+  alternates: {
+    canonical: "/agenda",
+  },
 };
 
 export default function About() {

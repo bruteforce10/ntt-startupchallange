@@ -1,31 +1,33 @@
 export default function sitemap() {
+  const siteUrl = "https://www.ntt-startupchallenge.com";
+
   return [
     {
-      url: "https://www.ntt-startupchallenge.com",
+      url: `${siteUrl}/`,
       lastModified: new Date(),
-      changeFrequency: "yearly",
+      changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://www.ntt-startupchallenge.com/about",
+      url: `${siteUrl}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://www.ntt-startupchallenge.com/agenda",
+      url: `${siteUrl}/agenda`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.5,
     },
     {
-      url: "https://www.ntt-startupchallenge.com/why-attend",
+      url: `${siteUrl}/why-attend`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.5,
     },
     {
-      url: "https://www.ntt-startupchallenge.com/nsc-2025",
+      url: `${siteUrl}/nsc-2025`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
