@@ -42,8 +42,16 @@ import EachUtils from "@/utils/eachUtils";
 
 const NAVBAR_ACTIONS = [
   {
+    title: "Contact Us",
+    href: "https://wa.me/6281130804004?text=Hello%20NTT%20Startup%20Challenge%2C%20I%20am%20interested%20in%20contacting%20you.%20Please%20let%20me%20know%20how%20we%20can%20connect.",
+  },
+  {
     title: "Partner With Us",
     href: "/",
+  },
+  {
+    title: "Subscribe to Our Newsletter",
+    href: "mailto:info@ntt-startupchallenge.com?subject=Newsletter%20Subscription",
   },
   {
     title: "Register",
@@ -52,14 +60,14 @@ const NAVBAR_ACTIONS = [
     disabled: true,
     badge: "coming soon",
   },
-  {
-    title: "Subscribe to Our Newsletter",
-    href: "mailto:info@ntt-startupchallenge.com?subject=Newsletter%20Subscription",
-  },
 ];
 
-const PRIMARY_ACTION = NAVBAR_ACTIONS[1];
-const SECONDARY_ACTIONS = [NAVBAR_ACTIONS[0], NAVBAR_ACTIONS[2]];
+const PRIMARY_ACTION = NAVBAR_ACTIONS[3];
+const SECONDARY_ACTIONS = [
+  NAVBAR_ACTIONS[0],
+  NAVBAR_ACTIONS[1],
+  NAVBAR_ACTIONS[2],
+];
 
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
