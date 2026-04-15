@@ -5,15 +5,15 @@ export async function POST(req) {
   const data = await req.json();
 
   try {
-    const allRecords = await pb.collection("data_partner").getFullList();
+    const allRecords = await pb.collection("data_partner_2026").getFullList();
     const record = allRecords.find(
-      (r) => r.email_address === data.email_address
+      (r) => r.email_address === data.email_address,
     );
 
     if (record) {
-      await pb.collection("data_partner").update(record.id, data);
+      await pb.collection("data_partner_2026").update(record.id, data);
     } else {
-      await pb.collection("data_partner").create(data);
+      await pb.collection("data_partner_2026").create(data);
     }
 
     return NextResponse.json({ success: true });

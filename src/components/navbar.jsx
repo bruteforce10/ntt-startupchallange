@@ -47,7 +47,7 @@ const NAVBAR_ACTIONS = [
   },
   {
     title: "Partner With Us",
-    href: "/",
+    href: "/register?type=partner",
   },
   {
     title: "Subscribe to Our Newsletter",
@@ -55,7 +55,7 @@ const NAVBAR_ACTIONS = [
   },
   {
     title: "Register",
-    href: "/",
+    href: "/register?type=startup",
     external: true,
     disabled: true,
     badge: "coming soon",
