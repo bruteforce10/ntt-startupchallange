@@ -158,6 +158,15 @@ export const TABS_DATA = [
       "Develop new businesses from zero to one through those programs",
     ],
   },
+  {
+    id: "ntt-data",
+    label: "NTT DATA",
+    logo: "/ntt-data.png",
+    logoAlt: "NTT DATA logo",
+    content: [
+      "NTT DATA has a long and rich legacy of innovation. Our experience spans both closed, R&D-driven initiatives and open innovation conducted in collaboration with startups, academic institutions, and strategic technology and accelerator partners. By leveraging our global resources, offerings, capabilities, and assets, we drive innovation and growth for both our own business and our clients.",
+    ],
+  },
 ];
 
 export const STATISTICS = [
