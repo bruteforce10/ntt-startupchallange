@@ -92,7 +92,7 @@ function UploadForm() {
       }
 
       const res = await fetch(
-        `https://pb.ntt-startupchallenge.com/api/collections/data_startup/records?filter=(email_address="${email}")`
+        `https://pb.ntt-startupchallenge.com/api/collections/data_startup_2026/records?filter=(email_address="${email}")`,
       );
       const list = await res.json();
       const matchedRecord = list?.items?.[0];
@@ -108,11 +108,11 @@ function UploadForm() {
       formData.append("file_proposal", file);
 
       const updateRes = await fetch(
-        `https://pb.ntt-startupchallenge.com/api/collections/data_startup/records/${recordId}`,
+        `https://pb.ntt-startupchallenge.com/api/collections/data_startup_2026/records/${recordId}`,
         {
           method: "PATCH",
           body: formData,
-        }
+        },
       );
 
       if (updateRes.ok) {

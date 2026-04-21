@@ -10,6 +10,7 @@ export async function POST(req) {
   const filePath = path.join(process.cwd(), "public/email-template.html");
   let html = fs.readFileSync(filePath, "utf8");
   html = html.replace("{{name}}", data.first_name);
+  html = html.replace("{{company}}", data.startup_name);
   html = html.replace("{{email}}", data.email_address);
 
   const transporter = nodemailer.createTransport({
@@ -31,7 +32,7 @@ export async function POST(req) {
       name: "NTT Startup Challenge",
     },
     to: data.email_address,
-    subject: "Thank you for your registration!",
+    subject: "NTT Startup Challenge 2026 Registration Confirmed",
     html,
     headers: {
       "X-Mailer": "NTT Startup Challenge Mailer",
@@ -46,15 +47,15 @@ export async function POST(req) {
     await transporter.verify();
     console.log("Server is ready to send emails");
 
-    const allRecords = await pb.collection("data_startup").getFullList();
+    const allRecords = await pb.collection("data_startup_2026").getFullList();
     const record = allRecords.find(
-      (r) => r.email_address === data.email_address
+      (r) => r.email_address === data.email_address,
     );
 
     if (record) {
-      await pb.collection("data_startup").update(record.id, data);
+      await pb.collection("data_startup_2026").update(record.id, data);
     } else {
-      await pb.collection("data_startup").create(data);
+      await pb.collection("data_startup_2026").create(data);
     }
 
     // Send email
@@ -72,7 +73,7 @@ export async function POST(req) {
         success: false,
         error: error.message,
       },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

@@ -7,13 +7,13 @@ export async function POST(req) {
     const email_address = formData.get("email_address");
     const file_proposal = formData.get("file_proposal");
 
-    const allRecords = await pb.collection("data_startup").getFullList();
+    const allRecords = await pb.collection("data_startup_2026").getFullList();
     const record = allRecords.find((r) => r.email_address === email_address);
 
     if (!record) {
       return NextResponse.json(
         { success: false, message: "Email not found" },
-        { status: 404 }
+        { status: 404 },
       );
     }
 
@@ -29,7 +29,7 @@ export async function POST(req) {
       file_proposal: file_proposal,
     };
 
-    await pb.collection("data_startup").update(record.id, recordData);
+    await pb.collection("data_startup_2026").update(record.id, recordData);
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Gagal kirim", error);
