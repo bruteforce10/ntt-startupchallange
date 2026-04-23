@@ -71,8 +71,6 @@ const SECONDARY_ACTIONS = [
 
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
-  const [activePositionSideLeft, setActivePositionSideLeft] =
-    React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -186,10 +184,7 @@ export function Navbar() {
         <div className="hidden xl:flex xl:gap-6">
           {/* Desktop Navigation */}
           <div className="flex items-center justify-center flex-1">
-            <NavigationMenu
-              className="justify-center"
-              positionSideLeft={activePositionSideLeft}
-            >
+            <NavigationMenu className="justify-center" viewport={false}>
               <NavigationMenuList>
                 <EachUtils
                   of={LIST_NAVBAR}
@@ -209,18 +204,7 @@ export function Navbar() {
                       );
                     } else {
                       return (
-                        <NavigationMenuItem
-                          key={item.title}
-                          onMouseEnter={() =>
-                            item.positionSideLeft &&
-                            setActivePositionSideLeft(true)
-                          }
-                          onMouseLeave={() => {
-                            setTimeout(() => {
-                              setActivePositionSideLeft(false);
-                            }, 4000);
-                          }}
-                        >
+                        <NavigationMenuItem key={item.title}>
                           <NavigationMenuTrigger>
                             {item.title}
                           </NavigationMenuTrigger>
@@ -395,7 +379,7 @@ const ListItem = React.forwardRef(
             ref={ref}
             href={href}
             className={cn(
-              "block select-none space-y-1 rounded-md p-3 leading-none no-underline hover:bg-primary hover:text-accent text-accent",
+              "block select-none space-y-1 rounded-md p-3 leading-none no-underline text-slate-900 transition-colors hover:bg-gray-200",
               className,
             )}
             {...props}

@@ -14,9 +14,13 @@ import { SPEAK_CONTENT } from "@/constant/speaks-content";
 import Autoplay from "embla-carousel-autoplay";
 
 const SpeaksSection = ({ is2026 = false }) => {
-  const plugin = React.useRef(
-    Autoplay({ delay: 10000, stopOnInteraction: true }),
+  const autoplay = React.useRef(
+    Autoplay({ delay: 10000, stopOnInteraction: false }),
   );
+
+  const stopAutoplay = React.useCallback(() => {
+    autoplay.current?.stop();
+  }, []);
 
   return (
     <div className="md:pt-28 pt-16 ">
@@ -26,7 +30,7 @@ const SpeaksSection = ({ is2026 = false }) => {
         <HeadingText text={"Our Community Speaks"} />
       )}
       <Carousel
-        plugins={[plugin.current]}
+        plugins={[autoplay.current]}
         className="lg:max-w-6xl max-lg:max-w-2xl px-4 container mx-auto"
       >
         <CarouselContent>
@@ -46,8 +50,14 @@ const SpeaksSection = ({ is2026 = false }) => {
             )}
           />
         </CarouselContent>
-        <CarouselPrevious className={"max-xl:hidden -left-12"} />
-        <CarouselNext className={"max-xl:hidden  -right-12"} />
+        <CarouselPrevious
+          className={"max-xl:hidden -left-12"}
+          onClick={stopAutoplay}
+        />
+        <CarouselNext
+          className={"max-xl:hidden  -right-12"}
+          onClick={stopAutoplay}
+        />
       </Carousel>
     </div>
   );

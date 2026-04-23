@@ -151,6 +151,7 @@ function CarouselPrevious({
   className,
   variant = "outline",
   size = "icon",
+  onClick,
   ...props
 }) {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel();
@@ -168,7 +169,13 @@ function CarouselPrevious({
         className
       )}
       disabled={!canScrollPrev}
-      onClick={scrollPrev}
+      onClick={(event) => {
+        onClick?.(event);
+
+        if (event.defaultPrevented) return;
+
+        scrollPrev();
+      }}
       {...props}
     >
       <ArrowLeft />
@@ -181,6 +188,7 @@ function CarouselNext({
   className,
   variant = "outline",
   size = "icon",
+  onClick,
   ...props
 }) {
   const { orientation, scrollNext, canScrollNext } = useCarousel();
@@ -198,7 +206,13 @@ function CarouselNext({
         className
       )}
       disabled={!canScrollNext}
-      onClick={scrollNext}
+      onClick={(event) => {
+        onClick?.(event);
+
+        if (event.defaultPrevented) return;
+
+        scrollNext();
+      }}
       {...props}
     >
       <ArrowRight />

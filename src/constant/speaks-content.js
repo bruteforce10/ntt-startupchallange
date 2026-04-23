@@ -41,19 +41,19 @@ export const SPEAKERS_CONTENT = [
   {
     id: 2,
     name: "Akie Iriyama",
-    organization: "Waseda University - Professor",
+    organization: "Professor, Waseda University",
     bio: "Akie Iriyama is a professor at Waseda Business School. His research in strategic management, international business, and entrepreneurship has been published in prestigious journals. Previously, he worked as an industrial economist and consultant at Mitsubishi Research Institute Inc. in Japan.",
   },
   {
     id: 10,
     name: "Takashi Ebihara",
-    organization: "NTT Inc.,Executive Vice President",
+    organization: "Executive Vice President, NTT Inc.",
     bio: "Takashi Ebihara is a startup-savvy technology executive at NTT Holdings, serving as Co-Chief Artificial Intelligence Officer, CIO, and Head of Technology Planning. He accelerates responsible AI adoption across businesses, translates long-horizon R&D—including the IOWN initiative—into usable platforms, and advances information strategy and cybersecurity. Previously, as CTO/CIO of NTT EAST, he led end-to-end modernization at Japan’s largest operator; as President & CEO of NTT e-Asia, he scaled digital solutions across Southeast Asia. Ebihara partners with founders building AI-native, network-centric products, offering enterprise distribution and deep domain expertise. He holds an MBA from the National University of Singapore and a B.S. in Applied Physics from Tokyo University of Science.",
   },
   {
     id: 8,
     name: "Ken Katsuyama",
-    organization: "NTT Inc.,Senior Vice President",
+    organization: "Senior Vice President, NTT Inc.",
     bio: "Ken Katsuyama is the Senior Vice President, Head of Global Business at Nippon Telegraph and Telephone Corporation (NTT). His current responsibility is the global business of the whole NTT group. In addition, he is a member of the board of directors of NTT DATA, Inc., a major operating company of NTT group covering outside of Japan.",
   },
   // {
@@ -87,7 +87,7 @@ export const JUDGES_CONTENT = [
   {
     id: 1,
     name: "Kuan Hsu",
-    organization: "Synexia Ventures, Managing Director",
+    organization: "Managing Director, Synexia Ventures",
     bio: "Kuan Hsu is the Managing Director of Synexia Ventures, an investment vehicle established to reinforce NTT Group’s business development in Southeast Asia. Synexia Ventures aims to further strengthen these Group-wide initiatives by establishing an investment platform specialized in Southeast Asia, accelerating NTT Group’s collaboration with local startups and fostering new business creation in the region.",
   },
   {
@@ -99,19 +99,19 @@ export const JUDGES_CONTENT = [
   {
     id: 3,
     name: "Takeshi Ebihara",
-    organization: "Founding General Partner of Rebright Partners",
+    organization: "Founding General Partner, Rebright Partners",
     bio: "Takeshi Ebihara is Founding General Partner at Rebright Partners, VC  firm invests in Seed to Series-A Startups in SE Asia and India includes  Indonesian Largest IPO company Bukalapak (1st round Lead/Solo),  Philipino Largest tech exit company Coins.Ph (1st round co-lead) ,  multiple Indian Unicorn and Soonicorns.  Ebihara has been in the industry more than decades as a venture  capitalist as well as serial entrepreneur started his career at JAFCO, the  largest VC/PE firm in Japan in 1994. He also founded and managed  several Tech companies includes Tokyo Stock-EX Listed Public  Company ",
   },
   {
     id: "anthony-liem",
     name: "Anthony Liem",
-    organization: "Founding Partner of GDP Venture",
+    organization: "Founding Partner, GDP Venture",
     bio: "Antonny is a founding partner at GDP Venture. Technology, marketing, people, and execution have driven his professional journey. He began in Enterprise IT before joining SemutApi Colony as Managing Director in 2005, transforming it into a digital marketing agency. In 2010, he started MerahPutih Incubator, the seed investment arm of GDP Venture.",
   },
   {
     id: "gary-khoeng",
     name: "Gary Khoeng",
-    organization: "Partner of Vertex Ventures",
+    organization: "Partner, Vertex Ventures",
     bio: "Gary Khoeng is a Partner at Vertex Ventures Southeast Asia & India, leading the Indonesian team. He focuses on Indonesia's startup ecosystem. Before joining Vertex, Gary invested in early-stage opportunities at an Indonesian fund across sectors like e-Commerce and Fintech. Prior to that, he worked at Citigroup in New York, Singapore, and Hong Kong, and at the Boston Consulting Group in Jakarta, covering FMCG and Financial Services.",
   },
   // {
