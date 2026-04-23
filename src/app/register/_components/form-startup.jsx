@@ -22,13 +22,13 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Label } from "@/components/ui/label";
 import { Loader2 } from "lucide-react";
-import { Label } from "@radix-ui/react-dropdown-menu";
 
 const formSchema = z.object({
   first_name: z.string().min(2).max(50),
   last_name: z.string().min(2).max(50),
-  email_address: z.string().email(),
+  email_address: z.string().trim().email(),
   job_title: z.string().min(2).max(50),
   startup_name: z.string().min(2).max(50),
   website: z.string(),
@@ -285,8 +285,8 @@ export default function FormStartup() {
                                 } else {
                                   field.onChange(
                                     field.value.filter(
-                                      (item) => item !== entity
-                                    )
+                                      (item) => item !== entity,
+                                    ),
                                   );
                                 }
                               }}
@@ -346,7 +346,7 @@ export default function FormStartup() {
           )}
         />
 
-        {(howDidYouHear === "Venture Capital" || "other") && (
+        {(howDidYouHear === "Venture Capital" || howDidYouHear === "Other") && (
           <div className="pb-4">
             <Label className="my-2 text-sm text-gray-200">
               {howDidYouHear === "Venture Capital"
@@ -364,13 +364,14 @@ export default function FormStartup() {
                 onChange={(e) => setVentureCapital(e.target.value)}
               />
               <Button
+                type="button"
                 variant={"secondary"}
                 onClick={() => {
                   form.setValue(
                     "how_did_you_hear",
                     howDidYouHear === "Venture Capital"
                       ? `Venture Capital: ${ventureCapital}`
-                      : `Other: ${ventureCapital}`
+                      : `Other: ${ventureCapital}`,
                   );
                   setVentureCapital("");
                 }}

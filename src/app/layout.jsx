@@ -54,8 +54,8 @@ export default function RootLayout({ children }) {
         >
           <MouseMoveEffect />
           <Providers>{children}</Providers>
+          <Analytics />
         </body>
-        <Analytics />
       </html>
     </ClerkProvider>
   );

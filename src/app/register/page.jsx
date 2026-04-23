@@ -5,7 +5,7 @@ import HeadingText from "@/components/heading-text";
 import InitialPage from "@/components/pages/initial-page";
 import FormStartup from "./_components/form-startup";
 import FormPartner from "./_components/form-partner";
-import { redirect, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 function RegisterTabs() {
   const params = useSearchParams();
@@ -14,14 +14,14 @@ function RegisterTabs() {
   const type = params.get("type");
 
   useEffect(() => {
-    if (type) {
+    if (type === "startup" || type === "partner") {
       setActiveTab(type);
     }
   }, [type]);
 
   return (
     <Tabs
-      defaultValue="audience"
+      defaultValue="startup"
       value={activeTab}
       onValueChange={setActiveTab}
       className="w-full"
@@ -41,11 +41,10 @@ function RegisterTabs() {
         </TabsTrigger>
       </TabsList>
 
-      {/* <TabsContent value="startup">
+      <TabsContent value="startup">
         <FormStartup />
-      </TabsContent> */}
+      </TabsContent>
 
-      {/* Partner Registration Form */}
       <TabsContent value="partner">
         <FormPartner />
       </TabsContent>

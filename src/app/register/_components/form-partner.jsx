@@ -20,7 +20,7 @@ import { Loader2 } from "lucide-react";
 const formSchema = z.object({
   first_name: z.string().min(2).max(50),
   last_name: z.string().min(2).max(50),
-  email_address: z.string().email(),
+  email_address: z.string().trim().email(),
   job_title: z.string().min(2).max(50),
   company_name: z.string().min(2).max(50),
   website: z.string(),
@@ -138,7 +138,7 @@ export default function FormPartner() {
                 Email <sup className="text-red-500 text-lg -ml-1">*</sup>
               </FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input type="email" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

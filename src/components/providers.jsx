@@ -12,5 +12,5 @@ export default function Providers({ children }) {
     gtag.pageview(pathname);
   }, [pathname]);
 
-  return children;
+  return <>{children}</>;
 }
