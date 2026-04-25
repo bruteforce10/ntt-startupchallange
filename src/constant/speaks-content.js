@@ -133,3 +133,213 @@ export const JUDGES_CONTENT = [
     bio: "Yasunori Kinebuchi is a seasoned corporate strategist and finance expert with a global perspective. Since joining NTT in 2006, He has held multiple senior roles, currently leading Global Incubation activities at NTT Holdings, serving as Director. In this role, he oversees open innovation initiatives across NTT's global network. Previously, he led corporate strategy in Singapore and in the UK, and directed partnerships with industry leaders. Kinebuchi also pioneered the \"NTT Startup Challenge,\" supporting startup collaboration across Asia. He brings strong strategic insight and international experience to NTT's growth and innovation goals.",
   },
 ];
+
+export const PAST_SPEAKERS_JUDGES_CONTENT = [
+  {
+    title: "NTTSC 2024",
+    items: [
+      {
+        id: "andhy-koesnandar-2024",
+        name: "Andhy Koesnandar",
+        organization: "CEO, Cermati",
+        image:
+          "/past-speakers-judges/NTTSC 2024/Andhy Koesnandar, CEO, Cermati, - NSC 2024 Speaker.png",
+      },
+      {
+        id: "ricky-willianto-2024",
+        name: "Ricky Willianto",
+        organization: "Co-Founder, Ravenry",
+        image:
+          "/past-speakers-judges/NTTSC 2024/Ricky Willianto, Co-Founder, Ravenry - NSC 2024 Speaker.png",
+      },
+    ],
+  },
+  {
+    title: "NTTSC 2019",
+    items: [
+      {
+        id: "halim-wijaya-2019",
+        name: "Halim Wijaya",
+        organization: "Country Head, Grab",
+        image:
+          "/past-speakers-judges/NTTSC 2019/Halim Wijaya, Country Head, Grab - NSC 2019 Speaker.png",
+      },
+      {
+        id: "indra-utoyo-2019",
+        name: "Indra Utoyo",
+        organization: "Director of Digital, IT and Operation, BRI",
+        image:
+          "/past-speakers-judges/NTTSC 2019/Indra Utoyo, Director of Digital, IT and Operation, BRI - NSC 2019 Speaker.png",
+      },
+    ],
+  },
+  {
+    title: "NTTSC Malaysia 2018",
+    items: [
+      {
+        id: "andreas-surya-malaysia-2018",
+        name: "Andreas Surya",
+        organization: "Principal, Kejora Ventures",
+        image:
+          "/past-speakers-judges/NTTSC Malaysia 2018/Andreas Surya, Principal, Kejora Ventures - NSC Malaysia 2018 Judges.jpeg",
+      },
+      {
+        id: "audrey-ling-malaysia-2018",
+        name: "Audrey Ling",
+        organization: "CEO, Next Academy",
+        image:
+          "/past-speakers-judges/NTTSC Malaysia 2018/Audrey Ling, CEO, Next Academy NSC Malaysia 2018 Speaker.png",
+      },
+      {
+        id: "bryan-chung-malaysia-2018",
+        name: "Bryan Chung",
+        organization: "Director, Investments, Mountain Partners Malaysia",
+        image:
+          "/past-speakers-judges/NTTSC Malaysia 2018/Bryan Chung, Director, Investments of Mountain Partners Malaysia - NSC Malaysia 2018.png",
+      },
+      {
+        id: "dr-lau-cher-malaysia-2018",
+        name: "Dr. Lau Cher",
+        organization: "Founder, LEAD",
+        image:
+          "/past-speakers-judges/NTTSC Malaysia 2018/Dr. Lau Cher, Funder, LEAD - NSC Malaysia 2018 Speaker.png",
+      },
+      {
+        id: "hiroshi-nishikawa-malaysia-2018",
+        name: "Hiroshi Nishikawa",
+        organization: "Partnership Manager, Orange Japan",
+        image:
+          "/past-speakers-judges/NTTSC Malaysia 2018/Hiroshi Nishikawa, Partnership Manager, Orange Japan - NSC Malaysia 2018 Judge.png",
+      },
+      {
+        id: "norhizam-abdul-kadir-malaysia-2018",
+        name: "Norhizam Abdul Kadir",
+        organization: "VP Growth Ecosystem Development Division, MDEC",
+        image:
+          "/past-speakers-judges/NTTSC Malaysia 2018/Norhizam Abdul Kadir, VP Growth Ecosystem Development Division, MDEC - NSC Malaysia 2018 Speaker.png",
+      },
+      {
+        id: "shannon-wong-malaysia-2018",
+        name: "Shannon Wong",
+        organization: "Senior Assistant Vice President, Astro Malaysia",
+        image:
+          "/past-speakers-judges/NTTSC Malaysia 2018/Shannon Wong, Senior Assistant Vice President, Astro Malaysia - NSC Malaysia 2018 Judges.png",
+      },
+    ],
+  },
+  {
+    title: "NTTSC Vietnam 2018",
+    items: [
+      {
+        id: "andy-kondo-vietnam-2018",
+        name: "Andy Kondo",
+        organization: "Managing Director, NTT Docomo Inc",
+        image:
+          "/past-speakers-judges/NTTSC Vietnam 2018/Andy Kondo, Managing Director, NTT Docomo Inc - NSC Vietnam 2018 Judges.jpeg",
+      },
+      {
+        id: "bobby-ty-liu-vietnam-2018",
+        name: "Bobby T. Y. Liu",
+        organization: "Senior Director, Topica Edtech Group",
+        image:
+          "/past-speakers-judges/NTTSC Vietnam 2018/Bobby T. Y. Liu, Senior Director, Topica Edtech Group - NSC Vietnam 2018 Panelist Moderator.png",
+      },
+      {
+        id: "eddie-thai-vietnam-2018",
+        name: "Eddie Thai",
+        organization: "Partner, 500 Startups",
+        image:
+          "/past-speakers-judges/NTTSC Vietnam 2018/Eddie Thai, Partner, 500 Startups - NSC Vietnam 2018 Judge.png",
+      },
+      {
+        id: "jeffry-paine-vietnam-2018",
+        name: "Jeffry Paine",
+        organization: "Founding Partner, Golden Gate Venture",
+        image:
+          "/past-speakers-judges/NTTSC Vietnam 2018/Jeffry Paine, Founding Partner, Golden Gate Venture - NSC Vietnam 2018 Speaker.png",
+      },
+      {
+        id: "justin-nguyen-vietnam-2018",
+        name: "Justin Nguyen",
+        organization: "Advisor, Monk's Hill Ventures",
+        image:
+          "/past-speakers-judges/NTTSC Vietnam 2018/Justin Nguyen, Advisor, Monks Hill Ventures, - NSC Vietnam 2018 Speaker.png",
+      },
+      {
+        id: "kazuya-murata-vietnam-2018",
+        name: "Kazuya Murata",
+        organization: "Senior Director, NTT Docomo Ventures",
+        image:
+          "/past-speakers-judges/NTTSC Vietnam 2018/Kazuya Murata, Senior Director, NTT Docomo Ventures - NSC Vietnam 2018 Judges.png",
+      },
+      {
+        id: "nguyen-phi-van-vietnam-2018",
+        name: "Nguyen Phi Van",
+        organization: "Chairwoman, Board of Advisor, SIHUB",
+        image:
+          "/past-speakers-judges/NTTSC Vietnam 2018/Nguyen Phi Van, Chairwoman Board of Advisor, SIHUB - NSC Vietnam 2018 Speakers.png",
+      },
+      {
+        id: "truc-dao-phan-vietnam-2018",
+        name: "Truc Dao Phan",
+        organization: "Incubation/Accelerator Program, BSSC Vietnam",
+        image:
+          "/past-speakers-judges/NTTSC Vietnam 2018/Truc Dao Phan, Incubation_Accelerator Program, BSSC Vietnam - NSC Vietnam 2018 Speaker.png",
+      },
+    ],
+  },
+  {
+    title: "NTTSC Indonesia 2018",
+    items: [
+      {
+        id: "ashran-dato-ghazi-indonesia-2018",
+        name: "Ashran Dato' Ghazi",
+        organization: "CEO, MaGIC",
+        image:
+          "/past-speakers-judges/NTTSC Indonesia 2018/Ashran Dato_ Ghazi, CEO, MaGIC - NSC Indonesia 2018 Speaker.jpeg",
+      },
+      {
+        id: "david-soukhasing-indonesia-2018",
+        name: "David Soukhasing",
+        organization: "Managing Director, ANGIN",
+        image:
+          "/past-speakers-judges/NTTSC Indonesia 2018/David Soukhasing, Managing Director, ANGIN - NSC Indonesia 2018 Speaker.png",
+      },
+      {
+        id: "herman-widjaja-indonesia-2018",
+        name: "Herman Widjaja",
+        organization: "VP of Engineering, Tokopedia",
+        image:
+          "/past-speakers-judges/NTTSC Indonesia 2018/Herman Widjaja, VP of Engineering, Tokopedia - NSC Indonesia 2018 Speaker.png",
+      },
+      {
+        id: "irman-putera-indonesia-2018",
+        name: "Irman Putera",
+        organization: "Head of Accelerator & Incubator, MDI Ventures",
+        image:
+          "/past-speakers-judges/NTTSC Indonesia 2018/Irman Putera, Head of Accelerator & Incubator, MDI Ventures - NSC Indonesia 2018 Speaker.png",
+      },
+      {
+        id: "nikhil-kapur-indonesia-2018",
+        name: "Nikhil Kapur",
+        organization: "Head of South Asia, Gree Ventures",
+        image:
+          "/past-speakers-judges/NTTSC Indonesia 2018/Nikhil Kapur, Head of South Asia, Gree Ventures - NSC Indonesia 2018 Judges.png",
+      },
+      {
+        id: "rohit-agarwal-indonesia-2018",
+        name: "Rohit Agarwal",
+        organization: "Investor, Sequoia Capital",
+        image:
+          "/past-speakers-judges/NTTSC Indonesia 2018/Rohit Agarwal, Investor, Sequoia Capital - NSC Indonesia 2018 Judge.png",
+      },
+      {
+        id: "vijay-sarashetti-indonesia-2018",
+        name: "Vijay Sarashetti",
+        organization: "Head of IT, Indonusa Dwitama",
+        image:
+          "/past-speakers-judges/NTTSC Indonesia 2018/Vijay Sarashetti, Head of IT, Indonusa Dwitama - NSC Indonesia 2018 Speaker.png",
+      },
+    ],
+  },
+];

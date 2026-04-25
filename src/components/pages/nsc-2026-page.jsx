@@ -13,6 +13,7 @@ import { NewsSection } from "@/components/news-section";
 import { ListSection } from "@/components/modules/list-section";
 import { PARTNER_CONTENT_2026 } from "@/constant/finalist-content";
 import SectionCoverLink from "@/components/section-cover-link";
+import { PastSpeakersJudgesDialog } from "@/components/nsc-2026/past-speakers-judges-dialog";
 
 export function Nsc2026PageContent() {
   return (
@@ -33,6 +34,7 @@ export function Nsc2026PageContent() {
         items={SPEAKERS_CONTENT}
       />
       <PersonCarouselSection2026 title="Past Judges" items={JUDGES_CONTENT} />
+      <PastSpeakersJudgesDialog />
       <InfoSessionSection2026 />
       <ListSection
         title={"Sponsors"}
