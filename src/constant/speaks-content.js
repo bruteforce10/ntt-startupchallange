@@ -93,7 +93,7 @@ export const JUDGES_CONTENT = [
   {
     id: 2,
     name: "Akie Iriyama",
-    organization: "Waseda University",
+    organization: "Professor, Waseda University",
     bio: "Akie Iriyama is a professor at Waseda Business School. His research in strategic management, international business, and entrepreneurship has been published in prestigious journals. Previously, he worked as an industrial economist and consultant at Mitsubishi Research Institute Inc. in Japan.",
   },
   {
@@ -123,13 +123,13 @@ export const JUDGES_CONTENT = [
   {
     id: 7,
     name: "Yuma Kotake",
-    organization: "NTT DOCOMO Ventures",
+    organization: "Director, NTT Docomo Ventures",
     bio: "Yuma Kotake is the director of NTT Docomo Ventures, a corporate venture capital of NTT Group, and responsible for investment in Southeast Asia. He also has more than 10 years of experience as in-house lawyer dealing with cross-border M&A and alliance.",
   },
   {
     id: 9,
     name: "Yasunori Kinebuchi",
-    organization: "NTT Director",
+    organization: "Director, NTT",
     bio: "Yasunori Kinebuchi is a seasoned corporate strategist and finance expert with a global perspective. Since joining NTT in 2006, He has held multiple senior roles, currently leading Global Incubation activities at NTT Holdings, serving as Director. In this role, he oversees open innovation initiatives across NTT's global network. Previously, he led corporate strategy in Singapore and in the UK, and directed partnerships with industry leaders. Kinebuchi also pioneered the \"NTT Startup Challenge,\" supporting startup collaboration across Asia. He brings strong strategic insight and international experience to NTT's growth and innovation goals.",
   },
 ];
@@ -193,7 +193,7 @@ export const PAST_SPEAKERS_JUDGES_CONTENT = [
       {
         id: "bryan-chung-malaysia-2018",
         name: "Bryan Chung",
-        organization: "Director, Investments, Mountain Partners Malaysia",
+        organization: "Director of Investments, Mountain Partners Malaysia",
         image:
           "/past-speakers-judges/NTTSC Malaysia 2018/Bryan Chung, Director, Investments of Mountain Partners Malaysia - NSC Malaysia 2018.png",
       },
@@ -282,7 +282,7 @@ export const PAST_SPEAKERS_JUDGES_CONTENT = [
       {
         id: "truc-dao-phan-vietnam-2018",
         name: "Truc Dao Phan",
-        organization: "Incubation/Accelerator Program, BSSC Vietnam",
+        organization: "Incubation    Accelerator Program, BSSC Vietnam",
         image:
           "/past-speakers-judges/NTTSC Vietnam 2018/Truc Dao Phan, Incubation_Accelerator Program, BSSC Vietnam - NSC Vietnam 2018 Speaker.png",
       },
