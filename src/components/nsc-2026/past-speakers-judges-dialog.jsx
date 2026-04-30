@@ -13,15 +13,15 @@ import {
 } from "@/components/ui/dialog";
 import { PAST_SPEAKERS_JUDGES_CONTENT } from "@/constant/speaks-content";
 
-function PastPersonCard({ person }) {
+function PastPersonCard({ person, is2024 }) {
   return (
     <article className="flex min-h-[18rem] min-w-0 flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-6 text-left">
-      <div className="relative mb-5 aspect-[4/5] w-full overflow-hidden border-blue-ntt border-2 rounded-2xl bg-white/5">
+      <div className={`relative mb-5 aspect-[4/5] w-full overflow-hidden bg-white/5 ${is2024 ? '' : 'border-blue-ntt border-2 rounded-2xl'}`}>
         <Image
           src={person.image}
           alt={person.name}
           fill
-          className="object-cover"
+          className={is2024 ? 'object-contain' : 'object-cover'}
           sizes="(max-width: 768px) 60vw, 220px"
         />
       </div>
@@ -54,18 +54,21 @@ export function PastSpeakersJudgesDialog() {
           </DialogHeader>
 
           <div className="max-h-[calc(85vh-6rem)] space-y-10 overflow-y-auto px-6 py-6 sm:px-8">
-            {PAST_SPEAKERS_JUDGES_CONTENT.map((group) => (
-              <section key={group.title} className="space-y-5">
-                <h3 className="text-left text-2xl font-semibold text-white">
-                  {group.title}
-                </h3>
-                <div className="grid auto-cols-[minmax(220px,220px)] grid-flow-col gap-4 overflow-x-auto pb-2">
-                  {group.items.map((person) => (
-                    <PastPersonCard key={person.id} person={person} />
-                  ))}
-                </div>
-              </section>
-            ))}
+            {PAST_SPEAKERS_JUDGES_CONTENT.map((group) => {
+              const is2024 = group.title === "NTTSC 2024";
+              return (
+                <section key={group.title} className="space-y-5">
+                  <h3 className="text-left text-2xl font-semibold text-white">
+                    {group.title}
+                  </h3>
+                  <div className="grid auto-cols-[minmax(220px,220px)] grid-flow-col gap-4 overflow-x-auto pb-2">
+                    {group.items.map((person) => (
+                      <PastPersonCard key={person.id} person={person} is2024={is2024} />
+                    ))}
+                  </div>
+                </section>
+              );
+            })}
           </div>
         </DialogContent>
       </Dialog>

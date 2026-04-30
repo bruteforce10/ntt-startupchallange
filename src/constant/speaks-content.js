@@ -139,6 +139,69 @@ export const PAST_SPEAKERS_JUDGES_CONTENT = [
     title: "NTTSC 2024",
     items: [
       {
+        id: "akie-iriyama-2024",
+        name: "Akie Iriyama",
+        organization: "Professor, Waseda University",
+        image:
+          "/past-speakers-judges/NTTSC 2024/Akie Iriyama, Professor, Waseda University - NSC 2024 Speaker.png",
+      },
+      {
+        id: "ken-katsuyama-2024",
+        name: "Ken Katsuyama",
+        organization: "Senior Vice President, NTT Inc.",
+        image:
+          "/past-speakers-judges/NTTSC 2024/Ken Katsuyama, Senior Vice President, NTT Inc. - NSC 2024 Speaker.png",
+      },
+      {
+        id: "takashi-ebihara-2024",
+        name: "Takashi Ebihara",
+        organization: "Executive Vice President, NTT Inc.",
+        image:
+          "/past-speakers-judges/NTTSC 2024/Takashi Ebihara, Executive Vice President, NTT Inc. - NSC 2024 Speaker.png",
+      },
+      {
+        id: "kuan-hsu-2024",
+        name: "Kuan Hsu",
+        organization: "Managing Director, Synexia Ventures",
+        image:
+          "/past-speakers-judges/NTTSC 2024/Kuan Hsu, Managing Director, Synexia Ventures - NSC 2024 Judge.png",
+      },
+      {
+        id: "takeshi-ebihara-judge-2024",
+        name: "Takeshi Ebihara",
+        organization: "Founding General Partner, Rebright Partners",
+        image:
+          "/past-speakers-judges/NTTSC 2024/Takeshi Ebihara, Founding General Partner, Rebright Partners - NSC 2024 Judge.png",
+      },
+      {
+        id: "anthony-liem-2024",
+        name: "Anthony Liem",
+        organization: "Founding Partner, GDP Venture",
+        image:
+          "/past-speakers-judges/NTTSC 2024/Anthony Liem, Founding Partner, GDP Venture - NSC 2024 Judge.png",
+      },
+      {
+        id: "gary-khoeng-2024",
+        name: "Gary Khoeng",
+        organization: "Partner, Vertex Ventures",
+        image:
+          "/past-speakers-judges/NTTSC 2024/Gary Khoeng, Partner, Vertex Ventures - NSC 2024 Judge.png",
+      },
+      {
+        id: "yuma-kotake-2024",
+        name: "Yuma Kotake",
+        organization: "Director, NTT Docomo Ventures",
+        image:
+          "/past-speakers-judges/NTTSC 2024/Yuma Kotake, Director, NTT Docomo Ventures - NSC 2024 Judge.png",
+      },
+      {
+        id: "yasunori-kinebuchi-2024",
+        name: "Yasunori Kinebuchi",
+        organization: "Director, NTT",
+        image:
+          "/past-speakers-judges/NTTSC 2024/Yasunori Kinebuchi, Director, NTT - NSC 2024 Judge.png",
+      },
+      {
         id: "andhy-koesnandar-2024",
         name: "Andhy Koesnandar",
         organization: "CEO, Cermati",
