@@ -99,13 +99,12 @@ export const GROUP_NTT_CONTENT = [
 
 export const TABS_DATA = [
   {
-    id: "docomo-ventures",
-    label: "NTT DOCOMO Ventures",
-    logo: "/docomo-ntt.avif",
-    logoAlt: "NTT DOCOMO Ventures logo",
+    id: "ntt-data",
+    label: "NTT DATA",
+    logo: "/ntt-data.png",
+    logoAlt: "NTT DATA logo",
     content: [
-      "NTT DOCOMO Ventures makes business collaborations between startups and NTT group",
-      "NTT DOCOMO Ventures Operates one of the largest corporate venture funds in Japan and has invested in the World's leading companies for over 10 years",
+      "NTT DATA has a long and rich legacy of innovation. Our experience spans both closed, R&D-driven initiatives and open innovation conducted in collaboration with startups, academic institutions, and strategic technology and accelerator partners. By leveraging our global resources, offerings, capabilities, and assets, we drive innovation and growth for both our own business and our clients.",
     ],
   },
   {
@@ -114,15 +113,15 @@ export const TABS_DATA = [
     logo: "/ntt-easia.avif",
     logoAlt: "NTT e-Asia logo",
     content: [
-      "NTT e-Asia aims to create sustainable values for the communities in Asia by working with local partners",
-      "Expanding the possibilities of FTTH & Digital x Software to shape sustainable value for the Asian communities",
+      "Regional telecommunications operator focused on solving social and regional issues through ICT services and solutions",
+      "Promotes locally rooted innovation via subsidiaries such as NTT e-Asia, combining technical expertise with regional partnerships",
+      "Open innovation examples:",
+      "WEAVE: Strategic investment to expand affordable FTTH and bridge the digital divide in Indonesia",
+      "AWING: Strategic investment in a Wi-Fi-based digital advertising platform, supporting regional expansion across ASEAN",
+      "Demonstrates practical commercialization of OI through minority investments combined with hands-on operational and technical support",
     ],
-    secondLogo: "/ntt-ecity.avif",
+    // secondLogo: "/ntt-ecity.avif",
     secondLogoAlt: "NTT e-City Labo logo",
-    secondContent: [
-      "Demonstration Field for Realization of a Regional Recycling-Oriented Society",
-      "A facility where visitors can experience the solutions that the NTT East Group is working on to solve local issues",
-    ],
   },
   {
     id: "ntt-west",
@@ -130,18 +129,10 @@ export const TABS_DATA = [
     logo: "/quint-bridge.avif",
     logoAlt: "QUINTBRIDGE logo",
     content: [
-      'QUINTBRIDGE offers programs and events based on the three axes of "Learn", "Interact", and "Co-create"',
-      "QUINTBRIDGE is a laboratory for social change, where enterprises, startups, students, and local governments — all who want a better world — can harness their individuality and interact as equals, creating innovative solutions through the exchange of ideas, technology, and expertise.",
-    ],
-  },
-  {
-    id: "ntt-com",
-    label: "NTT Docomo Business",
-    logo: "/extorch.avif",
-    logoAlt: "ExTorch logo",
-    content: [
-      'Open innovation programs with external companies "Co-creation" with society',
-      "Aiming to strengthen existing businesses and creating new ones by combining the technology of partners, with focus on startups, and assets put by NTT Docomo Ventures together",
+      "Regional telecommunications and ICT provider focused on solving regional and social issues in Western Japan through digital services",
+      "Operates QUINTBRIDGE, an open innovation facility where companies, startups, universities, local governments, and individuals co-create solutions to social and regional challenges",
+      "QUINTBRIDGE is positioned as a community-open co-creation space, enabling idea generation, experimentation, and commercialization through diverse collaboration",
+      "Operates E-manga/ digital entertainment (NTT Solmare)",
     ],
   },
   {
@@ -150,21 +141,43 @@ export const TABS_DATA = [
     logo: "/docomo-startup.avif",
     logoAlt: "docomo STARTUP logo",
     content: [
-      'Employee-created "Bottom-up" approach',
-      "New business creation program initiated by employees",
-      'Training Program "COLLEGE"',
-      'New Business Idea Contest "CHALLENGE"',
-      'Accelerator Program "GROWTH"',
-      "Develop new businesses from zero to one through those programs",
+      "Japan's leading mobile operator, driving new growth through customer-centric mobility and advanced technologies",
+      "Actively promotes open RAN, 5G/6G evolution, and AI-driven networks through global partnerships and joint white papers",
+      "Engages in open innovation via collaboration with startups, universities, and global partners, including overseas OI programs such as NTT Startup Challenge",
+      "Positions innovation as a core growth engine, combining R&D, external collaboration, and global expansion",
     ],
   },
   {
-    id: "ntt-data",
-    label: "NTT DATA",
-    logo: "/ntt-data.png",
-    logoAlt: "NTT DATA logo",
+    id: "ntt-com",
+    label: "NTT Docomo Business",
+    logo: "/extorch.avif",
+    logoAlt: "ExTorch logo",
     content: [
-      "NTT DATA has a long and rich legacy of innovation. Our experience spans both closed, R&D-driven initiatives and open innovation conducted in collaboration with startups, academic institutions, and strategic technology and accelerator partners. By leveraging our global resources, offerings, capabilities, and assets, we drive innovation and growth for both our own business and our clients.",
+      "Official mission: to support an autonomous, decentralized, and collaborative society through technology and innovation towards enterprise clients",
+      "Acts as an industrial and regional DX platformer, providing global ICT, network, cloud, security, and data center services",
+      "Advances open innovation by partnering with enterprises, startups, and global technology providers to enable new digital business models",
+      "Plays a key role in commercializing innovation at scale across industries and regions",
+    ],
+  },
+  {
+    id: "synexia-ventures",
+    label: "Synexia Ventures",
+    logo: "/ntt-group/synexia-ventures.avif",
+    logoAlt: "Synexia Ventures logo",
+    content: [
+      "NTT Group's corporate venture capital fund focused on Southeast Asia, investing in early- to mid-stage startups and driving strategic B2B and B2C co-creation with NTT Group companies in global markets",
+    ],
+  },
+  {
+    id: "docomo-ventures",
+    label: "NTT DOCOMO Ventures",
+    logo: "/docomo-ntt.avif",
+    logoAlt: "NTT DOCOMO Ventures logo",
+    content: [
+      "NTT Group's global corporate venture capital arm and general contact point for the startup and venture community",
+      'Mission: "Transform the global landscape by uniting startups and the NTT Group\'s deployment expertise"',
+      "Actively invests in and supports business co-creation between startups and NTT Group companies",
+      "A key driver of open innovation through investment + collaboration, linking venture ecosystems with group execution capabilities",
     ],
   },
 ];

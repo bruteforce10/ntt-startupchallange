@@ -247,21 +247,24 @@ export default function FormStartup() {
               <FormLabel>
                 Which corporate entity would you like to collaborate with?
               </FormLabel>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="columns-2 gap-6 space-y-2">
                 {[
                   "All entity",
-                  "NTT Docomo Ventures",
+                  "NTT Holdings",
+                  "NTT Data Japan",
                   "NTT East",
                   "NTT West",
-                  "NTT Finance",
-                  "NTT Communications",
+                  "NTT Field Techno",
                   "NTT Docomo",
-                  "NTT AT",
-                  "NTT Data",
-                  "Nippon Information and Communication Corporation (NI+C)",
-                  "NTT Precision Medicine",
+                  "NTT Docomo Global",
+                  "NTT Docomo Business",
+                  "NTT Com Asia",
+                  "NTT Advanced Technology",
+                  "NTT Urban Development",
                   "NTT Anode Energy",
-                  "NTT Docomo Solutions",
+                  "Synexia Ventures",
+                  "NTT Docomo Ventures",
+                  "NTT Finance",
                 ].map((entity) => (
                   <FormField
                     key={entity}
@@ -271,7 +274,7 @@ export default function FormStartup() {
                       return (
                         <FormItem
                           key={entity}
-                          className="flex flex-row items-center space-x-1 space-y-0"
+                          className="flex flex-row items-center space-x-1 space-y-0 break-inside-avoid"
                         >
                           <FormControl>
                             <input
