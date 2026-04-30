@@ -249,21 +249,22 @@ export default function FormStartup() {
               </FormLabel>
               <div className="columns-2 gap-6 space-y-2">
                 {[
-                  "NTT Holdings",
-                  "NTT Data Japan",
-                  "NTT East",
-                  "NTT West",
-                  "NTT Field Techno",
-                  "NTT Docomo",
-                  "NTT Docomo Global",
-                  "NTT Docomo Business",
-                  "NTT Com Asia",
-                  "NTT Advanced Technology",
-                  "NTT Urban Development",
-                  "NTT Anode Energy",
-                  "Synexia Ventures",
-                  "NTT Docomo Ventures",
-                  "NTT Finance",
+                  "NTT Holdings (Organizer)",
+                  "NTT Data Japan (Domestic SI & DX Services, Finance & Marketing",
+                  "NTT Data Global (Global IT Services & SI, Data center)",
+                  "NTT East (Telecom East area of Japan, Aquaculture, Digital art, Healthcare",
+                  "NTT West (Telecom West area of Japan, Digital entertainment",
+                  "NTT Field Techno (AI Road surface inspection)",
+                  "NTT Docomo (B2C, Consumer Mobile & Digital Services",
+                  "NTT Docomo Global (New Biz Dev in Asia for Docomo)",
+                  "NTT Docomo Business (B2B, Enterprise DX & ICT Solutions)",
+                  "NTT Com Asia (Hong Kong Area)",
+                  "NTT Advanced Technology (New technology development)",
+                  "NTT Urban Development (Real Estate)",
+                  "NTT Anode Energy (Energy)",
+                  "Synexia Ventures (CVC)",
+                  "NTT Docomo Ventures (CVC)",
+                  "NTT Finance(CVC)",
                 ].map((entity) => (
                   <FormField
                     key={entity}
