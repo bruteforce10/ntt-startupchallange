@@ -155,6 +155,39 @@ export const PAST_SPEAKERS_JUDGES_CONTENT = [
     ],
   },
   {
+    title: "NTTSC 2020",
+    items: [
+      {
+        id: "kim-meng-png-2020",
+        name: "Kim Meng Png",
+        organization: "CEO, NTT Ltd. ASEAN",
+        image:
+          "/past-speakers-judges/NTTSC 2020/Kim Meng Png, CEO, NTT Ltd. ASEAN - NSC 2020 Speaker.png",
+      },
+      {
+        id: "nikhil-kapur-2020",
+        name: "Nikhil Kapur",
+        organization: "Partner, Strive",
+        image:
+          "/past-speakers-judges/NTTSC 2020/Nikhil Kapur, Partner, Strive - NSC 2020 Speaker.png",
+      },
+      {
+        id: "shaun-chong-2020",
+        name: "Shaun Chong",
+        organization: "Co Founder and CTO, Ninja Van",
+        image:
+          "/past-speakers-judges/NTTSC 2020/Shaun Chong, Co Founder and CTO, Ninja Van - NSC 2020 Speaker.png",
+      },
+      {
+        id: "yoriyuki-sugiyama-2020",
+        name: "Yoriyuki Sugiyama",
+        organization: "General Manager, Tokyo Stock Exchange",
+        image:
+          "/past-speakers-judges/NTTSC 2020/Yoriyuki Sugiyama, General Manager, Tokyo Stock Exchange - NSC 2020 Speaker.png",
+      },
+    ],
+  },
+  {
     title: "NTTSC 2019",
     items: [
       {
@@ -170,6 +203,27 @@ export const PAST_SPEAKERS_JUDGES_CONTENT = [
         organization: "Director of Digital, IT and Operation, BRI",
         image:
           "/past-speakers-judges/NTTSC 2019/Indra Utoyo, Director of Digital, IT and Operation, BRI - NSC 2019 Speaker.png",
+      },
+      {
+        id: "hiroshi-nishikawa-2019",
+        name: "Hiroshi Nishikawa",
+        organization: "Partnership Manager, Orange Japan",
+        image:
+          "/past-speakers-judges/NTTSC 2019/Hiroshi Nishikawa, Partnership Manager, Orange Japan - NSC 2019 Speaker.png",
+      },
+      {
+        id: "masa-fukata-2019",
+        name: "Masa Fukata",
+        organization: "Director, Panasonic",
+        image:
+          "/past-speakers-judges/NTTSC 2019/Masa Fukata, Director, Panasonic - NSC 2019 Speaker.png",
+      },
+      {
+        id: "nikhil-kapur-2019",
+        name: "Nikhil Kapur",
+        organization: "Head of South Asia, Gree Ventures",
+        image:
+          "/past-speakers-judges/NTTSC 2019/Nikhil Kapur, Head of South Asia, Gree Ventures - NSC 2019 Speaker.png",
       },
     ],
   },

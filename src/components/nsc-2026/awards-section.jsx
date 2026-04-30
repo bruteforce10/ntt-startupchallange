@@ -6,18 +6,20 @@ export function AwardsSection2026() {
   const awards = [
     {
       place: "2nd Place Winner",
+      prize: "$5,000",
       image: "trophy-new-2.svg",
       order: 1, // Visual order (left)
     },
     {
       place: "1st PLACE",
-      subtext: "",
+      prize: "$10,000",
       image: "trophy-new-1.svg",
       order: 2, // Visual order (center)
       isFirst: true,
     },
     {
       place: "3rd Place Winner",
+      prize: "$3,000",
       image: "trophy-new-3.svg",
       order: 3, // Visual order (right)
     },
@@ -59,11 +61,7 @@ export function AwardsSection2026() {
             >
               {award.place}
             </h3>
-            {award.subtext && (
-              <p className="text-4xl font-black text-yellow-500 mt-2">
-                {award.subtext}
-              </p>
-            )}
+            <p className="text-4xl font-black text-white mt-2">{award.prize}</p>
           </div>
         ))}
       </div>
