@@ -254,48 +254,48 @@ export const COMUNITY_PARTNER_CONTENT = [
 ];
 
 export const PARTNER_CONTENT_2026 = [
-  {
-    id: 1,
-    name: "Artique Agency",
-    url: "https://www.artique-agency.com",
-    image: "/community-partner/2026/01-artique-agency.webp",
-  },
-  {
-    id: 2,
-    name: "KK Fund",
-    url: "https://kkfund.co",
-    image: "/community-partner/2026/02-kk-fund.webp",
-  },
-  {
-    id: 3,
-    name: "Cradle",
-    url: "https://cradle.com.my",
-    image: "/community-partner/2026/03-cradle.webp",
-  },
+  // {
+  //   id: 1,
+  //   name: "Artique Agency",
+  //   url: "https://www.artique-agency.com",
+  //   image: "/community-partner/2026/01-artique-agency.webp",
+  // },
+  // {
+  //   id: 2,
+  //   name: "KK Fund",
+  //   url: "https://kkfund.co",
+  //   image: "/community-partner/2026/02-kk-fund.webp",
+  // },
+  // {
+  //   id: 3,
+  //   name: "Cradle",
+  //   url: "https://cradle.com.my",
+  //   image: "/community-partner/2026/03-cradle.webp",
+  // },
   {
     id: 4,
     name: "Dojo Coworking KL",
     url: "https://workspacedojo.com/",
     image: "/community-partner/2026/04-dojo-coworking-kl.webp",
   },
-  {
-    id: 5,
-    name: "Trihill Capital",
-    url: "https://trihillcapital.com",
-    image: "/community-partner/2026/05-trihill-capital.webp",
-  },
-  {
-    id: 6,
-    name: "EXEO Global",
-    url: "https://exeo-global.com",
-    image: "/community-partner/2026/06-exeo-global.webp",
-  },
-  {
-    id: 7,
-    name: "e27",
-    url: "https://e27.co",
-    image: "/community-partner/2026/07-e27.webp",
-  },
+  // {
+  //   id: 5,
+  //   name: "Trihill Capital",
+  //   url: "https://trihillcapital.com",
+  //   image: "/community-partner/2026/05-trihill-capital.webp",
+  // },
+  // {
+  //   id: 6,
+  //   name: "EXEO Global",
+  //   url: "https://exeo-global.com",
+  //   image: "/community-partner/2026/06-exeo-global.webp",
+  // },
+  // {
+  //   id: 7,
+  //   name: "e27",
+  //   url: "https://e27.co",
+  //   image: "/community-partner/2026/07-e27.webp",
+  // },
   {
     id: 8,
     name: "BNI Ventures",
@@ -404,12 +404,12 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://ibis-uty.com",
     image: "/community-partner/2026/25-ibis-uty.webp",
   },
-  {
-    id: 26,
-    name: "ABP Incubator",
-    url: "https://abpincubator.com/",
-    image: "/community-partner/2026/26-abp-incubator.webp",
-  },
+  // {
+  //   id: 26,
+  //   name: "ABP Incubator",
+  //   url: "https://abpincubator.com/",
+  //   image: "/community-partner/2026/26-abp-incubator.webp",
+  // },
   {
     id: 27,
     name: "Skystar Ventures",
@@ -434,12 +434,12 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://umscomm.vercel.app/",
     image: "/community-partner/2026/30-umsc.webp",
   },
-  {
-    id: 31,
-    name: "NEXEA",
-    url: "https://www.nexea.co/",
-    image: "/community-partner/2026/31-nexea.webp",
-  },
+  // {
+  //   id: 31,
+  //   name: "NEXEA",
+  //   url: "https://www.nexea.co/",
+  //   image: "/community-partner/2026/31-nexea.webp",
+  // },
   {
     id: 32,
     name: "Kairous",
@@ -452,10 +452,10 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://ukmindonesia.id/",
     image: "/community-partner/2026/33-ukmindonesia-id.webp",
   },
-  {
-    id: 34,
-    name: "GrowthCharger",
-    url: "https://growthcharger.com/",
-    image: "/community-partner/2026/34-growthcharger.webp",
-  },
+  // {
+  //   id: 34,
+  //   name: "GrowthCharger",
+  //   url: "https://growthcharger.com/",
+  //   image: "/community-partner/2026/34-growthcharger.webp",
+  // },
 ];

@@ -249,7 +249,6 @@ export default function FormStartup() {
               </FormLabel>
               <div className="columns-2 gap-6 space-y-2">
                 {[
-                  "All entity",
                   "NTT Holdings",
                   "NTT Data Japan",
                   "NTT East",
