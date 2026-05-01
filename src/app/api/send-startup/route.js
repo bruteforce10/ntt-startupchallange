@@ -32,7 +32,7 @@ export async function POST(req) {
       name: "NTT Startup Challenge",
     },
     to: data.email_address,
-    subject: "NTT Startup Challenge 2026 Registration Confirmed",
+    subject: "NTT Startup Challenge 2026",
     html,
     headers: {
       "X-Mailer": "NTT Startup Challenge Mailer",

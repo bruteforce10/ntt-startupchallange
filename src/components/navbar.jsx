@@ -56,9 +56,9 @@ const NAVBAR_ACTIONS = [
   {
     title: "Register",
     href: "/register?type=startup",
-    external: true,
-    disabled: true,
-    badge: "coming soon",
+    external: false,
+    disabled: false,
+    // badge: "coming soon",
   },
 ];
 

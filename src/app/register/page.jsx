@@ -27,12 +27,12 @@ function RegisterTabs() {
       className="w-full"
     >
       <TabsList className="grid grid-cols-2 bg-transparent w-full mb-8">
-        {/* <TabsTrigger
+        <TabsTrigger
           value="startup"
           className=" data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:text-white data-[state=active]:border-b-2 data-[state=active]:border-blue-500 rounded-lg text-gray-400"
         >
           Startup
-        </TabsTrigger> */}
+        </TabsTrigger>
         <TabsTrigger
           value="partner"
           className="w-full data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:text-white data-[state=active]:border-b-2 data-[state=active]:border-blue-500 rounded-lg text-gray-400"

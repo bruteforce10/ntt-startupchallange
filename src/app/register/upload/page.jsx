@@ -150,7 +150,7 @@ function UploadForm() {
         </Alert>
       )}
       <h1 className=" font-extrabold tracking-wide uppercase  leading-tight sm:text-3xl md:text-4xl lg:text-6xl">
-        NSC 2025 DECK SUBMISSION
+        NSC 2026 DECK SUBMISSION
       </h1>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">

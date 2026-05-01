@@ -2,14 +2,14 @@ import React from "react";
 import { CountdownTimer } from "../ui/countdown-timer";
 
 export function ComingSoonSection2026() {
-  // Target date for the countdown: May 21, 2026
-  const targetDate = new Date("2026-05-01T00:00:00").getTime();
+  // Target date for the countdown: August 21, 2026
+  const targetDate = new Date("2026-08-21T00:00:00").getTime();
 
   return (
     <section className="container mx-auto px-4 py-20 md:py-32 text-center text-white">
       <div className="max-w-4xl mx-auto space-y-12">
         <h2 className="text-4xl font-bold leading-tight tracking-[0.12em]">
-          The NTT Startup Challenge 2026 <br /> Registration Opens in
+          The NTT Startup Challenge 2026 <br /> Registration Closes in
         </h2>
 
         <div className="relative inline-block group w-full max-w-4xl">
@@ -26,7 +26,7 @@ export function ComingSoonSection2026() {
               }
             />
             <p className="text-xl md:text-2xl mt-12 text-white/60 font-black uppercase tracking-[0.21em] animate-pulse">
-              1st May 2026
+              21st August 2026
             </p>
           </div>
         </div>
