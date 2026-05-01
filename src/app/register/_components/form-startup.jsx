@@ -23,7 +23,7 @@ import {
 } from "@/components/ui/select";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Label } from "@/components/ui/label";
-import { Loader2 } from "lucide-react";
+import { Loader2, HelpCircle } from "lucide-react";
 
 const formSchema = z.object({
   first_name: z.string().min(2).max(50),
@@ -46,6 +46,41 @@ const formSchema = z.object({
     .max(3, "You may choose a maximum of 3."),
   how_did_you_hear: z.string(),
 });
+
+const ENTITY_DESCRIPTIONS = {
+  "NTT Holdings (Organizer)":
+    "Acts as the group-level organiser overseeing all B2B and B2C services, coordinating strategy and collaboration across all NTT Group companies globally, including SI, data centre, and new business domains.",
+  "NTT Data Japan (Domestic SI & DX Services, Finance & Marketing":
+    "Delivers system integration and digital transformation services for public and private sector clients in the Japan market.",
+  "NTT Data Global (Global IT Services & SI, Data center)":
+    "Provides global-scale IT services and system integration, supporting multinational enterprises with end-to-end digital solutions.",
+  "NTT East (Telecom East area of Japan, Aquaculture, Digital art, Healthcare":
+    "Provides regional ICT and telecommunications services in Eastern Japan, addressing social and community challenges through digital solutions.",
+  "NTT West (Telecom West area of Japan, Digital entertainment":
+    "Delivers ICT and telecommunications services across Western Japan, driving regional innovation and social value creation",
+  "NTT Field Techno (AI Road surface inspection)":
+    "Delivers B2B AI-enabled road infrastructure maintenance, working through SI-led operations for customers through digital transformation.",
+  "NTT Docomo (B2C, Consumer Mobile & Digital Services":
+    "Leads B2C mobile communications and digital services in Japan, expanding into smart life, payments, and digital platforms.",
+  "NTT Docomo Global (New Biz Dev in Asia for Docomo)":
+    "Drives B2B/C new business development across Asia in the global market, partnering with local ecosystems",
+  "NTT Docomo Business (B2B, Enterprise DX & ICT Solutions)":
+    "Offers B2B ICT and digital transformation solutions, integrating networks, cloud, and applications to support enterprise customers.",
+  "NTT Com Asia (Hong Kong Area)":
+    "Supports B2B customers mainly in Hong Kong, delivering SI-based solutions connected to data centre and IT services.",
+  "NTT Advanced Technology (New technology development)":
+    "Commercializes advanced technologies from NTT's R&D, providing products, solutions, and professional services to global markets.",
+  "NTT Urban Development (Real Estate)":
+    "Develops real estate and urban solutions for the global market, collaborating with local partners.",
+  "NTT Anode Energy (Energy)":
+    "Advances B2B energy solutions in the Japan and global market, working with SI partners and data centre operators to modernise infrastructure.",
+  "Synexia Ventures (CVC)":
+    "NTT's dedicated fund for Asia invests in early- to mid-stage startups, enabling B2B co-creation in the global market",
+  "NTT Docomo Ventures (CVC)":
+    "With a strong focus on Southeast Asia, drives B2B/C innovation in the global market by investing in startups enabling co-creation with NTT Group businesses.",
+  "NTT Finance(CVC)":
+    "With a strong focus on Southeast Asia, NTT Finance supports B2B innovation in the global market.",
+};
 
 export default function FormStartup() {
   const form = useForm({
@@ -247,7 +282,7 @@ export default function FormStartup() {
               <FormLabel>
                 Which corporate entity would you like to collaborate with?
               </FormLabel>
-              <div className="columns-2 gap-6 space-y-2">
+              <div className="gap-6 space-y-2">
                 {[
                   "NTT Holdings (Organizer)",
                   "NTT Data Japan (Domestic SI & DX Services, Finance & Marketing",
@@ -295,9 +330,20 @@ export default function FormStartup() {
                               }}
                             />
                           </FormControl>
-                          <FormLabel className="text-sm font-normal">
-                            {entity}
-                          </FormLabel>
+                          <div className="flex items-center gap-1 group relative py-2">
+                            <FormLabel className="text-sm font-normal cursor-pointer">
+                              {entity}
+                            </FormLabel>
+                            <div className="relative inline-block">
+                              <HelpCircle className="w-4 h-4 text-gray-400 hover:text-blue-500 transition-colors cursor-help" />
+                              <div className="absolute right-0 top-1/2 -translate-y-1/2 ml-2 w-72 p-4 bg-gray-900 text-white text-xs leading-relaxed rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <div className="relative">
+                                  {ENTITY_DESCRIPTIONS[entity]}
+                                  <div className="absolute -left-1 top-1/2 -translate-y-1/2 w-2 h-2 bg-gray-900 rotate-45"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </FormItem>
                       );
                     }}
