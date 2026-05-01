@@ -54,28 +54,64 @@ function UploadForm() {
   const [isLoadingLink, setIsLoadingLink] = React.useState(false);
   const [link_url, setLinkUrl] = React.useState("");
 
+  const sendSubmissionEmail = async (userData) => {
+    try {
+      await fetch("/api/send-submission-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      });
+    } catch (error) {
+      console.error("Error sending submission email:", error);
+    }
+  };
+
   const onSubmitLink = async () => {
+    let isSuccessUpload = false;
     try {
       setIsLoadingLink(true);
       const formData = new FormData();
       formData.append("opt_link_file_proposal", link_url);
       formData.append("email_address", defaultEmail);
 
-      await fetch("/api/send-file-link-proposal", {
+      // Get user data first
+      const res = await fetch(
+        `https://pb.ntt-startupchallenge.com/api/collections/data_startup_2026/records?filter=(email_address="${defaultEmail}")`,
+      );
+      const list = await res.json();
+      const matchedRecord = list?.items?.[0];
+
+      const uploadRes = await fetch("/api/send-file-link-proposal", {
         method: "POST",
         body: formData,
       });
+
+      if (uploadRes.ok && matchedRecord) {
+        // Send submission email
+        await sendSubmissionEmail({
+          email_address: defaultEmail,
+          first_name: matchedRecord.first_name || defaultEmail.split('@')[0],
+        });
+        setIsSuccess("success");
+        isSuccessUpload = true;
+      } else {
+        setIsSuccess("error");
+      }
     } catch (error) {
       setIsSuccess("error");
       console.error("Upload error:", error);
     } finally {
       setIsLoadingLink(false);
-      setIsSuccess("success");
-      setTimeout(() => window.location.reload(), 3000);
+      if (isSuccessUpload) {
+        setTimeout(() => window.location.reload(), 3000);
+      }
     }
   };
 
   const onSubmit = async (data) => {
+    let matchedRecord = null;
     try {
       setIsLoading(true);
 
@@ -95,7 +131,7 @@ function UploadForm() {
         `https://pb.ntt-startupchallenge.com/api/collections/data_startup_2026/records?filter=(email_address="${email}")`,
       );
       const list = await res.json();
-      const matchedRecord = list?.items?.[0];
+      matchedRecord = list?.items?.[0];
 
       if (!matchedRecord) {
         setIsSuccess("error");
@@ -116,6 +152,11 @@ function UploadForm() {
       );
 
       if (updateRes.ok) {
+        // Send submission email first
+        await sendSubmissionEmail({
+          email_address: email,
+          first_name: matchedRecord.first_name || email.split('@')[0],
+        });
         setIsSuccess("success");
       } else {
         setIsSuccess("error");
