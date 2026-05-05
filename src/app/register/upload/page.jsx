@@ -16,12 +16,14 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2 } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
-import { set, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { z } from "zod";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -52,17 +54,25 @@ function UploadForm() {
   const [isSuccess, setIsSuccess] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
   const [isLoadingLink, setIsLoadingLink] = React.useState(false);
+  const [isSuccessDialogOpen, setIsSuccessDialogOpen] = React.useState(false);
   const [link_url, setLinkUrl] = React.useState("");
+  const uploadAbortControllerRef = React.useRef(null);
+  const linkSubmissionSucceededRef = React.useRef(false);
 
   const sendSubmissionEmail = async (userData) => {
     try {
-      await fetch("/api/send-submission-email", {
+      const res = await fetch("/api/send-submission-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(userData),
       });
+
+      if (!res.ok) {
+        const error = await res.json().catch(() => null);
+        throw new Error(error?.error || "Failed to send submission email");
+      }
     } catch (error) {
       console.error("Error sending submission email:", error);
     }
@@ -93,8 +103,13 @@ function UploadForm() {
         await sendSubmissionEmail({
           email_address: defaultEmail,
           first_name: matchedRecord.first_name || defaultEmail.split('@')[0],
+          startup_name: matchedRecord.startup_name,
         });
-        setIsSuccess("success");
+        setIsSuccess("");
+        setIsSuccessDialogOpen(true);
+        setLinkUrl("");
+        linkSubmissionSucceededRef.current = true;
+        uploadAbortControllerRef.current?.abort();
         isSuccessUpload = true;
       } else {
         setIsSuccess("error");
@@ -105,7 +120,7 @@ function UploadForm() {
     } finally {
       setIsLoadingLink(false);
       if (isSuccessUpload) {
-        setTimeout(() => window.location.reload(), 3000);
+        setIsLoading(false);
       }
     }
   };
@@ -114,6 +129,10 @@ function UploadForm() {
     let matchedRecord = null;
     try {
       setIsLoading(true);
+      linkSubmissionSucceededRef.current = false;
+
+      const abortController = new AbortController();
+      uploadAbortControllerRef.current = abortController;
 
       const email = data.email_address;
       const file = data.file_proposal;
@@ -129,6 +148,7 @@ function UploadForm() {
 
       const res = await fetch(
         `https://pb.ntt-startupchallenge.com/api/collections/data_startup_2026/records?filter=(email_address="${email}")`,
+        { signal: abortController.signal },
       );
       const list = await res.json();
       matchedRecord = list?.items?.[0];
@@ -148,6 +168,7 @@ function UploadForm() {
         {
           method: "PATCH",
           body: formData,
+          signal: abortController.signal,
         },
       );
 
@@ -156,15 +177,22 @@ function UploadForm() {
         await sendSubmissionEmail({
           email_address: email,
           first_name: matchedRecord.first_name || email.split('@')[0],
+          startup_name: matchedRecord.startup_name,
         });
-        setIsSuccess("success");
+        setIsSuccess("");
+        setIsSuccessDialogOpen(true);
       } else {
         setIsSuccess("error");
       }
     } catch (error) {
+      if (error.name === "AbortError" && linkSubmissionSucceededRef.current) {
+        return;
+      }
+
       console.error("Upload error:", error);
       setIsSuccess("error");
     } finally {
+      uploadAbortControllerRef.current = null;
       const fileInput = document.querySelector('input[type="file"]');
       if (fileInput) {
         fileInput.value = "";
@@ -176,13 +204,26 @@ function UploadForm() {
 
   return (
     <section className="pt-16 md:pt-28 container mx-auto px-4 space-y-8">
-      {isSuccess == "success" && (
-        <Alert>
-          <AlertDescription>
-            Thank you! Your submission has been received!
-          </AlertDescription>
-        </Alert>
-      )}
+      <Dialog
+        open={isSuccessDialogOpen}
+        onOpenChange={setIsSuccessDialogOpen}
+      >
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Submission Received</DialogTitle>
+            <DialogDescription>
+              Thank you. Your submission has been received successfully. Please
+              check your email for further information and next steps.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button type="button">Close</Button>
+            </DialogClose>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
       {isSuccess == "error" && (
         <Alert variant={"destructive"}>
           <AlertDescription>
@@ -252,15 +293,8 @@ function UploadForm() {
                   </DialogTrigger>
                   <DialogContent>
                     <DialogHeader>
-                      <DialogTitle>Sumbit link directly</DialogTitle>
+                      <DialogTitle>Submit link directly</DialogTitle>
                     </DialogHeader>
-                    {isSuccess == "success" && (
-                      <Alert>
-                        <AlertDescription>
-                          Thank you! Your submission has been received!
-                        </AlertDescription>
-                      </Alert>
-                    )}
                     {isSuccess == "error" && (
                       <Alert variant={"destructive"}>
                         <AlertDescription>
