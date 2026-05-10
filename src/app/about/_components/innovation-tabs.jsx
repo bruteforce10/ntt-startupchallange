@@ -54,19 +54,21 @@ export function InnovationTabs() {
             >
               <div className="flex flex-col items-center">
                 {/* Logo */}
-                <div className="mb-8">
-                  <Image
-                    src={tab.logo || "/placeholder.svg"}
-                    alt={tab.logoAlt}
-                    width={300}
-                    height={80}
-                    quality={100}
-                    className="h-auto max-h-18 object-contain"
-                  />
-                </div>
+                {tab?.logo && (
+                  <div className="mb-8">
+                    <Image
+                      src={tab.logo || "/placeholder.svg"}
+                      alt={tab.logoAlt}
+                      width={300}
+                      height={80}
+                      quality={100}
+                      className="h-auto max-h-36 object-contain"
+                    />
+                  </div>
+                )}
 
                 {/* Content paragraphs */}
-                <div className="space-y-6 text-center max-w-4xl mx-auto">
+                <div className="space-y-6 text-center max-w-4xl mx-auto md:text-justify">
                   {tab.content.map((paragraph, idx) => (
                     <p
                       key={idx}
@@ -89,7 +91,7 @@ export function InnovationTabs() {
                         className="h-auto max-h-20"
                       />
                     </div>
-                    <div className="space-y-6 text-center max-w-4xl mx-auto">
+                    <div className="space-y-6 text-center max-w-4xl mx-auto md:text-justify">
                       {tab.secondContent?.map((paragraph, idx) => (
                         <p key={idx} className="text-md">
                           {paragraph}

@@ -8,7 +8,7 @@ export const GROUP_NTT_CONTENT = [
   {
     url: "https://www.linkedin.com/company/synexia-ventures/posts/?feedView=all",
     img: "synexia-ventures",
-    width: 220,
+    width: 250,
     height: 200,
   },
   {
@@ -101,7 +101,7 @@ export const TABS_DATA = [
   {
     id: "ntt-data",
     label: "NTT DATA",
-    logo: "/ntt-data.png",
+    logo: "/ntt-data.webp",
     logoAlt: "NTT DATA logo",
     content: [
       "NTT DATA has a long and rich legacy of innovation. Our experience spans both closed, R&D-driven initiatives and open innovation conducted in collaboration with startups, academic institutions, and strategic technology and accelerator partners. By leveraging our global resources, offerings, capabilities, and assets, we drive innovation and growth for both our own business and our clients.",
@@ -150,8 +150,6 @@ export const TABS_DATA = [
   {
     id: "ntt-com",
     label: "NTT Docomo Business",
-    logo: "/extorch.avif",
-    logoAlt: "ExTorch logo",
     content: [
       "Official mission: to support an autonomous, decentralized, and collaborative society through technology and innovation towards enterprise clients",
       "Acts as an industrial and regional DX platformer, providing global ICT, network, cloud, security, and data center services",
@@ -162,7 +160,7 @@ export const TABS_DATA = [
   {
     id: "synexia-ventures",
     label: "Synexia Ventures",
-    logo: "/ntt-group/synexia-ventures.avif",
+    logo: "/synexia-venture.webp",
     logoAlt: "Synexia Ventures logo",
     content: [
       "NTT Group's corporate venture capital fund focused on Southeast Asia, investing in early- to mid-stage startups and driving strategic B2B and B2C co-creation with NTT Group companies in global markets",
