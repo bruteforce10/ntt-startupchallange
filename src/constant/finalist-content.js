@@ -268,34 +268,47 @@ export const PARTNER_CONTENT_2026 = [
   },
   {
     id: 3,
+    name: "SEBI Startup",
+    url: "https://sebi.umy.ac.id",
+    image: "/community-partner/2026/03.1-sebi-startup.webp",
+  },
+  {
+    id: 4,
     name: "Cradle",
     url: "https://cradle.com.my",
     image: "/community-partner/2026/03-cradle.webp",
   },
   {
-    id: 4,
+    id: 5,
     name: "Dojo Coworking KL",
     url: "https://workspacedojo.com/",
     image: "/community-partner/2026/04-dojo-coworking-kl.webp",
   },
   {
-    id: 5,
+    id: 6,
     name: "Trihill Capital",
     url: "https://trihillcapital.com",
     image: "/community-partner/2026/05-trihill-capital.webp",
   },
   {
-    id: 6,
+    id: 7,
     name: "EXEO Global",
     url: "https://exeo-global.com",
     image: "/community-partner/2026/06-exeo-global.webp",
   },
   {
-    id: 7,
+    id: 8,
     name: "e27",
     url: "https://e27.co",
     image: "/community-partner/2026/07-e27.webp",
   },
+  {
+    id: 9,
+    name: "Endeavor",
+    url: "https://malaysia.endeavor.org",
+    image: "/community-partner/2026/09.1-endeavor.webp",
+  },
+
   // {
   //   id: 8,
   //   name: "BNI Ventures",
