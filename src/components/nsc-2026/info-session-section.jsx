@@ -4,16 +4,16 @@ import { SectionHeading2026 } from "./section-heading";
 
 const INFO_SESSIONS = [
   {
-    title: "Malaysia Info Session",
-    href: "https://www.eventbrite.com/e/1986789688441?aff=oddtdtcreator",
-    image: "/info-session/Infosession%20Malaysia.webp",
-    alt: "NTT Startup Challenge Malaysia Info Session poster",
+    title: "Vietnam Info Session",
+    href: "https://www.eventbrite.hk/e/ntt-startup-challenge-2026-info-session-hcmc-tickets-1986785057590?aff=oddtdtcreator",
+    image: "/info-session/infosession-vietnam.webp",
+    alt: "NTT Startup Challenge Vietnam Info Session poster",
   },
   {
-    title: "Vietnam Info Session",
-    href: "https://www.eventbrite.com/e/1986785057590?aff=oddtdtcreator",
-    image: "/info-session/Infosession%20Vietnam.webp",
-    alt: "NTT Startup Challenge Vietnam Info Session poster",
+    title: "Final Day NTT Startup Challenge 2026",
+    href: "https://www.eventbrite.hk/e/final-day-ntt-startup-challenge-2026-tickets-1986790310301?aff=oddtdtcreator",
+    image: "/info-session/final-day-ntt-startup-challange-day.webp",
+    alt: "NTT Startup Challenge 2026 Final Day poster",
   },
 ];
 
@@ -23,9 +23,9 @@ export function InfoSessionSection2026() {
       id="infosession"
       className="container mx-auto px-4 py-16 md:py-20 text-white"
     >
-      <SectionHeading2026 title="Meet NTT Startup Challenge Team at Our Info Session" />
+      <SectionHeading2026 title="Meet Us at NTT Startup Challenge Offline Events" />
 
-      <div className="grid gap-8 lg:grid-cols-2">
+      <div className="grid gap-8 md:grid-cols-2">
         {INFO_SESSIONS.map((session) => (
           <Link
             key={session.title}
