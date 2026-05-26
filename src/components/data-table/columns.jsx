@@ -1,7 +1,9 @@
 "use client";
 
 import { Checkbox } from "@/components/ui/checkbox";
+import { Badge } from "@/components/ui/badge";
 import { DataTableColumnHeader } from "./data-table-column-header";
+import { getRecordStatus, formatUpdatedDate } from "@/utils/record-status";
 
 export const columns = [
   {
@@ -27,6 +29,34 @@ export const columns = [
     ),
     enableSorting: false,
     enableHiding: false,
+  },
+  {
+    id: "record_status",
+    accessorFn: (row) => getRecordStatus(row),
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Status" />
+    ),
+    cell: ({ row }) => {
+      const status = row.getValue("record_status");
+      if (status === "new") {
+        return (
+          <Badge className="bg-emerald-500 text-white hover:bg-emerald-500/90">
+            NEW
+          </Badge>
+        );
+      }
+      if (status === "updated") {
+        const updatedLabel = formatUpdatedDate(row.original?.updated);
+        return (
+          <Badge className="bg-amber-500 text-white hover:bg-amber-500/90">
+            UPDATED{updatedLabel ? ` · ${updatedLabel}` : ""}
+          </Badge>
+        );
+      }
+      return null;
+    },
+    filterFn: (row, id, value) => value.includes(row.getValue(id)),
+    enableSorting: false,
   },
   {
     accessorKey: "id",
@@ -104,16 +134,15 @@ export const columns = [
       <DataTableColumnHeader column={column} title="Proposal" />
     ),
     cell: ({ row }) => {
-      const fileUrl = `https://pb.ntt-startupchallenge.com/api/files/pbc_3609018881/${row?.original?.id}/${row?.original?.file_proposal}`;
-      if (row?.original?.file_proposal) {
-        return (
-          <a href={fileUrl} target="_blank" rel="noopener noreferrer">
-            View Proposal
-          </a>
-        );
-      } else {
-        return <div>N/A</div>;
-      }
+      const record = row?.original;
+      if (!record?.file_proposal) return <div>N/A</div>;
+      const collection = record.collectionId || record.collectionName;
+      const fileUrl = `https://pb.ntt-startupchallenge.com/api/files/${collection}/${record.id}/${record.file_proposal}`;
+      return (
+        <a href={fileUrl} target="_blank" rel="noopener noreferrer">
+          View Proposal
+        </a>
+      );
     },
   },
   {

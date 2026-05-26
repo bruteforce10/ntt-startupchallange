@@ -5,9 +5,16 @@ import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { DataTableViewOptions } from "./data-table-view-options";
+import { DataTableFacetedFilter } from "./data-table-faceted-filter";
+
+const statusOptions = [
+  { label: "New", value: "new" },
+  { label: "Updated", value: "updated" },
+];
 
 export function DataTableToolbar({ table }) {
   const isFiltered = table.getState().columnFilters.length > 0;
+  const statusColumn = table.getColumn("record_status");
 
   return (
     <div className="flex w-full items-center justify-between">
@@ -25,6 +32,13 @@ export function DataTableToolbar({ table }) {
           }}
           className="h-8 w-[150px] lg:w-[250px]"
         />
+        {statusColumn && (
+          <DataTableFacetedFilter
+            column={statusColumn}
+            title="Status"
+            options={statusOptions}
+          />
+        )}
         {isFiltered && (
           <Button
             variant="ghost"
