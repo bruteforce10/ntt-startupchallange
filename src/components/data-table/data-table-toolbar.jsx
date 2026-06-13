@@ -2,6 +2,7 @@
 
 import { Table } from "@tanstack/react-table";
 import { X } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { DataTableViewOptions } from "./data-table-view-options";
@@ -49,6 +50,9 @@ export function DataTableToolbar({ table }) {
             <X className="ml-2 h-4 w-4" />
           </Button>
         )}
+        <Button asChild size="sm" className="h-8">
+          <Link href="/register/upload?method=register">Register &amp; Upload</Link>
+        </Button>
       </div>
       <DataTableViewOptions table={table} />
     </div>

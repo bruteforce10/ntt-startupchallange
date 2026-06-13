@@ -9,7 +9,6 @@ import useSWR from "swr";
 
 const DataStartupPage = () => {
   const { data, error, isLoading } = useSWR("/api/get-data-startup", fetcher);
-  console.log(data);
 
   return (
     <InitialPage>
