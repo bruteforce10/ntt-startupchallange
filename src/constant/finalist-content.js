@@ -308,6 +308,24 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://malaysia.endeavor.org",
     image: "/community-partner/2026/09.1-endeavor.webp",
   },
+  {
+    id: 10,
+    name: "AVV",
+    url: "https://avv.co",
+    image: "/community-partner/2026/10-avv-web.webp",
+  },
+  {
+    id: 11,
+    name: "Innovnation.ai",
+    url: "https://www.innovnation.ai",
+    image: "/community-partner/2026/11-innovnation-ai-web.webp",
+  },
+  {
+    id: 12,
+    name: "Thinkzone Ventures",
+    url: "https://thinkzone.vn",
+    image: "/community-partner/2026/12-thinkzone-ventures-web.webp",
+  },
 
   // {
   //   id: 8,
