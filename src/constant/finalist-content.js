@@ -267,12 +267,6 @@ export const PARTNER_CONTENT_2026 = [
     image: "/community-partner/2026/02-kk-fund.webp",
   },
   {
-    id: 3,
-    name: "SEBI Startup",
-    url: "https://sebi.umy.ac.id",
-    image: "/community-partner/2026/03.1-sebi-startup.webp",
-  },
-  {
     id: 4,
     name: "Cradle",
     url: "https://cradle.com.my",
@@ -301,6 +295,12 @@ export const PARTNER_CONTENT_2026 = [
     name: "e27",
     url: "https://e27.co",
     image: "/community-partner/2026/07-e27.webp",
+  },
+  {
+    id: 3,
+    name: "SEBI Startup",
+    url: "https://sebi.umy.ac.id",
+    image: "/community-partner/2026/03.1-sebi-startup.webp",
   },
   {
     id: 9,
