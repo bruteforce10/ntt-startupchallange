@@ -267,12 +267,6 @@ export const PARTNER_CONTENT_2026 = [
     image: "/community-partner/2026/02-kk-fund.webp",
   },
   {
-    id: 3,
-    name: "SEBI Startup",
-    url: "https://sebi.umy.ac.id",
-    image: "/community-partner/2026/03.1-sebi-startup.webp",
-  },
-  {
     id: 4,
     name: "Cradle",
     url: "https://cradle.com.my",
@@ -303,10 +297,34 @@ export const PARTNER_CONTENT_2026 = [
     image: "/community-partner/2026/07-e27.webp",
   },
   {
+    id: 3,
+    name: "SEBI Startup",
+    url: "https://sebi.umy.ac.id",
+    image: "/community-partner/2026/03.1-sebi-startup.webp",
+  },
+  {
     id: 9,
     name: "Endeavor",
     url: "https://malaysia.endeavor.org",
     image: "/community-partner/2026/09.1-endeavor.webp",
+  },
+  {
+    id: 10,
+    name: "AVV",
+    url: "https://avv.co",
+    image: "/community-partner/2026/10-avv-web.webp",
+  },
+  {
+    id: 11,
+    name: "Innovnation.ai",
+    url: "https://www.innovnation.ai",
+    image: "/community-partner/2026/11-innovnation-ai-web.webp",
+  },
+  {
+    id: 12,
+    name: "Thinkzone Ventures",
+    url: "https://thinkzone.vn",
+    image: "/community-partner/2026/12-thinkzone-ventures-web.webp",
   },
 
   // {

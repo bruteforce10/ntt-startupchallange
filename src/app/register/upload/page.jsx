@@ -40,6 +40,7 @@ const formSchema = z.object({
 function UploadForm() {
   const searchParams = useSearchParams();
   const defaultEmail = searchParams.get("email") || "";
+  const isRegisterMode = searchParams.get("method") === "register";
   const router = useRouter();
 
   const form = useForm({
@@ -141,9 +142,9 @@ function UploadForm() {
         const params = new URLSearchParams(searchParams.toString());
         params.set("email", email);
 
-        const decodedEmail = decodeURIComponent(email);
         form.setValue("email_address", email);
-        router.push(`/register/upload?email=${decodedEmail}`);
+        // Preserve the active mode (e.g. method=register) when locking the email in the URL.
+        router.push(`/register/upload?${params.toString()}`);
       }
 
       const res = await fetch(
@@ -153,31 +154,46 @@ function UploadForm() {
       const list = await res.json();
       matchedRecord = list?.items?.[0];
 
-      if (!matchedRecord) {
+      // Update mode requires an existing registration. Register mode instead
+      // creates a record for emails that are not registered yet.
+      if (!matchedRecord && !isRegisterMode) {
         setIsSuccess("error");
         return;
       }
 
-      const recordId = matchedRecord.id;
-
       const formData = new FormData();
       formData.append("file_proposal", file);
 
-      const updateRes = await fetch(
-        `https://pb.ntt-startupchallenge.com/api/collections/data_startup_2026/records/${recordId}`,
-        {
-          method: "PATCH",
-          body: formData,
-          signal: abortController.signal,
-        },
-      );
+      let uploadRes;
+      if (matchedRecord) {
+        uploadRes = await fetch(
+          `https://pb.ntt-startupchallenge.com/api/collections/data_startup_2026/records/${matchedRecord.id}`,
+          {
+            method: "PATCH",
+            body: formData,
+            signal: abortController.signal,
+          },
+        );
+      } else {
+        formData.append("email_address", email);
+        uploadRes = await fetch(
+          `https://pb.ntt-startupchallenge.com/api/collections/data_startup_2026/records`,
+          {
+            method: "POST",
+            body: formData,
+            signal: abortController.signal,
+          },
+        );
+      }
 
-      if (updateRes.ok) {
-        // Send submission email first
+      if (uploadRes.ok) {
+        // For a freshly registered record, read it back so the email greeting has a name.
+        const savedRecord =
+          matchedRecord ?? (await uploadRes.json().catch(() => null));
         await sendSubmissionEmail({
           email_address: email,
-          first_name: matchedRecord.first_name || email.split('@')[0],
-          startup_name: matchedRecord.startup_name,
+          first_name: savedRecord?.first_name || email.split("@")[0],
+          startup_name: savedRecord?.startup_name,
         });
         setIsSuccess("");
         setIsSuccessDialogOpen(true);
@@ -248,8 +264,9 @@ function UploadForm() {
                   <Input {...field} disabled={!!defaultEmail} />
                 </FormControl>
                 <FormDescription>
-                  Please make sure that the email above is the same as the one
-                  you used to register
+                  {isRegisterMode
+                    ? "Enter the email you want to register with. It will be used for all further communication, so make sure it is correct."
+                    : "Please make sure that the email above is the same as the one you used to register"}
                 </FormDescription>
                 <FormMessage />
               </FormItem>
