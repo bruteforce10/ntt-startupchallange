@@ -14,8 +14,14 @@ const WHATSAPP_CONTACTS = [
 ];
 
 const EMAIL_CONTACTS = [
-  { label: "info@ntt-startupchallenge.com", url: "mailto:info@ntt-startupchallenge.com" },
-  { label: "partner@ntt-startupchallenge.com", url: "mailto:partner@ntt-startupchallenge.com" },
+  {
+    label: "info@ntt-startupchallenge.com",
+    url: "mailto:info@ntt-startupchallenge.com",
+  },
+  {
+    label: "partner@ntt-startupchallenge.com",
+    url: "mailto:partner@ntt-startupchallenge.com",
+  },
 ];
 
 const SOCIAL_LINKS = [
@@ -55,7 +61,7 @@ export function Footer() {
           />
 
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 lg:justify-end">
-            <div className="flex items-center gap-3">
+            {/* <div className="flex items-center gap-3">
               <FaWhatsapp className="h-6 w-6 shrink-0 text-blue-400" />
               <div className="flex flex-col gap-1">
                 {WHATSAPP_CONTACTS.map((contact) => (
@@ -70,7 +76,7 @@ export function Footer() {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             <div className="flex items-center gap-3">
               <FaEnvelope className="h-6 w-6 shrink-0 text-blue-400" />
