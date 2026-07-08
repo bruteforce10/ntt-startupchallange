@@ -4,16 +4,16 @@ import { SectionHeading2026 } from "./section-heading";
 
 const INFO_SESSIONS = [
   {
-    title: "Vietnam Info Session",
-    href: "https://www.eventbrite.hk/e/ntt-startup-challenge-2026-info-session-hcmc-tickets-1986785057590?aff=oddtdtcreator",
-    image: "/info-session/infosession-vietnam.webp",
-    alt: "NTT Startup Challenge Vietnam Info Session poster",
+    title: "India Info Session",
+    href: "https://www.eventbrite.hk/e/ntt-startup-challenge-2026-info-session-bangalore-india-tickets-1991474028428",
+    image: "/info-session/infosession-india.webp",
+    alt: "NTT Startup Challenge 2026 India Info Session poster",
   },
   {
-    title: "Final Day NTT Startup Challenge 2026",
-    href: "https://www.eventbrite.hk/e/final-day-ntt-startup-challenge-2026-tickets-1986790310301?aff=oddtdtcreator",
-    image: "/info-session/final-day-ntt-startup-challange-day.webp",
-    alt: "NTT Startup Challenge 2026 Final Day poster",
+    title: "Online Info Session",
+    href: "https://www.eventbrite.hk/e/online-info-session-ntt-startup-challenge-2026-info-session-tickets-1988691684362",
+    image: "/info-session/infosession-attend-session.webp",
+    alt: "NTT Startup Challenge 2026 online info session poster",
   },
 ];
 
