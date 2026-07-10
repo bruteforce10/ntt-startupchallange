@@ -37,7 +37,7 @@ export default function About() {
         emptyLabel={"COMING SOON"}
       />
       <ListSection
-        title={"Community Partners"}
+        title={"Partners & Community Partners"}
         subtitle={"ECOSYSTEM"}
         items={PARTNER_CONTENT_2026}
         pathImg={"community-partner/2026"}

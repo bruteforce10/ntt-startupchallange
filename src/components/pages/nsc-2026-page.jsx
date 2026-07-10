@@ -43,7 +43,7 @@ export function Nsc2026PageContent() {
         emptyLabel={"COMING SOON"}
       />
       <ListSection
-        title={"Community Partners"}
+        title={"Partners & Community Partners"}
         items={PARTNER_CONTENT_2026}
         pathImg={"community-partner/2026"}
         is2026
