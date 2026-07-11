@@ -30,13 +30,6 @@ export default function About() {
       {/* <EventPromotion />
       <EventSchedule /> */}
       <ListSection
-        title={"Sponsors"}
-        subtitle={"PARTNERSHIP"}
-        items={[]}
-        is2026
-        emptyLabel={"COMING SOON"}
-      />
-      <ListSection
         title={"Partners & Community Partners"}
         subtitle={"ECOSYSTEM"}
         items={PARTNER_CONTENT_2026}
