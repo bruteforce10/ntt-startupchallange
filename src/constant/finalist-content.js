@@ -284,18 +284,7 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://trihillcapital.com",
     image: "/community-partner/2026/05-trihill-capital.webp",
   },
-  {
-    id: 7,
-    name: "EXEO Global",
-    url: "https://exeo-global.com",
-    image: "/community-partner/2026/06-exeo-global.webp",
-  },
-  {
-    id: 8,
-    name: "e27",
-    url: "https://e27.co",
-    image: "/community-partner/2026/07-e27.webp",
-  },
+
   {
     id: 3,
     name: "SEBI Startup",
@@ -488,5 +477,17 @@ export const PARTNER_CONTENT_2026 = [
     name: "GrowthCharger",
     url: "https://growthcharger.com/",
     image: "/community-partner/2026/34-growthcharger.webp",
+  },
+  {
+    id: 8,
+    name: "e27",
+    url: "https://e27.co",
+    image: "/community-partner/2026/07-e27.webp",
+  },
+  {
+    id: 7,
+    name: "EXEO Global",
+    url: "https://exeo-global.com",
+    image: "/community-partner/2026/06-exeo-global.webp",
   },
 ];

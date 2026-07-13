@@ -174,16 +174,6 @@ export function NewsSection({ is2026 = false }) {
         ) : (
           <div className="mx-auto max-w-7xl space-y-16">
             <NewsCarouselBlock
-              title="News Articles"
-              items={newsArticles}
-              isLoading={isLoading}
-              emptyLabel={
-                hasNewsArticleError
-                  ? "News articles couldn't be loaded right now."
-                  : "No news articles available yet."
-              }
-            />
-            <NewsCarouselBlock
               title="News Activities"
               items={newsActivities}
               isLoading={isLoading}
@@ -191,6 +181,16 @@ export function NewsSection({ is2026 = false }) {
                 hasNewsActivityError
                   ? "News activities couldn't be loaded right now."
                   : "No news activities available yet."
+              }
+            />
+            <NewsCarouselBlock
+              title="News Articles"
+              items={newsArticles}
+              isLoading={isLoading}
+              emptyLabel={
+                hasNewsArticleError
+                  ? "News articles couldn't be loaded right now."
+                  : "No news articles available yet."
               }
             />
           </div>
