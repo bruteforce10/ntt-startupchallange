@@ -15,6 +15,12 @@ const INFO_SESSIONS = [
     image: "/info-session/infosession-attend-session.webp",
     alt: "NTT Startup Challenge 2026 online info session poster",
   },
+  {
+    title: "Vietnam Info Session",
+    href: "https://www.eventbrite.hk/e/ntt-startup-challenge-2026-2nd-online-info-session-tickets-1994005532224",
+    image: "/info-session/info-session-attend-online.webp",
+    alt: "NTT Startup Challenge 2026 Attend Online Info Session",
+  }
 ];
 
 export function InfoSessionSection2026() {
