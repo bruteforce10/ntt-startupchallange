@@ -479,6 +479,12 @@ export const PARTNER_CONTENT_2026 = [
     image: "/community-partner/2026/34-growthcharger.webp",
   },
   {
+    id: 35,
+    name: "East Ventures",
+    url: "https://east.vc",
+    image: "/community-partner/2026/east-ventures.webp",
+  },
+  {
     id: 8,
     name: "e27",
     url: "https://e27.co",
