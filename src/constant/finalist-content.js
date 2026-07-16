@@ -473,6 +473,12 @@ export const PARTNER_CONTENT_2026 = [
   //   image: "/community-partner/2026/33-ukmindonesia-id.webp",
   // },
   {
+    id: 40,
+    name: "Artem Vertunes",
+    url: "/",
+    image: "/community-partner/2026/artem-vertunes.webp",
+  },
+  {
     id: 34,
     name: "GrowthCharger",
     url: "https://growthcharger.com/",
