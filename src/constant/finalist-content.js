@@ -473,6 +473,18 @@ export const PARTNER_CONTENT_2026 = [
   //   image: "/community-partner/2026/33-ukmindonesia-id.webp",
   // },
   {
+    id: 36,
+    name: "Unikom Venture",
+    url: "/",
+    image: "/community-partner/2026/ft-energy-logo.webp",
+  },
+  {
+    id: 37,
+    name: "SEIML",
+    url: "/",
+    image: "/community-partner/2026/seimlg&w.webp",
+  },
+  {
     id: 40,
     name: "Artem Vertunes",
     url: "/",
