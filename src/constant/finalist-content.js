@@ -310,6 +310,12 @@ export const PARTNER_CONTENT_2026 = [
     image: "/community-partner/2026/11-innovnation-ai-web.webp",
   },
   {
+    id: 13,
+    name: "Everitas",
+    url: "https://e-veritas.co",
+    image: "/community-partner/2026/e-veritas.co.webp",
+  },
+  {
     id: 12,
     name: "Thinkzone Ventures",
     url: "https://thinkzone.vn",
@@ -501,6 +507,12 @@ export const PARTNER_CONTENT_2026 = [
     name: "East Ventures",
     url: "https://east.vc",
     image: "/community-partner/2026/east-ventures.webp",
+  },
+  {
+    id: 38,
+    name: "HKSTP",
+    url: "https://www.hkstp.org",
+    image: "/community-partner/2026/hkstp-logo.webp",
   },
   {
     id: 8,
