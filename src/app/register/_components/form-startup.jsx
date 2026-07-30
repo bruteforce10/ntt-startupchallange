@@ -150,8 +150,7 @@ export default function FormStartup() {
           </Alert>
         )}
         <p>
-          Any startup companies operating business in ASIA and Oceania can
-          apply. Please note that startup must be legal entity not just an idea.
+          Please note that startup must be legal entity not just an idea.
         </p>
         <div className="flex max-sm:flex-col w-full gap-4">
           <FormField
