@@ -502,6 +502,12 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://growthcharger.com/",
     image: "/community-partner/2026/34-growthcharger.webp",
   },
+    {
+    id: 39,
+    name: "herizon",
+    url: "https://herizon.club",
+    image: "/community-partner/2026/herizon.webp",
+  },
   {
     id: 35,
     name: "East Ventures",
@@ -526,10 +532,5 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://exeo-global.com",
     image: "/community-partner/2026/06-exeo-global.webp",
   },
-  {
-    id: 39,
-    name: "herizon",
-    url: "https://herizon.club",
-    image: "/community-partner/2026/herizon.webp",
-  },
+
 ];
