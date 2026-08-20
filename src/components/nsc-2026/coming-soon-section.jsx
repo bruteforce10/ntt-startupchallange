@@ -2,8 +2,8 @@ import React from "react";
 import { CountdownTimer } from "../ui/countdown-timer";
 
 export function ComingSoonSection2026() {
-  // Target date for the countdown: August 21, 2026
-  const targetDate = new Date("2026-08-21T00:00:00").getTime();
+  // Target date for the countdown: August 21, 2026 at 22:59 WIB (UTC+7)
+  const targetDate = new Date("2026-08-21T22:59:00+07:00").getTime();
 
   return (
     <section className="container mx-auto px-4 py-20 md:py-32 text-center text-white">
