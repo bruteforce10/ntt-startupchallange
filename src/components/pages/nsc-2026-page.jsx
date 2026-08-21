@@ -25,7 +25,7 @@ export function Nsc2026PageContent() {
       >
         <HeroContent2026 />
       </Hero>
-      <ComingSoonSection2026 />
+      {/* <ComingSoonSection2026 /> */}
       <HistorySection2026 />
       <FeedbackSection2026 />
       <AwardsSection2026 />
