@@ -5,6 +5,7 @@ import { PARTNER_CONTENT_2026 } from "@/constant/finalist-content";
 import { NttGroupCompanies } from "./_components/ntt-group-companies";
 import { FaqSection } from "./_components/faq-content";
 import { EventSchedule } from "./_components/event-schedule";
+import { VenuePartner } from "@/components/nsc-2026/venue-partner";
 
 export const metadata = {
   title: "Agenda",
@@ -18,24 +19,26 @@ export const metadata = {
 export default function About() {
   return (
     <InitialPage>
-      <ContentHeroInfoPage
+      {/* <ContentHeroInfoPage
         title={
           <span>
             Navigate Success: <br />
             Explore Our Comprehensive Agenda
           </span>
         }
-      />
+      /> */}
       {/* <ComingSoonSection2026 /> */}
       {/* <EventPromotion /> */}
       <EventSchedule />
       <ListSection
         title={"Partners & Community Partners"}
         subtitle={"ECOSYSTEM"}
+        id={"partner"}
         items={PARTNER_CONTENT_2026}
         pathImg={"community-partner/2026"}
         is2026
       />
+      <VenuePartner />
       <NttGroupCompanies />
       <FaqSection />
     </InitialPage>

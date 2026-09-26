@@ -17,6 +17,7 @@ import { ListSection } from "@/components/modules/list-section";
 import { PARTNER_CONTENT_2026 } from "@/constant/finalist-content";
 import SectionCoverLink from "@/components/section-cover-link";
 import { PastSpeakersJudgesDialog } from "@/components/nsc-2026/past-speakers-judges-dialog";
+import { VenuePartner } from "@/components/nsc-2026/venue-partner";
 
 export function Nsc2026PageContent() {
   return (
@@ -48,6 +49,7 @@ export function Nsc2026PageContent() {
         pathImg={"community-partner/2026"}
         is2026
       />
+      <VenuePartner />
       <SpeaksSection is2026={true} />
       <NewsSection is2026 />
       <SectionCoverLink
