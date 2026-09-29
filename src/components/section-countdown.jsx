@@ -38,7 +38,10 @@ export function CountdownSection({ newEvent, title }) {
           />
         </Link>
 
-        <Link href="/top-50-startup-of-ntt-challange" className="block w-full ">
+        <Link
+          href="/top-50-startup-of-ntt-challange/2025"
+          className="block w-full"
+        >
           <Image
             src="/cover-startup-50.webp"
             alt="Top 50 Startup of NTT Startup Challenge 2025"
