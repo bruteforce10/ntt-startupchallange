@@ -371,7 +371,7 @@ const TOP_STARTUPS_2026 = [
   {
     ranking: 3,
     name: "Morse Micro Pty. Ltd.",
-    slug: "Morse Micro Pty. Ltd",
+    slug: "Morse Micro",
     description:
       "• Founded in 2016, an Australian semiconductor company developing Wi-Fi HaLow technology for long-range, low-power communications\n• Wide-area wireless connectivity for IoT devices, surveillance cameras, smart homes, and industrial equipment\n• Backed by MegaChips, Blackbird Ventures, and others, with mass-production capabilities spanning chips through development platforms",
     url: "morsemicro.com",
@@ -387,7 +387,7 @@ const TOP_STARTUPS_2026 = [
   {
     ranking: 5,
     name: "SatSure Analytics India Pvt. Ltd.",
-    slug: "SatSure Analytics India Pvt. Ltd",
+    slug: "SatSure Analytics India",
     description:
       "• Year founded undisclosed, an Indian Earth intelligence company that uses AI to integrate satellite, radar, IoT, and ground data\n• Risk assessment, monitoring, and decision support for agriculture, finance, insurance, and infrastructure\n• More than 50 customers; 9x revenue growth; FY26 revenue of US$11 million; US$30 million in orders; US$20 million raised to date",
     url: "https://www.satsure.co/",
@@ -435,7 +435,7 @@ const TOP_STARTUPS_2026 = [
   {
     ranking: 11,
     name: "DoctorTool",
-    slug: "DoctorTool (PT Medifa Infoyasa Suryantara)",
+    slug: "DoctorTool",
     description:
       "• Founded in 2015, an Indonesian digital health company integrating healthcare information systems, patient apps, and IoMT devices\n• Electronic medical records, patient management, telemedicine, and medical-device data integration for clinics and hospitals\n• Deployed at more than 2,500 healthcare facilities, with over 15 million patient records across 325 cities and 37 provinces",
     url: "doctortool.id",
@@ -659,7 +659,7 @@ const TOP_STARTUPS_2026 = [
   {
     ranking: 39,
     name: "TartanHQ Solutions Private Limited",
-    slug: "TartanHQ Solutions Private Limited",
+    slug: "TartanHQ",
     description:
       "• Founded in 2021, an Indian integration platform connecting AI agents with enterprise systems\n• Data integration and workflow orchestration across HR, payroll, ERP, CRM, and banking systems\n• More than 220 connectors; in production at major financial institutions; deployed to over 40,000 users; approximately US$4.5–8.39 million raised to date",
     url: "http://tartanhq.com",
