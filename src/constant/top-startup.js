@@ -477,7 +477,7 @@ const TOP_STARTUPS_2026 = [
     name: "Xtractify",
     slug: "Xtractify (ENNO)",
     description:
-      "• Founded in 2023, a Malaysian AI company that connects existing business systems to automate finance operations\n• Automation of accounts payable and receivable, reconciliation, anomaly detection, internal controls, and exception handling\n• US$1.72 million order backlog in H1 2026; demonstrated customer cost and workload reductions; backed by Jati Growth",
+      "• Founded in 2023, a Malaysian enterprise AI company building ENNO (Enterprise Neural Network Orchestration)\n• AI gateway that connects, governs and scales AI across existing enterprise systems, starting with high-volume finance operations\n• Proven with large enterprises and listed companies, delivering measurable cost and workload reductions; backed by Jati Growth",
     url: "https://www.xtractify.ai/",
   },
   {
@@ -509,7 +509,7 @@ const TOP_STARTUPS_2026 = [
     name: "Terminal 3",
     slug: "Terminal 3",
     description:
-      "• Founded in 2023, a Hong Kong digital trust company combining confidential computing with decentralized identity\n• Secure execution of AI agents, identity verification, verifiable credentials, and audit-trail creation\n• US$8 million seed round; several million profiles; paid pilot in Japan; enterprise revenue above US$1 million in 2025",
+      "• Founded in 2023, a Hong Kong deep-tech enterprise AI agent security company; combines confidential computing with decentralized technology so enterprises can verify, govern and audit the actions of AI agents\n• Secure execution of protected workflows through a confidential computing network, with identity verification, verifiable credentials, and audit trails for agents\n• US$8 million seed round co-led by Illuminate Financial and CMCC Titan Fund; paid pilots in Japan; over 10 million profiles secured with Terminal 3",
     url: "http://terminal3.io",
   },
   {
@@ -541,7 +541,7 @@ const TOP_STARTUPS_2026 = [
     name: "KewMann",
     slug: "KewMann",
     description:
-      "• Founded in 2014, a Singapore company providing human-centered AI for regulated industries in Southeast Asia\n• Fraud and AML detection, credit risk, collections, revenue optimization, and agent operations\n• More than 40 customers; FY2025 revenue of US$1.56 million; adjusted EBITDA of US$337,000; US$58.9 million sales pipeline",
+      "• Founded in 2014, a Malaysia-Singapore company providing human-centered AI for regulated industries in Southeast Asia\n• Fraud and AML detection, credit risk, collections, revenue optimization, and agent operations\n• More than 40 customers; FY2025 group revenue of over US$2 million; with a US$95 million qualified sales pipeline",
     url: "https://www.kewmann.com",
   },
   {
@@ -589,7 +589,7 @@ const TOP_STARTUPS_2026 = [
     name: "PriyoShop",
     slug: "PriyoShop",
     description:
-      "• Year founded undisclosed, a Bangladeshi company providing commerce infrastructure for informal retailers\n• Digital procurement, nationwide logistics, embedded credit, retail media, and sales data analytics\n• 220,000 retailers and 296 suppliers; annualized revenue above US$70 million; operating profit positive; backed by global investors",
+      "• Founded in 2020, PriyoShop is a Bangladeshi retail infrastructure company digitizing informal commerce for MSMEs.\n• Combines AI-powered procurement, last-mile logistics, data-powered embedded finance, retail DOOH media and demand intelligence.\n• Powers 220,000+ retailers and 296 brands, achieving positive operating profit and is backed by leading global investors.",
     url: "http://priyoshop.com",
   },
   {
@@ -637,7 +637,7 @@ const TOP_STARTUPS_2026 = [
     name: "Paraverse Technology",
     slug: "Paraverse Technology (ImmerShare)",
     description:
-      "• Founded in 2016, a Hong Kong-China delivery platform that enables high-quality 3D/XR content to be shared through a link\n• Device-independent 3D/XR delivery for design reviews, education, exhibitions, and remote collaboration\n• More than 1,000 enterprise customers and 20,000 developers; over 52 million minutes streamed; four patents and 36 copyrights",
+      "• Founded in 2016, a Hong Kong-China 3D/XR software distribution infrastructure enabling native immersive content to be shared instantly via a link.\n• Engine-agnostic, device-independent streaming optimized for digital twins, simulations, 3D visualization, spatial commerce, and enterprise XR.\n• More than 1,000 enterprise customers and 20,000 developers; over 52 million minutes streamed; 44 proprietary IP assets including 4 patents.",
     url: "http://paraverse.cc",
   },
   {
@@ -717,7 +717,7 @@ const TOP_STARTUPS_2026 = [
     name: "Otonoco AI",
     slug: "Otonoco AI",
     description:
-      "• Founded in 2024, a Malaysian company developing regulatory compliance AI for financial institutions\n• Regulatory inquiries, internal document search, compliance decisions, and auditable workflow support\n• Three-year contract worth US$174,000; more than 1,600 documents; three LOIs and a US$300,000 sales pipeline; backed by Antler Malaysia",
+      "• Founded in 2024, a Malaysian company building Nakhoda AI, the Compliance Brain for regulated institutions and multinationals operating across Asia\n• Case advisory, gap analysis and cross-jurisdiction comparisons across overlapping regulations and internal policies, with an auditable record of every step\n• Sits on top of existing GRC systems without an IT overhaul; deployed as an isolated, client-keyed instance; backed by Antler, with support from Cradle, PayNet, Google for Startups and Microsoft for Startups",
     url: "http://otonocoai.com/",
   },
   {
