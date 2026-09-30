@@ -262,9 +262,9 @@ export const PARTNER_CONTENT_2026 = [
   },
   {
     id: 2,
-    name: "KK Fund",
+    name: "synexia-ventures",
     url: "https://www.linkedin.com/company/synexia-ventures/",
-    image: "/community-partner/2026/02-kk-fund.webp",
+    image: "/community-partner/2026/synexia-ventures.webp",
   },
   {
     id: 4,
