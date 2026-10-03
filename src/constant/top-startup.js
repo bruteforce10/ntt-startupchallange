@@ -357,7 +357,7 @@ const TOP_STARTUPS_2026 = [
     name: "5N Networks",
     slug: "5N Networks",
     description:
-      "• Founded in Hong Kong in 2026, a browser-based mesh streaming company that relays encrypted video between viewer devices\n• Reduces bandwidth use for live video streaming in aviation, maritime, telecommunications, and smart venues\n• Local relay architecture requiring no additional hardware and capable of operating over constrained networks",
+      "• Founded in Hong Kong in 2026 to commercialise technology flight-validated in December 2023; a browser-based mesh streaming layer that relays encrypted live video between viewer devices\n• Cuts live-video bandwidth by 97% on constrained links — aviation first (any IFE system, software-only, no hardware or STC), extending to maritime connectivity\n• TRL-9: validated on an Airbus A350-900 with a major Southeast Asian carrier over Panasonic Avionics; 50 simultaneous viewers on 1.47 Mbps total; CREST-approved penetration test passed",
     url: "http://5nnetworks.com/",
   },
   {
@@ -373,7 +373,7 @@ const TOP_STARTUPS_2026 = [
     name: "Anervoir Power",
     slug: "Anervoir Power",
     description:
-      "• Founded in 2025, a Singapore company developing nonflammable nickel-zinc backup power systems with no thermal runaway risk\n• Mission-critical power protection for data centers and submarine cable infrastructure\n• Secured a 5 MW order and completed Singapore’s first NiZn deployment at a data center",
+      "• Anervoir Power, founded in 2024, maintains strategic hubs in Singapore and Hong Kong and a 40,000 m² manufacturing facility in Guangdong. The company develops ZnCore28, Asia’s first non-flammable nickel-zinc battery energy storage system, designed for mission-critical data centers, submarine cable infrastructure, and other digital infrastructure.\n• Engineered for brownfield UPS battery replacement, greenfield deployments, and high-power AI workloads, the second-generation ZnCore28 delivers up to 600 kW of power and 60 kWh of energy in a 600 mm-wide cabinet. Anervoir has also developed an 800 V HVDC solution designed for NVIDIA’s latest 800 V power architecture.\n• In 2026, Anervoir completed a 5 MW commercial deployment at a subsea cable landing station data center in Singapore and was awarded a 16 MW lithium-ion battery replacement project in Southeast Asia, demonstrating its ability to deliver safe, high-power backup solutions at commercial scale.",
     url: "http://anervoir.com",
   },
   {
@@ -509,7 +509,7 @@ const TOP_STARTUPS_2026 = [
     name: "Logisly",
     slug: "Logisly",
     description:
-      "• Founded in 2019, an Indonesian tech-enabled 3PL running road, sea, and rail freight on one AI-driven platform\n• Improves logistics efficiency and lowers freight costs through AI order intake, automated dispatch, driver management, and embedded transporter financing\n• 800+ corporate customers; 2,000+ transporters in network; backed by Monk’s Hill, Jungle, Genesia, AC Ventures, and others",
+      "• Founded in 2019, an Indonesian tech-enabled 3PL running road, sea, and rail freight on one AI-driven platform\n• Improves logistics efficiency and lowers freight costs through AI order intake, automated dispatch, driver management, and embedded transporter financing\n• 800+ corporate customers; 2,000+ transporters in network; backed by Monk's Hill, Jungle, Genesia, AC Ventures, and others",
     url: "logisly.com",
   },
   {
@@ -517,7 +517,7 @@ const TOP_STARTUPS_2026 = [
     name: "MediSun Energy",
     slug: "MediSun Energy",
     description:
-      "• Year founded undisclosed, a Singapore company providing decentralized modular water-treatment systems\n• Desalination, near-zero-discharge brine recovery, AI-based water management, and energy and mineral recovery from brine\n• US$22.5 million in contracts; FY26 year-to-date revenue of US$16 million; gross margin of 26–30%",
+      "• Founded in 2023, MediSun Energy is a Singapore-based company providing decentralized, modular water-treatment systems.\n• Its solutions cover desalination, near-zero-discharge brine recovery, AI-enabled water management, and energy and mineral recovery from brine.\n• US$22.5 million in contracts, FY2026 year-to-date revenue of US$16 million, and a gross margin of 26–30%.",
     url: "http://www.medisun.energy",
   },
   {
@@ -589,7 +589,7 @@ const TOP_STARTUPS_2026 = [
     name: "Polymerize",
     slug: "Polymerize",
     description:
-      "• Founded in 2020, a Singapore company providing an AI-native integrated platform for materials and chemical research\n• Experimental data management, materials property prediction, formulation optimization, and shorter R&D cycles\n• Contracted ARR of US$2 million; 27 paying customers; 32 PoCs; materials development track record with NTT-AS; backed by leading VCs",
+      "• Founded in 2020 and headquartered in Singapore, Polymerize provides an AI-native integrated platform that accelerates materials and chemical R&D across polymers, coatings, adhesives, compounding, and beyond.\n• Turns scattered lab data into actionable insight through experiment management, ML-based property prediction, and AI-guided formulation optimization, significantly shortening development cycles for materials and chemical companies.\n• Strong presence across APAC, with local subsidiaries serving customers in Korea, Japan, and China alongside our Singapore headquarters, and now expanding into Europe and the US; backed by leading VCs.",
     url: "http://polymerize.io",
   },
   {
@@ -637,7 +637,7 @@ const TOP_STARTUPS_2026 = [
     name: "Rain Biotech Solutions",
     slug: "Rain Biotech Solutions",
     description:
-      "• Year founded undisclosed, a Hong Kong microfluidics company integrating live-cell processing with AI analysis\n• Cell therapy, synthetic biology production, cell sorting and encapsulation, and biodigital twins\n• Product portfolio priced at US$110,000–210,000; equipment sales underway; kidney stem-cell validation; MoU and JV discussions; plans to raise US$5 million",
+      "• Hong Kong-based AI-enabled cell-sorting company building the living-cell validation layer that turns AI-designed drugs and cell therapies into biological proof.\n• Label-free sorting of encapsulated cells and organoids with >98% accuracy for cell therapy, synthetic biology, kidney-organoid drug discovery, and precision oncology.\n• Platform sales in the UK; successful 2-month glucose control in diabetic mice with an artificial pancreas implant; kidney stem-cell pilot and US JV underway; raising a US$5M Pre-A round.",
     url: "http://rainbiosolutions.com/",
   },
   {
@@ -645,7 +645,7 @@ const TOP_STARTUPS_2026 = [
     name: "SatSure Analytics India Pvt. Ltd.",
     slug: "SatSure Analytics India",
     description:
-      "• Year founded undisclosed, an Indian Earth intelligence company that uses AI to integrate satellite, radar, IoT, and ground data\n• Risk assessment, monitoring, and decision support for agriculture, finance, insurance, and infrastructure\n• More than 50 customers; 9x revenue growth; FY26 revenue of US$11 million; US$30 million in orders; US$20 million raised to date",
+      "Founded in 2017, SatSure is a deep-tech Earth Intelligence company that transforms satellite imagery, aerial and drone data, LiDAR, and other geospatial inputs into actionable insights using AI and advanced analytics. Its solutions support decision-making across infrastructure, utilities, energy, agriculture, banking and financial services, aviation, and forestry. Through its subsidiary, KaleidEO, SatSure is designing and developing high-resolution optical satellite payloads, with plans to launch its own constellation of high-resolution optical satellites to strengthen access to advanced Earth observation data and enable next-generation Earth Intelligence applications.",
     url: "https://www.satsure.co/",
   },
   {
@@ -661,7 +661,7 @@ const TOP_STARTUPS_2026 = [
     name: "SGService",
     slug: "Scientific Gear Service Co., Ltd. (SGService)",
     description:
-      "• Founded in Zhunan, Taiwan, in 2021, a semiconductor inspection company developing advanced X-ray 3D inspection systems\n• Submicron internal defect inspection and quality assurance for semiconductors and large panels\n• Delivered Asia’s first 150 nm nano-CT system; 14 engineers; systems priced at US$2–5 million; recurring maintenance model",
+      "• Taiwanese semiconductor equipment company founded in 2021, developing AI-powered 3D X-ray inspection for advanced packaging\n• Designed a new defect inspection architecture delivering submicron resolution and large panel scans up to 1,250× faster than conventional CT\n• Developed Asia's first 150 nm nano-CT; US$2–5 million systems with a recurring maintenance model",
     url: "http://sgservice.com.tw/",
   },
   {
@@ -717,7 +717,7 @@ const TOP_STARTUPS_2026 = [
     name: "Wavelet AI",
     slug: "WaveEco (Wavelet AI Pte. Ltd.)",
     description:
-      "• Year founded undisclosed, a Singapore company providing thermal digital twins and approval-based AI controls\n• Cooling optimization and energy savings for data centers, industrial facilities, and battery energy storage facilities\n• Six commercial deployments; energy savings of 10.8–53.2%; 27 patents, including 13 granted; eight copyrights",
+      "• Founded in 2025, a Singapore company developing physics-based thermal twins with human-gated autonomous control for industrial cooling\n• Cooling optimization and energy savings for data centers, industrial facilities, and battery energy-storage systems — deployed as an overlay, with no hardware replacement required\n• Six commercial deployments with client-confirmed energy savings of 10.8–53.2%; 27 patents (13 granted) and 8 registered software copyrights",
     url: "http://wavelet-ai.com/",
   },
   {
@@ -741,7 +741,7 @@ const TOP_STARTUPS_2026 = [
     name: "Whale Tech Pte. Ltd.",
     slug: "Whale Tech Pte. Ltd",
     description:
-      "• Year founded undisclosed, a Singapore-based enterprise AI company that manages physical spaces and operations through cloud and edge AI\n• Store and facility operations, voice analytics, content governance, agent workflows, and IoT device management\n• Large-scale operating track record across 45 countries, with more than 1,500 customers and over 530,000 connected devices",
+      "• Founded in 2017, Whale is a global enterprise AI company building the AI operating system for physical business, turning fragmented AI tools into a unified intelligence layer.\n• Powered by its proprietary World Model, Whale's platform spans space intelligence, voice, content, knowledge, agents, and IoT—closing the loop from physical sensing to autonomous execution.\n• Today, Whale serves 1,600+ enterprises across 45+ countries, embedding AI directly into real operations to help businesses move from providing answers to completing work.",
     url: "https://www.whale.sg/",
   },
   {
