@@ -910,11 +910,68 @@ const TOP_STARTUPS_20 = [
   },
 ];
 
+// Display order of the 2026 Top 20; details and logos come from TOP_STARTUPS_2026 by name.
+const TOP_20_2026_NAMES = [
+  "Anervoir Power",
+  "APETECHS Joint Stock Company",
+  "Credolab",
+  "DetectifAI",
+  "Extraterrestrial Power Ltd.",
+  "Forest Jalan Co., Ltd.",
+  "Hyperbots Inc.",
+  "Invigilo",
+  "Krosslinker",
+  "KUBOCARE",
+  "Logisly",
+  "MediSun Energy",
+  "Morse Micro Pty. Ltd.",
+  "Peris.ai",
+  "PT SENTRA SOLUSI AUTOMA",
+  "Quanfluence Pvt. Ltd.",
+  "SatSure Analytics India Pvt. Ltd.",
+  "Seoul Dynamics",
+  "SGService",
+  "Staple AI Pte. Ltd.",
+  "TALOS Corp.",
+  "Uravu Labs",
+  "Vayana",
+  "Whale Tech Pte. Ltd.",
+  "Xtractify",
+];
+
+const TOP_STARTUPS_20_2026 = TOP_20_2026_NAMES.map((name) => {
+  const startup = TOP_STARTUPS_2026.find((item) => item.name === name);
+  if (!startup) throw new Error(`Top 20 2026 startup not found in TOP_STARTUPS_2026: ${name}`);
+  return startup;
+});
+
+const TOP_20_STARTUPS_BY_YEAR = {
+  2025: {
+    year: "2025",
+    startups: TOP_STARTUPS_20,
+    imageDirectory: "/top-50-startup",
+    heroImage: "/top-20.webp",
+    title: "Top 20 Startups of NTT Startup Challenge 2025",
+    description:
+      "We extend our heartfelt congratulations to the Top 20 startups of the NTT Startup Challenge 2025. Your innovation, passion, and perseverance have brought you this far, and we truly commend your outstanding progress. This milestone reflects your dedication to creating meaningful impact and shaping the future of technology and business.",
+  },
+  2026: {
+    year: "2026",
+    startups: TOP_STARTUPS_20_2026,
+    imageDirectory: "/top-50-startup-2026",
+    heroImage: "/top-20.webp",
+    title: "Top 20 Startups of NTT Startup Challenge 2026",
+    description:
+      "We proudly celebrate the Top 20 startups of the NTT Startup Challenge 2026. Your bold ideas, passion for innovation, and commitment to creating meaningful impact have brought you to this remarkable achievement. This milestone reflects your dedication, perseverance, and vision in creating meaningful impact and shaping the future of technology and business. Bigger Ideas. Louder Impact. Bolder Futures",
+  },
+};
+
 const TOP_STARTUP_FINALISTS_BY_YEAR = {
   2025: {
     year: "2025",
     startups: TOP_STARTUPS,
     imageDirectory: "/top-50-startup",
+    heroImage: "/top-50.webp",
     title: "Top 50 Startups of NTT Startup Challenge 2025",
     description:
       "We extend our heartfelt congratulations to the Top 50 startups of the NTT Startup Challenge 2025. Your innovation, passion, and determination have set you apart, and we deeply appreciate the hard work and creativity you have demonstrated. This achievement is a testament to your commitment to driving positive change and shaping the future of technology and business.",
@@ -923,6 +980,7 @@ const TOP_STARTUP_FINALISTS_BY_YEAR = {
     year: "2026",
     startups: TOP_STARTUPS_2026,
     imageDirectory: "/top-50-startup-2026",
+    heroImage: "/top-50.webp",
     title: "Top 50 Startups of NTT Startup Challenge 2026",
     description:
       "We extend our heartfelt congratulations to the Top 50 startups of the NTT Startup Challenge 2026. Your innovation, passion, and determination have set you apart, and we deeply appreciate the hard work and creativity you have demonstrated. This achievement is a testament to your commitment to driving positive change and shaping the future of technology and business.",
@@ -935,4 +993,5 @@ export {
   TOP_STARTUPS_20,
   TOP_STARTUPS_10,
   TOP_STARTUP_FINALISTS_BY_YEAR,
+  TOP_20_STARTUPS_BY_YEAR,
 };

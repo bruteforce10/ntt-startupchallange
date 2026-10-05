@@ -26,7 +26,7 @@ export function CountdownSection({ newEvent, title }) {
         />
 
         <Link
-          href="/top-20-startup-of-ntt-challange"
+          href="/top-20-startup-of-ntt-challange/2025"
           className="block mt-32 w-full "
         >
           <Image

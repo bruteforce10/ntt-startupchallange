@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { Top50StartupsPage } from "@/components/pages/top-50-startups-page";
+import { TopStartupsPage } from "@/components/pages/top-startups-page";
 import { TOP_STARTUP_FINALISTS_BY_YEAR } from "@/constant/top-startup";
 
 export const dynamicParams = false;
@@ -29,5 +29,5 @@ export default async function Top50StartupsByYearPage({ params }) {
 
   if (!finalists) notFound();
 
-  return <Top50StartupsPage finalists={finalists} />;
+  return <TopStartupsPage finalists={finalists} />;
 }

@@ -6,15 +6,15 @@ function normalizeUrl(url) {
   return /^https?:\/\//i.test(url) ? url : `https://${url}`;
 }
 
-export function Top50StartupsPage({ finalists }) {
+export function TopStartupsPage({ finalists }) {
   return (
     <InitialPage>
       <main className="container mx-auto px-4 py-12">
         <header className="mb-12 text-center md:mb-16">
           <div className="mb-6 flex justify-center md:mb-8">
             <Image
-              src="/top-50.webp"
-              alt={`Top 50 Startups of NTT Startup Challenge ${finalists.year}`}
+              src={finalists.heroImage}
+              alt={finalists.title}
               width={1000}
               height={1000}
               priority
