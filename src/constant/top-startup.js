@@ -537,12 +537,26 @@ const TOP_STARTUPS_2026 = [
     url: "http://neuro-cle.com/",
   },
   {
+    name: "Neurowyzr",
+    slug: "Neurowyzr",
+    description:
+      "• Founded in 2019, a Singapore-based neuroscience company using AI to detect early brain decline\n• Gamified digital cognitive screening for healthcare providers, employers, and pharmaceutical companies\n• US$3.3 million raised to date; offices in Singapore and India; expanding across Southeast Asia and India",
+    url: "https://neurowyzr.com",
+  },
+  {
     ranking: 29,
     name: "Numbers Protocol",
     slug: "Numbers Protocol",
     description:
       "• Founded in Taipei in 2019, a Taiwanese company providing provenance and trust infrastructure for digital assets and AI\n• Authenticity verification, rights management, and audit trails for images, video, and generative AI content\n• More than 86 million registered assets; over 400,000 daily API calls; 1.5 million downloads; adopted by Reuters; US$6 million seed round",
     url: "http://numbersprotocol.io/",
+  },
+  {
+    name: "OmniCard",
+    slug: "OmniCard",
+    description:
+      "• Founded in 2021, an RBI-licensed Indian fintech for business spend management and payments\n• SaaS platform, mobile app, and UPI-enabled corporate cards for expenses, vendor payments, and gifting\n• Over 2 million users; US$3 million raised to date; first fintech to issue ONDC corporate gift cards",
+    url: "https://omnicard.in",
   },
   {
     ranking: 38,
@@ -598,7 +612,7 @@ const TOP_STARTUPS_2026 = [
     slug: "Portrai",
     description:
       "• Founded in 2021, a South Korea-based spatial biology and drug discovery company using human tissue data and AI\n• Decision support for drug targets, indications, therapeutic modalities, and patient selection\n• More than 3,000 tissue maps and 100 million cells; contracts worth up to US$88 million plus royalties; backed by leading VCs",
-    url: "http://www.portai.io/",
+    url: "https://portrai.io/",
   },
   {
     ranking: 30,
@@ -613,7 +627,7 @@ const TOP_STARTUPS_2026 = [
     name: "ProtoPie",
     slug: "ProtoPie",
     description:
-      "• Founded in 2014, a South Korea-based global SaaS company enabling high-fidelity interactive prototypes without coding\n• UI/UX prototyping and user testing for automobiles, home appliances, apps, and embedded devices\n• 68 patents; 93 employees; major corporate customers; strong revenue contribution from the Japanese market",
+      "ProtoPie lets teams validate AI-generated UI/UX with high-fidelity prototypes and real user testing, across automotive, home appliances, apps, and embedded devices.",
     url: "http://protopie.io",
   },
   {
@@ -912,12 +926,9 @@ const TOP_STARTUPS_20 = [
 
 // Display order of the 2026 Top 20; details and logos come from TOP_STARTUPS_2026 by name.
 const TOP_20_2026_NAMES = [
-  "Anervoir Power",
   "APETECHS Joint Stock Company",
-  "Credolab",
   "DetectifAI",
   "Extraterrestrial Power Ltd.",
-  "Forest Jalan Co., Ltd.",
   "Hyperbots Inc.",
   "Invigilo",
   "Krosslinker",
@@ -925,15 +936,13 @@ const TOP_20_2026_NAMES = [
   "Logisly",
   "MediSun Energy",
   "Morse Micro Pty. Ltd.",
-  "Peris.ai",
+  "Neurowyzr",
+  "OmniCard",
   "PT SENTRA SOLUSI AUTOMA",
-  "Quanfluence Pvt. Ltd.",
   "SatSure Analytics India Pvt. Ltd.",
   "Seoul Dynamics",
   "SGService",
-  "Staple AI Pte. Ltd.",
-  "TALOS Corp.",
-  "Uravu Labs",
+  "TartanHQ Solutions Private Limited",
   "Vayana",
   "Whale Tech Pte. Ltd.",
   "Xtractify",
