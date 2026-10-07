@@ -211,7 +211,7 @@ const TOP_STARTUPS = [
   },
   {
     name: "OneInbox",
-    slug: "oneinbox",
+    slug: "oneInbox",
     description:
       "Unified inbox for email, social and messaging. Shared views, templates and SLA tracking bring consistency and speed to customer communications.",
     url: "https://oneinbox.ai/",
@@ -348,6 +348,423 @@ const TOP_STARTUPS = [
     description:
       "Provides payment orchestration, unifying hundreds of payment methods and fraud tools. Smart routing boosts approval rates and lowers costs, enabling cross‑border payments for enterprises.",
     url: "https://y.uno/",
+  },
+];
+
+const TOP_STARTUPS_2026 = [
+  {
+    ranking: 10,
+    name: "5N Networks",
+    slug: "5N Networks",
+    description:
+      "• Founded in Hong Kong in 2026 to commercialise technology flight-validated in December 2023; a browser-based mesh streaming layer that relays encrypted live video between viewer devices\n• Cuts live-video bandwidth by 97% on constrained links — aviation first (any IFE system, software-only, no hardware or STC), extending to maritime connectivity\n• TRL-9: validated on an Airbus A350-900 with a major Southeast Asian carrier over Panasonic Avionics; 50 simultaneous viewers on 1.47 Mbps total; CREST-approved penetration test passed",
+    url: "http://5nnetworks.com/",
+  },
+  {
+    ranking: 21,
+    name: "Allegro Energy",
+    slug: "Allegro Energy",
+    description:
+      "• Founded in 2021, an Australian university spinout developing a patented aqueous flow battery for long-duration energy storage\n• 4–24-hour storage for data centers, power grids, manufacturing, and renewable energy\n• First commercial demonstration in 2025; more than US$14 million in equity and grant funding; backed by the Grantham Foundation and others",
+    url: "https://allegro.energy/",
+  },
+  {
+    ranking: 14,
+    name: "Anervoir Power",
+    slug: "Anervoir Power",
+    description:
+      "• Anervoir Power, founded in 2024, maintains strategic hubs in Singapore and Hong Kong and a 40,000 m² manufacturing facility in Guangdong. The company develops ZnCore28, Asia’s first non-flammable nickel-zinc battery energy storage system, designed for mission-critical data centers, submarine cable infrastructure, and other digital infrastructure.\n• Engineered for brownfield UPS battery replacement, greenfield deployments, and high-power AI workloads, the second-generation ZnCore28 delivers up to 600 kW of power and 60 kWh of energy in a 600 mm-wide cabinet. Anervoir has also developed an 800 V HVDC solution designed for NVIDIA’s latest 800 V power architecture.\n• In 2026, Anervoir completed a 5 MW commercial deployment at a subsea cable landing station data center in Singapore and was awarded a 16 MW lithium-ion battery replacement project in Southeast Asia, demonstrating its ability to deliver safe, high-power backup solutions at commercial scale.",
+    url: "http://anervoir.com",
+  },
+  {
+    ranking: 45,
+    name: "APETECHS Joint Stock Company",
+    slug: "APETECHS Joint Stock Company",
+    description:
+      "• Founded in 2020, a Vietnamese company operating enterprise digital transformation and AI-powered procurement platforms\n• E-procurement, invoice and transaction data management, and unsecured SME working-capital loans through partner financial institutions\n• Approximately US$800,000 in annual revenue; more than 15 enterprise customers and 30 deployments; profitable and fully bootstrapped; ISO certified",
+    url: "http://apetechs.com",
+  },
+  {
+    ranking: 47,
+    name: "Cakap",
+    slug: "Cakap",
+    description:
+      "• Founded in 2013, an Indonesian EdTech company providing live language and vocational education\n• Language learning for individuals, corporate training, vocational skills development, and support for accredited qualifications\n• More than 7 million registered learners; 284,000 monthly learners; over 1,000 corporate customers; backed by MDI Ventures and others",
+    url: "http://cakap.com/",
+  },
+  {
+    ranking: 23,
+    name: "Credolab",
+    slug: "Credolab",
+    description:
+      "• Founded in 2016, a Singapore company assessing credit and fraud risk using device and behavioral data\n• Credit underwriting, fraud detection, income prediction, and customer-intent analysis for financial institutions\n• Presence in more than 50 countries; over 200 million people assessed; more than 325 customers; profitable since 2024; US$9 million raised to date",
+    url: "http://www.credolab.com",
+  },
+  {
+    ranking: 28,
+    name: "DetectifAI",
+    slug: "DetectifAI",
+    description:
+      "• Year founded undisclosed, an India-based AI company developing a language-agnostic voice authenticity model\n• Synthetic voice and deepfake detection, speaker verification, and protection for voice AI services\n• 95.4% accuracy and 0.99 ROC-AUC on public benchmarks; deployable in the cloud, on premises, and on devices",
+    url: "https://detectif.ai",
+  },
+  {
+    ranking: 11,
+    name: "DoctorTool",
+    slug: "DoctorTool",
+    description:
+      "• Founded in 2015, an Indonesian digital health company integrating healthcare information systems, patient apps, and IoMT devices\n• Electronic medical records, patient management, telemedicine, and medical-device data integration for clinics and hospitals\n• Deployed at more than 2,500 healthcare facilities, with over 15 million patient records across 325 cities and 37 provinces",
+    url: "doctortool.id",
+  },
+  {
+    ranking: 31,
+    name: "Eieling Technology Limited",
+    slug: "Eieling Technology Limited",
+    description:
+      "• Founded in 2018, a Hong Kong Polytechnic University spinout developing an AI-guided portable liver diagnostic device\n• Testing and ongoing monitoring of liver fibrosis and fatty liver disease at healthcare facilities and community sites\n• Liverscan and FattaLab product lines; supported by the university, HKSTP, and ultrasound industry companies",
+    url: "http://eieling.com/",
+  },
+  {
+    ranking: 9,
+    name: "Extraterrestrial Power Ltd.",
+    slug: "Extraterrestrial Power Ltd",
+    description:
+      "• Founded in 2019, an Australian company developing radiation-resistant, self-healing silicon solar cells for space\n• Power generation for satellites, spacecraft, and future large-scale space infrastructure\n• Patent-protected technology, a low-cost and short-lead-time mass-production design, and backing from Flying Fox Ventures and others",
+    url: "https://www.extraterrestrialpower.com/",
+  },
+  {
+    ranking: 40,
+    name: "FinHero",
+    slug: "FinHero",
+    description:
+      "• Founded in 2019, a Malaysian company providing an AI-powered credit and lending ecosystem for SMEs\n• Document analysis, loan matching, credit risk prediction, collections, and embedded leasing\n• NTT DATA holds an 18.5% stake and jointly offers services; ISO 27001 certified; hosted on domestic cloud infrastructure",
+    url: "http://finhero.asia/",
+  },
+  {
+    ranking: 18,
+    name: "Forest Jalan Co., Ltd.",
+    slug: "Forest Jalan Co., Ltd",
+    description:
+      "• Founded in June 2024, a South Korea-based fintech company using merchant data and AI to support private credit in emerging markets\n• Credit for small merchants, repayment at the point of payment, and funding through tokenized real-world assets (RWAs)\n• More than US$1 million in cumulative RWA funding; KRW 5 billion raised to date; backed by Grab, Hashed, and others",
+    url: "forjl.com",
+  },
+  {
+    ranking: 33,
+    name: "Hyperbots Inc.",
+    slug: "Hyperbots Inc",
+    description:
+      "• Founded in 2023, a U.S.-Indian company developing specialized agentic AI for finance and accounting operations\n• Automation and ERP integration for procure-to-pay, order-to-cash, accruals, and financial close\n• US$8.5 million raised; more than 150 employees; over 50 patents and papers; eight production agents; backed by leading VCs",
+    url: "http://hyperbots.com/",
+  },
+  {
+    ranking: 34,
+    name: "Intello Labs",
+    slug: "Intello Labs",
+    description:
+      "• Founded in 2016, an Indian physical AI company automating quality assessment and sorting of fresh produce\n• Labor-saving automation for visual inspection, grading, sorting, and packing of agricultural products\n• More than 50 machines in operation; four major customers; project pipeline above US$5 million; commercial deployments across multiple regions",
+    url: "http://intellolabs.com/",
+  },
+  {
+    ranking: 42,
+    name: "Invigilo",
+    slug: "Invigilo",
+    description:
+      "• Founded in 2020, a Singapore company providing computer-vision-based workplace safety management\n• Real-time detection of safety violations and hazardous behavior in construction, manufacturing, and critical infrastructure\n• US$2.85 million revenue; 87% gross margin; 133% NRR; profitable since 2023; more than 200 customer sites",
+    url: "http://invigilo.ai",
+  },
+  {
+    ranking: 43,
+    name: "IPIN LABS Co., Ltd.",
+    slug: "IPIN LABS Co., Ltd",
+    description:
+      "• Founded in 2022, a South Korean company providing deep-learning-based indoor positioning using existing wireless infrastructure\n• Location tracking and movement management for assets and personnel in factories, hospitals, airports, and buildings\n• Manages more than 6,000 high-value assets; paid Japanese validation at Shimizu Corporation’s NOVARE; backed by Bluepoint and others",
+    url: "http://home.ipinlabs.com",
+  },
+  {
+    ranking: 24,
+    name: "KewMann",
+    slug: "KewMann",
+    description:
+      "• Founded in 2014, a Malaysia-Singapore company providing human-centered AI for regulated industries in Southeast Asia\n• Fraud and AML detection, credit risk, collections, revenue optimization, and agent operations\n• More than 40 customers; FY2025 group revenue of over US$2 million; with a US$95 million qualified sales pipeline",
+    url: "https://www.kewmann.com",
+  },
+  {
+    ranking: 4,
+    name: "Krosslinker",
+    slug: "Krosslinker",
+    description:
+      "• Founded in 2019, a Singapore-based advanced materials company producing scalable silica aerogel using patented technology\n• Thermal insulation and passive cooling for buildings, data centers, energy facilities, and cold chains\n• Backed by 500 Global, SEEDS Capital, Apsara Capital, and others, with patent-protected manufacturing technology",
+    url: "https://krosslinker.com/",
+  },
+  {
+    ranking: 22,
+    name: "KUBOCARE",
+    slug: "KUBOCARE",
+    description:
+      "• Founded in 2023, a company providing camera-free patient monitoring using millimeter-wave radar and on-device AI\n• Early detection of falls, bed exits, and respiratory and posture risks in hospitals and care facilities\n• Paid deployments in India, Japan, and the United States; response time under one minute; MoUs covering more than 5,300 units; backed by Antler and others",
+    url: "https://kubocare.ai/",
+  },
+  {
+    ranking: 27,
+    name: "Logisly",
+    slug: "Logisly",
+    description:
+      "• Founded in 2019, an Indonesian tech-enabled 3PL running road, sea, and rail freight on one AI-driven platform\n• Improves logistics efficiency and lowers freight costs through AI order intake, automated dispatch, driver management, and embedded transporter financing\n• 800+ corporate customers; 2,000+ transporters in network; backed by Monk's Hill, Jungle, Genesia, AC Ventures, and others",
+    url: "logisly.com",
+  },
+  {
+    ranking: 12,
+    name: "MediSun Energy",
+    slug: "MediSun Energy",
+    description:
+      "• Founded in 2023, MediSun Energy is a Singapore-based company providing decentralized, modular water-treatment systems.\n• Its solutions cover desalination, near-zero-discharge brine recovery, AI-enabled water management, and energy and mineral recovery from brine.\n• US$22.5 million in contracts, FY2026 year-to-date revenue of US$16 million, and a gross margin of 26–30%.",
+    url: "http://www.medisun.energy",
+  },
+  {
+    ranking: 3,
+    name: "Morse Micro Pty. Ltd.",
+    slug: "Morse Micro",
+    description:
+      "• Founded in 2016, an Australian semiconductor company developing Wi-Fi HaLow technology for long-range, low-power communications\n• Wide-area wireless connectivity for IoT devices, surveillance cameras, smart homes, and industrial equipment\n• Backed by MegaChips, Blackbird Ventures, and others, with mass-production capabilities spanning chips through development platforms",
+    url: "morsemicro.com",
+  },
+  {
+    ranking: 41,
+    name: "Neurocle Inc.",
+    slug: "Neurocle Inc",
+    description:
+      "• Founded in 2019, a South Korean company providing AI visual inspection software that can be trained and operated on site\n• Defect detection on manufacturing lines, automated creation of quality inspection models, and real-time decisions\n• Achieved 20x revenue growth without external funding; hundreds of manufacturing customers; recurring licenses and deployments across diverse equipment",
+    url: "http://neuro-cle.com/",
+  },
+  {
+    name: "Neurowyzr",
+    slug: "Neurowyzr",
+    description:
+      "• Founded in 2019, a Singapore-based neuroscience company using AI to detect early brain decline\n• Gamified digital cognitive screening for healthcare providers, employers, and pharmaceutical companies\n• US$3.3 million raised to date; offices in Singapore and India; expanding across Southeast Asia and India",
+    url: "https://neurowyzr.com",
+  },
+  {
+    ranking: 29,
+    name: "Numbers Protocol",
+    slug: "Numbers Protocol",
+    description:
+      "• Founded in Taipei in 2019, a Taiwanese company providing provenance and trust infrastructure for digital assets and AI\n• Authenticity verification, rights management, and audit trails for images, video, and generative AI content\n• More than 86 million registered assets; over 400,000 daily API calls; 1.5 million downloads; adopted by Reuters; US$6 million seed round",
+    url: "http://numbersprotocol.io/",
+  },
+  {
+    name: "OmniCard",
+    slug: "OmniCard",
+    description:
+      "• Founded in 2021, an RBI-licensed Indian fintech for business spend management and payments\n• SaaS platform, mobile app, and UPI-enabled corporate cards for expenses, vendor payments, and gifting\n• Over 2 million users; US$3 million raised to date; first fintech to issue ONDC corporate gift cards",
+    url: "https://omnicard.in",
+  },
+  {
+    ranking: 38,
+    name: "OneNDF",
+    slug: "OneNDF",
+    description:
+      "• Founded in 2021, OneNDF is an Indian lending platform connecting secured-loan decision-making and execution\n• Borrower assessment, financial institution matching, and secured-loan origination and execution management\n• More than 120 lenders; INR 3.17 billion across 117 loans disbursed in FY2025–26; supported by multiple investors",
+    url: "https://onendf.com/",
+  },
+  {
+    ranking: 46,
+    name: "Otonoco AI",
+    slug: "Otonoco AI",
+    description:
+      "• Founded in 2024, a Malaysian company building Nakhoda AI, the Compliance Brain for regulated institutions and multinationals operating across Asia\n• Case advisory, gap analysis and cross-jurisdiction comparisons across overlapping regulations and internal policies, with an auditable record of every step\n• Sits on top of existing GRC systems without an IT overhaul; deployed as an isolated, client-keyed instance; backed by Antler, with support from Cradle, PayNet, Google for Startups and Microsoft for Startups",
+    url: "http://otonocoai.com/",
+  },
+  {
+    ranking: 44,
+    name: "Oxylus Energy",
+    slug: "Oxylus Energy",
+    description:
+      "• Founded in 2023, a U.S. climate tech company directly producing green methanol from captured CO₂\n• Decarbonization of maritime fuel, chemical feedstocks, and fuels derived from renewable energy\n• 4,500 hours of continuous operation; 95% selectivity; paid pilots; 1.3 million tonnes per year of committed demand; backed by Toyota Ventures and others",
+    url: "http://oxylusenergy.com/",
+  },
+  {
+    ranking: 36,
+    name: "Paraverse Technology",
+    slug: "Paraverse Technology (ImmerShare)",
+    description:
+      "• Founded in 2016, a Hong Kong-China 3D/XR software distribution infrastructure enabling native immersive content to be shared instantly via a link.\n• Engine-agnostic, device-independent streaming optimized for digital twins, simulations, 3D visualization, spatial commerce, and enterprise XR.\n• More than 1,000 enterprise customers and 20,000 developers; over 52 million minutes streamed; 44 proprietary IP assets including 4 patents.",
+    url: "http://paraverse.cc",
+  },
+  {
+    ranking: 35,
+    name: "Peris.ai",
+    slug: "Peris.ai (Perisai Cybersecurity Defense Pte. Ltd.)",
+    description:
+      "• Founded in 2022, a Singaporean-Indonesian company providing an autonomous cyber defense platform powered by agentic AI\n• Automation of threat detection, investigation, and response, as well as compliance and attack-surface management\n• 2025 ARR of US$1.34 million; TRL 7–8; more than 1,200 ethical hackers; backed by East Ventures and others",
+    url: "http://peris.ai",
+  },
+  {
+    ranking: 25,
+    name: "Polymerize",
+    slug: "Polymerize",
+    description:
+      "• Founded in 2020 and headquartered in Singapore, Polymerize provides an AI-native integrated platform that accelerates materials and chemical R&D across polymers, coatings, adhesives, compounding, and beyond.\n• Turns scattered lab data into actionable insight through experiment management, ML-based property prediction, and AI-guided formulation optimization, significantly shortening development cycles for materials and chemical companies.\n• Strong presence across APAC, with local subsidiaries serving customers in Korea, Japan, and China alongside our Singapore headquarters, and now expanding into Europe and the US; backed by leading VCs.",
+    url: "http://polymerize.io",
+  },
+  {
+    ranking: 17,
+    name: "Portrai.io",
+    slug: "Portrai",
+    description:
+      "• Founded in 2021, a South Korea-based spatial biology and drug discovery company using human tissue data and AI\n• Decision support for drug targets, indications, therapeutic modalities, and patient selection\n• More than 3,000 tissue maps and 100 million cells; contracts worth up to US$88 million plus royalties; backed by leading VCs",
+    url: "https://portrai.io/",
+  },
+  {
+    ranking: 30,
+    name: "PriyoShop",
+    slug: "PriyoShop",
+    description:
+      "• Founded in 2020, PriyoShop is a Bangladeshi retail infrastructure company digitizing informal commerce for MSMEs.\n• Combines AI-powered procurement, last-mile logistics, data-powered embedded finance, retail DOOH media and demand intelligence.\n• Powers 220,000+ retailers and 296 brands, achieving positive operating profit and is backed by leading global investors.",
+    url: "http://priyoshop.com",
+  },
+  {
+    ranking: 8,
+    name: "ProtoPie",
+    slug: "ProtoPie",
+    description:
+      "ProtoPie lets teams validate AI-generated UI/UX with high-fidelity prototypes and real user testing, across automotive, home appliances, apps, and embedded devices.",
+    url: "http://protopie.io",
+  },
+  {
+    ranking: 37,
+    name: "PT SENTRA SOLUSI AUTOMA",
+    slug: "AUTOMA",
+    description:
+      "• Founded in May 2018, an Indonesian IoT and carbon platform integrating logistics operations and emissions\n• Visibility and management of vehicles, warehouses, energy, costs, risks, and Scope 1–3 emissions\n• 23 B2B customers; 2025 revenue above IDR 5 billion; deployed by MitraTel; strategic investment from Telkom Group",
+    url: "http://automa.id/",
+  },
+  {
+    ranking: 13,
+    name: "Quanfluence Pvt. Ltd.",
+    slug: "Quanfluence Pvt. Ltd",
+    description:
+      "• Founded in October 2021, an Indian quantum computing company developing photonic quantum technology and the OPTIQON optimization platform\n• Combinatorial optimization for logistics, finance, manufacturing, and other sectors, with a path toward general-purpose photonic quantum computing\n• US$450,000 in product revenue; more than US$1 million in government grants; nine patent applications; US$12 million raised to date",
+    url: "quanfluence.com",
+  },
+  {
+    ranking: 50,
+    name: "Rain Biotech Solutions",
+    slug: "Rain Biotech Solutions",
+    description:
+      "• Hong Kong-based AI-enabled cell-sorting company building the living-cell validation layer that turns AI-designed drugs and cell therapies into biological proof.\n• Label-free sorting of encapsulated cells and organoids with >98% accuracy for cell therapy, synthetic biology, kidney-organoid drug discovery, and precision oncology.\n• Platform sales in the UK; successful 2-month glucose control in diabetic mice with an artificial pancreas implant; kidney stem-cell pilot and US JV underway; raising a US$5M Pre-A round.",
+    url: "http://rainbiosolutions.com/",
+  },
+  {
+    ranking: 5,
+    name: "SatSure Analytics India Pvt. Ltd.",
+    slug: "SatSure Analytics India",
+    description:
+      "Founded in 2017, SatSure is a deep-tech Earth Intelligence company that transforms satellite imagery, aerial and drone data, LiDAR, and other geospatial inputs into actionable insights using AI and advanced analytics. Its solutions support decision-making across infrastructure, utilities, energy, agriculture, banking and financial services, aviation, and forestry. Through its subsidiary, KaleidEO, SatSure is designing and developing high-resolution optical satellite payloads, with plans to launch its own constellation of high-resolution optical satellites to strengthen access to advanced Earth observation data and enable next-generation Earth Intelligence applications.",
+    url: "https://www.satsure.co/",
+  },
+  {
+    ranking: 1,
+    name: "Seoul Dynamics",
+    slug: "Seoul Dynamics",
+    description:
+      "• Founded in July 2022, a South Korean developer of autonomous mobile robots and forklifts capable of transporting heavy loads\n• Automates indoor and outdoor material transport and reduces labor requirements in logistics warehouses, shipyards, and construction and manufacturing sites\n• 16-person team, 50% of whom hold PhDs; more than 10 patents; 260% revenue CAGR; deployments include a major Japanese logistics company",
+    url: "https://www.seouldynamics.com/",
+  },
+  {
+    ranking: 49,
+    name: "SGService",
+    slug: "Scientific Gear Service Co., Ltd. (SGService)",
+    description:
+      "• Taiwanese semiconductor equipment company founded in 2021, developing AI-powered 3D X-ray inspection for advanced packaging\n• Designed a new defect inspection architecture delivering submicron resolution and large panel scans up to 1,250× faster than conventional CT\n• Developed Asia's first 150 nm nano-CT; US$2–5 million systems with a recurring maintenance model",
+    url: "http://sgservice.com.tw/",
+  },
+  {
+    ranking: 19,
+    name: "Staple AI Pte. Ltd.",
+    slug: "Staple AI Pte. Ltd",
+    description:
+      "• Year founded undisclosed, a Singapore company providing a document AI platform with audit trails and controls for regulated industries\n• Automation of document processing, confidential computing, policy enforcement, and tamper-resistant audits\n• Contracts with Fortune 50 and Global 1000 companies; MRR above US$290,000; presence in more than 60 countries; 134% NDR",
+    url: "staple.ai",
+  },
+  {
+    ranking: 7,
+    name: "TALOS Corp.",
+    slug: "TALOS Corp",
+    description:
+      "• Founded in 2021, a Seoul National University spinout using AI to estimate cerebral aneurysm risk from health screening data\n• Early screening for cerebral aneurysms and referral recommendations using routine health checkups\n• Validated on a national cohort of approximately 420,000 people; contracts with more than 50 Korean institutions; enterprise deployment track record",
+    url: "https://taloscorp.io/en/",
+  },
+  {
+    ranking: 39,
+    name: "TartanHQ Solutions Private Limited",
+    slug: "TartanHQ",
+    description:
+      "• Founded in 2021, an Indian integration platform connecting AI agents with enterprise systems\n• Data integration and workflow orchestration across HR, payroll, ERP, CRM, and banking systems\n• More than 220 connectors; in production at major financial institutions; deployed to over 40,000 users; approximately US$4.5–8.39 million raised to date",
+    url: "http://tartanhq.com",
+  },
+  {
+    ranking: 20,
+    name: "Terminal 3",
+    slug: "Terminal 3",
+    description:
+      "• Founded in 2023, a Hong Kong deep-tech enterprise AI agent security company; combines confidential computing with decentralized technology so enterprises can verify, govern and audit the actions of AI agents\n• Secure execution of protected workflows through a confidential computing network, with identity verification, verifiable credentials, and audit trails for agents\n• US$8 million seed round co-led by Illuminate Financial and CMCC Titan Fund; paid pilots in Japan; over 10 million profiles secured with Terminal 3",
+    url: "http://terminal3.io",
+  },
+  {
+    ranking: 48,
+    name: "Uravu Labs",
+    slug: "Uravu Labs",
+    description:
+      "• Founded in 2017, an Indian climate tech company that generates water from air while providing cooling\n• Energy-efficient cooling, water generation, and waste-heat utilization for data centers and industrial facilities\n• Proprietary liquid desiccant technology; multiple commercial demonstrations; backed by Enrission India Capital and others",
+    url: "https://www.uravulabs.com/",
+  },
+  {
+    ranking: 2,
+    name: "Vayana",
+    slug: "Vayana",
+    description:
+      "• Founded in 2009, an India-based trade credit platform connecting B2B commerce and finance\n• Electronic invoicing, credit assessment, domestic and cross-border supply chain finance, collections and payments, and receivables tokenization\n• Backed by Trifecta Capital, SMBC Asia Rising Fund, Jungle Ventures, IFC, and others",
+    url: "vayana.com",
+  },
+  {
+    ranking: 32,
+    name: "Wavelet AI",
+    slug: "WaveEco (Wavelet AI Pte. Ltd.)",
+    description:
+      "• Founded in 2025, a Singapore company developing physics-based thermal twins with human-gated autonomous control for industrial cooling\n• Cooling optimization and energy savings for data centers, industrial facilities, and battery energy-storage systems — deployed as an overlay, with no hardware replacement required\n• Six commercial deployments with client-confirmed energy savings of 10.8–53.2%; 27 patents (13 granted) and 8 registered software copyrights",
+    url: "http://wavelet-ai.com/",
+  },
+  {
+    ranking: 15,
+    name: "WAYCEN Inc.",
+    slug: "WAYCEN Inc",
+    description:
+      "• Founded in 2019, a South Korean medical AI company supporting cancer prevention, diagnosis, and treatment\n• Lesion detection, diagnostic support, and enhanced clinical workflows for endoscopy and other procedures\n• Commercial deployments in hospitals in South Korea and Vietnam, regulatory approvals, numerous patents, and backing from SparkLabs and others",
+    url: "waycen.com",
+  },
+  {
+    ranking: 26,
+    name: "WeavAir",
+    slug: "WeavAir",
+    description:
+      "• Year founded undisclosed, a Canadian climate intelligence company integrating satellites, drones, IoT, and edge AI\n• Emissions verification, asset risk monitoring, digital twins, and sustainability reporting\n• 10 customers across 16 countries; 96% logo retention; 128% NRR; 147% year-over-year growth; supported by Techstars and others",
+    url: "weavair.com",
+  },
+  {
+    ranking: 6,
+    name: "Whale Tech Pte. Ltd.",
+    slug: "Whale Tech Pte. Ltd",
+    description:
+      "• Founded in 2017, Whale is a global enterprise AI company building the AI operating system for physical business, turning fragmented AI tools into a unified intelligence layer.\n• Powered by its proprietary World Model, Whale's platform spans space intelligence, voice, content, knowledge, agents, and IoT—closing the loop from physical sensing to autonomous execution.\n• Today, Whale serves 1,600+ enterprises across 45+ countries, embedding AI directly into real operations to help businesses move from providing answers to completing work.",
+    url: "https://www.whale.sg/",
+  },
+  {
+    ranking: 16,
+    name: "Xtractify",
+    slug: "Xtractify (ENNO)",
+    description:
+      "• Founded in 2023, a Malaysian enterprise AI company building ENNO (Enterprise Neural Network Orchestration)\n• AI gateway that connects, governs and scales AI across existing enterprise systems, starting with high-volume finance operations\n• Proven with large enterprises and listed companies, delivering measurable cost and workload reductions; backed by Jati Growth",
+    url: "https://www.xtractify.ai/",
   },
 ];
 
@@ -507,4 +924,83 @@ const TOP_STARTUPS_20 = [
   },
 ];
 
-export { TOP_STARTUPS, TOP_STARTUPS_20, TOP_STARTUPS_10 };
+// Display order of the 2026 Top 20; details and logos come from TOP_STARTUPS_2026 by name.
+const TOP_20_2026_NAMES = [
+  "APETECHS Joint Stock Company",
+  "DetectifAI",
+  "Extraterrestrial Power Ltd.",
+  "Hyperbots Inc.",
+  "Invigilo",
+  "Krosslinker",
+  "KUBOCARE",
+  "Logisly",
+  "MediSun Energy",
+  "Morse Micro Pty. Ltd.",
+  "Neurowyzr",
+  "OmniCard",
+  "PT SENTRA SOLUSI AUTOMA",
+  "SatSure Analytics India Pvt. Ltd.",
+  "Seoul Dynamics",
+  "SGService",
+  "TartanHQ Solutions Private Limited",
+  "Vayana",
+  "Whale Tech Pte. Ltd.",
+  "Xtractify",
+];
+
+const TOP_STARTUPS_20_2026 = TOP_20_2026_NAMES.map((name) => {
+  const startup = TOP_STARTUPS_2026.find((item) => item.name === name);
+  if (!startup) throw new Error(`Top 20 2026 startup not found in TOP_STARTUPS_2026: ${name}`);
+  return startup;
+});
+
+const TOP_20_STARTUPS_BY_YEAR = {
+  2025: {
+    year: "2025",
+    startups: TOP_STARTUPS_20,
+    imageDirectory: "/top-50-startup",
+    heroImage: "/top-20.webp",
+    title: "Top 20 Startups of NTT Startup Challenge 2025",
+    description:
+      "We extend our heartfelt congratulations to the Top 20 startups of the NTT Startup Challenge 2025. Your innovation, passion, and perseverance have brought you this far, and we truly commend your outstanding progress. This milestone reflects your dedication to creating meaningful impact and shaping the future of technology and business.",
+  },
+  2026: {
+    year: "2026",
+    startups: TOP_STARTUPS_20_2026,
+    imageDirectory: "/top-50-startup-2026",
+    heroImage: "/top-20.webp",
+    title: "Top 20 Startups of NTT Startup Challenge 2026",
+    description:
+      "We proudly celebrate the Top 20 startups of the NTT Startup Challenge 2026. Your bold ideas, passion for innovation, and commitment to creating meaningful impact have brought you to this remarkable achievement. This milestone reflects your dedication, perseverance, and vision in creating meaningful impact and shaping the future of technology and business. Bigger Ideas. Louder Impact. Bolder Futures",
+  },
+};
+
+const TOP_STARTUP_FINALISTS_BY_YEAR = {
+  2025: {
+    year: "2025",
+    startups: TOP_STARTUPS,
+    imageDirectory: "/top-50-startup",
+    heroImage: "/top-50.webp",
+    title: "Top 50 Startups of NTT Startup Challenge 2025",
+    description:
+      "We extend our heartfelt congratulations to the Top 50 startups of the NTT Startup Challenge 2025. Your innovation, passion, and determination have set you apart, and we deeply appreciate the hard work and creativity you have demonstrated. This achievement is a testament to your commitment to driving positive change and shaping the future of technology and business.",
+  },
+  2026: {
+    year: "2026",
+    startups: TOP_STARTUPS_2026,
+    imageDirectory: "/top-50-startup-2026",
+    heroImage: "/top-50.webp",
+    title: "Top 50 Startups of NTT Startup Challenge 2026",
+    description:
+      "We extend our heartfelt congratulations to the Top 50 startups of the NTT Startup Challenge 2026. Your innovation, passion, and determination have set you apart, and we deeply appreciate the hard work and creativity you have demonstrated. This achievement is a testament to your commitment to driving positive change and shaping the future of technology and business.",
+  },
+};
+
+export {
+  TOP_STARTUPS,
+  TOP_STARTUPS_2026,
+  TOP_STARTUPS_20,
+  TOP_STARTUPS_10,
+  TOP_STARTUP_FINALISTS_BY_YEAR,
+  TOP_20_STARTUPS_BY_YEAR,
+};

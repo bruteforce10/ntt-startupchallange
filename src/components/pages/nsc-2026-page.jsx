@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import InitialPage from "@/components/pages/initial-page";
 import Hero from "@/components/hero";
 import { HeroContent2026 } from "@/components/nsc-2026/hero-content";
@@ -30,6 +32,34 @@ export function Nsc2026PageContent() {
         <HeroContent2026 />
       </Hero>
       <ComingSoonSection2026 />
+      <section className="container mx-auto px-4">
+        <Link
+          href="/top-20-startup-of-ntt-challange/2026"
+          aria-label="View the Top 20 Startups of NTT Startup Challenge 2026"
+          className="block rounded-2xl transition-opacity duration-200 hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-ntt-200"
+        >
+          <Image
+            src="/cover-startup-20-2026.webp"
+            alt="Top 20 Startups of NTT Startup Challenge 2026"
+            width={1000}
+            height={1000}
+            className="mx-auto h-auto w-[94.4%] max-w-[60.4rem]"
+          />
+        </Link>
+        <Link
+          href="/top-50-startup-of-ntt-challange/2026"
+          aria-label="View the Top 50 Finalists of NTT Startup Challenge 2026"
+          className="block rounded-2xl transition-opacity duration-200 hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-ntt-200"
+        >
+          <Image
+            src="/cover-startup-50-2026.webp"
+            alt="Top 50 Finalists of NTT Startup Challenge 2026"
+            width={1000}
+            height={1000}
+            className="mx-auto h-auto w-full max-w-5xl"
+          />
+        </Link>
+      </section>
       <HistorySection2026 />
       <FeedbackSection2026 />
       <AwardsSection2026 />

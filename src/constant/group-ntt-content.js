@@ -78,9 +78,9 @@ export const GROUP_NTT_CONTENT = [
     height: 250,
   },
   {
-    url: "https://www.linkedin.com/company/synexia-ventures/posts/?feedView=all",
+    url: "https://www.linkedin.com/company/synexia-ventures/",
     img: "synexia-ventures",
-    width: 250,
+    width: 200,
     height: 200,
   },
   {

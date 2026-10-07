@@ -262,9 +262,9 @@ export const PARTNER_CONTENT_2026 = [
   },
   {
     id: 2,
-    name: "KK Fund",
-    url: "https://kkfund.co",
-    image: "/community-partner/2026/02-kk-fund.webp",
+    name: "synexia-ventures",
+    url: "https://www.linkedin.com/company/synexia-ventures/",
+    image: "/community-partner/2026/synexia-ventures.webp",
   },
   {
     id: 4,
@@ -502,7 +502,7 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://growthcharger.com/",
     image: "/community-partner/2026/34-growthcharger.webp",
   },
-    {
+  {
     id: 39,
     name: "herizon",
     url: "https://herizon.club",
@@ -532,5 +532,4 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://exeo-global.com",
     image: "/community-partner/2026/06-exeo-global.webp",
   },
-
 ];
