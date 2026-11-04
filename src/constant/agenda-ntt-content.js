@@ -7,7 +7,7 @@ export const DETAIL_EVENTS = [
   },
   {
     Icon: <Calendar className="text-blue-600 h-5 w-5 flex-shrink-0" />,
-    title: " Tuesday, November 11, 2025",
+    title: "Wednesday, November 11, 2026",
   },
   {
     Icon: <Clock className="text-blue-600 h-5 w-5 flex-shrink-0" />,
@@ -48,7 +48,8 @@ export const SCHEDULE_DATA = [
   {
     time: "13:20-13:30",
     content: "Keynote Speech ①",
-    presenter: "Indonesia Partner (TBC)",
+    presenter:
+      "Teuku Riefky Harsya, Minister of Creative Economy, Government of Indonesia",
     isHighlighted: false,
     isBreak: false,
   },
@@ -97,35 +98,42 @@ export const SCHEDULE_DATA = [
     isBreak: false,
   },
   {
-    time: "16:00-16:20",
+    time: "16:00-16:10",
+    content: "Announcement",
+    presenter: "MC",
+    isHighlighted: false,
+    isBreak: false,
+  },
+  {
+    time: "16:10-16:30",
     content: "Break",
     presenter: "",
     isHighlighted: false,
     isBreak: true,
   },
   {
-    time: "16:20-16:50",
+    time: "16:30-17:00",
     content: "Awards Ceremony",
     presenter: "Naoki Ichihashi, SVP, Head of Public Relations, NTT, Inc.",
     isHighlighted: false,
     isBreak: false,
   },
   {
-    time: "16:50-17:00",
+    time: "17:00-17:10",
     content: "Closing Remarks",
     presenter: "Takashi Ebihara, SEVP, Head of Technology Planning, NTT, Inc.",
     isHighlighted: false,
     isBreak: false,
   },
   {
-    time: "17:00-17:10",
+    time: "17:10-17:30",
     content: "Venue Turnaround",
     presenter: "",
     isHighlighted: false,
     isBreak: true,
   },
   {
-    time: "17:10-19:00",
+    time: "17:30-19:00",
     content: "Networking",
     presenter: "Finalists, VIP guests, invited startups",
     isHighlighted: false,

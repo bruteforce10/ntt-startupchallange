@@ -150,7 +150,7 @@ export const SPEAKER_JUDGES_CONTENT_2026 = [
   {
     id: "kuan-hsu-2026",
     name: "Kuan Hsu",
-    organization: "Fund Manager, Synexia Ventures",
+    organization: "Managing Director, Synexia Ventures",
     image: "/speakers/2026/Kuan Hsu.webp",
     bio: "Kuan Hsu is the Managing Director of Synexia Ventures, an investment vehicle established to reinforce NTT Group’s business development in Southeast Asia. Synexia Ventures aims to further strengthen these Group-wide initiatives by establishing an investment platform specialized in Southeast Asia, accelerating NTT Group’s collaboration with local startups and fostering new business creation in the region.",
   },
@@ -178,7 +178,7 @@ export const SPEAKER_JUDGES_CONTENT_2026 = [
   {
     id: "yasunori-kinebuchi-2026",
     name: "Yasunori Kinebuchi",
-    organization: "Director, NTT",
+    organization: "Director, Head of Global Incubation, NTT, Inc.",
     image: "/speakers/9.webp",
     bio: "Yasunori Kinebuchi is a seasoned corporate strategist and finance expert with a global perspective. Since joining NTT in 2006, He has held multiple senior roles, currently leading Global Incubation activities at NTT Holdings, serving as Director. In this role, he oversees open innovation initiatives across NTT's global network. Previously, he led corporate strategy in Singapore and in the UK, and directed partnerships with industry leaders. Kinebuchi also pioneered the \"NTT Startup Challenge,\" supporting startup collaboration across Asia. He brings strong strategic insight and international experience to NTT's growth and innovation goals.",
   },
@@ -200,7 +200,7 @@ export const SPEAKER_JUDGES_CONTENT_2026 = [
   {
     id: "ken-katsuyama-2026",
     name: "Ken Katsuyama",
-    organization: "Senior Vice President, NTT",
+    organization: "Senior Vice President, Head of Global Business Department, NTT, Inc.",
     image: "/speakers/2026/Ken Katsuyama.webp",
     bio: "Ken Katsuyama is the Senior Vice President, Head of Global Business at Nippon Telegraph and Telephone Corporation (NTT). His current responsibility is the global business of the whole NTT group. In addition, he is a member of the board of directors of NTT DATA, Inc., a major operating company of NTT group covering outside of Japan.",
   },
