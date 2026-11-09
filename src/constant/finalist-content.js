@@ -517,6 +517,12 @@ export const PARTNER_CONTENT_2026 = [
     image: "/community-partner/2026/sgInnovate.webp",
   },
   {
+    id: 91,
+    name: "ITRI",
+    url: "https://www.itri.org.tw/english/",
+    image: "/community-partner/2026/itri.webp",
+  },
+  {
     id: 38,
     name: "HKSTP",
     url: "https://www.hkstp.org",
