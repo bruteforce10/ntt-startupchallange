@@ -4,7 +4,7 @@ import InitialPage from "@/components/pages/initial-page";
 import Hero from "@/components/hero";
 import { HeroContent2026 } from "@/components/nsc-2026/hero-content";
 import { HistorySection2026 } from "@/components/nsc-2026/history-section";
-import { ComingSoonSection2026 } from "@/components/nsc-2026/coming-soon-section";
+import { Top3FinalistsSection2026 } from "@/components/nsc-2026/top-3-finalists-section";
 import { FeedbackSection2026 } from "@/components/nsc-2026/feedback-section";
 import { AwardsSection2026 } from "@/components/nsc-2026/awards-section";
 import { PersonCarouselSection2026 } from "@/components/nsc-2026/person-carousel-section";
@@ -32,8 +32,8 @@ export function Nsc2026PageContent() {
       >
         <HeroContent2026 />
       </Hero>
-      <ComingSoonSection2026 />
-         <ListSection
+      <Top3FinalistsSection2026 />
+      <ListSection
         title={"Top 10 Finalists of NTT Startup Challenge 2026"}
         items={TOP_STARTUPS_10_2026}
         imageClassName="h-auto w-[150px] md:w-[200px]"
