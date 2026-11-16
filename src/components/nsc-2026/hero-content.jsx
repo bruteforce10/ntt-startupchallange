@@ -37,7 +37,7 @@ export function HeroContent2026() {
         </h1>
 
         <div className="mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 lg:flex-row lg:items-stretch lg:justify-center">
-          {HERO_ACTIONS.map((action, index) => (
+          {HERO_ACTIONS.filter((action) => !action.disabled).map((action) => (
             <Button
               key={action.label}
               asChild
