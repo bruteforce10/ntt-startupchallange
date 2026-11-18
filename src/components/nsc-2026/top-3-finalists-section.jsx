@@ -7,19 +7,22 @@ const TOP_3_FINALISTS = [
   {
     place: "1st",
     name: "SatSure",
-    src: "/top-3-2026/1st-satsure.webp",
+    src: "/top-3-2026/1st-winner-satsure.webp",
+    href: "https://www.satsure.co/",
     podiumOrder: "sm:order-2",
   },
   {
     place: "2nd",
     name: "Neurowyzr",
-    src: "/top-3-2026/2nd-neurowyzr.webp",
+    src: "/top-3-2026/2nd-winner-neurowyzr.webp",
+    href: "https://neurowyzr.com/",
     podiumOrder: "sm:order-1",
   },
   {
     place: "3rd",
     name: "OmniCard",
-    src: "/top-3-2026/3rd-omnicard.webp",
+    src: "/top-3-2026/3rd-winner-omnicard.webp",
+    href: "https://omnicard.in/",
     podiumOrder: "sm:order-3",
   },
 ];
@@ -43,19 +46,27 @@ export function Top3FinalistsSection2026() {
         />
 
         <ol className="relative grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-2 md:gap-4">
-          {TOP_3_FINALISTS.map(({ place, name, src, podiumOrder }) => (
+          {TOP_3_FINALISTS.map(({ place, name, src, href, podiumOrder }) => (
             <li
               key={place}
               className={cn("mx-auto w-full max-w-[260px] sm:max-w-none", podiumOrder)}
             >
-              <Image
-                src={src}
-                alt={`${place} place: ${name}`}
-                width={620}
-                height={660}
-                sizes="(min-width: 1152px) 360px, (min-width: 640px) 32vw, 260px"
-                className="h-auto w-full transition-transform duration-500 ease-out hover:-translate-y-1.5"
-              />
+              <a
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${place} place: ${name} (opens in a new tab)`}
+                className="block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-ntt-200/60"
+              >
+                <Image
+                  src={src}
+                  alt={`${place} place: ${name}`}
+                  width={720}
+                  height={703}
+                  sizes="(min-width: 1152px) 360px, (min-width: 640px) 32vw, 260px"
+                  className="h-auto w-full transition-transform duration-500 ease-out hover:-translate-y-1.5 motion-reduce:hover:translate-y-0"
+                />
+              </a>
             </li>
           ))}
         </ol>
