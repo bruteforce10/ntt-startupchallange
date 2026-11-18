@@ -15,6 +15,7 @@ const formatDate = (value) => {
 };
 
 export default function GalleryGrid({
+  title,
   galleryImages,
   errorMessage,
   cloudName,
@@ -25,7 +26,7 @@ export default function GalleryGrid({
     <>
       <section className="px-4 pt-28 pb-12 sm:pt-36">
         <div className="mx-auto max-w-5xl text-center">
-          <HeadingText text="NTT Startup Challenge 2025 Gallery" />
+          <HeadingText text={title} />
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
             <span className="rounded-full border border-white/10 px-3 py-1">
               {galleryImages?.length || 0} documentations

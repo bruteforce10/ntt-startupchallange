@@ -66,7 +66,7 @@ export function Nsc2025PageContent() {
           text={"NTT Startup Challenge 2025 Gallery"}
           className="text-center"
         />
-        <Link href="/gallery" className="block w-full">
+        <Link href="/gallery/2025" className="block w-full">
           <Image
             src="/cover-gallery-fix.webp"
             alt="NTT Startup Challenge 2025 Gallery"

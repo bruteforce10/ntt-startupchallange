@@ -46,7 +46,8 @@ export const getGalleryImages = async ({
   const expressionParts = ["resource_type:image"];
   const sanitizedFolder = sanitizeFolder(folder);
 
-  if (sanitizedFolder) {
+  // undefined/null = no folder filter; "" = root-folder assets only.
+  if (sanitizedFolder !== undefined) {
     expressionParts.push(`folder="${sanitizedFolder}"`);
   }
 
