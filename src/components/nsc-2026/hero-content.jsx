@@ -18,9 +18,8 @@ const HERO_ACTIONS = [
   //     "border border-white/20 bg-white/12 text-white shadow-[0_18px_40px_rgba(5,12,31,0.22)] hover:bg-white/18",
   // },
   {
-    label: "ATTEND THE FINAL DAY NTTSC 2026",
-    href: "https://www.eventbrite.hk/e/final-day-ntt-startup-challenge-2026-tickets-1986790310301",
-    disabled: true,
+    label: "GALLERY OF 2026",
+    href: "/gallery/2026",
     className:
       "border border-blue-ntt-200/35 bg-[#08172d]/85 text-blue-ntt-200 shadow-[0_18px_36px_rgba(8,23,45,0.32)] hover:border-blue-ntt-200/55 hover:bg-[#0d2342]",
   },

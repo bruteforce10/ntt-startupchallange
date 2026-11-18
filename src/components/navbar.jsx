@@ -54,15 +54,11 @@ const NAVBAR_ACTIONS = [
     href: "mailto:info@ntt-startupchallenge.com?subject=Newsletter%20Subscription",
   },
   {
-    title: "Attend Final Day",
-    href: "https://www.eventbrite.hk/e/final-day-ntt-startup-challenge-2026-tickets-1986790310301",
-    external: true,
-    disabled: false,
+    title: "Gallery of 2026",
+    href: "/gallery/2026",
     // badge: "coming soon",
   },
 ];
-
-const OPEN_INNOVATION_URL = "https://oip.ntt-startupchallenge.com";
 
 const PRIMARY_ACTION = NAVBAR_ACTIONS[3];
 const SECONDARY_ACTIONS = [
@@ -293,7 +289,6 @@ function DesktopNavbarActions() {
           ))}
         </DropdownMenuContent>
       </DropdownMenu>
-      <OpenInnovationButton className="min-h-11 px-5" />
     </div>
   );
 }
@@ -301,7 +296,6 @@ function DesktopNavbarActions() {
 function MobileNavbarActions() {
   return (
     <div className="flex flex-col gap-3">
-      <OpenInnovationButton className="min-h-12 w-full" />
       <NavbarActionButton
         {...PRIMARY_ACTION}
         mobile
@@ -319,28 +313,6 @@ function MobileNavbarActions() {
         {SECONDARY_ACTIONS[1].title}
       </a>
     </div>
-  );
-}
-
-function OpenInnovationButton({ className }) {
-  return (
-    <a
-      href={OPEN_INNOVATION_URL}
-      target="_blank"
-      rel="noreferrer"
-      className={cn(
-        "inline-flex touch-manipulation items-center justify-center rounded-full bg-[#154284] px-5 py-2 shadow-[0_10px_28px_rgba(8,41,71,0.2)] transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[0_14px_32px_rgba(8,41,71,0.28)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-ntt/40 motion-reduce:hover:translate-y-0",
-        className,
-      )}
-    >
-      <Image
-        src="/oi-logo.png"
-        alt="NTT Open Innovation"
-        width={2160}
-        height={514}
-        className="h-7 w-auto object-contain"
-      />
-    </a>
   );
 }
 

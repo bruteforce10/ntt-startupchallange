@@ -6,7 +6,6 @@ import { HeroContent2026 } from "@/components/nsc-2026/hero-content";
 import { HistorySection2026 } from "@/components/nsc-2026/history-section";
 import { Top3FinalistsSection2026 } from "@/components/nsc-2026/top-3-finalists-section";
 import { FeedbackSection2026 } from "@/components/nsc-2026/feedback-section";
-import { AwardsSection2026 } from "@/components/nsc-2026/awards-section";
 import { PersonCarouselSection2026 } from "@/components/nsc-2026/person-carousel-section";
 import { InfoSessionSection2026 } from "@/components/nsc-2026/info-session-section";
 import SpeaksSection from "@/components/section-speaks";
@@ -69,7 +68,6 @@ export function Nsc2026PageContent() {
       </section>
       <HistorySection2026 />
       <FeedbackSection2026 />
-      <AwardsSection2026 />
       <PersonCarouselSection2026
         title="Meet the Speakers & Judges of 2026"
         items={SPEAKER_JUDGES_CONTENT_2026}
