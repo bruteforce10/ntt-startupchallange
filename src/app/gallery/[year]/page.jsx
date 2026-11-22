@@ -48,7 +48,6 @@ export default async function GalleryByYearPage({ params }) {
         title={gallery.title}
         galleryImages={galleryImages}
         errorMessage={errorMessage}
-        cloudName={process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}
       />
     </InitialPage>
   );

@@ -1,8 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { CldImage } from "next-cloudinary";
 import HeadingText from "@/components/heading-text";
+import GalleryLightbox from "@/components/gallery-lightbox";
 
 const formatDate = (value) => {
   if (!value) return null;
@@ -18,9 +19,9 @@ export default function GalleryGrid({
   title,
   galleryImages,
   errorMessage,
-  cloudName,
 }) {
   const lastUpdated = formatDate(galleryImages?.at(0)?.createdAt);
+  const [activeIndex, setActiveIndex] = useState(null);
 
   return (
     <>
@@ -57,9 +58,13 @@ export default function GalleryGrid({
                   key={image.id}
                   className="group rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02] p-2 shadow-[0_20px_80px_-40px_rgba(15,23,42,0.75)]"
                 >
-                  <div className="relative h-64 w-full overflow-hidden rounded-2xl sm:h-80">
+                  <button
+                    type="button"
+                    onClick={() => setActiveIndex(index)}
+                    aria-label={`View ${image.alt} fullscreen`}
+                    className="relative block h-64 w-full cursor-zoom-in overflow-hidden rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-ntt-200 sm:h-80"
+                  >
                     <CldImage
-                      cloudName={cloudName}
                       src={image.publicId}
                       width={image.width}
                       height={image.height}
@@ -72,7 +77,7 @@ export default function GalleryGrid({
                       priority={index < 3}
                       className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                     />
-                  </div>
+                  </button>
                   <figcaption className="flex flex-col gap-2 p-4">
                     <div className="flex items-center justify-between text-xs uppercase tracking-widest text-muted-foreground">
                       <span>{formatDate(image.createdAt)}</span>
@@ -82,6 +87,13 @@ export default function GalleryGrid({
               ))}
             </div>
           )}
+          {galleryImages?.length ? (
+            <GalleryLightbox
+              images={galleryImages}
+              activeIndex={activeIndex}
+              onIndexChange={setActiveIndex}
+            />
+          ) : null}
         </div>
       </section>
     </>
