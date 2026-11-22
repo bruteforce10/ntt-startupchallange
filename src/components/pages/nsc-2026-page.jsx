@@ -25,7 +25,7 @@ export function Nsc2026PageContent() {
   return (
     <InitialPage>
       <Hero
-        videoUrl={"/bg-video-2025.webm"}
+        videoUrl={"/bg-video-2026.webm"}
         classNameContainer={"min-h-screen pb-8"}
         className={"flex-col flex items-center justify-between"}
       >
@@ -89,8 +89,9 @@ export function Nsc2026PageContent() {
       <SpeaksSection is2026={true} />
       <NewsSection is2026 />
       <SectionCoverLink
-        title={"Watch The NTT Startup Challenge 2025 Recap Video"}
+        title={"Watch The NTT Startup Challenge 2026 Final Day Recap"}
         subtitle={"VIDEO RECAP"}
+        videoUrl={"https://www.youtube.com/embed/oOmNWW0HlVA"}
         is2026
       />
     </InitialPage>
