@@ -3,6 +3,7 @@
 import React from "react";
 import { CldImage } from "next-cloudinary";
 import HeadingText from "@/components/heading-text";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const formatDate = (value) => {
   if (!value) return null;
@@ -15,17 +16,19 @@ const formatDate = (value) => {
 };
 
 export default function GalleryGrid({
-  galleryImages,
-  errorMessage,
+  groups,
   cloudName,
 }) {
-  const lastUpdated = formatDate(galleryImages?.at(0)?.createdAt);
+  const [activeFolder, setActiveFolder] = React.useState(groups[0]?.folder);
+  const activeGroup = groups.find((group) => group.folder === activeFolder);
+  const galleryImages = activeGroup?.images ?? [];
+  const lastUpdated = formatDate(galleryImages.at(0)?.createdAt);
 
   return (
     <>
       <section className="px-4 pt-28 pb-12 sm:pt-36">
         <div className="mx-auto max-w-5xl text-center">
-          <HeadingText text="NTT Startup Challenge 2025 Gallery" />
+          <HeadingText text="NTT Startup Challenge Gallery" />
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
             <span className="rounded-full border border-white/10 px-3 py-1">
               {galleryImages?.length || 0} documentations
@@ -41,13 +44,23 @@ export default function GalleryGrid({
 
       <section className="px-4 pb-24">
         <div className="mx-auto max-w-6xl">
+          <Tabs value={activeFolder} onValueChange={setActiveFolder}>
+            <TabsList aria-label="Gallery folders" className="mb-6 grid h-auto w-full grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-4">
+              {groups.map(({ folder }) => (
+                <TabsTrigger key={folder} value={folder} className="min-h-11 px-4 py-3">
+                  {folder}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+            {groups.map(({ folder, images: galleryImages, errorMessage }) => (
+              <TabsContent key={folder} value={folder}>
           {errorMessage ? (
             <div className="rounded-3xl border border-red-500/30 bg-red-500/10 p-6 text-sm text-red-50">
               {errorMessage}
             </div>
           ) : !galleryImages || galleryImages.length === 0 ? (
             <div className="rounded-3xl border border-white/10 bg-white/5 p-12 text-center text-muted-foreground">
-              Belum ada dokumentasi yang tersedia. Silakan cek kembali nanti.
+              Belum ada dokumentasi untuk {folder}. Silakan cek kembali nanti.
             </div>
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -81,6 +94,9 @@ export default function GalleryGrid({
               ))}
             </div>
           )}
+              </TabsContent>
+            ))}
+          </Tabs>
         </div>
       </section>
     </>
