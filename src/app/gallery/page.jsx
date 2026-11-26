@@ -2,27 +2,35 @@ import InitialPage from "@/components/pages/initial-page";
 import { getGalleryImages } from "@/lib/cloudinary";
 import GalleryGrid from "@/components/gallery-grid";
 
+const GALLERY_FOLDERS = [
+  "Info Session India",
+  "Final Day 2026",
+  "Info Session Vietnam",
+  "Info Session Malaysia",
+];
+
 const GalleryPage = async () => {
-  let galleryImages = [];
-  let errorMessage = null;
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
 
-  try {
-    // Passing null skips the folder filter so every image in the Cloudinary
-    // account is included in the gallery.
-    galleryImages = await getGalleryImages({ folder: null });
-  } catch (error) {
-    errorMessage =
-      error instanceof Error
-        ? error.message
-        : "We could not load the Cloudinary gallery right now.";
-  }
+  const groups = await Promise.all(
+    GALLERY_FOLDERS.map(async (folder) => {
+      try {
+        return { folder, images: await getGalleryImages({ folder }) };
+      } catch (error) {
+        console.error(`Unable to load gallery folder ${folder}:`, error);
+        return {
+          folder,
+          images: [],
+          errorMessage: "Dokumentasi belum dapat dimuat. Silakan coba kembali nanti.",
+        };
+      }
+    }),
+  );
 
   return (
     <InitialPage>
       <GalleryGrid
-        galleryImages={galleryImages}
-        errorMessage={errorMessage}
+        groups={groups}
         cloudName={cloudName}
       />
     </InitialPage>

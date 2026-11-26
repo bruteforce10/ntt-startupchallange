@@ -18,7 +18,7 @@ const humanizePublicId = (publicId = "") =>
 const normalizeResource = (resource) => ({
   id: resource.asset_id ?? resource.public_id,
   publicId: resource.public_id,
-  folder: resource.folder,
+  folder: resource.asset_folder ?? resource.folder,
   width: resource.width,
   height: resource.height,
   format: resource.format,
@@ -47,7 +47,8 @@ export const getGalleryImages = async ({
   const sanitizedFolder = sanitizeFolder(folder);
 
   if (sanitizedFolder) {
-    expressionParts.push(`folder="${sanitizedFolder}"`);
+    const folderField = process.env.CLOUDINARY_FOLDER_MODE === "fixed" ? "folder" : "asset_folder";
+    expressionParts.push(`${folderField}="${sanitizedFolder}"`);
   }
 
   const searchPayload = {
@@ -56,29 +57,37 @@ export const getGalleryImages = async ({
     max_results: maxResults,
   };
 
-  const response = await fetch(
-    `https://api.cloudinary.com/v1_1/${cloudName}/resources/search`,
-    {
-      method: "POST",
-      headers: {
-        Authorization: `Basic ${Buffer.from(`${apiKey}:${apiSecret}`).toString(
-          "base64",
-        )}`,
-        "Content-Type": "application/json",
+  const images = [];
+  let nextCursor;
+
+  do {
+    const response = await fetch(
+      `https://api.cloudinary.com/v1_1/${cloudName}/resources/search`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Basic ${Buffer.from(`${apiKey}:${apiSecret}`).toString(
+            "base64",
+          )}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...searchPayload, next_cursor: nextCursor }),
+        next: { revalidate: DEFAULT_REVALIDATE_SECONDS },
       },
-      body: JSON.stringify(searchPayload),
-      next: { revalidate: DEFAULT_REVALIDATE_SECONDS },
-    },
-  );
-
-  const payload = await response.json();
-
-  if (!response.ok) {
-    throw new Error(
-      payload.error?.message ??
-        "Unable to load gallery assets from Cloudinary at the moment.",
     );
-  }
 
-  return (payload.resources ?? []).map(normalizeResource);
+    const payload = await response.json();
+
+    if (!response.ok) {
+      throw new Error(
+        payload.error?.message ??
+          "Unable to load gallery assets from Cloudinary at the moment.",
+      );
+    }
+
+    images.push(...(payload.resources ?? []).map(normalizeResource));
+    nextCursor = payload.next_cursor;
+  } while (nextCursor);
+
+  return images;
 };
