@@ -1,6 +1,7 @@
 import EachUtils from "@/utils/eachUtils";
 import Image from "next/image";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 import HeadingText from "../heading-text";
 import { SectionHeading2026 } from "../nsc-2026/section-heading";
 
@@ -13,6 +14,7 @@ export function ListSection({
   is2026 = false,
   subtitle,
   emptyLabel,
+  imageClassName,
 }) {
   return (
     <section id={id} className="pt-16 md:pt-28">
@@ -40,7 +42,10 @@ export function ListSection({
                     width={150}
                     height={150}
                     alt={`${item.name} logo`}
-                    className="object-contain brightness-100 filter"
+                    className={cn(
+                      "object-contain brightness-100 filter",
+                      imageClassName
+                    )}
                   />
                 </Link>
               )}

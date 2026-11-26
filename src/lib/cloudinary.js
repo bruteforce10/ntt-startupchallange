@@ -18,7 +18,7 @@ const humanizePublicId = (publicId = "") =>
 const normalizeResource = (resource) => ({
   id: resource.asset_id ?? resource.public_id,
   publicId: resource.public_id,
-  folder: resource.folder,
+  folder: resource.asset_folder ?? resource.folder,
   width: resource.width,
   height: resource.height,
   format: resource.format,
@@ -46,8 +46,10 @@ export const getGalleryImages = async ({
   const expressionParts = ["resource_type:image"];
   const sanitizedFolder = sanitizeFolder(folder);
 
-  if (sanitizedFolder) {
-    expressionParts.push(`folder="${sanitizedFolder}"`);
+  // undefined/null = no folder filter; "" = root-folder assets only.
+  if (sanitizedFolder !== undefined) {
+    const field = process.env.CLOUDINARY_FOLDER_MODE === "fixed" ? "folder" : "asset_folder";
+    expressionParts.push(`${field}="${sanitizedFolder}"`);
   }
 
   const searchPayload = {
@@ -56,6 +58,9 @@ export const getGalleryImages = async ({
     max_results: maxResults,
   };
 
+  const images = [];
+  let nextCursor;
+  do {
   const response = await fetch(
     `https://api.cloudinary.com/v1_1/${cloudName}/resources/search`,
     {
@@ -66,7 +71,7 @@ export const getGalleryImages = async ({
         )}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(searchPayload),
+      body: JSON.stringify({ ...searchPayload, next_cursor: nextCursor }),
       next: { revalidate: DEFAULT_REVALIDATE_SECONDS },
     },
   );
@@ -80,5 +85,8 @@ export const getGalleryImages = async ({
     );
   }
 
-  return (payload.resources ?? []).map(normalizeResource);
+  images.push(...(payload.resources ?? []).map(normalizeResource));
+  nextCursor = payload.next_cursor;
+  } while (nextCursor);
+  return images;
 };

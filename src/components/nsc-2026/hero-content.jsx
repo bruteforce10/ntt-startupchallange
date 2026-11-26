@@ -18,8 +18,8 @@ const HERO_ACTIONS = [
   //     "border border-white/20 bg-white/12 text-white shadow-[0_18px_40px_rgba(5,12,31,0.22)] hover:bg-white/18",
   // },
   {
-    label: "ATTEND THE FINAL DAY NTTSC 2026",
-    href: "https://www.eventbrite.hk/e/final-day-ntt-startup-challenge-2026-tickets-1986790310301",
+    label: "GALLERY OF 2026",
+    href: "/gallery/2026",
     className:
       "border border-blue-ntt-200/35 bg-[#08172d]/85 text-blue-ntt-200 shadow-[0_18px_36px_rgba(8,23,45,0.32)] hover:border-blue-ntt-200/55 hover:bg-[#0d2342]",
   },
@@ -36,7 +36,7 @@ export function HeroContent2026() {
         </h1>
 
         <div className="mx-auto flex max-w-6xl flex-col gap-3 sm:gap-4 lg:flex-row lg:items-stretch lg:justify-center">
-          {HERO_ACTIONS.map((action, index) => (
+          {HERO_ACTIONS.filter((action) => !action.disabled).map((action) => (
             <Button
               key={action.label}
               asChild
@@ -45,14 +45,19 @@ export function HeroContent2026() {
                 action.badge ? "flex-col gap-1.5" : "",
                 "lg:flex-1 lg:basis-0",
                 action.className,
+                action.disabled
+                  ? "pointer-events-none cursor-not-allowed opacity-50 hover:translate-y-0"
+                  : "",
               ].join(" ")}
             >
               {action.disabled ? (
-                <span aria-disabled="true" className="cursor-default">
+                <span aria-disabled="true">
                   <span className="block text-balance">{action.label}</span>
-                  <span className="block text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/85">
-                    {action.badge}
-                  </span>
+                  {action.badge ? (
+                    <span className="block text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/85">
+                      {action.badge}
+                    </span>
+                  ) : null}
                 </span>
               ) : (
                 <a

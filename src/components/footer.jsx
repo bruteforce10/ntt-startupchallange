@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaWhatsapp,
   FaEnvelope,
@@ -108,6 +109,16 @@ export function Footer() {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="mt-10 flex flex-col items-center gap-3 border-t border-white/10 pt-6 text-sm text-gray-400 sm:flex-row sm:justify-between">
+          <p>© {new Date().getFullYear()} NTT Startup Challenge</p>
+          <Link
+            href="/privacy-policy"
+            className="text-white hover:text-blue-400 transition-colors"
+          >
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>

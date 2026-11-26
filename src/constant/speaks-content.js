@@ -139,7 +139,7 @@ export const JUDGES_CONTENT = [
 export const SPEAKERS_JUDGES_CONTENT = [
   ...SPEAKERS_CONTENT,
   ...JUDGES_CONTENT.filter(
-    (judge) => !SPEAKERS_CONTENT.some((speaker) => speaker.id === judge.id)
+    (judge) => !SPEAKERS_CONTENT.some((speaker) => speaker.id === judge.id),
   ),
 ];
 
@@ -150,7 +150,7 @@ export const SPEAKER_JUDGES_CONTENT_2026 = [
   {
     id: "kuan-hsu-2026",
     name: "Kuan Hsu",
-    organization: "Fund Manager, Synexia Ventures",
+    organization: "Managing Director, Synexia Ventures",
     image: "/speakers/2026/Kuan Hsu.webp",
     bio: "Kuan Hsu is the Managing Director of Synexia Ventures, an investment vehicle established to reinforce NTT Group’s business development in Southeast Asia. Synexia Ventures aims to further strengthen these Group-wide initiatives by establishing an investment platform specialized in Southeast Asia, accelerating NTT Group’s collaboration with local startups and fostering new business creation in the region.",
   },
@@ -168,13 +168,21 @@ export const SPEAKER_JUDGES_CONTENT_2026 = [
     image: "/speakers/2026/Takeshi Ebihara.webp",
     bio: "Takeshi Ebihara is Founding General Partner at Rebright Partners, VC firm invests in Seed to Series-A Startups in SE Asia and India includes Indonesian Largest IPO company Bukalapak (1st round Lead/Solo), Philipino Largest tech exit company Coins.Ph (1st round co-lead), multiple Indian Unicorn and Soonicorns. Ebihara has been in the industry more than decades as a venture capitalist as well as serial entrepreneur started his career at JAFCO, the largest VC/PE firm in Japan in 1994. He also founded and managed several Tech companies includes Tokyo Stock-EX Listed Public Company.",
   },
+  // {
+  //   id: "hsien-hui-tong-2026",
+  //   name: "Hsien-Hui Tong",
+  //   organization: "Executive Director, SG Innovate",
+  //   image: "/speakers/2026/Hsien Hui Tong.webp",
+  //   bio: "Leads SGInnovate’s investments in Southeast Asia, backing AI, robotics and quantum startups.",
+  // },
   {
-    id: "hsien-hui-tong-2026",
-    name: "Hsien-Hui Tong",
-    organization: "Executive Director, SG Innovate",
-    image: "/speakers/2026/Hsien Hui Tong.webp",
-    bio: "Leads SGInnovate’s investments in Southeast Asia, backing AI, robotics and quantum startups.",
+    id: "yasunori-kinebuchi-2026",
+    name: "Yasunori Kinebuchi",
+    organization: "Director, Head of Global Incubation, NTT, Inc.",
+    image: "/speakers/9.webp",
+    bio: "Yasunori Kinebuchi is a seasoned corporate strategist and finance expert with a global perspective. Since joining NTT in 2006, He has held multiple senior roles, currently leading Global Incubation activities at NTT Holdings, serving as Director. In this role, he oversees open innovation initiatives across NTT's global network. Previously, he led corporate strategy in Singapore and in the UK, and directed partnerships with industry leaders. Kinebuchi also pioneered the \"NTT Startup Challenge,\" supporting startup collaboration across Asia. He brings strong strategic insight and international experience to NTT's growth and innovation goals.",
   },
+
   {
     id: "ben-tulloch-2026",
     name: "Ben Tulloch",
@@ -192,9 +200,16 @@ export const SPEAKER_JUDGES_CONTENT_2026 = [
   {
     id: "ken-katsuyama-2026",
     name: "Ken Katsuyama",
-    organization: "Senior Vice President, NTT",
+    organization: "Senior Vice President, Head of Global Business Department, NTT, Inc.",
     image: "/speakers/2026/Ken Katsuyama.webp",
     bio: "Ken Katsuyama is the Senior Vice President, Head of Global Business at Nippon Telegraph and Telephone Corporation (NTT). His current responsibility is the global business of the whole NTT group. In addition, he is a member of the board of directors of NTT DATA, Inc., a major operating company of NTT group covering outside of Japan.",
+  },
+  {
+    id: "reo-kusaka-2026",
+    name: "Reo Kusaka",
+    organization: "Head of Global Business, NTT EAST",
+    image: "/speakers/2026/Reo Kusaka.png",
+    bio: "Reo Kusaka is Head of Global Business at NTT EAST, leading new business development, strategic investments, and partnerships across Asia. He also serves as a Commissioner of Integrasi Jaringan Ekosistem (IJE) in Indonesia, supporting its mission to expand affordable fixed broadband access to underserved communities.",
   },
 ];
 

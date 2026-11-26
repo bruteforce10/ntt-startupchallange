@@ -1,8 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { CldImage } from "next-cloudinary";
 import HeadingText from "@/components/heading-text";
+import GalleryLightbox from "@/components/gallery-lightbox";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const formatDate = (value) => {
   if (!value) return null;
@@ -15,17 +17,45 @@ const formatDate = (value) => {
 };
 
 export default function GalleryGrid({
+  title,
+  groups,
   galleryImages,
   errorMessage,
-  cloudName,
 }) {
+  const [activeFolder, setActiveFolder] = useState(groups?.[0]?.folder);
+  if (groups) {
+    return (
+      <Tabs value={activeFolder} onValueChange={setActiveFolder} className="gap-0">
+        <section className="px-4 pt-28 sm:pt-36">
+          <div className="mx-auto max-w-6xl text-center">
+            <HeadingText text={title} />
+            <TabsList aria-label="Gallery folders" className="mt-8 grid h-auto w-full grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-4">
+              {groups.map(({ folder }) => (
+                <TabsTrigger key={folder} value={folder} className="min-h-11 px-4 py-3">{folder}</TabsTrigger>
+              ))}
+            </TabsList>
+          </div>
+        </section>
+        {groups.map(({ folder, images, errorMessage }) => (
+          <TabsContent key={folder} value={folder}>
+            <GalleryAlbum galleryImages={images} errorMessage={errorMessage} />
+          </TabsContent>
+        ))}
+      </Tabs>
+    );
+  }
+  return <GalleryAlbum title={title} galleryImages={galleryImages} errorMessage={errorMessage} />;
+}
+
+function GalleryAlbum({ title, galleryImages, errorMessage }) {
   const lastUpdated = formatDate(galleryImages?.at(0)?.createdAt);
+  const [activeIndex, setActiveIndex] = useState(null);
 
   return (
     <>
-      <section className="px-4 pt-28 pb-12 sm:pt-36">
+      <section className={title ? "px-4 pt-28 pb-12 sm:pt-36" : "px-4 pt-6 pb-8"}>
         <div className="mx-auto max-w-5xl text-center">
-          <HeadingText text="NTT Startup Challenge 2025 Gallery" />
+          {title ? <HeadingText text={title} /> : null}
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
             <span className="rounded-full border border-white/10 px-3 py-1">
               {galleryImages?.length || 0} documentations
@@ -56,9 +86,13 @@ export default function GalleryGrid({
                   key={image.id}
                   className="group rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02] p-2 shadow-[0_20px_80px_-40px_rgba(15,23,42,0.75)]"
                 >
-                  <div className="relative h-64 w-full overflow-hidden rounded-2xl sm:h-80">
+                  <button
+                    type="button"
+                    onClick={() => setActiveIndex(index)}
+                    aria-label={`View ${image.alt} fullscreen`}
+                    className="relative block h-64 w-full cursor-zoom-in overflow-hidden rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-ntt-200 sm:h-80"
+                  >
                     <CldImage
-                      cloudName={cloudName}
                       src={image.publicId}
                       width={image.width}
                       height={image.height}
@@ -71,7 +105,7 @@ export default function GalleryGrid({
                       priority={index < 3}
                       className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                     />
-                  </div>
+                  </button>
                   <figcaption className="flex flex-col gap-2 p-4">
                     <div className="flex items-center justify-between text-xs uppercase tracking-widest text-muted-foreground">
                       <span>{formatDate(image.createdAt)}</span>
@@ -81,6 +115,13 @@ export default function GalleryGrid({
               ))}
             </div>
           )}
+          {galleryImages?.length ? (
+            <GalleryLightbox
+              images={galleryImages}
+              activeIndex={activeIndex}
+              onIndexChange={setActiveIndex}
+            />
+          ) : null}
         </div>
       </section>
     </>

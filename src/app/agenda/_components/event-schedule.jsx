@@ -30,6 +30,9 @@ export function EventSchedule() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Final Day Agenda
           </h2>
+          <p className="text-lg text-white/80 mb-4">
+            Wednesday, November 11, 2026 · 13:00-19:00 · Soehanna Hall
+          </p>
           <div className="h-1 w-24 bg-color-ntt mx-auto"></div>
         </div>
 
@@ -60,6 +63,11 @@ export function EventSchedule() {
                   </TableCell>
                   <TableCell className="text-white py-3 pr-6">
                     {item.content}
+                    {item.presenter && (
+                      <p className="mt-1 text-base text-white/70">
+                        {item.presenter}
+                      </p>
+                    )}
                   </TableCell>
                 </TableRow>
               ))}
@@ -84,6 +92,11 @@ export function EventSchedule() {
                 <div className="flex flex-col">
                   <span className="font-medium text-white">{item.time}</span>
                   <span className="text-white">{item.content}</span>
+                  {item.presenter && (
+                    <span className="mt-1 text-sm text-white/70">
+                      {item.presenter}
+                    </span>
+                  )}
                 </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +108,7 @@ export function EventSchedule() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className={`h-5 w-5 text-white transition-transform ${
+                  className={`h-5 w-5 shrink-0 text-white transition-transform ${
                     expandedRows.includes(index) ? "transform rotate-180" : ""
                   }`}
                 >

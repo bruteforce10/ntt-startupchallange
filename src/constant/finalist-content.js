@@ -261,12 +261,6 @@ export const PARTNER_CONTENT_2026 = [
     image: "/community-partner/2026/01-artique-agency.webp",
   },
   {
-    id: 2,
-    name: "KK Fund",
-    url: "https://kkfund.co",
-    image: "/community-partner/2026/02-kk-fund.webp",
-  },
-  {
     id: 4,
     name: "Cradle",
     url: "https://cradle.com.my",
@@ -303,6 +297,7 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://avv.co",
     image: "/community-partner/2026/10-avv-web.webp",
   },
+ 
   {
     id: 11,
     name: "Innovnation.ai",
@@ -321,6 +316,7 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://thinkzone.vn",
     image: "/community-partner/2026/12-thinkzone-ventures-web.webp",
   },
+  
 
   // {
   //   id: 8,
@@ -502,7 +498,7 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://growthcharger.com/",
     image: "/community-partner/2026/34-growthcharger.webp",
   },
-    {
+  {
     id: 39,
     name: "herizon",
     url: "https://herizon.club",
@@ -513,6 +509,18 @@ export const PARTNER_CONTENT_2026 = [
     name: "East Ventures",
     url: "https://east.vc",
     image: "/community-partner/2026/east-ventures.webp",
+  },
+   {
+    id: 90,
+    name: "sgInnovate",
+    url: "https://www.sginnovate.com",
+    image: "/community-partner/2026/sgInnovate.webp",
+  },
+  {
+    id: 91,
+    name: "ITRI",
+    url: "https://www.itri.org.tw/english/",
+    image: "/community-partner/2026/itri.webp",
   },
   {
     id: 38,
@@ -532,5 +540,10 @@ export const PARTNER_CONTENT_2026 = [
     url: "https://exeo-global.com",
     image: "/community-partner/2026/06-exeo-global.webp",
   },
-
+    {
+    id: 2,
+    name: "synexia-ventures",
+    url: "https://www.linkedin.com/company/synexia-ventures/",
+    image: "/community-partner/2026/synexia-ventures.webp",
+  },
 ];
