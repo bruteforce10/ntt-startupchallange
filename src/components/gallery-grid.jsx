@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { CldImage } from "next-cloudinary";
 import HeadingText from "@/components/heading-text";
 import GalleryLightbox from "@/components/gallery-lightbox";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const formatDate = (value) => {
   if (!value) return null;
@@ -17,17 +18,44 @@ const formatDate = (value) => {
 
 export default function GalleryGrid({
   title,
+  groups,
   galleryImages,
   errorMessage,
 }) {
+  const [activeFolder, setActiveFolder] = useState(groups?.[0]?.folder);
+  if (groups) {
+    return (
+      <Tabs value={activeFolder} onValueChange={setActiveFolder} className="gap-0">
+        <section className="px-4 pt-28 sm:pt-36">
+          <div className="mx-auto max-w-6xl text-center">
+            <HeadingText text={title} />
+            <TabsList aria-label="Gallery folders" className="mt-8 grid h-auto w-full grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-4">
+              {groups.map(({ folder }) => (
+                <TabsTrigger key={folder} value={folder} className="min-h-11 px-4 py-3">{folder}</TabsTrigger>
+              ))}
+            </TabsList>
+          </div>
+        </section>
+        {groups.map(({ folder, images, errorMessage }) => (
+          <TabsContent key={folder} value={folder}>
+            <GalleryAlbum galleryImages={images} errorMessage={errorMessage} />
+          </TabsContent>
+        ))}
+      </Tabs>
+    );
+  }
+  return <GalleryAlbum title={title} galleryImages={galleryImages} errorMessage={errorMessage} />;
+}
+
+function GalleryAlbum({ title, galleryImages, errorMessage }) {
   const lastUpdated = formatDate(galleryImages?.at(0)?.createdAt);
   const [activeIndex, setActiveIndex] = useState(null);
 
   return (
     <>
-      <section className="px-4 pt-28 pb-12 sm:pt-36">
+      <section className={title ? "px-4 pt-28 pb-12 sm:pt-36" : "px-4 pt-6 pb-8"}>
         <div className="mx-auto max-w-5xl text-center">
-          <HeadingText text={title} />
+          {title ? <HeadingText text={title} /> : null}
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
             <span className="rounded-full border border-white/10 px-3 py-1">
               {galleryImages?.length || 0} documentations

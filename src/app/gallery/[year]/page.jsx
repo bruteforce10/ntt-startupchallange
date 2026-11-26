@@ -32,8 +32,18 @@ export default async function GalleryByYearPage({ params }) {
 
   let galleryImages = [];
   let errorMessage = null;
+  let groups;
 
-  try {
+  if (gallery.folders) {
+    groups = await Promise.all(gallery.folders.map(async (folder) => {
+      try {
+        return { folder, images: await getGalleryImages({ folder }) };
+      } catch (error) {
+        console.error(`Unable to load gallery folder ${folder}:`, error);
+        return { folder, images: [], errorMessage: "Dokumentasi belum dapat dimuat. Silakan coba kembali nanti." };
+      }
+    }));
+  } else try {
     galleryImages = await getGalleryImages({ folder: gallery.folder });
   } catch (error) {
     errorMessage =
@@ -46,6 +56,7 @@ export default async function GalleryByYearPage({ params }) {
     <InitialPage>
       <GalleryGrid
         title={gallery.title}
+        groups={groups}
         galleryImages={galleryImages}
         errorMessage={errorMessage}
       />

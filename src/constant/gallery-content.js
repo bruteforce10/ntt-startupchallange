@@ -8,6 +8,11 @@ export const GALLERY_BY_YEAR = {
   },
   2026: {
     title: "NTT Startup Challenge 2026 Gallery",
-    folder: "2026",
+    folders: [
+      "Info Session India",
+      "Final Day 2026",
+      "Info Session Vietnam",
+      "Info Session Malaysia",
+    ],
   },
 };
